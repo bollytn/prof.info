@@ -1,6 +1,9 @@
 import { JetBrains_Mono as JetBrainsMono } from "next/font/google";
 import "./globals.css";
-import { Weight } from "lucide-react";
+
+//Components
+import Header from "@/components/Header";
+import PageTransition from "@/components/PageTransition";
 
 const jetBrainsMono = JetBrainsMono({
   variable: "--font-jetbrains-mono",
@@ -16,7 +19,10 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={jetBrainsMono.variable}>{children}</body>
+      <body className={jetBrainsMono.variable}>
+        <Header />
+        <PageTransition>{children}</PageTransition>
+      </body>
     </html>
   );
 }
