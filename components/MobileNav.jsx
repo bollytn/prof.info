@@ -5,13 +5,7 @@ import Link from "next/link"
 import { CiMenuFries } from 'react-icons/ci'
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet"
 
-const links = [
-    { name: 'Home', path: '/' },
-    { name: 'services', path: '/services' },
-    { name: 'resume', path: '/resume' },
-    { name: 'work', path: '/work' },
-    { name: 'contact', path: '/contact' },
-]
+
 
 const MobileNav = () => {
     const path = usePathname()
@@ -20,8 +14,22 @@ const MobileNav = () => {
             <SheetTrigger className="flex items-center justify-center">
                 <CiMenuFries className="text-[32px] text-accent" />
             </SheetTrigger>
-            <SheetContent>
-                content
+            <SheetContent flex flex-col>
+                {/* logo */}
+                <div className="mt-32 mb-40 text-center text-2xl">
+                    <Link href="/">
+                        <h1 className="text-4xl font-semibold">
+                            Bollytn <span className='text-accent'>.</span>
+                        </h1>
+
+                    </Link>
+                </div>
+
+                {/* nav */}
+                <nav className="">
+                    nav
+                </nav>
+
             </SheetContent>
         </Sheet>
     )

@@ -8,7 +8,7 @@ const Header = () => {
             <div className="container mx-auto flex justify-between items-center">
                 <Link href="/">
                     <h1 className="text-4xl font-semibold">
-                        Bolytn <span className='text-accent'>.</span>
+                        Bollytn <span className='text-accent'>.</span>
                     </h1>
                 </Link>
                 {/* Nav & hire me button */}
@@ -19,7 +19,7 @@ const Header = () => {
                     </Link>
                 </div>
 
-                {/* Mobile Nav */}
+                {/* Mobile Nav */} 
                 <div className="lg:hidden">
                     <MobileNav />
                 </div>
