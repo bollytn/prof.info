@@ -4,7 +4,7 @@ import { usePathname } from "next/navigation"
 import Link from "next/link"
 import { CiMenuFries } from 'react-icons/ci'
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet"
-
+import Links from "@/components/data/links"
 
 
 const MobileNav = () => {
@@ -14,7 +14,7 @@ const MobileNav = () => {
             <SheetTrigger className="flex items-center justify-center">
                 <CiMenuFries className="text-[32px] text-accent" />
             </SheetTrigger>
-            <SheetContent flex flex-col>
+            <SheetContent className='flex flex-col'>
                 {/* logo */}
                 <div className="mt-32 mb-40 text-center text-2xl">
                     <Link href="/">
@@ -26,8 +26,20 @@ const MobileNav = () => {
                 </div>
 
                 {/* nav */}
-                <nav className="">
-                    nav
+                <nav className="flex flex-col justify-center items-center gap-8">
+                    {
+                        Links.map((link, index) => (
+                            <Link
+                                key={index}
+                                href={link.path}
+                                className={`${path === link.path &&
+                                    'text-accent border-b-2 border-accent'} 
+                                     text-lg capitalize hover:text-accent transition-all`}
+                            >
+                                {link.name}
+                            </Link>
+                        ))
+                    }
                 </nav>
 
             </SheetContent>

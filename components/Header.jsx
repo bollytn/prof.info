@@ -1,6 +1,7 @@
 import Link from 'next/link';
 import Nav from './Nav';
 import MobileNav from './MobileNav';
+import { Button } from './ui/button';
 
 const Header = () => {
     return (
@@ -15,7 +16,7 @@ const Header = () => {
                 <div className="hidden lg:flex items-center gap-8">
                     <Nav />
                     <Link href="/contact">
-                        <button>Hire me</button>
+                        <Button>Hire me</Button>
                     </Link>
                 </div>
 
