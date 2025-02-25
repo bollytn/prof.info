@@ -6,8 +6,8 @@ import Image from "next/image"
 const Photo = () => {
     return (
         <div className="w-full h-full relative">
-            <motion.div>
-             <div className="w-[289px] h-[298px] xl:w-[498px] xl:h-[498px] mix-blend-lighten">
+            <motion.div >
+             <div className="w-[289px] h-[298px] xl:w-[498px] xl:h-[498px] mix-blend-difference">
                 <Image
                     src="/assets/photo.png"
                     priority
