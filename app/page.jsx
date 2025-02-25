@@ -1,3 +1,4 @@
+import Photo from '@/components/Photo';
 import Social from '@/components/Social';
 import { Button } from '@/components/ui/button'
 import { FiDownload } from "react-icons/fi"
@@ -8,7 +9,6 @@ export default function Home() {
       <div className="container mx-auto h-full">
         <div className="flex flex-col xl:flex-row items-center justify-between xl:pt-8 xl:pb-24">
           {/* text*/}
-
           <div className="text-center xl:text-left">
             <span className='text-xl'>Full-Stack</span>
             <h1 className='h1 mb-6'>
@@ -31,8 +31,10 @@ export default function Home() {
               hover:bg-accent hover:text-primary hover:transition-all duration-500'/>
             </div>
           </div>
-          {/* photo*/}
-          <div>photo</div>
+        </div>
+        {/* photo*/}
+        <div>
+          <Photo/>
         </div>
       </div>
     </section>
