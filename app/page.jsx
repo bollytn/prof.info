@@ -10,11 +10,11 @@ export default function Home() {
         <div className="flex flex-col xl:flex-row items-center justify-between xl:pt-8 xl:pb-24">
           {/* text*/}
           <div className="text-center xl:text-left order-2 xl:order-none">
-            <span className='text-xl'>Full-Stack</span>
-            <h1 className='h1 mb-6'>
-              salut, Je suis <br /> <span className='text-accent capitalize'>mahjoubi bilel</span>
+            <span className='text-xl'>Développeur Full-Stack</span>
+            <h1 className='h2 mb-6'>
+              salut, Je suis <br /> <span className='text-accent capitalize h1'>mahjoubi bilel</span>
             </h1>
-            <p className='max-w-[500px] mb-9 text-white/80'>laboriosam praesentium consequuntur eaque cum esse blanditiis asperiores quis exercitationem?</p>
+            <p className='max-w-[500px] mb-9 text-white/80'>Web,Mobile,Front-end,Back-end,designer,je suis un développeur full-stack passionné par la technologie et le design.</p>
             {/* btn && social*/}
             <div className='flex flex-col xl:flex-row items-center gap 8'>
               <Button
