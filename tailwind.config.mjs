@@ -26,7 +26,7 @@ const tailwindConfig = {
 				},
 				muted: {
 					DEFAULT: 'hsl(var(--muted))',
-					foreground: 'hsl(var(--muted-foreground))'
+					foreground: 'hsl(var(--muted-foreground))' 
 				},
 				accent: {
 					// defaut: 00ff99  hover :00e187
