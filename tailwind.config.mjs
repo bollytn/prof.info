@@ -1,5 +1,5 @@
 /** @type {import('tailwindcss').Config} */
-export default {
+const tailwindConfig = {
 	darkMode: ["class"],
 	content: [
 		"./pages/**/*.{js,ts,jsx,tsx,mdx}",
@@ -29,7 +29,7 @@ export default {
 					foreground: 'hsl(var(--muted-foreground))'
 				},
 				accent: {
-					//defaut: 00ff99  hover :00e187
+					// defaut: 00ff99  hover :00e187
 					DEFAULT: '#ffe866',
 					hover: '#ffd900',
 				},
@@ -70,3 +70,5 @@ export default {
 	},
 	plugins: [require("tailwindcss-animate")],
 };
+
+export default tailwindConfig;
