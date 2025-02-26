@@ -11,7 +11,7 @@ export default function Home() {
           {/* text*/}
           <div className="text-center xl:text-left order-2 xl:order-none">
             <span className='text-xl'>Développeur Full-Stack</span>
-            <h1 className='h2 mb-4'>
+            <h1 className='h2 mb-4 mt-2 xl:mt-4'>
               salut, Je suis <br /> <span className='text-accent capitalize h1'>mahjoubi bilel</span>
             </h1>
             <p className='max-w-[500px] mb-6 text-white/80'>Web,Mobile,Front-end,Back-end,designer,je suis un développeur full-stack passionné par la technologie et le design.</p>
@@ -24,7 +24,7 @@ export default function Home() {
                 <span>Télecharger CV</span>
                 <FiDownload className='text-xl' />
               </Button>
-              <div className='ml-0 mt-8 xl:mb-8 ml-8'>
+              <div className='ml-0 mt-8 xl:mb-8 xl:ml-8'>
                 <Social containerStyles='flex gap-6'
                   iconStyles='w-9 h-9 border border-accent rounded-full flex justify-center items-center text-accent text-base
               hover:bg-accent hover:text-primary hover:transition-all duration-500'/>
@@ -32,7 +32,7 @@ export default function Home() {
             </div>
           </div>
           {/* photo*/}
-          <div className='order-1 ml-5 xl:order-none mb-8 xl:mb-0'>
+          <div className='order-1 xl:order-none mb-8 xl:mb-0'>
             <Photo />
           </div>
         </div>
