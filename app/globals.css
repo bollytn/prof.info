@@ -2,11 +2,8 @@
 @tailwind components;
 @tailwind utilities;
 
-
-
 @layer base {
   :root {
-
     --background: 0 0% 100%;
 
     --foreground: 222.2 84% 4.9%;
@@ -55,10 +52,9 @@
 
     --chart-5: 27 87% 67%;
 
-    --radius: 0.5rem
+    --radius: 0.5rem;
   }
   .dark {
-
     --background: 222.2 84% 4.9%;
 
     --foreground: 210 40% 98%;
@@ -105,11 +101,9 @@
 
     --chart-4: 280 65% 60%;
 
-    --chart-5: 340 75% 55%
+    --chart-5: 340 75% 55%;
   }
 }
-
-
 
 @layer base {
   * {
@@ -119,12 +113,18 @@
     @apply font-primary bg-primary text-white leading-loose;
   }
   .h1 {
-    @apply text-[48px] xl:text-[80px] leading-[1.1] font-semibold
+    @apply text-[48px] xl:text-[80px] leading-[1.1] font-semibold;
   }
   .h2 {
-    @apply text-[36px] xl:text-[48px] leading-[1.1] font-semibold
+    @apply text-[36px] xl:text-[48px] leading-[1.1] font-semibold;
   }
   .h3 {
-    @apply text-[20px] xl:text-[24px] leading-[1.1] font-semibold
+    @apply text-[20px] xl:text-[24px] leading-[1.1] font-semibold;
+  }
+  .text-outline {
+    -webkit-text-stroke: #fff 1px;
+  }
+  .text-outline-hover {
+    -webkit-text-stroke: #ffe866 1px;
   }
 }
