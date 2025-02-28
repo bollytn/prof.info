@@ -2,7 +2,6 @@ import { FaHtml5, FaCss3, FaJs, FaReact, FaFigma, FaNodeJs } from "react-icons/f
 import { FiFigma } from "react-icons/fi";
 import { SiTailwindcss, SiNextdotjs, SiMongodb } from "react-icons/si";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs';
-import { motion } from "framer-motion";
 
 import AnimatedContent from './components/AnimatedContent'
 
