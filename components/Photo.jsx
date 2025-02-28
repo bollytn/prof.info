@@ -23,6 +23,7 @@ const Photo = () => {
                         fill
                         alt=""
                         className="object-contain"
+                        sizes="(max-width: 768px) 289px, (max-width: 1200px) 498px, 100vw"
                     />
                 </motion.div>
                 {/*circle*/}
@@ -52,7 +53,6 @@ const Photo = () => {
                             repeatType: "reverse",
                         }}
                     >
-
                     </motion.circle>
                 </motion.svg>
             </motion.div>
