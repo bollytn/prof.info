@@ -1,8 +1,10 @@
-'use client'
-
 import { FaHtml5, FaCss3, FaJs, FaReact, FaFigma, FaNodeJs } from "react-icons/fa";
 import { FiFigma } from "react-icons/fi";
-import { SiTailwindcss, SiNextdotjs, SiMongodb } from "react-icons/si"
+import { SiTailwindcss, SiNextdotjs, SiMongodb } from "react-icons/si";
+import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs';
+import { motion } from "framer-motion";
+
+import AnimatedContent from './components/AnimatedContent'
 
 const about = {
     title: "about me",
@@ -21,7 +23,6 @@ const about = {
             filedValue: "+5 years"
         },
         {
-
             filedName: "email",
             filedValue: "Mahjoubi.Bilel@gmail.com"
         },
@@ -137,27 +138,16 @@ const skills = {
     ]
 }
 
-import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs'
-import { Tooltip, TooltipContent, TooltipProvider, TooltipTrigger } from "@/components/ui/tooltip";
-import { ScrollArea } from "@/components/ui/scroll-area";
-
-import { motion } from "framer-motion";
-import { TabContent } from "react-bootstrap";
-
 const Resume = () => {
     return (
-        <motion.div
-            className="min-h-[80vh] flex items-center justify-center py-12 xl:py-0"
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1, transition: { delay: 2.4, duration: 0.4, ease: "easeIn" } }}
-        >
+        <AnimatedContent>
             <div className="container mx-auto">
                 <Tabs defaultValue="experience" className="flex flex-col xl:flex-row gap-16">
                     <TabsList className="flex flex-col w-full max-w-[380px] mx-auto xl:mx-0 gap-6">
-                        <TabsTrigger value="experience">Experince</TabsTrigger>
-                        <TabsTrigger value="education">education</TabsTrigger>
-                        <TabsTrigger value="skills">skills</TabsTrigger>
-                        <TabsTrigger value="about">about me</TabsTrigger>
+                        <TabsTrigger value="experience">Experience</TabsTrigger>
+                        <TabsTrigger value="education">Education</TabsTrigger>
+                        <TabsTrigger value="skills">Skills</TabsTrigger>
+                        <TabsTrigger value="about">About Me</TabsTrigger>
                     </TabsList>
                     {/* contenu */}
                     <div className="min-h-[70vh] w-full">
@@ -177,7 +167,7 @@ const Resume = () => {
                     </div>
                 </Tabs>
             </div>
-        </motion.div>
+        </AnimatedContent>
     );
 }
 export default Resume;
