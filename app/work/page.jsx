@@ -6,7 +6,8 @@ import React, { useState } from 'react'
 import { Swiper, SwiperSlide } from 'swiper/react'
 import 'swiper/css'
 
-import { BsArrowUpRight, BsGithub } from 'react-icons/bs'
+import { BsGithub } from 'react-icons/bs'
+import { LuExternalLink } from "react-icons/lu";
 
 import { Tooltip, TooltipContent, TooltipProvider, TooltipTrigger } from '@/components/ui/tooltip'
 
@@ -47,6 +48,14 @@ const projects = [
 
 const Work = () => {
     const [project, setProject] = useState(projects[0])
+
+    const handleSlideChange = (swiper) => {
+        // get current slide index
+        const currentIndex = swiper.activeIndex
+        // update project state based on current slide index
+        setProject(projects[currentIndex])
+    }
+
     return (
         <motion.section
             initial={{ opacity: 0 }}
@@ -56,7 +65,7 @@ const Work = () => {
             <div className='container mx-auto'>
                 <div className='flex flex-col xl:flex-row xl:gap-7'>
                     <div className='w-full xl:w-[50%] xl:h-[460px] flex flex-col xl:justify-between order-2 xl:order-none'>
-                        <div>
+                        <div className='flex flex-col gap-7 h-[50%]'>
                             {/*  outline num*/}
                             <div className='text-8xl leading-none font-extrabold text-transparent text-outline'>
                                 {project.num}
@@ -86,17 +95,65 @@ const Work = () => {
                             {/* border */}
                             <div className='border border-white/20'></div>
                             {/* button */}
-                            <div>
+                            <div className='flex gap-4'>
                                 {/* live project button */}
                                 <Link href={project.live}>
                                     <TooltipProvider delayDuration={100}>
+                                        <Tooltip>
+                                            <TooltipTrigger className='w-[70px] h-[70px] rounded-full bg-white/5 flex justify-center items-center group'>
+                                                <LuExternalLink className='text-white text-3xl group-hover:text-accent' />
+                                            </TooltipTrigger>
+                                            <TooltipContent>
+                                                <p>live project</p>
+                                            </TooltipContent>
+                                        </Tooltip>
+                                    </TooltipProvider>
+                                </Link>
 
+                                {/* live project button */}
+                                <Link href={project.github}>
+                                    <TooltipProvider delayDuration={100}>
+                                        <Tooltip>
+                                            <TooltipTrigger className='w-[70px] h-[70px] rounded-full bg-white/5 flex justify-center items-center group'>
+                                                <BsGithub className='text-white text-3xl group-hover:text-accent' />
+                                            </TooltipTrigger>
+                                            <TooltipContent>
+                                                <p>github repository</p>
+                                            </TooltipContent>
+                                        </Tooltip>
                                     </TooltipProvider>
                                 </Link>
                             </div>
                         </div>
                     </div>
-                    <div className='w-full xl:w-[50%]'>slider</div>
+                    <div className='w-full xl:w-[50%]'>
+                        <Swiper className='xl:h-[520px] mb-12'
+                            spaceBetween={30}
+                            slidesPerView={1}
+                            onSlideChange={handleSlideChange}>
+                            {
+                                projects.map((item, index) => {
+                                    return (
+                                        <SwiperSlide key={index} className='w-full'>
+                                            <div className='h-[460px] relative group flex justify-center items-center bg-pink-50/20'>
+                                                {/* overlay */}
+                                                <div></div>
+                                                {/* image */ }
+                                                <div>
+                                                    <Image 
+                                                    fill 
+                                                    alt=''
+                                                    src={item.image}
+                                                    className="object-cover"
+                                                    />
+                                                </div>
+                                            </div>
+                                        </SwiperSlide>
+                                    )
+                                })
+                            }
+                        </Swiper>
+                    </div>
                 </div>
             </div>
         </motion.section>
