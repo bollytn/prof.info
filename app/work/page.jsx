@@ -12,6 +12,7 @@ import { LuExternalLink } from "react-icons/lu";
 import { Tooltip, TooltipContent, TooltipProvider, TooltipTrigger } from '@/components/ui/tooltip'
 
 import Link from 'next/link'
+import Image from 'next/image'
 
 const projects = [
     {
