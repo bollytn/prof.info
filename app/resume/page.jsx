@@ -72,7 +72,7 @@ const experience = {
 const education = {
     icon: '/public/assets/resume/cap.svg',
     title: 'Mon Education',
-    description: "Passionné par la création d'applications dynamiques et engageantes, j'apporte plus de 3 ans d'expérience en tant que développeur full-stack axé sur la création d'expériences Web2 fluides et l'expansion vers le Web3. Je suis toujours à la recherche de nouveaux outils, de meilleures pratiques et des dernières technologies pour améliorer mon travail.",
+    description: "Je suis toujours à la recherche de nouveaux outils, de meilleures pratiques et des dernières technologies pour améliorer mon travail.",
     items: [
         {
             institution: 'online course platform',
@@ -91,7 +91,7 @@ const education = {
         },
         {
             institution: 'Maitrise en informatique',
-            degree: 'Développement et nouvelles technologies',
+            degree: 'Nouvelles technologies',
             duration: '4 ans en 2010'
         },
     ]
@@ -99,7 +99,7 @@ const education = {
 
 const skills = {
     title: 'Mes Compétances',
-    description: "Passionné par la création d'applications dynamiques et engageantes, j'apporte plus de 3 ans d'expérience en tant que développeur full-stack axé sur la création d'expériences Web2 fluides et l'expansion vers le Web3. Je suis toujours à la recherche de nouveaux outils, de meilleures pratiques et des dernières technologies pour améliorer mon travail.",
+    description: "l'expansion vers le Web3.",
     skilList: [
         {
             icon: <FaHtml5 />,
