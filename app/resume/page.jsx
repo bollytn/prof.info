@@ -43,7 +43,7 @@ const about = {
 
 const experience = {
     icon: '/public/assets/resume/badge.svg',
-    title: 'mon expérience',
+    title: 'Mon Expérience',
     description: "Passionné par la création d'applications dynamiques et engageantes, j'apporte plus de 3 ans d'expérience en tant que développeur full-stack axé sur la création d'expériences Web2 fluides et l'expansion vers le Web3. Je suis toujours à la recherche de nouveaux outils, de meilleures pratiques et des dernières technologies pour améliorer mon travail.",
     items: [
         {
@@ -71,7 +71,7 @@ const experience = {
 
 const education = {
     icon: '/public/assets/resume/cap.svg',
-    title: 'mon education',
+    title: 'Mon Education',
     description: "Passionné par la création d'applications dynamiques et engageantes, j'apporte plus de 3 ans d'expérience en tant que développeur full-stack axé sur la création d'expériences Web2 fluides et l'expansion vers le Web3. Je suis toujours à la recherche de nouveaux outils, de meilleures pratiques et des dernières technologies pour améliorer mon travail.",
     items: [
         {
@@ -98,7 +98,7 @@ const education = {
 }
 
 const skills = {
-    title: 'mes compétances',
+    title: 'Mes Compétances',
     description: "Passionné par la création d'applications dynamiques et engageantes, j'apporte plus de 3 ans d'expérience en tant que développeur full-stack axé sur la création d'expériences Web2 fluides et l'expansion vers le Web3. Je suis toujours à la recherche de nouveaux outils, de meilleures pratiques et des dernières technologies pour améliorer mon travail.",
     skilList: [
         {
