@@ -8,35 +8,35 @@ import AnimatedContent from './components/AnimatedContent'
 import { TooltipProvider, TooltipTrigger, Tooltip, TooltipContent } from "@/components/ui/tooltip";
 
 const about = {
-    title: "about me",
+    title: "À PROPOS DE MOI",
     description: "Lsequi porro soluta optio ipsum molestias. Illo facere eum fugiat assumenda fuga repellat mollitia voluptates, similique at illum sit, error molestias.",
     info: [
         {
-            filedName: "name",
+            filedName: "Nom & Prenom",
             filedValue: "Mahjoubi Bilel"
         },
         {
-            filedName: "phone",
-            filedValue: "(216) 22 917 226"
+            filedName: "Tél",
+            filedValue: "(+216) 22 917 226"
         },
         {
-            filedName: "experience",
+            filedName: "Experience",
             filedValue: "+5 years"
         },
         {
-            filedName: "email",
+            filedName: "E-mail",
             filedValue: "Mahjoubi.Bilel@gmail.com"
         },
         {
-            filedName: "github",
+            filedName: "Github",
             filedValue: "bollytn"
         }, {
-            filedName: "freelance",
-            filedValue: "available"
+            filedName: "Freelance",
+            filedValue: "Available"
         },
         {
-            filedName: "languages",
-            filedValue: "arabic,frensh,english"
+            filedName: "Languages",
+            filedValue: "Arabic,Frensh,English"
         },
     ]
 }
@@ -44,7 +44,7 @@ const about = {
 const experience = {
     icon: '/public/assets/resume/badge.svg',
     title: 'mon expérience',
-    description: 'Ipsa laudantium magnam quae animi velit tempora in nam ducimus veniam eos. Accusantium repudiandae veritatis voluptate consequuntur sit id minus suscipit asperiores!',
+    description: "Passionné par la création d'applications dynamiques et engageantes, j'apporte plus de 3 ans d'expérience en tant que développeur full-stack axé sur la création d'expériences Web2 fluides et l'expansion vers le Web3. Je suis toujours à la recherche de nouveaux outils, de meilleures pratiques et des dernières technologies pour améliorer mon travail.",
     items: [
         {
             company: 'tech solution inc',
@@ -57,12 +57,12 @@ const experience = {
             duration: '2021'
         },
         {
-            company: 'Ecomoerce startup',
-            position: 'freelance developper',
+            company: 'Ecomerce startup',
+            position: 'front end developper',
             duration: '2020 - 2021'
         },
         {
-            company: 'tech academy',
+            company: 'IwebSolution',
             position: 'teaching assistant',
             duration: '2019'
         },
@@ -72,34 +72,34 @@ const experience = {
 const education = {
     icon: '/public/assets/resume/cap.svg',
     title: 'mon education',
-    description: 'Ipsa laudantium magnam quae animi velit tempora in nam ducimus veniam eos. Accusantium repudiandae veritatis voluptate consequuntur sit id minus suscipit asperiores!',
+    description: "Passionné par la création d'applications dynamiques et engageantes, j'apporte plus de 3 ans d'expérience en tant que développeur full-stack axé sur la création d'expériences Web2 fluides et l'expansion vers le Web3. Je suis toujours à la recherche de nouveaux outils, de meilleures pratiques et des dernières technologies pour améliorer mon travail.",
     items: [
         {
             institution: 'online course platform',
             degree: 'full stack web developement bootcamp',
-            duration: '2024'
+            duration: '2023'
         },
         {
             institution: 'code academy',
             degree: 'front end track',
-            duration: '2023'
+            duration: '2022'
         },
         {
             institution: 'online course',
             degree: 'programming course',
-            duration: '2022'
+            duration: '2021'
         },
         {
-            institution: 'tech institue',
-            degree: 'certified web developer',
-            duration: '2021'
+            institution: 'Maitrise en informatique',
+            degree: 'Développement et nouvelles technologies',
+            duration: '4 ans en 2010'
         },
     ]
 }
 
 const skills = {
     title: 'mes compétances',
-    description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque, minima. Sit quaerat similique suscipit optio laudantium repudiandae nostrum.',
+    description: "Passionné par la création d'applications dynamiques et engageantes, j'apporte plus de 3 ans d'expérience en tant que développeur full-stack axé sur la création d'expériences Web2 fluides et l'expansion vers le Web3. Je suis toujours à la recherche de nouveaux outils, de meilleures pratiques et des dernières technologies pour améliorer mon travail.",
     skilList: [
         {
             icon: <FaHtml5 />,
