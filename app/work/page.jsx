@@ -141,7 +141,7 @@ const Work = () => {
                                                 {/* overlay */}
                                                 <div className='absolute top-0 bottom-0 w-full h-full bg-black/10 z-10'></div>
                                                 {/* image */}
-                                                <div>
+                                                <div className='w-full h-full relative'>
                                                     <Image
                                                         fill
                                                         alt=''
