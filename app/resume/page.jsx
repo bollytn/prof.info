@@ -9,7 +9,7 @@ import { TooltipProvider, TooltipTrigger, Tooltip, TooltipContent } from "@/comp
 
 const about = {
     title: "À PROPOS DE MOI",
-    description: "Lsequi porro soluta optio ipsum molestias. Illo facere eum fugiat assumenda fuga repellat mollitia voluptates, similique at illum sit, error molestias.",
+    description: "Passionné par la création d'applications dynamiques et engageantes, j'apporte plus de 3 ans d'expérience en tant que développeur full-stack axé sur la création d'expériences Web2 fluides et l'expansion vers le Web3. Je suis toujours à la recherche de nouveaux outils, de meilleures pratiques et des dernières technologies pour améliorer mon travail.",
     info: [
         {
             filedName: "Nom & Prenom",
@@ -44,7 +44,7 @@ const about = {
 const experience = {
     icon: '/public/assets/resume/badge.svg',
     title: 'Mon Expérience',
-    description: "Passionné par la création d'applications dynamiques et engageantes, j'apporte plus de 3 ans d'expérience en tant que développeur full-stack axé sur la création d'expériences Web2 fluides et l'expansion vers le Web3. Je suis toujours à la recherche de nouveaux outils, de meilleures pratiques et des dernières technologies pour améliorer mon travail.",
+    description: "j'apporte plus de 3 ans d'expérience en tant que développeur full-stack ",
     items: [
         {
             company: 'tech solution inc',
