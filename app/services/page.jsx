@@ -8,25 +8,25 @@ const services = [
     {
         num: "01",
         title: "Web Development",
-        description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, nunc vel tincidunt lacinia, nisl nisl aliquam nisl, eget aliquam nisl nisl sit amet nisl.",
+        description: "je maîtrise les technologies modernes telles que HTML, CSS, JavaScript ainsi que des frameworks comme React, Vue.js pour le front-end, et Node.js, PHP ou Django pour le back-end. Mon objectif est de créer des sites et applications web performants, ergonomiques et adaptés aux besoins des utilisateurs. Attentif(ve) aux bonnes pratiques de développement.",
         link: "/services/web-development"
     },
     {
         num: "02",
         title: "Mobile App Development",
-        description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, nunc vel tincidunt lacinia, nisl nisl aliquam nisl, eget aliquam nisl nisl sit amet nisl.",
+        description: "Je possède une solide expertise en [Android/iOS/Flutter/React Native], acquise au cours de mes études et expériences professionnelles. Ma maîtrise de [langages et frameworks utilisés, ex. Swift, Kotlin, Dart, React Native] m’a permis de concevoir des applications performantes, ergonomiques et adaptées aux besoins des utilisateurs.",
         link: "/services/mobile-app-development"
     },
     {
         num: "03",
         title: "UI/UX Design",
-        description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, nunc vel tincidunt lacinia, nisl nisl aliquam nisl, eget aliquam nisl nisl sit amet nisl.",
+        description: "je me spécialise en UI/UX Design afin de créer des expériences numériques intuitives, esthétiques et fonctionnelles. Ma maîtrise des outils tels que Figma, Adobe XD et Sketch, ainsi que ma compréhension des principes de design centré sur l’utilisateur, me permettent de concevoir des interfaces optimisées et engageantes.",
         link: ""
     },
     {
         num: "04",
         title: "Logo Design",
-        description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, nunc vel tincidunt lacinia, nisl nisl aliquam nisl, eget aliquam nisl nisl sit amet nisl.",
+        description: "je me spécialise dans la création de logos uniques et impactants qui reflètent l’essence d’une marque. Grâce à ma maîtrise des outils tels qu’Adobe Illustrator et Photoshop, l’harmonie des formes et des couleurs, ainsi que l’équilibre entre simplicité et originalité. ",
         link: ""
     }
 ]
