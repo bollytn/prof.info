@@ -1,4 +1,5 @@
 import { JetBrains_Mono as JetBrainsMono } from "next/font/google";
+import { SpeedInsights } from "@vercel/speed-insights/next"
 import "./globals.css";
 
 //Components
@@ -23,7 +24,9 @@ export default function RootLayout({ children }) {
       <body className={jetBrainsMono.variable}>
         <Header />
         <StairTransition />
-        <PageTransition>{children}</PageTransition>
+        <PageTransition>{children}
+          <SpeedInsights />
+        </PageTransition>
       </body>
     </html>
   );
