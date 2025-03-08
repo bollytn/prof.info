@@ -21,7 +21,7 @@ const about = {
         },
         {
             filedName: "Experience",
-            filedValue: "+5 years"
+            filedValue: "+3 years"
         },
         {
             filedName: "E-mail",
@@ -99,7 +99,7 @@ const education = {
 
 const skills = {
     title: 'Mes Compétances',
-    description: "l'expansion vers le Web3.",
+    description: "J'ai toutes les compétences nécessaires (Back-End, Front-End, UX/UI, architecture…) à la création d’un site d’un sa globalité (création, développement, codage…).",
     skilList: [
         {
             icon: <FaHtml5 />,
@@ -139,12 +139,12 @@ const Resume = () => {
     return (
         <AnimatedContent>
             <div className="container mx-auto">
-                <Tabs defaultValue="experience" className="flex flex-col xl:flex-row gap-16">
+                <Tabs defaultValue="experience" className="flex flex-col xl:flex-row gap-8">
                     <TabsList className="flex flex-col w-full max-w-[380px] mx-auto xl:mx-0 gap-6">
                         <TabsTrigger value="experience">Experience</TabsTrigger>
                         <TabsTrigger value="education">Education</TabsTrigger>
-                        <TabsTrigger value="skills">Skills</TabsTrigger>
-                        <TabsTrigger value="about">About Me</TabsTrigger>
+                        <TabsTrigger value="skills">Compétances</TabsTrigger>
+                        <TabsTrigger value="about">A props De Moi</TabsTrigger>
                     </TabsList>
                     {/* contenu */}
                     <div className="min-h-[70vh] w-full">
@@ -231,15 +231,15 @@ const Resume = () => {
                         <TabsContent value='about' className="w-full text-center xl:text-left">
                             <div className="flex flex-col gap-7">
                                 <h3 className="text-4xl font-bold">{about.title}</h3>
-                                <p className="max-w-[600px] text-white/60 mx-auto xl:mx-0">{about.description}</p>
-                                <ul className="grid grid-cols-1 xl:grid-cols-2 gap-y-2 max-w-[620px] mx-auto xl:mx-0">
+                                <p className="max-w-[600px] xl:max-w-[700px] text-white/60 mx-auto xl:mx-0">{about.description}</p>
+                                <ul className="grid grid-cols-1 xl:grid-cols-2 gap-y-2 max-w-[750px] mx-auto xl:mx-0">
                                     {about.info.map((item,index)=> {
                                         return (
                                             <li 
                                             key={index}
                                             className="flex items-center justify-center xl:justify-start gap-4"
                                             >
-                                                <span className="text-white/60">{item.filedName}</span>
+                                                <span className="text-white/60">{item.filedName}:</span>
                                                 <span className="text-xl">{item.filedValue}</span>
                                             </li>
                                         )

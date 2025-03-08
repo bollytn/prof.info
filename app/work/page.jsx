@@ -19,8 +19,8 @@ const projects = [
     {
         num: '01',
         category: 'frontend',
-        title: 'project 1',
-        description: 'lorem lorem lorem lorem lorem lorem lorem lorem',
+        title: 'Leadlinker',
+        description: 'Boost sales with personalized links for WhatsApp, calls, and custom URLs. Sell without a website and track link visits with detailed stats.',
         stack: [{ name: 'html 5' }, { name: "css 3" }, { name: "javascript" }],
         image: '/assets/work/thumb1.png',
         live: '',
@@ -29,8 +29,8 @@ const projects = [
     {
         num: '02',
         category: 'fullstack',
-        title: 'project 2',
-        description: 'lorem lorem lorem lorem lorem lorem lorem lorem',
+        title: 'Ravnaq Store',
+        description: 'Ravnaq Store is a luxury home decor brand that offers a wide range of products including tea sets, decorative products, and serving stands.',
         stack: [{ name: 'Next.js' }, { name: "Tailwind.css" }, { name: "Node.js" }],
         image: '/assets/work/thumb2.png',
         live: '',
@@ -38,10 +38,10 @@ const projects = [
     },
     {
         num: '03',
-        category: 'frontend',
-        title: 'project 3',
-        description: 'lorem lorem lorem lorem lorem lorem lorem lorem',
-        stack: [{ name: 'Next.js' }, { name: "Tailwind.css" }],
+        category: 'fullstack',
+        title: 'Tvman Store',
+        description: 'An e-commerce platform for selling TVs, accessories, and other related products.',
+        stack: [{ name: 'Next.js' }, { name: "Tailwind.css" }, { name: "Node.js" }],
         image: '/assets/work/thumb3.png',
         live: '',
         github: '',
@@ -74,7 +74,7 @@ const Work = () => {
                             </div>
                             {/* project category */}
                             <h2 className='text-4xl font-bold leading-none text-white group-hover:text-accent transition-all duration-500 capitalize'>
-                                {project.category}
+                                {project.title}
                             </h2>
                             {/* project description */}
                             <p className='text-white/60'>{project.description}</p>
