@@ -36,6 +36,8 @@ const info = [
 
 import { motion } from "framer-motion";
 
+import Image from "next/image";
+
 const Contact = () => {
     return (
         <motion.section initial={{ opacity: 0 }}
@@ -82,7 +84,17 @@ const Contact = () => {
                         </form>
                     </div>
                     {/* info */}
-                    <div className="flex flex-1 items-center xl:justify-center order-1 xl:order-none ">
+                    <div className="flex flex-1 flex-col gap-16 items-center xl:justify-between order-1 xl:order-none ">
+                        {/* Image */}
+                        <div className="hidden xl:block">
+                            <Image
+                                src="/assets/contact/maileee.svg"
+                                alt="mail"
+                                width={400}
+                                height={400}
+                                quality={100}
+                            />
+                        </div>
                         <ul className="flex flex-col gap-4">
                             {info.map((item, index) => {
                                 return (
