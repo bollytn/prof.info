@@ -58,7 +58,7 @@ const Contact = () => {
                             <p className="text-white/60">Créer la structure (back-end) du site ou de l'application.</p>
                             <p className="text-white/60">Développer tous les aspects techniques du projet web (base de données, interface utilisateur…).</p>
                             {/* line shadow rounded */}
-                            <div className="h-[1px] w-full bg-yellow-300 shadow-sm shadow-yellow-500 rounded"></div>
+                            <div className="h-[1px] w-full bg-yellow-300 shadow-[0_0_10px_yellow] rounded"></div>
                             {/*input */}
                             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                                 <input type="firstname" placeholder="Nom" className="bg-transparent border-b border-white/20 text-white focus:outline-none placeholder:px-2" />
