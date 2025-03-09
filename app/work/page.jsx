@@ -96,12 +96,16 @@ const Work = () => {
                             </ul>
                             {/* border */}
                             {/*<div className='border border-white/20'></div>*/}
+
                             {/* divider line */}
                             <h3 className="flex items-center w-full">
                                 <span className="flex-grow bg-yellow-300 shadow-[0_0_5px_yellow] rounded h-px "></span>
-                                <span className="mx-3 text-lg font-medium text-accent/60 animate-bounce">{project.category}</span>
+                                <span
+                                    className="mx-3 text-lg font-medium text-accent/60 animate-bounce">{project.category}
+                                </span>
                                 <span className="flex-grow bg-yellow-300 shadow-[0_0_5px_yellow] rounded h-px"></span>
                             </h3>
+                    
                             {/* button */}
                             <div className='flex gap-4'>
                                 {/* live project button */}
@@ -160,9 +164,9 @@ const Work = () => {
                                     )
                                 })
                             }
-                            <WorkSliderBtn 
-                            containerStyles="flex gap-2 absolute right-0 bottom-[calc(50%_-_22px)] xl:bottom-0 w-full justify-between xl:w-max xl:justify-none z-20"
-                            btnStyles="bg-accent hover:bg-accent-hover text-primary text-[22px] w-[44px] h-[44px] flex justify-center items-center transition-all"
+                            <WorkSliderBtn
+                                containerStyles="flex gap-2 absolute right-0 bottom-[calc(50%_-_22px)] xl:bottom-0 w-full justify-between xl:w-max xl:justify-none z-20"
+                                btnStyles="bg-accent hover:bg-accent-hover text-primary text-[22px] w-[44px] h-[44px] flex justify-center items-center transition-all"
                             />
                         </Swiper>
                     </div>
