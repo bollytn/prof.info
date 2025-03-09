@@ -58,7 +58,13 @@ const Contact = () => {
                             <p className="text-white/60">Créer la structure (back-end) du site ou de l'application.</p>
                             <p className="text-white/60">Développer tous les aspects techniques du projet web (base de données, interface utilisateur…).</p>
                             {/* line shadow rounded */}
-                            <div className="h-[1px] w-full bg-yellow-300 shadow-[0_0_10px_yellow] rounded"></div>
+                            {/*<div className="h-[1px] w-full bg-yellow-300 shadow-[0_0_10px_yellow] rounded"></div>*/}
+                            {/* divider line */}
+                            <h3 class="flex items-center w-full">
+                                <span class="flex-grow bg-yellow-300 shadow-[0_0_5px_yellow] rounded h-[2px] "></span>
+                                <span class="mx-3 text-lg font-medium text-accent/60">msg</span>
+                                <span class="flex-grow bg-yellow-300 shadow-[0_0_5px_yellow] rounded h-[2px]"></span>
+                            </h3>
                             {/*input */}
                             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                                 <input type="firstname" placeholder="Nom" className="bg-transparent border-b border-white/20 text-white focus:outline-none placeholder:px-2" />

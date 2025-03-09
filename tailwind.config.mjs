@@ -8,6 +8,9 @@ const tailwindConfig = {
 	],
 	theme: {
 		extend: {
+			boxShadow: {
+				neon: "0 0 5px color(var(--accent))/50, 0 0 10px color(var(--accent))/200, 0 0 15px color(var(--accent))/400",
+			},
 			colors: {
 				background: 'hsl(var(--background))',
 				foreground: 'hsl(var(--foreground))',
@@ -26,7 +29,7 @@ const tailwindConfig = {
 				},
 				muted: {
 					DEFAULT: 'hsl(var(--muted))',
-					foreground: 'hsl(var(--muted-foreground))' 
+					foreground: 'hsl(var(--muted-foreground))'
 				},
 				accent: {
 					// defaut: 00ff99  hover :00e187
