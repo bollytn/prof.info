@@ -24,9 +24,6 @@ const Photo = () => {
                         alt=""
                         className="object-contain"
                         sizes="(max-width: 768px) 289px, (max-width: 1200px) 498px, 100vw"
-                        layout="responsive" // add this line
-                        width={289} // add this line
-                        height={298} // add this line
                     />
                 </motion.div>
                 {/*circle*/}

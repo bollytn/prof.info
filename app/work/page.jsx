@@ -18,7 +18,7 @@ import { WorkSliderBtn } from '@/components/WorkSliderBtn'
 const projects = [
     {
         num: '01',
-        category: 'frontend',
+        category: 'Front-end',
         title: 'Leadlinker',
         description: 'Boost sales with personalized links for WhatsApp, calls, and custom URLs. Sell without a website and track link visits with detailed stats.',
         stack: [{ name: 'html 5' }, { name: "css 3" }, { name: "javascript" }],
@@ -28,7 +28,7 @@ const projects = [
     },
     {
         num: '02',
-        category: 'fullstack',
+        category: 'Full-stack',
         title: 'Ravnaq Store',
         description: 'Ravnaq Store is a luxury home decor brand that offers a wide range of products including tea sets, decorative products, and serving stands.',
         stack: [{ name: 'Next.js' }, { name: "Tailwind.css" }, { name: "Node.js" }],
@@ -38,9 +38,9 @@ const projects = [
     },
     {
         num: '03',
-        category: 'fullstack',
+        category: 'Full-stack',
         title: 'Tvman Store',
-        description: 'An e-commerce platform for selling TVs, accessories, and other related products.',
+        description: 'An e-commerce platform for accessories, and other related products, Our store features a wide range of products—from stylish fashion items and accessories',
         stack: [{ name: 'Next.js' }, { name: "Tailwind.css" }, { name: "Node.js" }],
         image: '/assets/work/thumb3.png',
         live: '',
@@ -95,7 +95,13 @@ const Work = () => {
                                 }
                             </ul>
                             {/* border */}
-                            <div className='border border-white/20'></div>
+                            {/*<div className='border border-white/20'></div>*/}
+                            {/* divider line */}
+                            <h3 className="flex items-center w-full">
+                                <span className="flex-grow bg-yellow-300 shadow-[0_0_5px_yellow] rounded h-px "></span>
+                                <span className="mx-3 text-lg font-medium text-accent/60 animate-bounce">{project.category}</span>
+                                <span className="flex-grow bg-yellow-300 shadow-[0_0_5px_yellow] rounded h-px"></span>
+                            </h3>
                             {/* button */}
                             <div className='flex gap-4'>
                                 {/* live project button */}

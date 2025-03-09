@@ -66,7 +66,7 @@ const Contact = () => {
                                 <span className="flex-grow bg-yellow-300 shadow-[0_0_5px_yellow] rounded h-px"></span>
                             </h3>
                             {/*input */}
-                            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+                            <div className="grid grid-cols-1 md:grid-cols-2 gap-6 -mb-3" >
                                 <input type="firstname" placeholder="Nom" className="bg-transparent border-b border-white/20 text-white focus:outline-none placeholder:px-2" />
                                 <input type="lastname" placeholder="Prenom" className="bg-transparent border-b border-white/20 text-white focus:outline-none placeholder:px-2" />
                                 <input type="email" placeholder="E-mail" className="bg-transparent border-b border-white/20 text-white focus:outline-none placeholder:px-2" />
@@ -86,7 +86,7 @@ const Contact = () => {
                                 </SelectContent>
                             </Select>
                             {/* textarea */}
-                            <Textarea placeholder="Message" className="h-[200px] bg-transparent border-white/20 text-white focus:outline-none" />
+                            <Textarea placeholder="Message" className="h-[100px] bg-transparent border-white/20 text-white focus:outline-none" />
                             {/* button */}
                             {/*<Button className="bg-accent hover:bg-accent/60 text-black rounded-full w-fit">Envoyer</Button>*/}
                             <button className="group p-5 relative text-lg font-normal border-0 flex items-center justify-center bg-transparent text-accent h-auto w-[140px] overflow-hidden transition-all duration-100">
