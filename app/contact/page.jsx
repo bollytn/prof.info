@@ -60,10 +60,10 @@ const Contact = () => {
                             {/* line shadow rounded */}
                             {/*<div className="h-[1px] w-full bg-yellow-300 shadow-[0_0_10px_yellow] rounded"></div>*/}
                             {/* divider line */}
-                            <h3 class="flex items-center w-full">
-                                <span class="flex-grow bg-yellow-300 shadow-[0_0_5px_yellow] rounded h-[2px] "></span>
-                                <span class="mx-3 text-lg font-medium text-accent/60">msg</span>
-                                <span class="flex-grow bg-yellow-300 shadow-[0_0_5px_yellow] rounded h-[2px]"></span>
+                            <h3 className="flex items-center w-full">
+                                <span className="flex-grow bg-yellow-300 shadow-[0_0_5px_yellow] rounded h-px "></span>
+                                <span className="mx-3 text-lg font-medium text-accent/60 animate-bounce">msg</span>
+                                <span className="flex-grow bg-yellow-300 shadow-[0_0_5px_yellow] rounded h-px"></span>
                             </h3>
                             {/*input */}
                             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
@@ -88,7 +88,13 @@ const Contact = () => {
                             {/* textarea */}
                             <Textarea placeholder="Message" className="h-[200px] bg-transparent border-white/20 text-white focus:outline-none" />
                             {/* button */}
-                            <Button className="bg-accent hover:bg-accent/60 text-black rounded-full w-fit">Envoyer</Button>
+                            {/*<Button className="bg-accent hover:bg-accent/60 text-black rounded-full w-fit">Envoyer</Button>*/}
+                            <button className="group p-5 relative text-lg font-normal border-0 flex items-center justify-center bg-transparent text-accent h-auto w-[140px] overflow-hidden transition-all duration-100">
+                                <span className="group-hover:w-full absolute left-0 h-full w-5 border-y border-l border-accent transition-all duration-500"></span>
+                                <p className="group-hover:opacity-0 group-hover:translate-x-[-100%] absolute translate-x-0 transition-all duration-200">Envoyer</p>
+                                <span className="group-hover:translate-x-0  group-hover:opacity-100 absolute  translate-x-full opacity-0  transition-all duration-200">Merci!</span>
+                                <span className="group-hover:w-full absolute right-0 h-full w-5 border-y border-r  border-accent transition-all duration-500"></span>
+                            </button>
                         </form>
                     </div>
                     {/* info */}
