@@ -35,12 +35,13 @@ const info = [
 import { motion } from "framer-motion";
 
 import Image from "next/image";
+import { sendEmail } from "@/lib/resend";
 
 
 const Contact = () => {
 
     function send () {
-        console.log("send mail");
+        sendEmail()
     }
 
     return (
