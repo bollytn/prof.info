@@ -1,7 +1,5 @@
 'use client'
 
-import { Button } from "@/components/ui/button";
-import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 
 import {
@@ -85,15 +83,23 @@ const Contact = () => {
                                     </SelectGroup>
                                 </SelectContent>
                             </Select>
-                            {/* textarea */}
-                            <Textarea placeholder="Message" className="h-[100px] bg-transparent border-white/20 text-white focus:outline-none" />
+                            {/*custom textarea */}
+                            <Textarea
+                                placeholder="Message"
+                                className="h-[100px] bg-transparent border-white/20 text-white focus:outline-none resize-none
+                                [&::-webkit-scrollbar]:w-2
+                              [&::-webkit-scrollbar-track]:bg-white/10 
+                              [&::-webkit-scrollbar-thumb]:bg-yellow-300
+                                [&::-webkit-scrollbar-thumb]:rounded-full
+                                [&::-webkit-scrollbar-thumb]:shadow-[0_0_5px_yellow]"
+                            />
                             {/* button */}
                             {/*<Button className="bg-accent hover:bg-accent/60 text-black rounded-full w-fit">Envoyer</Button>*/}
                             <button className="group p-5 relative text-lg font-normal border-0 flex items-center justify-center bg-transparent text-accent h-auto w-[140px] overflow-hidden transition-all duration-100">
                                 <span className="group-hover:w-full absolute left-0 h-full w-5 border-y border-l border-accent transition-all duration-500"></span>
                                 <p className="group-hover:opacity-0 group-hover:translate-x-[-100%] absolute translate-x-0 transition-all duration-200">Envoyer</p>
-                                <span className="group-hover:translate-x-0  group-hover:opacity-100 absolute  translate-x-full opacity-0  transition-all duration-200">Merci!</span>
-                                <span className="group-hover:w-full absolute right-0 h-full w-5 border-y border-r  border-accent transition-all duration-500"></span>
+                                <span className="group-hover:translate-x-0 group-hover:opacity-100 absolute  translate-x-full opacity-0  transition-all duration-200">Merci!</span>
+                                <span className="group-hover:w-full absolute right-0 h-full w-5 border-y border-r border-accent transition-all duration-500"></span>
                             </button>
                         </form>
                     </div>
