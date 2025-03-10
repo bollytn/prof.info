@@ -1,5 +1,6 @@
 'use client'
 
+import { useState } from "react";
 import { Textarea } from "@/components/ui/textarea";
 
 import {
@@ -33,16 +34,49 @@ const info = [
 ]
 
 import { motion } from "framer-motion";
-
 import Image from "next/image";
-import { sendEmail } from "@/lib/resend";
 
 
 const Contact = () => {
 
-    function send () {
-        sendEmail()
-    }
+    const [formData, setFormData] = useState({
+        firstName: '',
+        lastName: '',
+        email: '',
+        phone: '',
+        message: ''
+    });
+
+    const handleSubmit = async (e) => {
+        e.preventDefault();
+
+        try {
+            const response = await fetch('/api/contact', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                },
+                body: JSON.stringify(formData),
+            });
+
+            if (response.ok) {
+                alert('Message sent successfully!');
+                setFormData({ firstName: '', lastName: '', phone: '', email: '', message: '' });
+            } else {
+                throw new Error('Failed to send message');
+            }
+        } catch (error) {
+            alert('Error sending message. Please try again.');
+        }
+    };
+
+    const handleChange = (e) => {
+        setFormData({
+            ...formData,
+            [e.target.name]: e.target.value
+        });
+    };
+
 
     return (
         <motion.section initial={{ opacity: 0 }}
@@ -56,7 +90,7 @@ const Contact = () => {
                 <div className="flex flex-col xl:flex-row xl:gap-0 gap-6">
                     {/* form */}
                     <div className="xl:w-[60%] order-2 xl:order-none">
-                        <form action={send} className="flex flex-col gap-6 p-10 bg-[#27272c] rounded-xl">
+                        <form onSubmit={handleSubmit} className="flex flex-col gap-6 p-10 bg-[#27272c] rounded-xl">
                             <h3 className="text-4xl text-accent">Travailler Ensemble</h3>
                             <p className="text-white/60">Recueillir le besoin du client et l'analyser.</p>
                             <p className="text-white/60">Définir le cahier des charges du projet de développement.</p>
@@ -72,10 +106,10 @@ const Contact = () => {
                             </h3>
                             {/*input */}
                             <div className="grid grid-cols-1 md:grid-cols-2 gap-6 -mb-3" >
-                                <input type="firstname" placeholder="Nom" className="bg-transparent border-b border-white/20 text-white focus:outline-none placeholder:px-2" />
-                                <input type="lastname" placeholder="Prenom" className="bg-transparent border-b border-white/20 text-white focus:outline-none placeholder:px-2" />
-                                <input type="email" placeholder="E-mail" className="bg-transparent border-b border-white/20 text-white focus:outline-none placeholder:px-2" />
-                                <input type="phone" placeholder="Tél" className="bg-transparent border-b border-white/20 text-white focus:outline-none placeholder:px-2" />
+                                <input name="firstName" value={formData.firstName} onChange={handleChange} type="firstname" placeholder="Nom" className="bg-transparent border-b border-white/20 text-white focus:outline-none placeholder:px-2" />
+                                <input name="lastName" value={formData.lastName} onChange={handleChange} type="lastname" placeholder="Prenom" className="bg-transparent border-b border-white/20 text-white focus:outline-none placeholder:px-2" />
+                                <input name="email" value={formData.email} onChange={handleChange} type="email" placeholder="E-mail" className="bg-transparent border-b border-white/20 text-white focus:outline-none placeholder:px-2" />
+                                <input name="phone" value={formData.phone} onChange={handleChange} type="phone" placeholder="Tél" className="bg-transparent border-b border-white/20 text-white focus:outline-none placeholder:px-2" />
                             </div>
                             {/* select */}
                             <Select className="bg-transparent border-b border-white/20 text-white/60 focus:outline-none">
@@ -92,6 +126,9 @@ const Contact = () => {
                             </Select>
                             {/*custom textarea */}
                             <Textarea
+                                name="message"
+                                value={formData.message}
+                                onChange={handleChange}
                                 placeholder="Message"
                                 className="h-[100px] bg-transparent border-white/20 text-white focus:outline-none resize-none
                                 [&::-webkit-scrollbar]:w-2
@@ -102,7 +139,7 @@ const Contact = () => {
                             />
                             {/* button */}
                             {/*<Button className="bg-accent hover:bg-accent/60 text-black rounded-full w-fit">Envoyer</Button>*/}
-                            <button className="group p-5 relative text-lg font-normal border-0 flex items-center justify-center bg-transparent text-accent h-auto w-[140px] overflow-hidden transition-all duration-100">
+                            <button type="submit" className="group p-5 relative text-lg font-normal border-0 flex items-center justify-center bg-transparent text-accent h-auto w-[140px] overflow-hidden transition-all duration-100">
                                 <span className="group-hover:w-full absolute left-0 h-full w-5 border-y border-l border-accent transition-all duration-500"></span>
                                 <p className="group-hover:opacity-0 group-hover:translate-x-[-100%] absolute translate-x-0 transition-all duration-200">Envoyer</p>
                                 <span className="group-hover:translate-x-0 group-hover:opacity-100 absolute  translate-x-full opacity-0  transition-all duration-200">Merci!</span>
