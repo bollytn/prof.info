@@ -36,7 +36,13 @@ import { motion } from "framer-motion";
 
 import Image from "next/image";
 
+
 const Contact = () => {
+
+    function send () {
+        console.log("send mail");
+    }
+
     return (
         <motion.section initial={{ opacity: 0 }}
             animate={{
@@ -49,7 +55,7 @@ const Contact = () => {
                 <div className="flex flex-col xl:flex-row xl:gap-0 gap-6">
                     {/* form */}
                     <div className="xl:w-[60%] order-2 xl:order-none">
-                        <form className="flex flex-col gap-6 p-10 bg-[#27272c] rounded-xl">
+                        <form action={send} className="flex flex-col gap-6 p-10 bg-[#27272c] rounded-xl">
                             <h3 className="text-4xl text-accent">Travailler Ensemble</h3>
                             <p className="text-white/60">Recueillir le besoin du client et l'analyser.</p>
                             <p className="text-white/60">Définir le cahier des charges du projet de développement.</p>
