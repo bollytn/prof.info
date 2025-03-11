@@ -44,6 +44,7 @@ const Contact = () => {
         lastName: '',
         email: '',
         phone: '',
+        subject: '',
         message: ''
     });
 
@@ -61,7 +62,7 @@ const Contact = () => {
 
             if (response.ok) {
                 alert('Message sent successfully!');
-                setFormData({ firstName: '', lastName: '', phone: '', email: '', message: '' });
+                setFormData({ firstName: '', lastName: '', phone: '', email: '', subject: '', message: '' });
             } else {
                 throw new Error('Failed to send message');
             }
@@ -76,7 +77,6 @@ const Contact = () => {
             [e.target.name]: e.target.value
         });
     };
-
 
     return (
         <motion.section initial={{ opacity: 0 }}
@@ -112,7 +112,11 @@ const Contact = () => {
                                 <input name="phone" value={formData.phone} onChange={handleChange} type="phone" placeholder="Tél" className="bg-transparent border-b border-white/20 text-white focus:outline-none placeholder:px-2" />
                             </div>
                             {/* select */}
-                            <Select className="bg-transparent border-b border-white/20 text-white/60 focus:outline-none">
+                            <Select
+                                name="subject"
+                                value={formData.subject}
+                                onChange={handleChange}
+                                className="bg-transparent border-b border-white/20 text-white/60 focus:outline-none">
                                 <SelectTrigger className="w-full">
                                     <SelectValue placeholder="Nos Service" />
                                 </SelectTrigger>
@@ -139,12 +143,15 @@ const Contact = () => {
                             />
                             {/* button */}
                             {/*<Button className="bg-accent hover:bg-accent/60 text-black rounded-full w-fit">Envoyer</Button>*/}
-                            <button type="submit" className="group p-5 relative text-lg font-normal border-0 flex items-center justify-center bg-transparent text-accent h-auto w-[140px] overflow-hidden transition-all duration-100">
+                            <motion.button
+                                whileHover={{ scale: 1.1 }}
+                                whileTap={{ scale: 0.9 }}
+                                type="submit" className="group p-5 relative text-lg font-normal border-0 flex items-center justify-center bg-transparent text-accent h-auto w-[140px] overflow-hidden transition-all duration-100">
                                 <span className="group-hover:w-full absolute left-0 h-full w-5 border-y border-l border-accent transition-all duration-500"></span>
                                 <p className="group-hover:opacity-0 group-hover:translate-x-[-100%] absolute translate-x-0 transition-all duration-200">Envoyer</p>
                                 <span className="group-hover:translate-x-0 group-hover:opacity-100 absolute  translate-x-full opacity-0  transition-all duration-200">Merci!</span>
                                 <span className="group-hover:w-full absolute right-0 h-full w-5 border-y border-r border-accent transition-all duration-500"></span>
-                            </button>
+                            </motion.button>
                         </form>
                     </div>
                     {/* info */}
