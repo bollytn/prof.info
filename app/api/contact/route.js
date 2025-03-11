@@ -5,7 +5,7 @@ export async function POST(req) {
     const data = await req.json();
 
     const transporter = nodemailer.createTransport({
-        host: 'smtpserver.com',
+        host: 'smtp.gmail.com', // Use the correct SMTP server
         port: 465,
         secure: true,
         auth: {
@@ -39,6 +39,6 @@ export async function POST(req) {
         return NextResponse.json({ message: 'Message sent successfully!' }, { status: 200 });
     } catch (error) {
         console.error('Error sending email:', error);
-        return NextResponse.json({ error: 'Failed to send message' }, { status: 500 });
+        return NextResponse.json({ error: 'Failed to send message', details: error.message }, { status: 500 });
     }
 }
