@@ -48,7 +48,6 @@ const Contact = () => {
 
     const handleSubmit = async (e) => {
         e.preventDefault();
-
         try {
             const response = await fetch('/api/contact', {
                 method: 'POST',
