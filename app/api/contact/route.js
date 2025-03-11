@@ -24,7 +24,7 @@ export async function POST(req) {
       <p>LasttName: ${data.lastName}</p>
       <p>Email: ${data.email}</p>
       <p>Télephone: ${data.phone}</p>
-       <p>Subject: ${data.subject}</p>
+      <p>Subject: ${data.subject}</p>
       <p>Message: ${data.message}</p>
     `
     };
