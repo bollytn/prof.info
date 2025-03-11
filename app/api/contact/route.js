@@ -1,13 +1,15 @@
 import { NextResponse } from 'next/server';
-import nodemailer from 'nodemailer';
+import sgMail from '@sendgrid/mail';
+
+sgMail.setApiKey(process.env.SENDGRID_API_KEY);
 
 export async function POST(req) {
     const data = await req.json();
 
     const transporter = nodemailer.createTransport({
         host: 'smtp.gmail.com',
-        port: 587,
-        secure: false,
+        port: 465,
+        secure: true,
         auth: {
             user: process.env.EMAIL_USER,
             pass: process.env.EMAIL_PASS
@@ -17,6 +19,7 @@ export async function POST(req) {
     const mailOptions = {
         from: process.env.EMAIL_USER,
         to: 'mahjoubi.bilel@gmail.com',
+        from: process.env.EMAIL_USER, // Use the email address or domain you verified with SendGrid
         subject: 'Portfolio',
         html: `
       <h3>New Client</h3>
@@ -24,15 +27,16 @@ export async function POST(req) {
       <p>LasttName: ${data.lastName}</p>
       <p>Email: ${data.email}</p>
       <p>Télephone: ${data.phone}</p>
-      <p>Subject: ${data.subject}</p>
+       <p>Subject: ${data.subject}</p>
       <p>Message: ${data.message}</p>
     `
     };
 
     try {
-        await transporter.sendMail(mailOptions);
-        return NextResponse.json({ message: 'Email sent successfully' }, { status: 200 });
+        await sgMail.send(msg);
+        return NextResponse.json({ message: 'Message sent successfully!' }, { status: 200 });
     } catch (error) {
-        return NextResponse.json({ error: 'Failed to send email' }, { status: 500 });
+        console.error('Error sending email:', error);
+        return NextResponse.json({ error: 'Failed to send message', details: error.message }, { status: 500 });
     }
 }
