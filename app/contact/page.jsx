@@ -78,6 +78,13 @@ const Contact = () => {
         });
     };
 
+    const handleSelectChange = (value) => {
+        setFormData({
+            ...formData,
+            subject: value
+        });
+    };
+
     return (
         <motion.section initial={{ opacity: 0 }}
             animate={{
@@ -115,7 +122,7 @@ const Contact = () => {
                             <Select
                                 name="subject"
                                 value={formData.subject}
-                                onChange={handleChange}
+                                onChange={handleSelectChange}
                                 className="bg-transparent border-b border-white/20 text-white/60 focus:outline-none">
                                 <SelectTrigger className="w-full">
                                     <SelectValue placeholder="Nos Service" />
