@@ -21,18 +21,24 @@ export async function POST(req) {
         html: `
       <h3>New Client</h3>
       <p>FirstName: ${data.firstName}</p>
-      <p>LasttName: ${data.lastName}</p>
+      <p>LastName: ${data.lastName}</p>
       <p>Email: ${data.email}</p>
       <p>Télephone: ${data.phone}</p>
-       <p>Subject: ${data.subject}</p>
+      <p>Subject: ${data.subject}</p>
       <p>Message: ${data.message}</p>
     `
     };
 
     try {
+        // Verify connection configuration
+        await transporter.verify();
+
+        // Send email
         await transporter.sendMail(mailOptions);
-        return NextResponse.json({ message: 'Email sent successfully' }, { status: 200 });
+
+        return NextResponse.json({ message: 'Message sent successfully!' }, { status: 200 });
     } catch (error) {
-        return NextResponse.json({ error: 'Failed to send email' }, { status: 500 });
+        console.error('Error sending email:', error);
+        return NextResponse.json({ error: 'Failed to send message' }, { status: 500 });
     }
 }
