@@ -8,7 +8,6 @@ import {
     SelectContent,
     SelectGroup,
     SelectItem,
-    SelectLabel,
     SelectTrigger,
     SelectValue,
 } from "@/components/ui/select";
@@ -35,7 +34,6 @@ const info = [
 
 import { motion } from "framer-motion";
 import Image from "next/image";
-
 
 const Contact = () => {
 
@@ -113,16 +111,16 @@ const Contact = () => {
                             </h3>
                             {/*input */}
                             <div className="grid grid-cols-1 md:grid-cols-2 gap-6 -mb-3" >
-                                <input name="firstName" value={formData.firstName} onChange={handleChange} type="firstname" placeholder="Nom" className="bg-transparent border-b border-white/20 text-white focus:outline-none placeholder:px-2" />
-                                <input name="lastName" value={formData.lastName} onChange={handleChange} type="lastname" placeholder="Prenom" className="bg-transparent border-b border-white/20 text-white focus:outline-none placeholder:px-2" />
+                                <input name="firstName" value={formData.firstName} onChange={handleChange} type="text" placeholder="Nom" className="bg-transparent border-b border-white/20 text-white focus:outline-none placeholder:px-2" />
+                                <input name="lastName" value={formData.lastName} onChange={handleChange} type="text" placeholder="Prenom" className="bg-transparent border-b border-white/20 text-white focus:outline-none placeholder:px-2" />
                                 <input name="email" value={formData.email} onChange={handleChange} type="email" placeholder="E-mail" className="bg-transparent border-b border-white/20 text-white focus:outline-none placeholder:px-2" />
-                                <input name="phone" value={formData.phone} onChange={handleChange} type="phone" placeholder="Tél" className="bg-transparent border-b border-white/20 text-white focus:outline-none placeholder:px-2" />
+                                <input name="phone" value={formData.phone} onChange={handleChange} type="tel" placeholder="Tél" className="bg-transparent border-b border-white/20 text-white focus:outline-none placeholder:px-2" />
                             </div>
                             {/* select */}
                             <Select
                                 name="subject"
                                 value={formData.subject}
-                                onChange={handleSelectChange}
+                                onValueChange={handleSelectChange}
                                 className="bg-transparent border-b border-white/20 text-white/60 focus:outline-none">
                                 <SelectTrigger className="w-full">
                                     <SelectValue placeholder="Nos Service" />
