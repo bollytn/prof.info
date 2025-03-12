@@ -32,6 +32,21 @@ const info = [
     }
 ]
 
+const services = [
+    {
+        title: 'Web Development',
+        description: 'We build websites that are fast, secure, and easy to use.'
+    },
+    {
+        title: 'Design',
+        description: 'We design logos, flyers, and other marketing materials.'
+    },
+    {
+        title: 'Flyer/Logo',
+        description: 'We design logos, flyers, and other marketing materials.'
+    },
+]
+
 import { motion } from "framer-motion";
 import Image from "next/image";
 
@@ -126,9 +141,13 @@ const Contact = () => {
                                 </SelectTrigger>
                                 <SelectContent>
                                     <SelectGroup>
-                                        <SelectItem value="web">Web Development</SelectItem>
-                                        <SelectItem value="design">Design</SelectItem>
-                                        <SelectItem value="marketing">Flyer/Logo</SelectItem>
+                                        {
+                                            services.map((service, index) => (
+                                                <SelectItem key={index} value={service}>
+                                                    {service}
+                                                </SelectItem>
+                                            ))
+                                        }
                                     </SelectGroup>
                                 </SelectContent>
                             </Select>
