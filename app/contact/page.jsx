@@ -65,7 +65,10 @@ const Contact = () => {
 
     useEffect(() => {
         const { firstName, lastName, email, phone, subject, message } = formData;
-        setIsFormValid(firstName && lastName && email && phone && subject && message);
+        const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+        const phoneRegex = /^[0-9]+$/;
+        const isValid = firstName.length >= 2 && lastName.length >= 2 && emailRegex.test(email) && phoneRegex.test(phone) && subject && message;
+        setIsFormValid(isValid);
     }, [formData]);
 
     const handleSubmit = async (e) => {
