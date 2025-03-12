@@ -1,6 +1,6 @@
 'use client'
 
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { Textarea } from "@/components/ui/textarea";
 
 import {
@@ -60,6 +60,13 @@ const Contact = () => {
         subject: '',
         message: ''
     });
+
+    const [isFormValid, setIsFormValid] = useState(false);
+
+    useEffect(() => {
+        const { firstName, lastName, email, phone, subject, message } = formData;
+        setIsFormValid(firstName && lastName && email && phone && subject && message);
+    }, [formData]);
 
     const handleSubmit = async (e) => {
         e.preventDefault();
@@ -169,7 +176,9 @@ const Contact = () => {
                             <motion.button
                                 whileHover={{ scale: 1.1 }}
                                 whileTap={{ scale: 0.9 }}
-                                type="submit" className="group p-5 relative text-lg font-normal border-0 flex items-center justify-center bg-transparent text-accent h-auto w-[140px] overflow-hidden transition-all duration-100">
+                                type="submit"
+                                disabled={!isFormValid}
+                                className={`group p-5 relative text-lg font-normal border-0 flex items-center justify-center bg-transparent text-accent h-auto w-[140px] overflow-hidden transition-all duration-100 ${!isFormValid ? 'opacity-50 cursor-not-allowed' : ''}`}>
                                 <span className="group-hover:w-full absolute left-0 h-full w-5 border-y border-l border-accent transition-all duration-500"></span>
                                 <p className="group-hover:opacity-0 group-hover:translate-x-[-100%] absolute translate-x-0 transition-all duration-200">Envoyer</p>
                                 <span className="group-hover:translate-x-0 group-hover:opacity-100 absolute  translate-x-full opacity-0  transition-all duration-200">Merci!</span>
