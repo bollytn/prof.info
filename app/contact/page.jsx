@@ -143,8 +143,8 @@ const Contact = () => {
                                     <SelectGroup>
                                         {
                                             services.map((service, index) => (
-                                                <SelectItem key={index} value={service}>
-                                                    {service}
+                                                <SelectItem key={index} value={service.title}>
+                                                    {service.title}
                                                 </SelectItem>
                                             ))
                                         }
