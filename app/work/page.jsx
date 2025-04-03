@@ -18,23 +18,23 @@ import { WorkSliderBtn } from '@/components/WorkSliderBtn'
 const projects = [
     {
         num: '01',
-        category: 'Front-end',
-        title: 'Leadlinker',
-        description: 'Boost sales with personalized links for WhatsApp, calls, and custom URLs. Sell without a website and track link visits with detailed stats.',
-        stack: [{ name: 'html 5' }, { name: "css 3" }, { name: "javascript" }],
+        category: 'microbit',
+        title: 'Fabrique une mangeoire',
+        description: 'Bonjour à tous, je partage avec vous ma première TP bien détaillé, dans le domaine de la programmation des cartes Micro:Bit en utilisant la logiciel scratch dans un premier temps. Je vais ajouter les autres très bientôt…',
+        stack: [{ name: 'microbit' }, { name: "boussol" }, { name: "transmission radio" }],
         image: '/assets/work/thumb1.png',
-        live: '',
-        github: '',
+        live: 'https://mega.nz/file/l3Y2GJ4Q?fbclid=IwY2xjawJbqndleHRuA2FlbQIxMAABHa5COE5t9OnoLF9Zd1CyJvFfpeMQE2tRnJ9Y4YVVM6m5o1hANyW2sXBY4w_aem__vsxXXPyK3nE7ejJfxFViw#Lvs_UbXCR9aR50StOcsktL9SXt5ArG9oE5cN6ievOVo',
+
     },
     {
         num: '02',
-        category: 'Full-stack',
-        title: 'Ravnaq Store',
+        category: 'sécurité informatique',
+        title: 'Quiz',
         description: 'Ravnaq Store is a luxury home decor brand that offers a wide range of products including tea sets, decorative products, and serving stands.',
         stack: [{ name: 'Next.js' }, { name: "Tailwind.css" }, { name: "Node.js" }],
         image: '/assets/work/thumb2.png',
         live: '',
-        github: '',
+
     },
     {
         num: '03',
@@ -44,7 +44,7 @@ const projects = [
         stack: [{ name: 'Next.js' }, { name: "Tailwind.css" }, { name: "Node.js" }],
         image: '/assets/work/thumb3.png',
         live: '',
-        github: '',
+
     }
 ]
 
@@ -105,7 +105,7 @@ const Work = () => {
                                 </span>
                                 <span className="flex-grow bg-yellow-300 shadow-[0_0_5px_yellow] rounded h-px"></span>
                             </h3>
-                    
+
                             {/* button */}
                             <div className='flex gap-4'>
                                 {/* live project button */}
@@ -123,7 +123,7 @@ const Work = () => {
                                 </Link>
 
                                 {/* live project button */}
-                                <Link href={project.github}>
+                                {/*<Link href={project.github}>
                                     <TooltipProvider delayDuration={100}>
                                         <Tooltip>
                                             <TooltipTrigger className='w-[70px] h-[70px] rounded-full bg-white/5 flex justify-center items-center group'>
@@ -134,7 +134,7 @@ const Work = () => {
                                             </TooltipContent>
                                         </Tooltip>
                                     </TooltipProvider>
-                                </Link>
+                                </Link>*/}
                             </div>
                         </div>
                     </div>
