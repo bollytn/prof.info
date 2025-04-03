@@ -7,29 +7,24 @@ import { motion } from "framer-motion";
 const services = [
     {
         num: "01",
-        title: "Web Development",
-        description: "je maîtrise les technologies modernes telles que HTML, CSS, JavaScript ainsi que des frameworks comme React, Vue.js pour le front-end, et Node.js, PHP ou Django pour le back-end. Mon objectif est de créer des sites et applications web performants, ergonomiques et adaptés aux besoins des utilisateurs. Attentif(ve) aux bonnes pratiques de développement.",
+        title: "Nouvelles Technologies",
+        description: "Formateur des nouvelles technologies pour les enseignants : chingViews - IspringTools - Google Classroom - Articulate360 - Class DOJO - Netsupport_school - LanSchool - Canva_pro",
         link: "/services/web-development"
     },
     {
         num: "02",
-        title: "Mobile App Development",
-        description: "Je possède une solide expertise en [Android/iOS/Flutter/React Native], acquise au cours de mes études et expériences professionnelles. Ma maîtrise de [langages et frameworks utilisés, ex. Swift, Kotlin, Dart, React Native] m’a permis de concevoir des applications performantes, ergonomiques et adaptées aux besoins des utilisateurs.",
+        title: "La programmation en 7eme année",
+        description: "- S’approprier un environnement informatique de travail.<br> - Savoir coder ou décoder pour prévoir ou représenter des déplacements. <br> - Programmer les déplacements d’un personnage à l’écran.<br>- Réaliser un premier programme <br> - Modifier la scène <br> - Se familiariser avec le système de coordonnées",
         link: "/services/mobile-app-development"
     },
     {
         num: "03",
-        title: "UI/UX Design",
-        description: "je me spécialise en UI/UX Design afin de créer des expériences numériques intuitives, esthétiques et fonctionnelles. Ma maîtrise des outils tels que Figma, Adobe XD et Sketch, ainsi que ma compréhension des principes de design centré sur l’utilisateur, me permettent de concevoir des interfaces optimisées et engageantes.",
+        title: "La programmation en 8eme année",
+        description: "Définir les mécanismes du jeu : <br> - Compléter le programme<br> - Créer des boucles<br>- Programmer des instructions conditionnelles<br>- Compléter le programme en réinvestissant les notions de test, de boucle et de variable abordées précédemment, et en approfondissant la notion d’événement. ",
         link: ""
     },
-    {
-        num: "04",
-        title: "Logo Design",
-        description: "je me spécialise dans la création de logos uniques et impactants qui reflètent l’essence d’une marque. Grâce à ma maîtrise des outils tels qu’Adobe Illustrator et Photoshop, l’harmonie des formes et des couleurs, ainsi que l’équilibre entre simplicité et originalité. ",
-        link: ""
-    }
-]
+
+];
 
 const Services = () => {
     return (
@@ -50,9 +45,9 @@ const Services = () => {
                                     <div className="text-5xl font-extrabold text-outline text-transparent group-hover:text-outline-hover transition-all duration-500">
                                         {service.num}
                                     </div>
-                                    <Link 
-                                    href={service.link}
-                                    className="w-16 h-16 rounded-full bg-white/5 flex justify-center items-center group-hover:bg-accent transition-all duration-700 group-hover:-rotate-45"
+                                    <Link
+                                        href={service.link}
+                                        className="w-16 h-16 rounded-full bg-white/5 flex justify-center items-center group-hover:bg-accent transition-all duration-700 group-hover:-rotate-45"
                                     >
                                         <BsArrowDownRight className="text-3xl group-hover:text-slate-800 transition-all duration-500" />
                                     </Link>
@@ -62,7 +57,7 @@ const Services = () => {
                                     {service.title}
                                 </h2>
                                 {/* description */}
-                                <p>{service.description}</p>
+                                <p dangerouslySetInnerHTML={{ __html: service.description }}></p>
                                 {/* border */}
                                 <div className="border-b border-white/20 w-full"></div>
                             </div>

@@ -34,16 +34,16 @@ const info = [
 
 const services = [
     {
-        title: 'Web Development',
-        description: 'We build websites that are fast, secure, and easy to use.'
+        title: 'scratch 7eme annnée',
+        description: 'création des histories animées'
     },
     {
-        title: 'Design',
-        description: 'We design logos, flyers, and other marketing materials.'
+        title: 'scratch 8eme annnée',
+        description: 'création des jeux vidéo'
     },
     {
-        title: 'Flyer/Logo',
-        description: 'We design logos, flyers, and other marketing materials.'
+        title: 'Création des Applications androids',
+        description: 'creation des applications androids exemple quiz, des jeux de cartes, des jeux de société'
     },
 ]
 
@@ -120,11 +120,8 @@ const Contact = () => {
                     {/* form */}
                     <div className="xl:w-[60%] order-2 xl:order-none">
                         <form onSubmit={handleSubmit} className="flex flex-col gap-6 p-10 bg-[#27272c] rounded-xl">
-                            <h3 className="text-4xl text-accent">Travailler Ensemble</h3>
-                            <p className="text-white/60">Recueillir le besoin du client et l'analyser.</p>
-                            <p className="text-white/60">Définir le cahier des charges du projet de développement.</p>
-                            <p className="text-white/60">Créer la structure (back-end) du site ou de l'application.</p>
-                            <p className="text-white/60">Développer tous les aspects techniques du projet web (base de données, interface utilisateur…).</p>
+                            <h3 className="text-4xl text-accent">Un contenu riche et précieux</h3>
+                            <p className="text-white/60">Commencez votre évaluation, profitez du meilleur contenu d'assistance à distance et restez en contact avec votre professeur sans vous ruiner.</p>
                             {/* line shadow rounded */}
                             {/*<div className="h-[1px] w-full bg-yellow-300 shadow-[0_0_10px_yellow] rounded"></div>*/}
                             {/* divider line */}

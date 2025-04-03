@@ -10,11 +10,11 @@ export default function Home() {
         <div className="flex flex-col xl:flex-row items-center justify-between xl:pt-8 xl:pb-24">
           {/* text*/}
           <div className="text-center xl:text-left order-2 xl:order-none">
-            <span className='text-xl'>Développeur Full-Stack</span>
+            <span className='text-xl'>Enseignant En Informatique</span>
             <h1 className='h2 mb-4 mt-2 xl:mt-4'>
               salut, Je suis <br /> <span className='text-accent capitalize h1'>mahjoubi bilel</span>
             </h1>
-            <p className='max-w-[500px] mb-6 text-white/80'>Web,Mobile,Front-end,Back-end,designer,je suis un développeur full-stack passionné par la technologie et le design.</p>
+            <p className='max-w-[500px] mb-6 text-white/80'>Enseignant multidisciplinaires, professionnel dynamique et respecté, affichant une feuille de route exemplaire pour ce qui est de concevoir et d’offrir d’excellents plans de cours interactifs spécialement adaptés aux besoins de chaque élève.</p>
             {/* btn && social*/}
             <div className='flex flex-col xl:flex-row items-center gap 8'>
               <Button
