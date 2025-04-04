@@ -9,7 +9,8 @@ const Header = () => {
             <div className="container mx-auto flex justify-between items-center">
                 <Link href="/">
                     <h1 className="text-4xl font-semibold">
-                        Bollytn <span className='text-accent'>.</span>
+                        <span className='text-accent'>I</span>nfo
+                        <span className='text-accent'> .</span>
                     </h1>
                 </Link>
                 {/* Nav & hire me button */}
@@ -26,7 +27,7 @@ const Header = () => {
                 </div>
 
             </div>
-        </header>
+        </header >
     );
 }
 export default Header;

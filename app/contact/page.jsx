@@ -120,7 +120,7 @@ const Contact = () => {
                     {/* form */}
                     <div className="xl:w-[60%] order-2 xl:order-none">
                         <form onSubmit={handleSubmit} className="flex flex-col gap-6 p-10 bg-[#27272c] rounded-xl">
-                            <h3 className="text-4xl text-accent">Contacter moi</h3>
+                            <h3 className="text-4xl text-accent">Contactez-moi</h3>
                             <p className="text-white/60">Commencez votre évaluation, profitez du meilleur contenu d'assistance à distance et restez en contact avec votre professeur sans vous ruiner.</p>
                             {/* line shadow rounded */}
                             {/*<div className="h-[1px] w-full bg-yellow-300 shadow-[0_0_10px_yellow] rounded"></div>*/}
