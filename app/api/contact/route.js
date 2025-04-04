@@ -8,10 +8,10 @@ export async function POST(req) {
 
     const msg = {
         to: 'mahjoubi.bilel@gmail.com',
-        from: process.env.EMAIL_USER, // Use the email address or domain you verified with SendGrid
-        subject: 'Portfolio',
+        from:'mahjoubi.bilel@gmail.com', // Use the email address or domain you verified with SendGrid
+        subject: 'Cours',
         html: `
-        <h3>New Client</h3>
+        <h3>NNouveau Eléve</h3>
         <p>FirstName: ${data.firstName}</p>
         <p>LastName: ${data.lastName}</p>
         <p>Email: ${data.email}</p>

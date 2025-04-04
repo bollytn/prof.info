@@ -48,6 +48,9 @@ const services = [
 ]
 
 import { motion } from "framer-motion";
+
+import { ToastContainer, toast, Slide } from 'react-toastify';
+
 import Image from "next/image";
 
 const Contact = () => {
@@ -83,7 +86,17 @@ const Contact = () => {
             });
 
             if (response.ok) {
-                alert('Message sent successfully!');
+                toast.error('🦄 Wow so easy!', {
+                    position: "top-right",
+                    autoClose: 5000,
+                    hideProgressBar: false,
+                    closeOnClick: false,
+                    pauseOnHover: true,
+                    draggable: true,
+                    progress: undefined,
+                    theme: "dark",
+                    transition: Bounce,
+                });
                 setFormData({ firstName: '', lastName: '', phone: '', email: '', subject: '', message: '' });
             } else {
                 throw new Error('Failed to send message');
