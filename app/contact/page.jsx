@@ -50,6 +50,9 @@ const services = [
 import { motion } from "framer-motion";
 
 import { ToastContainer, toast, Slide } from 'react-toastify';
+import { FaCheckCircle } from "react-icons/fa";
+//icon error react-icon/fa
+import { FaExclamationCircle } from "react-icons/fa";
 
 import Image from "next/image";
 
@@ -86,7 +89,8 @@ const Contact = () => {
             });
 
             if (response.ok) {
-                toast.success('🦄 Message sent successfully!', {
+                toast.success('Message sent successfully!', {
+                    icon: <FaCheckCircle style={{ color: 'green' }} />,
                     position: "top-right",
                     autoClose: 5000,
                     hideProgressBar: false,
@@ -94,7 +98,7 @@ const Contact = () => {
                     pauseOnHover: true,
                     draggable: true,
                     progress: undefined,
-                    theme: "dark",
+                    theme: "light",
                     transition: Slide,
                 });
                 setFormData({ firstName: '', lastName: '', phone: '', email: '', subject: '', message: '' });
@@ -102,7 +106,8 @@ const Contact = () => {
                 throw new Error('Failed to send message');
             }
         } catch (error) {
-            toast.error('🦄 Error sending message. Please try again.', {
+            toast.error('Error sending message. Please try again.', {
+                icon: <FaExclamationCircle style={{ color: 'red' }} />,
                 position: "top-right",
                 autoClose: 5000,
                 hideProgressBar: false,
@@ -110,7 +115,7 @@ const Contact = () => {
                 pauseOnHover: true,
                 draggable: true,
                 progress: undefined,
-                theme: "dark",
+                theme: "light",
                 transition: Slide,
             });
         }
