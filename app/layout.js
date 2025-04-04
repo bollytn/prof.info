@@ -24,7 +24,7 @@ export const metadata = {
   description: "Portfolio de l'enseignant d'informatique",
   icons: {
     icon: [
-      { rel: "icon", url: "/assets/icon.ico", sizes: "32x32" },
+      { rel: "icon", url: "/assets/icon.ico", sizes: "64x64" },
       { rel: "icon", url: "/assets/iconlarge.png", sizes: "64x64" },
     ],
     shortcut: "/assets/icon.ico",
