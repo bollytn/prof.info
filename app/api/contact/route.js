@@ -11,7 +11,7 @@ export async function POST(req) {
         from:'mahjoubi.bilel@gmail.com', // Use the email address or domain you verified with SendGrid
         subject: 'Cours',
         html: `
-        <h3>NNouveau Eléve</h3>
+        <h3>Nouveau Eléve</h3>
         <p>FirstName: ${data.firstName}</p>
         <p>LastName: ${data.lastName}</p>
         <p>Email: ${data.email}</p>

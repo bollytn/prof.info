@@ -86,23 +86,24 @@ const Contact = () => {
             });
 
             if (response.ok) {
-                toast.error('🦄 Wow so easy!', {
-                    position: "top-right",
-                    autoClose: 5000,
-                    hideProgressBar: false,
-                    closeOnClick: false,
-                    pauseOnHover: true,
-                    draggable: true,
-                    progress: undefined,
-                    theme: "dark",
-                    transition: Bounce,
-                });
+                alert('Message sent successfully!');
                 setFormData({ firstName: '', lastName: '', phone: '', email: '', subject: '', message: '' });
             } else {
                 throw new Error('Failed to send message');
             }
         } catch (error) {
             alert('Error sending message. Please try again.');
+            toast.error('🦄 Wow so easy!', {
+                position: "top-right",
+                autoClose: 5000,
+                hideProgressBar: false,
+                closeOnClick: false,
+                pauseOnHover: true,
+                draggable: true,
+                progress: undefined,
+                theme: "dark",
+                transition: Bounce,
+            });
         }
     };
 
@@ -128,6 +129,7 @@ const Contact = () => {
             }}
             className="py-6"
         >
+            <ToastContainer />
             <div className="container mx-auto">
                 <div className="flex flex-col xl:flex-row xl:gap-0 gap-6">
                     {/* form */}
