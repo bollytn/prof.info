@@ -23,28 +23,61 @@ const projects = [
         description: 'Bonjour à tous, je partage avec vous ma première TP bien détaillé, dans le domaine de la programmation des cartes Micro:Bit en utilisant la logiciel scratch dans un premier temps. Je vais ajouter les autres très bientôt…',
         stack: [{ name: 'microbit' }, { name: "boussol" }, { name: "transmission radio" }],
         image: '/assets/work/thumb1.png',
-        live: 'https://mega.nz/file/l3Y2GJ4Q?fbclid=IwY2xjawJbqndleHRuA2FlbQIxMAABHa5COE5t9OnoLF9Zd1CyJvFfpeMQE2tRnJ9Y4YVVM6m5o1hANyW2sXBY4w_aem__vsxXXPyK3nE7ejJfxFViw#Lvs_UbXCR9aR50StOcsktL9SXt5ArG9oE5cN6ievOVo',
-
+        live: 'https://mega.nz/file/l3Y2GJ4Q#Lvs_UbXCR9aR50StOcsktL9SXt5ArG9oE5cN6ievOVo',
     },
     {
         num: '02',
         category: 'sécurité informatique',
         title: 'Quiz',
-        description: 'Ravnaq Store is a luxury home decor brand that offers a wide range of products including tea sets, decorative products, and serving stands.',
-        stack: [{ name: 'Next.js' }, { name: "Tailwind.css" }, { name: "Node.js" }],
+        description: 'Ce quiz permet aux enfants de tester leurs connaissances et de vérifier s’ils ont les bons réflexes.',
+        stack: [{ name: 'sécuriser les données' }, { name: "vie privée" }, { name: "malware" }],
         image: '/assets/work/thumb2.png',
-        live: '',
-
+        live: 'https://drive.google.com/drive/folders/1XoQSqq5mlVMRSqibavfnEmRsvCCLNTfb?usp=drive_link',
     },
     {
         num: '03',
-        category: 'Full-stack',
-        title: 'Tvman Store',
-        description: 'An e-commerce platform for accessories, and other related products, Our store features a wide range of products—from stylish fashion items and accessories',
-        stack: [{ name: 'Next.js' }, { name: "Tailwind.css" }, { name: "Node.js" }],
+        category: 'AppInventor',
+        title: 'Quiz',
+        description: 'mon premier test appinventor (exécutable fichier index).',
+        stack: [{ name: 'pédometre' }, { name: "traduire" }, { name: "composants non visibles" }],
         image: '/assets/work/thumb3.png',
-        live: '',
-
+        live: 'https://drive.google.com/file/d/1AhCTDfHtT27kt2frgygyiPm7nbLn41Zq/view?usp=sharing',
+    },
+    {
+        num: '04',
+        category: 'scratch',
+        title: "cahier d'activité 8ᵉ année",
+        description: ' .أعدت صياغة كتاب التمارين في نسخته الجديدة، أرجوا أن تعم الفائدة',
+        stack: [{ name: 'boucle' }, { name: "instruction conditionnelle" }, { name: "variable" }, { name: "bloc d'instructions" }],
+        image: '/assets/work/thumb4.png',
+        live: 'https://drive.google.com/file/d/10scm-92_kSG3fi1T9l1LURWWFb9SyHQw/view?usp=sharing',
+    },
+    {
+        num: '05',
+        category: 'scratch',
+        title: "cahier d'activité 8ᵉ année",
+        description: "السلام عليكم، قمت بإنشاء تحتوي على تلاخيص، تمارين و مشاريع مقسمة كالآتي:",
+        stack: [{ name: 'chiffre de césar' }, { name: "crabe aux pinces magiques" }, { name: "jeu de nim" }, { name: "le mage et la grenouille" }],
+        image: '/assets/work/thumb5.png',
+        live: 'https://drive.google.com/file/d/1ifZuzfKIPBJYcCFr1ZzltU4Q5qV7EHa2/view?usp=sharing',
+    },
+    {
+        num: '06',
+        category: 'scratch',
+        title: "fiche pédagogique 8ᵉ année",
+        description: "Bonjour chers collègues, je partage ma répartition que j'ai préparée pour 8ᵉ presque 15 séances sous forme des fiches pédagogiques.J'espère que vous aidez...",
+        stack: [{ name: 'scratch' }, { name: "activité débranché" }, { name: "activité pratique" }],
+        image: '/assets/work/thumb6.png',
+        live: 'https://mega.nz/folder/4yoXDTjb#XrJkt9u0JY2v2PBhv-wrTA',
+    },
+    {
+        num: '07',
+        category: 'Appinventor',
+        title: "fiche pédagogique 9ᵉ année",
+        description: "Bonjour chers collègues, je partage ma répartition que j'ai préparée pour 9ᵉ presque 15 séances sous forme des fiches pédagogiques.J'espère que vous aidez...",
+        stack: [{ name: 'microbit' }, { name: "reconnaissance vocale" }, { name: "compteur de temps" }, { name: "détecteur de mouvement" }, { name: "pédommètre" }],
+        image: '/assets/work/thumb7.png',
+        live: 'https://mega.nz/file/l3Y2GJ4Q#Lvs_UbXCR9aR50StOcsktL9SXt5ArG9oE5cN6ievOVo',
     }
 ]
 
@@ -109,7 +142,7 @@ const Work = () => {
                             {/* button */}
                             <div className='flex gap-4'>
                                 {/* live project button */}
-                                <Link href={project.live}>
+                                <Link href={project.live} target='_blank' rel='noreferrer noopennr'>
                                     <TooltipProvider delayDuration={100}>
                                         <Tooltip>
                                             <TooltipTrigger className='w-[70px] h-[70px] rounded-full bg-white/5 flex justify-center items-center group'>

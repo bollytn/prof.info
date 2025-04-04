@@ -8,22 +8,27 @@ const services = [
     {
         num: "01",
         title: "Nouvelles Technologies",
-        description: "Formateur des nouvelles technologies pour les enseignants : chingViews - IspringTools - Google Classroom - Articulate360 - Class DOJO - Netsupport_school - LanSchool - Canva_pro",
-        link: "/services/web-development"
+        description: "Formateur des nouvelles technologies pour les enseignants :<br> - chingViews - IspringTools - Google Classroom - Articulate 360 - Netsupport school - LanSchool - Canva edu - Edpuzzle - Kahoot - Quizlet - Nearpod - Padlet - Genially - LearningApps - ClassDojo - Edmodo - Socrative - Google Meet - Zoom - Microsoft Teams ",
+        link: "#"
     },
     {
         num: "02",
-        title: "La programmation en 7eme année",
+        title: "La programmation en 7ᵉ année",
         description: "- S’approprier un environnement informatique de travail.<br> - Savoir coder ou décoder pour prévoir ou représenter des déplacements. <br> - Programmer les déplacements d’un personnage à l’écran.<br>- Réaliser un premier programme <br> - Modifier la scène <br> - Se familiariser avec le système de coordonnées",
-        link: "/services/mobile-app-development"
+        link: "#"
     },
     {
         num: "03",
-        title: "La programmation en 8eme année",
+        title: "La programmation en 8ᵉ année",
         description: "Définir les mécanismes du jeu : <br> - Compléter le programme<br> - Créer des boucles<br>- Programmer des instructions conditionnelles<br>- Compléter le programme en réinvestissant les notions de test, de boucle et de variable abordées précédemment, et en approfondissant la notion d’événement. ",
-        link: ""
+        link: "#"
     },
-
+    {
+        num: "04",
+        title: "AppInventor en 9ᵉ année",
+        description: "AppInventor est un logiciel de plus en plus utilisé et continue à évaluer grâce au MIT :<br> - conçu à des fins pédagogiques<br>- très bien documenté<br>- Prise en main rapide<br>- Création des applications fonctionnant sur tous les appareils android<br>- App Inventor en mode Cloud",
+        link: "#"
+    },
 ];
 
 const Services = () => {

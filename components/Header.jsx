@@ -20,7 +20,7 @@ const Header = () => {
                     </Link>
                 </div>
 
-                {/* Mobile Nav */} 
+                {/* Mobile Nav */}
                 <div className="lg:hidden">
                     <MobileNav />
                 </div>
