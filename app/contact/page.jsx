@@ -50,8 +50,9 @@ const services = [
 import { motion } from "framer-motion";
 
 import { ToastContainer, toast, Slide } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 import { FaCheckCircle } from "react-icons/fa";
-//icon error react-icon/fa
+
 import { FaExclamationCircle } from "react-icons/fa";
 
 import Image from "next/image";
@@ -87,7 +88,6 @@ const Contact = () => {
                 },
                 body: JSON.stringify(formData),
             });
-
             if (response.ok) {
                 toast.success('Message sent successfully!', {
                     icon: <FaCheckCircle style={{ color: 'green' }} />,
