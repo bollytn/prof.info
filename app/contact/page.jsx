@@ -98,7 +98,7 @@ const Contact = () => {
                     pauseOnHover: true,
                     draggable: true,
                     progress: undefined,
-                    theme: "light",
+                    theme: "dark",
                     transition: Slide,
                 });
                 setFormData({ firstName: '', lastName: '', phone: '', email: '', subject: '', message: '' });
@@ -115,7 +115,7 @@ const Contact = () => {
                 pauseOnHover: true,
                 draggable: true,
                 progress: undefined,
-                theme: "light",
+                theme: "dark",
                 transition: Slide,
             });
         }
@@ -136,6 +136,7 @@ const Contact = () => {
     };
 
     return (
+
         <motion.section initial={{ opacity: 0 }}
             animate={{
                 opacity: 1,
@@ -143,8 +144,10 @@ const Contact = () => {
             }}
             className="py-6"
         >
-            <div className="container mx-auto">
+            <div suppressHydrationWarning>
                 <ToastContainer />
+            </div>
+            <div className="container mx-auto">
                 <div className="flex flex-col xl:flex-row xl:gap-0 gap-6">
                     {/* form */}
                     <div className="xl:w-[60%] order-2 xl:order-none">
