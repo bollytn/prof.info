@@ -128,3 +128,11 @@
     -webkit-text-stroke: #ffe866 1px;
   }
 }
+
+.btn-animate {
+  transition: transform 0.3s ease;
+}
+
+.btn-animate:active {
+  transform: scale(0.9);
+}

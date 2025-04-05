@@ -6,7 +6,6 @@ import React, { useState } from 'react'
 import { Swiper, SwiperSlide } from 'swiper/react'
 import 'swiper/css'
 
-import { BsGithub } from 'react-icons/bs'
 import { LuExternalLink } from "react-icons/lu";
 
 import { Tooltip, TooltipContent, TooltipProvider, TooltipTrigger } from '@/components/ui/tooltip'
@@ -154,6 +153,13 @@ const Work = () => {
         setProject(projects[currentIndex])
     }
 
+    // Animation variants
+    const fadeInOut = {
+        initial: { opacity: 0, y: 0 },
+        animate: { opacity: 1, y: 0, transition: { duration: 1 } },
+        exit: { opacity: 0, y: -20, transition: { duration: 1 } },
+    };
+
     return (
         <motion.section
             initial={{ opacity: 0 }}
@@ -165,17 +171,43 @@ const Work = () => {
                     <div className='w-full xl:w-[50%] xl:h-[460px] flex flex-col xl:justify-between order-2 xl:order-none'>
                         <div className='flex flex-col gap-7 h-[50%]'>
                             {/*  outline num*/}
-                            <div className='text-8xl leading-none font-extrabold text-transparent text-outline'>
+                            <motion.div
+                                key={project.num}
+                                variants={fadeInOut}
+                                initial="initial"
+                                animate="animate"
+                                exit="exit"
+                                className='text-8xl leading-none font-extrabold text-transparent text-outline'>
                                 {project.num}
-                            </div>
+                            </motion.div>
                             {/* project category */}
-                            <h2 className='text-4xl font-bold leading-none text-white group-hover:text-accent transition-all duration-500 capitalize'>
+                            <motion.h2
+                                key={project.title}
+                                variants={fadeInOut}
+                                initial="initial"
+                                animate="animate"
+                                exit="exit"
+                                className='text-4xl font-bold leading-none text-white group-hover:text-accent transition-all duration-500 capitalize'>
                                 {project.title}
-                            </h2>
+                            </motion.h2>
                             {/* project description */}
-                            <p className='text-white/60'>{project.description}</p>
+                            <motion.p
+                                key={project.description}
+                                variants={fadeInOut}
+                                initial="initial"
+                                animate="animate"
+                                exit="exit"
+                                className='text-white/60'>
+                                {project.description}
+                            </motion.p>
                             {/* stock */}
-                            <ul className='flex gap-4'>
+                            <motion.ul
+                                key={`${project.num}-stack`} // Unique key for animation
+                                variants={fadeInOut}
+                                initial="initial"
+                                animate="animate"
+                                exit="exit"
+                                className='flex gap-4'>
                                 {
                                     project.stack.map((item, index) => {
                                         return (
@@ -189,21 +221,33 @@ const Work = () => {
                                         )
                                     })
                                 }
-                            </ul>
+                            </motion.ul>
                             {/* border */}
                             {/*<div className='border border-white/20'></div>*/}
 
                             {/* divider line */}
-                            <h3 className="flex items-center w-full">
+                            <motion.h3
+                                key={`${project.num}-divider`} // Unique key for animation
+                                variants={fadeInOut}
+                                initial="initial"
+                                animate="animate"
+                                exit="exit"
+                                className="flex items-center w-full">
                                 <span className="flex-grow bg-yellow-300 shadow-[0_0_5px_yellow] rounded h-px "></span>
                                 <span
                                     className="mx-3 text-lg font-medium text-accent/60 animate-bounce">{project.category}
                                 </span>
                                 <span className="flex-grow bg-yellow-300 shadow-[0_0_5px_yellow] rounded h-px"></span>
-                            </h3>
+                            </motion.h3>
 
                             {/* button */}
-                            <div className='flex gap-4'>
+                            <motion.div
+                                key={`${project.num}-live-button`} // Unique key for animation
+                                variants={fadeInOut}
+                                initial="initial"
+                                animate="animate"
+                                exit="exit"
+                                className='flex gap-4'>
                                 {/* live project button */}
                                 <Link href={project.live} target='_blank' rel='noreferrer noopennr'>
                                     <TooltipProvider delayDuration={100}>
@@ -231,11 +275,13 @@ const Work = () => {
                                         </Tooltip>
                                     </TooltipProvider>
                                 </Link>*/}
-                            </div>
+
+                            </motion.div>
                         </div>
                     </div>
                     <div className='w-full xl:w-[50%]'>
                         <Swiper className='xl:h-[520px] mb-12'
+
                             spaceBetween={30}
                             slidesPerView={1}
                             onSlideChange={handleSlideChange}>
@@ -250,7 +296,7 @@ const Work = () => {
                                                 <div className='w-full h-full relative'>
                                                     <Image
                                                         fill
-                                                        alt=''
+                                                        alt={item.title}
                                                         src={item.image}
                                                         className="object-cover"
                                                     />
