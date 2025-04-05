@@ -225,8 +225,8 @@ const Contact = () => {
                             <Image
                                 src="/assets/contact/maileee.svg"
                                 alt="mail"
-                                width={400}
-                                height={400}
+                                width={300}
+                                height={300}
                                 quality={100}
                             />
                         </div>
