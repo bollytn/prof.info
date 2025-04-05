@@ -39,10 +39,10 @@ const services = [
     },
     {
         title: 'scratch 8eme annnée',
-        description: 'création des jeux vidéo'
+        description: 'création des jeux scratch'
     },
     {
-        title: 'AppInventor et Microbit',
+        title: 'AppInventor et Microbit 9eme annnée',
         description: 'creation des applications androids exemple quiz, des jeux de cartes, des jeux de société'
     },
 ]
