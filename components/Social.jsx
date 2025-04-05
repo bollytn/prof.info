@@ -13,6 +13,9 @@ export default function Social({ containerStyles, iconStyles }) {
             {
                 socials.map((item, index) => (
                     <Link
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        aria-label="social link"
                         key={index}
                         href={item.path}
                         className={iconStyles}
