@@ -20,13 +20,12 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata = {
-  title: "Mahjoubi Bilel",
-  description: "Portfolio de l'enseignant d'informatique",
+  title: "Mahjoubi Bilel - Portfolio Enseignant Informatique",
+  description: "Découvrez le portfolio de Mahjoubi Bilel, enseignant en informatique. Explorez ses projets éducatifs, ses services et ses ressources pédagogiques.",
+  keywords: "Mahjoubi Bilel, portfolio, enseignant informatique, scratch, AppInventor, Microbit, projets éducatifs",
+  author: "Mahjoubi Bilel",
   icons: {
-    icon: [
-      { rel: "icon", url: "/assets/icon.ico", sizes: "256x256" },
-      { rel: "icon", url: "/assets/iconlarge.png", sizes: "256x256" },
-    ],
+    icon: "/assets/icon.ico",
     shortcut: "/assets/icon.ico",
   },
 };
@@ -34,6 +33,25 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en" suppressHydrationWarning>
+      <head>
+      <meta property="og:title" content="Mahjoubi Bilel - Portfolio Enseignant Informatique" />
+  <meta property="og:description" content="Découvrez le portfolio de Mahjoubi Bilel, enseignant en informatique. Explorez ses projets éducatifs, ses services et ses ressources pédagogiques." />
+  <meta property="og:image" content="/assets/photo.png" />
+  <meta property="og:url" content="https://prof-info.vercel.app" />
+  <meta property="og:type" content="website" />
+
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Mahjoubi Bilel - Portfolio Enseignant Informatique" />
+  <meta name="twitter:description" content="Découvrez le portfolio de Mahjoubi Bilel, enseignant en informatique. Explorez ses projets éducatifs, ses services et ses ressources pédagogiques." />
+  <meta name="twitter:image" content="/assets/photo.png" />
+  {/* Ajoutez d'autres métadonnées facebook, linkedin, etc. ici */}
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="icon" href="/favicon.ico" />
+  <link rel="apple-touch-icon" href="/assets/icon.ico" />
+  <link rel="manifest" href="/manifest.json" />
+  <link rel="canonical" href="https://prof-info.vercel.app" />  
+
+      </head>  
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >

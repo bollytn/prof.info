@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+sitemap:  https://prof-info.vercel.app/sitemap.xml

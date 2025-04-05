@@ -1,0 +1,9 @@
+# *
+User-agent: *
+Allow: /
+
+# Host
+Host: https://prof-info.vercel.app
+
+# Sitemaps
+Sitemap: https://prof-info.vercel.app/sitemap.xml
