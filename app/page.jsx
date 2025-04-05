@@ -2,6 +2,7 @@ import Photo from '@/components/Photo';
 import Social from '@/components/Social';
 import { Button } from '@/components/ui/button'
 import { FiDownload } from "react-icons/fi"
+import Link from 'next/link';
 
 export default function Home() {
   return (
@@ -21,8 +22,10 @@ export default function Home() {
                 variant="outline"
                 size="lg"
                 className="uppercase flex items-center gap-2">
-                <span>Télecharger CV</span>
-                <FiDownload className='text-xl' />
+                <Link href="/resume" className="flex items-center gap-2">
+                  <span>Télecharger CV</span>
+                  <FiDownload className="text-xl" />
+                </Link>
               </Button>
               <div className='ml-0 mt-8 xl:mb-8 xl:ml-8'>
                 <Social containerStyles='flex gap-6'
