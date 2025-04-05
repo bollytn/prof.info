@@ -44,11 +44,11 @@ const about = {
 const experience = {
     icon: '/public/assets/resume/badge.svg',
     title: 'Mon Expérience',
-    description: "j'apporte plus de 3 ans d'expérience en tant que développeur full-stack ",
+    description: "j'apporte plus de 3 ans d'expérience en tant que développeur front end developper ",
     items: [
         {
             company: 'tech solution inc',
-            position: 'full stack developper',
+            position: 'front end developper',
             duration: '2022 - Present'
         },
         {
@@ -233,11 +233,11 @@ const Resume = () => {
                                 <h3 className="text-4xl font-bold">{about.title}</h3>
                                 <p className="max-w-[600px] xl:max-w-[700px] text-white/60 mx-auto xl:mx-0">{about.description}</p>
                                 <ul className="grid grid-cols-1 xl:grid-cols-2 gap-y-2 max-w-[750px] mx-auto xl:mx-0">
-                                    {about.info.map((item,index)=> {
+                                    {about.info.map((item, index) => {
                                         return (
-                                            <li 
-                                            key={index}
-                                            className="flex items-center justify-center xl:justify-start gap-4"
+                                            <li
+                                                key={index}
+                                                className="flex items-center justify-center xl:justify-start gap-4"
                                             >
                                                 <span className="text-white/60">{item.filedName}:</span>
                                                 <span className="text-xl">{item.filedValue}</span>
