@@ -13,6 +13,7 @@ import { Tooltip, TooltipContent, TooltipProvider, TooltipTrigger } from '@/comp
 import Link from 'next/link'
 import Image from 'next/image'
 import { WorkSliderBtn } from '@/components/WorkSliderBtn'
+import AnimatedWrapper from '@/components/AnimatedWrapper'
 
 const projects = [
     {
@@ -170,85 +171,63 @@ const Work = () => {
                 <div className='flex flex-col xl:flex-row xl:gap-7'>
                     <div className='w-full xl:w-[50%] xl:h-[460px] flex flex-col xl:justify-between order-2 xl:order-none'>
                         <div className='flex flex-col gap-7 h-[50%]'>
-                            {/*  outline num*/}
-                            <motion.div
-                                key={project.num}
-                                variants={fadeInOut}
-                                initial="initial"
-                                animate="animate"
-                                exit="exit"
-                                className='text-8xl leading-none font-extrabold text-transparent text-outline'>
+                            {/* Outline num */}
+                            <AnimatedWrapper
+                                key={project.num} // Unique key for re-triggering animation
+                                className='text-8xl leading-none font-extrabold text-transparent text-outline'
+                            >
                                 {project.num}
-                            </motion.div>
-                            {/* project category */}
-                            <motion.h2
-                                key={project.title}
-                                variants={fadeInOut}
-                                initial="initial"
-                                animate="animate"
-                                exit="exit"
-                                className='text-4xl font-bold leading-none text-white group-hover:text-accent transition-all duration-500 capitalize'>
-                                {project.title}
-                            </motion.h2>
-                            {/* project description */}
-                            <motion.p
-                                key={project.description}
-                                variants={fadeInOut}
-                                initial="initial"
-                                animate="animate"
-                                exit="exit"
-                                className='text-white/60'>
-                                {project.description}
-                            </motion.p>
-                            {/* stock */}
-                            <motion.ul
-                                key={`${project.num}-stack`} // Unique key for animation
-                                variants={fadeInOut}
-                                initial="initial"
-                                animate="animate"
-                                exit="exit"
-                                className='flex gap-4'>
-                                {
-                                    project.stack.map((item, index) => {
-                                        return (
-                                            <li
-                                                key={index}
-                                                className='text-accent'
-                                            >
-                                                {item.name}
-                                                {index !== project.stack.length - 1 ? ',' : '.'}
-                                            </li>
-                                        )
-                                    })
-                                }
-                            </motion.ul>
-                            {/* border */}
-                            {/*<div className='border border-white/20'></div>*/}
+                            </AnimatedWrapper>
 
-                            {/* divider line */}
-                            <motion.h3
-                                key={`${project.num}-divider`} // Unique key for animation
-                                variants={fadeInOut}
-                                initial="initial"
-                                animate="animate"
-                                exit="exit"
-                                className="flex items-center w-full">
+                            {/* Project category */}
+                            <AnimatedWrapper
+                                key={project.title} // Unique key for re-triggering animation
+                            >
+                                <h2 className='text-4xl font-bold leading-none text-white group-hover:text-accent transition-all duration-500 capitalize'>
+                                    {project.title}
+                                </h2>
+                            </AnimatedWrapper>
+
+                            {/* Project description */}
+                            <AnimatedWrapper
+                                key={project.description} // Unique key for re-triggering animation
+                                className='text-white/60'
+                            >
+                                {project.description}
+                            </AnimatedWrapper>
+
+                            {/* Stack */}
+                            <AnimatedWrapper
+                                key={`${project.num}-stack`} // Unique key for re-triggering animation
+                                className='flex gap-4'
+                            >
+                                <ul>
+                                    {project.stack.map((item, index) => (
+                                        <li key={index} className='text-accent'>
+                                            {item.name}
+                                            {index !== project.stack.length - 1 ? ',' : '.'}
+                                        </li>
+                                    ))}
+                                </ul>
+                            </AnimatedWrapper>
+
+                            {/* Divider line */}
+                            <AnimatedWrapper
+                                key={`${project.num}-divider`} // Unique key for re-triggering animation
+                                className="flex items-center w-full"
+                            >
                                 <span className="flex-grow bg-yellow-300 shadow-[0_0_5px_yellow] rounded h-px "></span>
-                                <span
-                                    className="mx-3 text-lg font-medium text-accent/60 animate-bounce">{project.category}
+                                <span className="mx-3 text-lg font-medium text-accent/60 animate-bounce">
+                                    {project.category}
                                 </span>
                                 <span className="flex-grow bg-yellow-300 shadow-[0_0_5px_yellow] rounded h-px"></span>
-                            </motion.h3>
+                            </AnimatedWrapper>
 
-                            {/* button */}
-                            <motion.div
-                                key={`${project.num}-live-button`} // Unique key for animation
-                                variants={fadeInOut}
-                                initial="initial"
-                                animate="animate"
-                                exit="exit"
-                                className='flex gap-4'>
-                                {/* live project button */}
+                            {/* Live project button */}
+                            <AnimatedWrapper
+                                key={`${project.num}-live-button`} // Unique key for re-triggering animation
+                                className='flex gap-4'
+                            >
                                 <Link href={project.live} target='_blank' rel='noreferrer noopennr'>
                                     <TooltipProvider delayDuration={100}>
                                         <Tooltip>
@@ -261,22 +240,7 @@ const Work = () => {
                                         </Tooltip>
                                     </TooltipProvider>
                                 </Link>
-
-                                {/* live project button */}
-                                {/*<Link href={project.github}>
-                                    <TooltipProvider delayDuration={100}>
-                                        <Tooltip>
-                                            <TooltipTrigger className='w-[70px] h-[70px] rounded-full bg-white/5 flex justify-center items-center group'>
-                                                <BsGithub className='text-white text-3xl group-hover:text-accent' />
-                                            </TooltipTrigger>
-                                            <TooltipContent>
-                                                <p>github repository</p>
-                                            </TooltipContent>
-                                        </Tooltip>
-                                    </TooltipProvider>
-                                </Link>*/}
-
-                            </motion.div>
+                            </AnimatedWrapper>
                         </div>
                     </div>
                     <div className='w-full xl:w-[50%]'>
