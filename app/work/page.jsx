@@ -14,6 +14,7 @@ import Link from 'next/link'
 import Image from 'next/image'
 import { WorkSliderBtn } from '@/components/WorkSliderBtn'
 import AnimatedWrapper from '@/components/AnimatedWrapper'
+import AnimatedBox from '@/components/AnimatedBox'
 
 const projects = [
     {
@@ -199,9 +200,9 @@ const Work = () => {
                             {/* Stack */}
                             <AnimatedWrapper
                                 key={`${project.num}-stack`} // Unique key for re-triggering animation
-                                className='flex gap-4'
+                                className='flex flex-wrap gap-4'
                             >
-                                <ul>
+                                <ul className='flex flex-wrap gap-4'>
                                     {project.stack.map((item, index) => (
                                         <li key={index} className='text-accent'>
                                             {item.name}
@@ -228,18 +229,20 @@ const Work = () => {
                                 key={`${project.num}-live-button`} // Unique key for re-triggering animation
                                 className='flex gap-4'
                             >
-                                <Link href={project.live} target='_blank' rel='noreferrer noopennr'>
-                                    <TooltipProvider delayDuration={100}>
-                                        <Tooltip>
-                                            <TooltipTrigger className='w-[70px] h-[70px] rounded-full bg-white/5 flex justify-center items-center group'>
-                                                <LuExternalLink className='text-white text-3xl group-hover:text-accent' />
-                                            </TooltipTrigger>
-                                            <TooltipContent>
-                                                <p>live project</p>
-                                            </TooltipContent>
-                                        </Tooltip>
-                                    </TooltipProvider>
-                                </Link>
+                                <AnimatedBox>
+                                    <Link href={project.live} target='_blank' rel='noreferrer noopennr'>
+                                        <TooltipProvider delayDuration={100}>
+                                            <Tooltip>
+                                                <TooltipTrigger className='w-[70px] h-[70px] rounded-full bg-white/5 flex justify-center items-center group'>
+                                                    <LuExternalLink className='text-white text-3xl group-hover:text-accent' />
+                                                </TooltipTrigger>
+                                                <TooltipContent>
+                                                    <p>live project</p>
+                                                </TooltipContent>
+                                            </Tooltip>
+                                        </TooltipProvider>
+                                    </Link>
+                                </AnimatedBox>
                             </AnimatedWrapper>
                         </div>
                     </div>
