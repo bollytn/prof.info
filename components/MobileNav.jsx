@@ -5,7 +5,7 @@ import Link from "next/link"
 import { CiMenuFries } from 'react-icons/ci'
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet"
 import Links from "@/components/data/links"
-
+import { motion } from "framer-motion"
 
 const MobileNav = () => {
     const path = usePathname()
@@ -42,7 +42,6 @@ const MobileNav = () => {
                         ))
                     }
                 </nav>
-
             </SheetContent>
         </Sheet>
     )

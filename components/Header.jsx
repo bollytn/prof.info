@@ -2,6 +2,7 @@ import Link from 'next/link';
 import Nav from './Nav';
 import MobileNav from './MobileNav';
 import { Button } from './ui/button';
+import AnimatedBox from './AnimatedBox';
 
 const Header = () => {
     return (
@@ -17,7 +18,9 @@ const Header = () => {
                 <div className="hidden lg:flex items-center gap-8">
                     <Nav />
                     <Link href="/contact">
-                        <Button>M'engager</Button>
+                        <AnimatedBox>
+                            <Button>M'engager</Button>
+                        </AnimatedBox>
                     </Link>
                 </div>
 

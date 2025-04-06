@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { FaGithub, FaLinkedinIn, FaYoutube, FaFacebook } from "react-icons/fa";
+import AnimatedBox from "@/components/AnimatedBox";
 
 const socials = [
     { icon: <FaGithub />, path: 'https://github.com/bollytn' },
@@ -12,16 +13,17 @@ export default function Social({ containerStyles, iconStyles }) {
         <div className={containerStyles}>
             {
                 socials.map((item, index) => (
-                    <Link
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        aria-label="social link"
-                        key={index}
-                        href={item.path}
-                        className={iconStyles}
-                    >
-                        {item.icon}
-                    </Link>
+                    <AnimatedBox key={index}> {/* Wrap each icon in AnimatedBox */}
+                        <Link
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            aria-label="social link"
+                            href={item.path}
+                            className={iconStyles}
+                        >
+                            {item.icon}
+                        </Link>
+                    </AnimatedBox>
                 ))
             }
         </div>
