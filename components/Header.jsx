@@ -36,7 +36,7 @@ const Header = () => {
                                     y: 30,
                                 }}
                                 transition={{
-                                    duration: 1,
+                                    duration: .8,
                                     ease: "easeInOut",
                                 }}
                             />

@@ -146,6 +146,29 @@ const projects = [
 ]
 
 const Work = () => {
+
+    //variations for the animation
+    const container = {
+        hidden: { opacity: 1, scale: 0 },
+        visible: {
+            opacity: 1,
+            scale: 1,
+            transition: {
+                delayChildren: 0.3,
+                staggerChildren: 0.2
+            }
+        }
+    };
+
+    const item = {
+        hidden: { y: 20, opacity: 0 },
+        visible: {
+            y: 0,
+            opacity: 1
+        }
+    };
+
+
     const [project, setProject] = useState(projects[0])
 
     const handleSlideChange = (swiper) => {
@@ -198,19 +221,23 @@ const Work = () => {
                             </AnimatedWrapper>
 
                             {/* Stack */}
-                            <AnimatedWrapper
+                            <div
                                 key={`${project.num}-stack`} // Unique key for re-triggering animation
                                 className='flex flex-wrap gap-4'
                             >
-                                <ul className='flex flex-wrap gap-4'>
+                                <motion.ul
+                                    variants={container}
+                                    initial="hidden"
+                                    animate="visible"
+                                    className='container flex flex-wrap gap-4'>
                                     {project.stack.map((item, index) => (
-                                        <li key={index} className='text-accent'>
+                                        <motion.li key={index} className='item text-accent' variants={item}>
                                             {item.name}
                                             {index !== project.stack.length - 1 ? ',' : '.'}
-                                        </li>
+                                        </motion.li>
                                     ))}
-                                </ul>
-                            </AnimatedWrapper>
+                                </motion.ul>
+                            </div>
 
                             {/* Divider line */}
                             <AnimatedWrapper
