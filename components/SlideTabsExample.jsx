@@ -27,7 +27,7 @@ const SlideTabs = ({ onTabClick }) => {
                     opacity: 0,
                 }));
             }}
-            className="relative mx-auto flex w-fit rounded-full border-2 border-accent bg-black p-1"
+            className="relative mx-auto flex w-fit rounded-full border-2 border-accent bg-black p-1 "
         >
             {Section.map((item, index) => (
                 <Tab key={index} setPosition={setPosition} onClick={() => onTabClick(item)}>

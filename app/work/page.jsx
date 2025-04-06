@@ -25,9 +25,10 @@ const Work = () => {
                 {/* SlideTabsExample for selecting classes */}
                 <SlideTabsExample onTabClick={handleTabClick} />
                 <div className="flex flex-col xl:flex-row xl:gap-7 mt-8">
-                    <div className="w-full xl:w-[50%] xl:h-[460px] flex flex-col xl:justify-between">
+                    <div className="w-full grid grid-cols-1 gap-8 xl:grid-cols-2">
                         {filteredProjects.map((project, index) => (
                             <div key={index} className="mb-8">
+
                                 {/* Project Title */}
                                 <h2 className="text-4xl font-bold leading-none text-white capitalize">
                                     {project.title}
