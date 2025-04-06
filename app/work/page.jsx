@@ -16,134 +16,8 @@ import { WorkSliderBtn } from '@/components/WorkSliderBtn'
 import AnimatedWrapper from '@/components/AnimatedWrapper'
 import AnimatedBox from '@/components/AnimatedBox'
 
-const projects = [
-    {
-        num: '01',
-        category: 'microbit',
-        title: 'Fabrique une mangeoire',
-        description: 'Bonjour à tous, je partage avec vous ma première TP bien détaillé, dans le domaine de la programmation des cartes Micro:Bit en utilisant la logiciel scratch dans un premier temps. Je vais ajouter les autres très bientôt…',
-        stack: [{ name: 'microbit' }, { name: "boussol" }, { name: "transmission radio" }],
-        image: '/assets/work/thumb1.png',
-        live: 'https://mega.nz/file/l3Y2GJ4Q#Lvs_UbXCR9aR50StOcsktL9SXt5ArG9oE5cN6ievOVo',
-    },
-    {
-        num: '02',
-        category: 'sécurité informatique',
-        title: 'Quiz',
-        description: 'Ce quiz permet aux enfants de tester leurs connaissances et de vérifier s’ils ont les bons réflexes.',
-        stack: [{ name: 'sécuriser les données' }, { name: "vie privée" }, { name: "malware" }],
-        image: '/assets/work/thumb2.png',
-        live: 'https://drive.google.com/drive/folders/1XoQSqq5mlVMRSqibavfnEmRsvCCLNTfb?usp=drive_link',
-    },
-    {
-        num: '03',
-        category: 'AppInventor',
-        title: 'Quiz',
-        description: 'mon premier test appinventor (exécutable fichier index).',
-        stack: [{ name: 'pédometre' }, { name: "traduire" }, { name: "composants non visibles" }],
-        image: '/assets/work/thumb3.png',
-        live: 'https://drive.google.com/file/d/1AhCTDfHtT27kt2frgygyiPm7nbLn41Zq/view?usp=sharing',
-    },
-    {
-        num: '04',
-        category: 'scratch',
-        title: "cahier d'activité 8ᵉ année",
-        description: ' .أعدت صياغة كتاب التمارين في نسخته الجديدة، أرجوا أن تعم الفائدة',
-        stack: [{ name: 'boucle' }, { name: "instruction conditionnelle" }, { name: "variable" }, { name: "bloc d'instructions" }],
-        image: '/assets/work/thumb4.png',
-        live: 'https://drive.google.com/file/d/10scm-92_kSG3fi1T9l1LURWWFb9SyHQw/view?usp=sharing',
-    },
-    {
-        num: '05',
-        category: 'scratch',
-        title: "cahier d'activité 8ᵉ année",
-        description: "السلام عليكم، قمت بإنشاء تحتوي على تلاخيص، تمارين و مشاريع مقسمة كالآتي:",
-        stack: [{ name: 'chiffre de césar' }, { name: "crabe aux pinces magiques" }, { name: "jeu de nim" }, { name: "le mage et la grenouille" }],
-        image: '/assets/work/thumb5.png',
-        live: 'https://drive.google.com/file/d/1ifZuzfKIPBJYcCFr1ZzltU4Q5qV7EHa2/view?usp=sharing',
-    },
-    {
-        num: '06',
-        category: 'scratch',
-        title: "fiche pédagogique 8ᵉ année",
-        description: "Bonjour chers collègues, je partage ma répartition que j'ai préparée pour 8ᵉ presque 15 séances sous forme des fiches pédagogiques.J'espère que vous aidez...",
-        stack: [{ name: 'scratch' }, { name: "activité débranché" }, { name: "activité pratique" }],
-        image: '/assets/work/thumb6.png',
-        live: 'https://mega.nz/folder/4yoXDTjb#XrJkt9u0JY2v2PBhv-wrTA',
-    },
-    {
-        num: '07',
-        category: 'Appinventor',
-        title: "fiche pédagogique 9ᵉ année",
-        description: "Bonjour chers collègues, je partage ma répartition que j'ai préparée pour 9ᵉ presque 15 séances sous forme des fiches pédagogiques.J'espère que vous aidez...",
-        stack: [{ name: 'microbit' }, { name: "reconnaissance vocale" }, { name: "compteur de temps" }, { name: "détecteur de mouvement" }, { name: "pédommètre" }],
-        image: '/assets/work/thumb7.png',
-        live: 'https://mega.nz/file/l3Y2GJ4Q#Lvs_UbXCR9aR50StOcsktL9SXt5ArG9oE5cN6ievOVo',
-    },
-    {
-        num: '08',
-        category: 'Examain',
-        title: "Devoir de synthèse 8ᵉ année",
-        description: "examain théorique et pratique de 8ᵉ année",
-        stack: [{ name: 'scratch' }, { name: "mot croisés" }, { name: "activité débranché" }, { name: "activité pratique" }],
-        image: '/assets/work/thumb8.png',
-        live: 'https://drive.google.com/file/d/1PgelJW8Tw2dCDr36DdFOkV_ODpce3jdc/view?usp=sharing',
-    },
-    {
-        num: '09',
-        category: 'Examain',
-        title: "Quatre devoirs théoriques 8ᵉ et 7ᵉ",
-        description: "بما ان قلة الحواسيب لا تمكننا من إنجاز فرض تطبقي ولا عامل الوقت يسمح لنا بإنجاز فرض نصفه تطبيقي و النصف الأخر نظري فهكذا كانت الخلاصة...",
-        stack: [{ name: 'scratch' }, { name: "activité débranché" }, { name: "pensée logique" }],
-        image: '/assets/work/thumb9.png',
-        live: 'https://drive.google.com/drive/folders/1V6bl3H2tD5vyveHLp8zECg4tb3CN-Bwg?usp=drive_link',
-    },
-    {
-        num: '10',
-        category: 'Examain',
-        title: "cinq devoirs théoriques 8ᵉ et 7ᵉ",
-        description: "لزملائي الأعزاء الذين لم يعدو بعد فروضهم اقترح عليهم بعض المواضيع ذات الطابع التطبيقي.",
-        stack: [{ name: 'scratch' }, { name: "sous programme" }, { name: "activité pratique" }],
-        image: '/assets/work/thumb10.png',
-        live: 'https://drive.google.com/drive/folders/1w061opt93tx_dKCnQoQFFrMZl34yIS77?usp=drive_link',
-    },
-    {
-        num: '11',
-        category: 'Evaluation',
-        title: "Quatre series théoriques 8ᵉ et 7ᵉ",
-        description: "Pour vous préparer au devoir de synthèse je vous propose cinq types de sujets.vous devrez réaliser des exercices sur les instructions...",
-        stack: [{ name: 'boucles' }, { name: "variables" }, { name: "instructions conditionnelles" }, { name: "fonctions" }, { name: "opérateurs" }],
-        image: '/assets/work/thumb11.png',
-        live: 'https://drive.google.com/drive/folders/1kFdFoKSBu5eos9zjYV7jmF5QOUYJJ4y_?usp=drive_link',
-    },
-    {
-        num: '12',
-        category: 'Rappel ',
-        title: "Rappel interactive 8ᵉ et 7ᵉ",
-        description: "Algorithme de rappel interactive sur les instructions conditionnelles et les boucles.",
-        stack: [{ name: 'les instructions' }, { name: "boucle" }, { name: "instructions conditionnelles" }],
-        image: '/assets/work/thumb12.png',
-        live: 'https://drive.google.com/file/d/1IIqW8EYKXaH5i9A8zqLFEghIxgWM9FLM/view?usp=sharing',
-    },
-    {
-        num: '13',
-        category: 'scratch ',
-        title: "Guide de révision 8ᵉ et 7ᵉ",
-        description: "Guide de programmation + Grille de suivi et d'évaluation",
-        stack: [{ name: 'evaluation' }, { name: "scratch" }],
-        image: '/assets/work/thumb13.png',
-        live: 'https://drive.google.com/drive/folders/17u5QeQiWsVxcM9jzR61jjubWQvl5liVd?usp=drive_link',
-    },
-    {
-        num: '14',
-        category: 'scratch ',
-        title: "11 Projets de révision 8ᵉ",
-        description: "Quelques projets réalisable avec une guide de programmation pour bien développer des techniques de jeux.",
-        stack: [{ name: 'baguette' }, { name: "balon" }, { name: "blue sky" }, { name: "chasse clé" }, { name: "robot" }, { name: "chasse aux sorciere" }, { name: "circulation" }, { name: "labyrinthe" }, { name: "rebond solo" }, { name: "singe et pomme" }],
-        image: '/assets/work/thumb14.png',
-        live: 'https://drive.google.com/drive/folders/1s70KInaWcq39YQ-UuGMAtbq3g7irZSN9?usp=drive_link',
-    }
-]
+import projects from '@/components/data/data'
+import { SlideTabsExample } from '@/components/SlideTabs'
 
 const Work = () => {
 
@@ -192,6 +66,7 @@ const Work = () => {
             className='min-h-[80vh] flex flex-col justify-center py-12 xl:px-0'
         >
             <div className='container mx-auto'>
+                <SlideTabsExample />
                 <div className='flex flex-col xl:flex-row xl:gap-7'>
                     <div className='w-full xl:w-[50%] xl:h-[460px] flex flex-col xl:justify-between order-2 xl:order-none'>
                         <div className='flex flex-col gap-7 h-[50%]'>
@@ -264,7 +139,7 @@ const Work = () => {
                                                     <LuExternalLink className='text-white text-3xl group-hover:text-accent' />
                                                 </TooltipTrigger>
                                                 <TooltipContent>
-                                                    <p>live project</p>
+                                                    <p>Télecharger</p>
                                                 </TooltipContent>
                                             </Tooltip>
                                         </TooltipProvider>
