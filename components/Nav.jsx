@@ -12,11 +12,11 @@ const Nav = () => {
         <nav className='gap-8 flex '>
             {
                 Links.map((link, index) => (
-                    <motion.div
+                    <div
                         key={index}
-                        whileHover={{ scale: 1.1, y: -5 }} // Scale up and move slightly up on hover
-                        whileTap={{ scale: 0.95 }} // Slightly shrink on tap
-                        transition={{ type: 'spring', stiffness: 300, damping: 20 }} // Smooth spring animation
+                        //whileHover={{ scale: 1.1, y: -5 }} // Scale up and move slightly up on hover
+                        //whileTap={{ scale: 0.95 }} // Slightly shrink on tap
+                        //transition={{ type: 'spring', stiffness: 300, damping: 20 }} // Smooth spring animatio
                     >
                         <Link
                             href={link.path}
@@ -24,7 +24,7 @@ const Nav = () => {
                         >
                             {link.name}
                         </Link>
-                    </motion.div>
+                    </div>
                 ))
             }
         </nav>
