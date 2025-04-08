@@ -1,8 +1,6 @@
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 import Links from '@/components/data/links';
-import { Dialog, DialogContent, DialogTitle } from '@radix-ui/react-dialog';
-import { VisuallyHidden } from '@radix-ui/react-visually-hidden';
 
 const Nav = () => {
     const path = usePathname();
