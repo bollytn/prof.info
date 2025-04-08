@@ -1,29 +1,28 @@
-
-
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 import Links from '@/components/data/links';
 import { Dialog, DialogContent, DialogTitle } from '@radix-ui/react-dialog';
 import { VisuallyHidden } from '@radix-ui/react-visually-hidden';
-import { motion } from 'framer-motion';
+
 const Nav = () => {
     const path = usePathname();
     return (
-        <nav className='gap-8 flex '>
+        <nav className='gap-8 flex'>
             {
                 Links.map((link, index) => (
-                    <div
-                        key={index}
-                        //whileHover={{ scale: 1.1, y: -5 }} // Scale up and move slightly up on hover
-                        //whileTap={{ scale: 0.95 }} // Slightly shrink on tap
-                        //transition={{ type: 'spring', stiffness: 300, damping: 20 }} // Smooth spring animatio
-                    >
+                    <div key={index} className="group relative">
                         <Link
                             href={link.path}
-                            className={`${path === link.path ? 'text-accent border-b-2 border-accent' : 'text-white'} transition-all duration-300`}
+                            className={`${path === link.path ? 'text-accent' : 'text-white'} relative z-10 hover:text-accent transition-all duration-300`}
                         >
                             {link.name}
                         </Link>
+                        {/* Animated underline */}
+                        <span
+                            className={`absolute left-0 bottom-0 h-[2px] w-full bg-accent scale-x-0 group-hover:scale-x-100 transition-transform duration-300 origin-left ${
+                                path === link.path ? 'scale-x-100' : ''
+                            }`}
+                        ></span>
                     </div>
                 ))
             }
@@ -31,17 +30,4 @@ const Nav = () => {
     );
 }
 
-const MyDialog = () => (
-    <Dialog>
-        <DialogContent aria-describedby="dialog-description">
-            <VisuallyHidden>
-                <DialogTitle>Navigation Menu</DialogTitle>
-            </VisuallyHidden>
-            <div id="dialog-description">
-                <p>Navigation options for the website</p>
-            </div>
-            {/* Your dialog content here */}
-        </DialogContent>
-    </Dialog>
-);
 export default Nav;
