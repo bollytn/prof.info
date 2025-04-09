@@ -17,6 +17,7 @@ const SlideTabs = ({ onTabClick }) => {
         opacity: 0,
     });
 
+    const [selectedTab, setSelectedTab] = useState('9ᵉ année'); // Track the currently selected tab
     const Section = ['9ᵉ année', '8ᵉ année', '7ᵉ année'];
 
     return (
@@ -27,10 +28,18 @@ const SlideTabs = ({ onTabClick }) => {
                     opacity: 0,
                 }));
             }}
-            className="relative mx-auto flex w-fit rounded-full border-2 border-accent bg-black p-1 "
+            className="relative mx-auto flex w-fit rounded-full border-2 border-accent bg-black p-1"
         >
             {Section.map((item, index) => (
-                <Tab key={index} setPosition={setPosition} onClick={() => onTabClick(item)}>
+                <Tab
+                    key={index}
+                    setPosition={setPosition}
+                    isSelected={selectedTab === item} // Check if the tab is selected
+                    onClick={() => {
+                        setSelectedTab(item); // Set the clicked tab as selected
+                        onTabClick(item); // Call the parent onTabClick function
+                    }}
+                >
                     {item}
                 </Tab>
             ))}
@@ -39,7 +48,7 @@ const SlideTabs = ({ onTabClick }) => {
     );
 };
 
-const Tab = ({ children, setPosition, onClick }) => {
+const Tab = ({ children, setPosition, onClick, isSelected }) => {
     const ref = useRef(null);
 
     return (
@@ -57,7 +66,8 @@ const Tab = ({ children, setPosition, onClick }) => {
                 });
             }}
             onClick={onClick} // Handle click event
-            className="relative z-10 block cursor-pointer px-3 py-1.5 text-xs uppercase text-white font-semibold rounded-full md:px-5 md:py-3 md:text-base hover:text-black transition-colors duration-300"
+            className={`relative z-10 block cursor-pointer px-3 py-1.5 text-xs uppercase font-semibold rounded-full md:px-5 md:py-3 md:text-base transition-colors duration-300 ${isSelected ? "bg-accent text-black" : "text-white hover:text-black"
+                }`}
         >
             {children}
         </li>
