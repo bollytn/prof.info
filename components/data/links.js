@@ -3,6 +3,6 @@ const links = [
     { name: 'Services', path: '/services' },
   //  { name: 'Curriculum vitae', path: '/resume' },
     { name: 'Cours', path: '/work' },
-    { name: 'contact', path: '/contact' },
+    { name: 'Contact', path: '/contact' },
 ]
 export default links;
