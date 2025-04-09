@@ -1,7 +1,5 @@
 'use client';
-
 import { useState } from 'react';
-import { motion } from 'framer-motion';
 import projects from '@/components/data/data';
 import { SlideTabsExample } from '@/components/SlideTabsExample';
 import Image from 'next/image';
@@ -24,7 +22,7 @@ const Work = () => {
                 </AnimatedContent>
 
                 <div className="flex flex-col xl:flex-row xl:gap-7 mt-8">
-                    <div className="w-full grid grid-cols-1 gap-8 xl:grid-cols-2">
+                    <div className="w-full grid grid-cols-1 gap-8 lg:grid-cols-2">
                         {filteredProjects.map((project, index) => (
                             <AnimatedContent key={index}>
                                 <div className="mb-8">

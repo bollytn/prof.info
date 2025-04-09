@@ -3,7 +3,7 @@ import { motion } from "framer-motion"; // Import motion for animations
 
 export const SlideTabsExample = ({ onTabClick }) => {
     return (
-        <div className="-mt-8 mb-8 flex w-full items-center justify-center">
+        <div className="-mt-8 mb-16 flex w-full items-center justify-center">
             <div className="absolute -top-8 z-0 h-1 w-full bg-white" />
             <SlideTabs onTabClick={onTabClick} /> {/* Pass onTabClick to SlideTabs */}
         </div>
