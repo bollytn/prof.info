@@ -22,40 +22,48 @@ const Work = () => {
                 </AnimatedContent>
 
                 <div className="flex flex-col xl:flex-row xl:gap-7 mt-8">
-                    <div className="w-full grid grid-cols-1  lg:grid-cols-2 gap-8 text-center">
+                    <div className="w-full grid grid-cols-1 lg:grid-cols-2 gap-8 text-center">
                         {filteredProjects.map((project, index) => (
                             <AnimatedContent key={index}>
-                                <div className="mb-2 p-6 bg-gray-800 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300">
-                                    {/* divider line */}
+                                <div className="relative group mb-2 p-6 bg-gray-800 rounded-lg shadow-lg transition-all duration-300 hover:shadow-2xl hover:scale-105 hover:bg-gray-700">
+                                    {/* Divider Line */}
                                     <h3 className="flex mb-4 items-center w-full">
-                                        <span className="flex-grow bg-yellow-300 shadow-[0_0_5px_yellow] rounded h-px "></span>
-                                        <span className="mx-3 text-lg font-medium text-accent/60 animate-bounce">{project.category}</span>
+                                        <span className="flex-grow bg-yellow-300 shadow-[0_0_5px_yellow] rounded h-px"></span>
+                                        <span className="mx-3 text-lg font-medium text-accent/60 animate-bounce">
+                                            {project.category}
+                                        </span>
                                         <span className="flex-grow bg-yellow-300 shadow-[0_0_5px_yellow] rounded h-px"></span>
                                     </h3>
+
                                     {/* Project Title */}
-                                    <h2 className="text-4xl font-bold leading-none text-white capitalize">
+                                    <h2 className="text-4xl font-bold leading-none text-white capitalize group-hover:text-accent transition-all duration-300">
                                         {project.title}
                                     </h2>
 
                                     {/* Project Description */}
-                                    <p className="text-white/60 mt-4">{project.description}</p>
+                                    <p className="text-white/60 mt-4 group-hover:text-white transition-all duration-300">
+                                        {project.description}
+                                    </p>
 
                                     {/* Project Stack */}
                                     <ul className="flex flex-wrap gap-4 mt-4">
                                         {project.stack.map((item, idx) => (
-                                            <li key={idx} className="text-accent">
+                                            <li
+                                                key={idx}
+                                                className="text-accent group-hover:text-yellow-300 transition-all duration-300"
+                                            >
                                                 {item.name}
                                             </li>
                                         ))}
                                     </ul>
 
                                     {/* Project Image */}
-                                    <div className="mt-6 relative w-full h-[300px]">
+                                    <div className="mt-6 relative w-full h-[300px] overflow-hidden rounded-lg">
                                         <Image
                                             src={project.image}
                                             alt={project.title}
                                             fill
-                                            className="object-cover rounded-lg"
+                                            className="object-cover transition-transform duration-500 group-hover:scale-110"
                                         />
                                     </div>
 
@@ -64,7 +72,7 @@ const Work = () => {
                                         href={project.live}
                                         target="_blank"
                                         rel="noopener noreferrer"
-                                        className="mt-4 inline-block text-accent underline"
+                                        className="mt-4 inline-block text-accent underline group-hover:text-yellow-300 transition-all duration-300"
                                     >
                                         Télécharger
                                     </a>
