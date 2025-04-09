@@ -22,10 +22,16 @@ const Work = () => {
                 </AnimatedContent>
 
                 <div className="flex flex-col xl:flex-row xl:gap-7 mt-8">
-                    <div className="w-full grid grid-cols-1 gap-8 lg:grid-cols-2">
+                    <div className="w-full grid grid-cols-1  lg:grid-cols-2 gap-8 text-center">
                         {filteredProjects.map((project, index) => (
                             <AnimatedContent key={index}>
-                                <div className="mb-8">
+                                <div className="mb-2 p-6 bg-gray-800 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300">
+                                    {/* divider line */}
+                                    <h3 className="flex mb-4 items-center w-full">
+                                        <span className="flex-grow bg-yellow-300 shadow-[0_0_5px_yellow] rounded h-px "></span>
+                                        <span className="mx-3 text-lg font-medium text-accent/60 animate-bounce">{project.category}</span>
+                                        <span className="flex-grow bg-yellow-300 shadow-[0_0_5px_yellow] rounded h-px"></span>
+                                    </h3>
                                     {/* Project Title */}
                                     <h2 className="text-4xl font-bold leading-none text-white capitalize">
                                         {project.title}
