@@ -122,7 +122,7 @@ const projects = [
     {
         num: '13',
         classe: '8ᵉ année',
-        category: 'scratch ',
+        category: 'Scratch ',
         title: "Guide de révision 8ᵉ et 7ᵉ",
         description: "Guide de programmation + Grille de suivi et d'évaluation",
         stack: [{ name: 'evaluation' }, { name: "scratch" }],
@@ -132,7 +132,7 @@ const projects = [
     {
         num: '14',
         classe: '8ᵉ année',
-        category: 'scratch ',
+        category: 'Scratch ',
         title: "11 Projets de révision 8ᵉ",
         description: "Quelques projets réalisable avec une guide de programmation pour bien développer des techniques de jeux.",
         stack: [{ name: 'baguette' }, { name: "balon" }, { name: "blue sky" }, { name: "chasse clé" }, { name: "robot" }, { name: "chasse aux sorciere" }, { name: "circulation" }, { name: "labyrinthe" }, { name: "rebond solo" }, { name: "singe et pomme" }],
