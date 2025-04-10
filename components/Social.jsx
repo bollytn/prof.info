@@ -1,6 +1,6 @@
 import Link from "next/link";
 import { FaGithub, FaLinkedinIn, FaYoutube, FaFacebook } from "react-icons/fa";
-import AnimatedBox from "@/components/AnimatedBox";
+import AnimatedBox from "@/components/shared/AnimatedBox";
 
 const socials = [
     { icon: <FaGithub />, path: 'https://github.com/bollytn' },

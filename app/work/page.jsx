@@ -3,7 +3,7 @@ import { useState } from 'react';
 import projects from '@/components/data/data';
 import { SlideTabsExample } from '@/components/SlideTabsExample';
 import Image from 'next/image';
-import AnimatedContent from '@/components/AnimatedContent';
+import AnimatedContent from '@/components/shared/AnimatedContent';
 
 const Work = () => {
     const [selectedClass, setSelectedClass] = useState('9ᵉ année'); // Default selected class

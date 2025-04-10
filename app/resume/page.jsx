@@ -5,7 +5,7 @@ import { SiTailwindcss, SiNextdotjs, SiMongodb } from "react-icons/si";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs';
 import { ScrollArea } from "@/components/ui/scroll-area";
 
-import AnimatedContent from '@/components/AnimatedContent';
+import AnimatedContent from '@/components/shared/AnimatedContent';
 import { TooltipProvider, TooltipTrigger, Tooltip, TooltipContent } from "@/components/ui/tooltip";
 
 const about = {

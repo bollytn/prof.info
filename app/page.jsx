@@ -5,7 +5,7 @@ import { Button } from '@/components/ui/button';
 import { FiDownload } from "react-icons/fi";
 import Link from 'next/link';
 
-import AnimatedBox from '@/components/AnimatedBox';
+import AnimatedBox from '@/components/shared/AnimatedBox';
 
 export default function Home() {
   return (

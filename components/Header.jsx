@@ -3,8 +3,9 @@ import Link from 'next/link';
 import Nav from './Nav';
 import MobileNav from './MobileNav';
 import { Button } from './ui/button';
-import AnimatedBox from './AnimatedBox';
+import AnimatedBox from './shared/AnimatedBox';
 import { motion } from 'framer-motion';
+import AnimatedContent from './shared/AnimatedContent';
 
 const Header = () => {
     return (
