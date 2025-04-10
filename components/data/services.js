@@ -44,7 +44,7 @@ const services = [
             ]
         },
         link: "#",
-        image: "/assets/services/thumb2.png" // Add image path
+        image: "/assets/services/thumb6.png" // Add image path
     },
     {
         num: "03",
@@ -59,7 +59,7 @@ const services = [
             ]
         },
         link: "#",
-        image: "/assets/services/thumb6.png" // Add image path
+        image: "/assets/services/thumb2.png" // Add image path
     },
     {
         num: "04",

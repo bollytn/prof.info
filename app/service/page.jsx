@@ -18,6 +18,7 @@ import AnimatedBox from '@/components/shared/AnimatedBox'
 
 import services from '@/components/data/services'
 import { PiCaretLeftBold, PiCaretRightBold } from 'react-icons/pi'
+import AnimatedContent from '@/components/shared/AnimatedContent'
 
 const Work = () => {
 
@@ -70,21 +71,21 @@ const Work = () => {
                     <div className='w-full xl:w-[50%] xl:h-[460px] flex flex-col xl:justify-between order-2 xl:order-none'>
                         <div className='flex flex-col gap-7 h-[50%]'>
                             {/* Outline num */}
-                            <AnimatedWrapper
+                            <AnimatedContent
                                 key={service.num} // Unique key for re-triggering animation
                                 className='text-8xl leading-none font-extrabold text-transparent text-outline'
                             >
                                 {service.num}
-                            </AnimatedWrapper>
+                            </AnimatedContent>
 
                             {/* Project category */}
-                            <AnimatedWrapper
+                            <AnimatedContent
                                 key={service.title} // Unique key for re-triggering animation
                             >
                                 <h2 className='text-4xl font-bold leading-none text-white group-hover:text-accent transition-all duration-500 capitalize'>
                                     {service.title}
                                 </h2>
-                            </AnimatedWrapper>
+                            </AnimatedContent>
 
                             {/* Project description 
                             <AnimatedWrapper
@@ -118,7 +119,7 @@ const Work = () => {
                             </div>
 
                             {/* Divider line */}
-                            <AnimatedWrapper
+                            <AnimatedContent
                                 key={`${service.num}-divider`} // Unique key for re-triggering animation
                                 className="flex items-center w-full"
                             >
@@ -127,10 +128,10 @@ const Work = () => {
                                     {service.title}
                                 </span>
                                 <span className="flex-grow bg-yellow-300 shadow-[0_0_5px_yellow] rounded h-px"></span>
-                            </AnimatedWrapper>
+                            </AnimatedContent>
 
                             {/* Live project button */}
-                            <AnimatedWrapper
+                            <AnimatedContent
                                 key={`${service.num}-live-button`} // Unique key for re-triggering animation
                                 className='flex gap-4'
                             >
@@ -148,7 +149,7 @@ const Work = () => {
                                         </TooltipProvider>
                                     </Link>
                                 </AnimatedBox>
-                            </AnimatedWrapper>
+                            </AnimatedContent>
                         </div>
                     </div>
                     <div className='w-full xl:w-[50%]'>

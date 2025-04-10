@@ -8,8 +8,10 @@ const Nav = () => {
     const path = usePathname();
     const [isVisible, setIsVisible] = useState(true); // State to control visibility
 
-    const handleLinkClick = () => {
-        setIsVisible(false); // Hide links when a link is clicked
+    const handleLinkClick = (linkPath) => {
+        if (linkPath !== path) {
+            setIsVisible(false); // Hide links only if the clicked link is different from the current path
+        }
     };
 
     // Reset visibility when the path changes
@@ -31,7 +33,7 @@ const Nav = () => {
                         >
                             <Link
                                 href={link.path}
-                                onClick={handleLinkClick} // Hide links on click
+                                onClick={() => handleLinkClick(link.path)} // Hide links on click
                                 className={`${path === link.path ? 'text-accent' : 'text-white'
                                     } relative z-10 transition-all duration-300`}
                             >

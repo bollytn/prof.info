@@ -4,6 +4,7 @@ import projects from '@/components/data/data';
 import { SlideTabsExample } from '@/components/SlideTabsExample';
 import Image from 'next/image';
 import AnimatedContent from '@/components/shared/AnimatedContent';
+import { motion } from 'framer-motion';
 
 const Work = () => {
     const [selectedClass, setSelectedClass] = useState('9ᵉ année'); // Default selected class
@@ -14,7 +15,13 @@ const Work = () => {
     };
 
     return (
-        <section className="min-h-[80vh] flex flex-col justify-center py-12 xl:px-0">
+        <motion.section
+            initial={{ opacity: 0 }}
+            animate={{
+                opacity: 1,
+                transition: { delay: 2.4, duration: 0.4, ease: "easeIn" }
+            }}
+            className="min-h-[80vh] flex flex-col justify-center py-12 xl:px-0">
             <div className="container mx-auto">
                 {/* SlideTabsExample for selecting classes */}
                 <AnimatedContent>
@@ -83,7 +90,7 @@ const Work = () => {
                     </div>
                 </div>
             </div>
-        </section>
+        </motion.section>
     );
 };
 
