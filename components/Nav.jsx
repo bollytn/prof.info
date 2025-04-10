@@ -11,7 +11,7 @@ const Nav = () => {
                     <div key={index} className="group relative">
                         <Link
                             href={link.path}
-                            className={`${path === link.path ? 'text-accent' : 'text-white'} relative z-10 hover:text-accent transition-all duration-300`}
+                            className={`${path === link.path ? 'text-accent' : 'text-white'} relative z-10 transition-all duration-300`}
                         >
                             {link.name}
                         </Link>
