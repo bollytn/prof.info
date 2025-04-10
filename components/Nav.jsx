@@ -17,9 +17,8 @@ const Nav = () => {
                         </Link>
                         {/* Animated underline */}
                         <span
-                            className={`absolute left-0 bottom-0 h-[2px] w-full bg-accent scale-x-0 group-hover:scale-x-100 transition-transform duration-300 origin-left ${
-                                path === link.path ? 'scale-x-100' : ''
-                            }`}
+                            className={`absolute left-0 bottom-0 h-[2px] w-full bg-accent scale-x-0 group-hover:scale-x-100 transition-transform duration-300 origin-left ${path === link.path ? 'scale-x-100' : ''
+                                }`}
                         ></span>
                     </div>
                 ))
