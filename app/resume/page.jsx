@@ -30,7 +30,7 @@ const about = {
         },
         {
             filedName: "Github",
-            filedValue: "bollytn"
+            filedValue: "github.com/bollytn"
         }, {
             filedName: "Freelance",
             filedValue: "Available"
