@@ -42,6 +42,7 @@ const Work = () => {
             opacity: 1
         }
     };
+
     // Animation for the fade-in and fade-out effect
     const fadeInOut = {
         initial: { opacity: 0, y: 0 },
