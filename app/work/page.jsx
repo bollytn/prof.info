@@ -43,7 +43,9 @@ const ScrollImage = ({ project }) => {
 
 const Work = () => {
     const [selectedClass, setSelectedClass] = useState('9ᵉ année'); // Default selected class
-    const filteredProjects = projects.filter((project) => project.classe === selectedClass); // Filter projects by selected class
+    const filteredProjects = projects.filter((project) =>
+        project.classe.includes(selectedClass) // Check if selectedClass exists in the classe array
+    );
 
     const handleTabClick = (classe) => {
         setSelectedClass(classe); // Update the selected class when a tab is clicked
@@ -87,7 +89,7 @@ const Work = () => {
                                         {/* Divider Line */}
                                         <h3 className="flex mb-4 items-center w-full">
                                             <span className="flex-grow bg-yellow-300 shadow-[0_0_5px_yellow] rounded h-px"></span>
-                                            <span className="mx-3 text-lg font-medium text-accent/60 animate-bounce">
+                                            <span className=" mx-3 text-lg font-medium text-accent/60 animate-bounce">
                                                 {project.category}
                                             </span>
                                             <span className="flex-grow bg-yellow-300 shadow-[0_0_5px_yellow] rounded h-px"></span>
@@ -95,7 +97,7 @@ const Work = () => {
 
                                         {/* Project Title */}
                                         <h2 className="text-4xl font-bold leading-none text-white capitalize group-hover:text-accent transition-all duration-300">
-                                            {project.title}
+                                            {project.title} - {selectedClass}
                                         </h2>
 
                                         {/* Project Description */}
