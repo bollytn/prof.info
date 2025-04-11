@@ -138,7 +138,18 @@ const projects = [
         stack: [{ name: 'baguette' }, { name: "balon" }, { name: "blue sky" }, { name: "chasse clé" }, { name: "robot" }, { name: "chasse aux sorciere" }, { name: "circulation" }, { name: "labyrinthe" }, { name: "rebond solo" }, { name: "singe et pomme" }],
         image: '/assets/work/thumb14.png',
         live: 'https://drive.google.com/drive/folders/1s70KInaWcq39YQ-UuGMAtbq3g7irZSN9?usp=drive_link',
-    }
+    },
+    {
+        num: '15',
+        classe: '7ᵉ année',
+        category: 'Scratch ',
+        title: "Activites débranchées de révision 7ᵉ",
+        description: "Chers collègues, lorsque vous présentez une nouvelle notion aux élèves avec Scratch, je vous invite à le présenter (d'abord) avec des activités débranchées (sans ordinateur). par exemple Il y a 3 séries de 10 cartes, de difficultés différentes :",
+        stack: [{ name: 'Série de cartes vertes : une seule boucle.' }, { name: "Série de cartes bleues : boucles imbriquées + utilisation de blocs créés." }, { name: "Série de cartes rouges : boucles imbriquées + utilisation de blocs créés + variables" }],
+        image: '/assets/work/thumb15.png',
+        live: 'https://drive.google.com/drive/folders/1tGbXvztXH7MDS-U-j_8FFpD8Opqslb43?usp=sharing',
+    },
+    
 ]
 
 export default projects;

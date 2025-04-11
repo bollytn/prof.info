@@ -53,7 +53,7 @@ const Work = () => {
                                     </p>
 
                                     {/* Project Stack */}
-                                    <ul className="flex flex-wrap gap-4 mt-4">
+                                    <ul className="flex flex-wrap gap-4 mt-4 text-left">
                                         {project.stack.map((item, idx) => (
                                             <li
                                                 key={idx}

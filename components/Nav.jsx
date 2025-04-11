@@ -28,6 +28,8 @@ const Nav = () => {
                             key={index}
                             className="group relative"
                             initial={{ opacity: 0, y: -10 }}
+                            whileHover={{ y: -5, scale: 1.1 }} // Scale up on hover
+                            whileTap={{ scale: 0.9 }} // Scale down on tap
                             animate={{ opacity: 1, y: 0, transition: { delay: 0.1 * index, duration: 0.4 } }}
                             exit={{ opacity: 0, y: -10, transition: { duration: 0.2, ease: 'easeInOut' } }} // Smooth exit animation
                         >

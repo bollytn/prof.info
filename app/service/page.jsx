@@ -22,7 +22,7 @@ import AnimatedContent from '@/components/shared/AnimatedContent'
 
 const Work = () => {
 
-    //variations for the animation
+    // Animation for the container,This animation controls the visibility and scale of the container
     const container = {
         hidden: { opacity: 1, scale: 0 },
         visible: {
@@ -34,7 +34,7 @@ const Work = () => {
             }
         }
     };
-
+    // Animation for each item in the list
     const item = {
         hidden: { y: 20, opacity: 0 },
         visible: {
@@ -42,7 +42,12 @@ const Work = () => {
             opacity: 1
         }
     };
-
+    // Animation for the fade-in and fade-out effect
+    const fadeInOut = {
+        initial: { opacity: 0, y: 0 },
+        animate: { opacity: 1, y: 0, transition: { duration: 1 } },
+        exit: { opacity: 0, y: -20, transition: { duration: 1 } },
+    };
 
     const [service, setService] = useState(services[0])
 
@@ -53,12 +58,7 @@ const Work = () => {
         setService(services[currentIndex]);
     };
 
-    // Animation variants
-    const fadeInOut = {
-        initial: { opacity: 0, y: 0 },
-        animate: { opacity: 1, y: 0, transition: { duration: 1 } },
-        exit: { opacity: 0, y: -20, transition: { duration: 1 } },
-    };
+
 
     return (
         <motion.section
