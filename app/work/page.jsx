@@ -34,6 +34,7 @@ const ScrollImage = ({ project }) => {
             <Image
                 src={project.image}
                 alt={project.title}
+                sizes='100vw'
                 fill
                 className="object-cover transition-transform duration-500 group-hover:scale-110"
             />
