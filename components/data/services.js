@@ -40,7 +40,12 @@ const services = [
                 "Programmer les déplacements d’un personnage à l’écran.",
                 "Réaliser un premier programme.",
                 "Modifier la scène.",
-                "Se familiariser avec le système de coordonnées."
+                "Se familiariser avec le système de coordonnées.",
+                "Utiliser des événements.",
+                "Utiliser des sprites.",
+                 "creer une animation.",
+                "Utiliser des sons.",
+                "Utiliser des images.",
             ]
         },
         link: "#",
@@ -55,7 +60,12 @@ const services = [
                 "Compléter le programme.",
                 "Créer des boucles.",
                 "Programmer des instructions conditionnelles.",
-                "Compléter le programme en réinvestissant les notions de test, de boucle et de variable abordées précédemment, et en approfondissant la notion d’événement."
+                "Compléter le programme en réinvestissant les notions de test,",
+                "condition et boucle.",
+                "Utiliser les variables.",
+                 "Utiliser des fonctions.",
+                "Utiliser des listes.",
+               
             ]
         },
         link: "#",
@@ -66,12 +76,16 @@ const services = [
         title: "AppInventor en 9ᵉ année",
         description: {
             points: [
-                "AppInventor est un logiciel de plus en plus utilisé et continue à évoluer grâce au MIT :",
-                "Conçu à des fins pédagogiques.",
-                "Très bien documenté.",
-                "Prise en main rapide.",
                 "Création des applications fonctionnant sur tous les appareils android.",
-                "App Inventor en mode Cloud."
+                "App Inventor et le Bluetooth.",
+                "App Inventor et la géolocalisation.",
+                "App Inventor et le GPS.",
+                "App Inventor et le capteur de mouvement.",
+                "App Inventor et le capteur de lumière.",
+                "App Inventor et le capteur de température.",
+                "App Inventor et le capteur de pression.",
+                "App inventor et bluetooth.",
+
             ]
         },
         link: "#",
