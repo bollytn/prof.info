@@ -2,48 +2,21 @@
 import { useRef, useState } from 'react';
 import projects from '@/components/data/data';
 import { SlideTabsExample } from '@/components/SlideTabsExample';
-import { motion, useScroll, useTransform, useSpring } from 'framer-motion';
 import Image from 'next/image';
 import AnimatedContent from '@/components/shared/AnimatedContent';
-
-const gradient = (mask) =>
-    `conic-gradient(black 0%, black ${mask ? 0 : 100}%, transparent ${mask ? 0 : 100}%, transparent 100%)`;
-
-const ScrollImage = ({ project }) => {
-    const target = useRef(null);
-    const { scrollYProgress } = useScroll({
-        target,
-        offset: [
-            [0, 0.75],
-            [0.3, 0.6],
-        ],
-    });
-    const smoothed = useSpring(scrollYProgress, {
-        damping: 30,
-        stiffness: 400,
-        restDelta: 0.001,
-    });
-    const maskImage = useTransform(smoothed, [0, 1], [gradient(true), gradient(false)]);
-
-    return (
-        <motion.div
-            ref={target}
-            style={{ WebkitMaskImage: maskImage, maskImage }}
-            className="relative w-full h-[300px] overflow-hidden rounded-lg"
-        >
-            <Image
-                src={project.image}
-                alt={project.title}
-                fill
-                className="object-cover transition-transform duration-500 group-hover:scale-110"
-            />
-        </motion.div>
-    );
-};
+import { motion } from 'framer-motion';
+import { useScroll, useTransform } from 'framer-motion';
 
 const Work = () => {
+
+
     const [selectedClass, setSelectedClass] = useState('9ᵉ année'); // Default selected class
     const filteredProjects = projects.filter((project) => project.classe === selectedClass); // Filter projects by selected class
+
+    const targetRef = useRef(null);
+    const { scrollYProgress } = useScroll({ target: targetRef, offset: ["center", "end start"] });
+
+    const rotate = useTransform(scrollYProgress, [0, 1], [0, 180]);
 
     const handleTabClick = (classe) => {
         setSelectedClass(classe); // Update the selected class when a tab is clicked
@@ -54,10 +27,9 @@ const Work = () => {
             initial={{ opacity: 0 }}
             animate={{
                 opacity: 1,
-                transition: { delay: 2.4, duration: 0.4, ease: 'easeIn' },
+                transition: { delay: 2.4, duration: 0.4, ease: "easeIn" }
             }}
-            className="min-h-[80vh] flex flex-col justify-center py-12 xl:px-0"
-        >
+            className="min-h-[80vh] flex flex-col justify-center py-12 xl:px-0">
             <div className="container mx-auto">
                 {/* SlideTabsExample for selecting classes */}
                 <AnimatedContent>
@@ -68,7 +40,10 @@ const Work = () => {
                     <div className="w-full grid grid-cols-1 lg:grid-cols-2 gap-8 text-center">
                         {filteredProjects.map((project, index) => (
                             <AnimatedContent key={index}>
-                                <div className="relative group mb-2 p-6 bg-gray-800 rounded-lg shadow-lg transition-all duration-300 hover:shadow-2xl hover:scale-105 hover:bg-gray-700">
+                                <div
+                                    ref={targetRef}
+                                    style={{ rotate: rotate }}
+                                    className="relative group mb-2 p-6 bg-gray-800 rounded-lg shadow-lg transition-all duration-300 hover:shadow-2xl hover:scale-105 hover:bg-gray-700">
                                     {/* Divider Line */}
                                     <h3 className="flex mb-4 items-center w-full">
                                         <span className="flex-grow bg-yellow-300 shadow-[0_0_5px_yellow] rounded h-px"></span>
@@ -100,8 +75,15 @@ const Work = () => {
                                         ))}
                                     </ul>
 
-                                    {/* Project Image with Scroll Animation */}
-                                    <ScrollImage project={project} />
+                                    {/* Project Image */}
+                                    <div className="mt-6 relative w-full h-[300px] overflow-hidden rounded-lg">
+                                        <Image
+                                            src={project.image}
+                                            alt={project.title}
+                                            fill
+                                            className="object-cover transition-transform duration-500 group-hover:scale-110"
+                                        />
+                                    </div>
 
                                     {/* Project Link */}
                                     <a
