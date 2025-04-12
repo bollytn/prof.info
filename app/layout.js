@@ -34,16 +34,32 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en" suppressHydrationWarning>
       <head>
+  <meta charSet="UTF-8" />
+  <meta name="description" content="Découvrez le portfolio de Mahjoubi Bilel, enseignant en informatique. Explorez ses projets éducatifs, ses services et ses ressources pédagogiques." />
+  <meta name="keywords" content="Mahjoubi Bilel, portfolio, enseignant informatique, scratch, AppInventor, Microbit, projets éducatifs" />
+  <meta name="author" content="Mahjoubi Bilel" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="robots" content="index, follow" />
+  <meta name="googlebot" content="index, follow" />
+  <meta name="google" content="nositelink" />
       <meta property="og:title" content="Mahjoubi Bilel - Portfolio Enseignant Informatique" />
   <meta property="og:description" content="Découvrez le portfolio de Mahjoubi Bilel, enseignant en informatique. Explorez ses projets éducatifs, ses services et ses ressources pédagogiques." />
   <meta property="og:image" content="/assets/photo.png" />
   <meta property="og:url" content="https://prof-info.vercel.app" />
   <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="Mahjoubi Bilel" />
+  <meta property="og:locale" content="fr_FR" />
+
+
 
   <meta name="twitter:card" content="summary_large_image" />
   <meta name="twitter:title" content="Mahjoubi Bilel - Portfolio Enseignant Informatique" />
   <meta name="twitter:description" content="Découvrez le portfolio de Mahjoubi Bilel, enseignant en informatique. Explorez ses projets éducatifs, ses services et ses ressources pédagogiques." />
   <meta name="twitter:image" content="/assets/photo.png" />
+  <meta name="twitter:url" content="https://prof-info.vercel.app" />
+  <meta name="twitter:site" content="@MahjoubiBilel" />
+  <meta name="twitter:creator" content="@MahjoubiBilel" />
+  <meta name="twitter:domain" content="https://prof-info.vercel.app" />
   {/* Ajoutez d'autres métadonnées facebook, linkedin, etc. ici */}
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <link rel="icon" href="/favicon.ico" />
