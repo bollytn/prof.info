@@ -93,7 +93,7 @@ const projects = [
         num: '10',
         classe: ['8ᵉ année', '7ᵉ année'],
         category: 'Examain',
-        title: "5 devoirs théoriques",
+        title: "5 devoirs Pratiques",
         description: "لزملائي الأعزاء الذين لم يعدو بعد فروضهم اقترح عليهم بعض المواضيع ذات الطابع التطبيقي.",
         stack: [{ name: 'scratch' }, { name: "sous programme" }, { name: "activité pratique" }],
         image: '/assets/work/thumb10.png',

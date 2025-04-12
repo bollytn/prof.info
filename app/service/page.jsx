@@ -13,11 +13,11 @@ import { Tooltip, TooltipContent, TooltipProvider, TooltipTrigger } from '@/comp
 import Link from 'next/link'
 import Image from 'next/image'
 import { WorkSliderBtn } from '@/components/shared/WorkSliderBtn'
-import AnimatedWrapper from '@/components/shared/AnimatedWrapper'
+
 import AnimatedBox from '@/components/shared/AnimatedBox'
 
 import services from '@/components/data/services'
-import { PiCaretLeftBold, PiCaretRightBold } from 'react-icons/pi'
+
 import AnimatedContent from '@/components/shared/AnimatedContent'
 
 const Work = () => {

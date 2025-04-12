@@ -1,4 +1,4 @@
-import { motion } from 'framer-motion';
+// Project: portfolio
 import Photo from '@/components/Photo';
 import Social from '@/components/Social';
 import { Button } from '@/components/ui/button';
