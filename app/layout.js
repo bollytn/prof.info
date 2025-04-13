@@ -36,6 +36,18 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en" suppressHydrationWarning>
       <head>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+                "@context": "https://schema.org",
+                "@type": "WebSite",
+                "name": "Mahjoubi Bilel",
+                "url": "https://prof-info.vercel.app/",
+            }),
+        }}
+    />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta charSet="UTF-8" />
   <meta name="description" content="Découvrez le portfolio de Mahjoubi Bilel, enseignant en informatique. Explorez ses projets éducatifs, ses services et ses ressources pédagogiques." />
   <meta name="keywords" content="Mahjoubi Bilel, portfolio, enseignant informatique, scratch, AppInventor, Microbit, projets éducatifs" />
