@@ -154,7 +154,7 @@ const projects = [
         classe:  ['7ᵉ année'],
         category: 'Scratch ',
         title: "Project de révision",
-        description: "Bonsoir, Projet nᵉ 1 de 7ᵉ année Pilote, j'espère que vous l'apprécierez, mes chers collègues.",
+        description: "Good evening, Project n°1 of 7ᵉ Pilot Year. I hope you enjoy it, dear colleagues.",
         stack: [{ name: 'Project' }, { name: "Loops" }, { name: "effect" }, { name: "instructions conditionnelles" }, { name: "message" }, { name: "opérateurs" }],
         image: '/assets/work/thumb16.png',
         live: 'https://mega.nz/file/8uA3SDaY#WbPMS7URZ9qDrkXbRpceArXhkwaVFoXR-Px_GJ5kWTw',
