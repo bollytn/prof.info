@@ -149,6 +149,16 @@ const projects = [
         image: '/assets/work/thumb15.png',
         live: 'https://drive.google.com/drive/folders/1tGbXvztXH7MDS-U-j_8FFpD8Opqslb43?usp=sharing',
     },
+    {
+        num: '16',
+        classe:  ['7ᵉ année'],
+        category: 'Scratch ',
+        title: "Project de révision",
+        description: "Bonsoir, Projet nᵉ 1 de 7ᵉ année Pilote, j'espère que vous l'apprécierez, mes chers collègues.",
+        stack: [{ name: 'Project' }, { name: "Loops" }, { name: "effect" }, { name: "instructions conditionnelles" }, { name: "message" }, { name: "opérateurs" }],
+        image: '/assets/work/thumb16.png',
+        live: 'https://mega.nz/file/8uA3SDaY#WbPMS7URZ9qDrkXbRpceArXhkwaVFoXR-Px_GJ5kWTw',
+    },
     
 ]
 
