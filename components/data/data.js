@@ -159,7 +159,6 @@ const projects = [
         image: '/assets/work/thumb16.png',
         live: 'https://mega.nz/file/8uA3SDaY#WbPMS7URZ9qDrkXbRpceArXhkwaVFoXR-Px_GJ5kWTw',
     },
-    
 ]
 
 export default projects;
