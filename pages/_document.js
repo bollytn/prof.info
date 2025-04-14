@@ -5,7 +5,7 @@ class MyDocument extends Document {
     return (
       <Html>
         <Head>
-        <title>Mahjoubi Bilel - Portfolio Enseignant Informatique</title>
+        {/* Title should be defined at the page level using <Head> from next/head */}
           <link rel="icon" href="/assets/icon.ico" />
           <link rel="shortcut icon" href="/assets/icon.ico" />
           <link rel="apple-touch-icon" href="/assets/icon.ico" />
