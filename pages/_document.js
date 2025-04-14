@@ -5,12 +5,27 @@ class MyDocument extends Document {
     return (
       <Html>
         <Head>
+        <title>Mahjoubi Bilel - Portfolio Enseignant Informatique</title>
+          <link rel="icon" href="/assets/icon.ico" />
+          <link rel="shortcut icon" href="/assets/icon.ico" />
+          <link rel="apple-touch-icon" href="/assets/icon.ico" />
+          <link rel="manifest" href="/manifest.json" />
+          <link rel="preload" href="/assets/photo.png" as="image" type="image/png" />
+          
           <link
             rel="preload"
             href="/assets/photo.png"
             as="image"
             type="image/png"
           />
+
+{/* meta description     */}
+<meta name="description" content="Découvrez le portfolio de Mahjoubi Bilel, enseignant en informatique. Explorez ses projets éducatifs, ses services et ses ressources pédagogiques ,programmtion algorithme creation des jeux scratch ,creation des histoire scratch,creation des animation scratch." />
+<meta name="keywords" content="Mahjoubi Bilel, portfolio, enseignant informatique, scratch, AppInventor, Microbit, projets éducatifs" />
+<meta name="author" content="Mahjoubi Bilel" />
+<meta name="robots" content="index,follow" />
+<meta name="googlebot" content="index,follow" />
+
         </Head>
         <body>
           <Main />
