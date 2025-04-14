@@ -10,7 +10,7 @@ import { TooltipProvider, TooltipTrigger, Tooltip, TooltipContent } from "@/comp
 
 const about = {
     title: "À PROPOS DE MOI",
-    description: "Passionné par la création d'applications dynamiques et engageantes, j'apporte plus de 3 ans d'expérience en tant que développeur full-stack axé sur la création d'expériences Web2 fluides et l'expansion vers le Web3. Je suis toujours à la recherche de nouveaux outils, de meilleures pratiques et des dernières technologies pour améliorer mon travail.",
+    description: "Enseignant d'informatique passionné avec plus de 15 ans d’expérience, Spécialisé dans l’enseignement de la pensée logique et du développement de compétences en programmation chez les collégiens. Ma pédagogie repose sur une approche ludique et interactive, utilisant des outils modernes tels que Scratch, App Inventor et Micro:bit pour éveiller l’intérêt des élèves à l’univers numérique.Passionné par la création d'applications dynamiques et engageantes, j'apporte plus de 3 ans d'expérience en tant que développeur full-stack axé sur la création d'expériences Web2 fluides et l'expansion vers le Web3. Je suis toujours à la recherche de nouveaux outils, de meilleures pratiques et des dernières technologies pour améliorer mon travail.",
     info: [
         {
             filedName: "Nom & Prenom",
@@ -22,7 +22,7 @@ const about = {
         },
         {
             filedName: "Experience",
-            filedValue: "+3 years"
+            filedValue: "15 ans"
         },
         {
             filedName: "E-mail",
@@ -31,9 +31,6 @@ const about = {
         {
             filedName: "Github",
             filedValue: "github.com/bollytn"
-        }, {
-            filedName: "Freelance",
-            filedValue: "Available"
         },
         {
             filedName: "Languages",
