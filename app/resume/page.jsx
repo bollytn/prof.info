@@ -24,7 +24,7 @@ const about = {
         },
         {
             filedName: "Experience",
-            filedValue: "15 ans"
+            filedValue: "+15 ans"
         },
         {
             filedName: "E-mail",
