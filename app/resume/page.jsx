@@ -1,7 +1,6 @@
+import { SiReact, SiScratch, SiMicrobit } from "react-icons/si";
+import { SiAppian } from "react-icons/si";
 
-import { FaHtml5, FaCss3, FaJs, FaReact, FaFigma, FaNodeJs } from "react-icons/fa";
-import { FiFigma } from "react-icons/fi";
-import { SiTailwindcss, SiNextdotjs, SiMongodb } from "react-icons/si";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs';
 import { ScrollArea } from "@/components/ui/scroll-area";
 
@@ -10,7 +9,7 @@ import { TooltipProvider, TooltipTrigger, Tooltip, TooltipContent } from "@/comp
 
 const about = {
     title: "À PROPOS DE MOI",
-    description: "Enseignant d'informatique passionné avec plus de 15 ans d’expérience, Spécialisé dans l’enseignement de la pensée logique et du développement de compétences en programmation chez les collégiens. Ma pédagogie repose sur une approche ludique et interactive, utilisant des outils modernes tels que Scratch, App Inventor et Micro:bit pour éveiller l’intérêt des élèves à l’univers numérique.Passionné par la création d'applications dynamiques et engageantes, j'apporte plus de 3 ans d'expérience en tant que développeur full-stack axé sur la création d'expériences Web2 fluides et l'expansion vers le Web3. Je suis toujours à la recherche de nouveaux outils, de meilleures pratiques et des dernières technologies pour améliorer mon travail.",
+    description: "Enseignant d'informatique passionné avec plus de 15 ans d’expérience, Spécialisé dans l’enseignement de la pensée logique et du développement de compétences en programmation chez les collégiens. Ma pédagogie repose sur une approche ludique et interactive, utilisant des outils modernes tels que Scratch, App Inventor et Micro:bit pour éveiller l’intérêt des élèves à l’univers numérique.",
     info: [
         {
             filedName: "Nom & Prenom",
@@ -42,28 +41,18 @@ const about = {
 const experience = {
     icon: '/public/assets/resume/badge.svg',
     title: 'Mon Expérience',
-    description: "j'apporte plus de 3 ans d'expérience en tant que développeur front end developper ",
+    description: "J'ai plus de 15 ans d'expérience dans le développement web et l'enseignement de la programmation. J'ai travaillé pour des entreprises de taille moyenne et grande, et j'ai également enseigné la programmation à des étudiants de tous niveaux.",
     items: [
         {
-            company: 'tech solution inc',
-            position: 'front end developper',
-            duration: '2022 - Present'
+            company: 'Ecole Préparatoire bousalem',
+            position: 'enseignant informatique',
+            duration: '2012 - Présent'
         },
         {
-            company: 'Web Design Studio',
-            position: 'front end developper',
-            duration: '2021'
-        },
-        {
-            company: 'Ecomerce startup',
-            position: 'front end developper',
-            duration: '2020 - 2021'
-        },
-        {
-            company: 'IwebSolution',
-            position: 'teaching assistant',
-            duration: '2019'
-        },
+            company: 'Tanit-School (Tunisie)',
+            position: 'enseignant informatique',
+            duration: '2010 - 2012'
+        }
     ]
 }
 
@@ -73,62 +62,40 @@ const education = {
     description: "Je suis toujours à la recherche de nouveaux outils, de meilleures pratiques et des dernières technologies pour améliorer mon travail.",
     items: [
         {
-            institution: 'online course platform',
-            degree: 'full stack web developement bootcamp',
-            duration: '2023'
+            institution: 'faculté des sciences de Bizerte',
+            degree: 'Maitrise en Informatique',
+            duration: '2005 - 2010'
         },
         {
-            institution: 'code academy',
-            degree: 'front end track',
-            duration: '2022'
-        },
-        {
-            institution: 'online course',
-            degree: 'programming course',
-            duration: '2021'
-        },
-        {
-            institution: 'Maitrise en informatique',
-            degree: 'Nouvelles technologies',
-            duration: '4 ans en 2010'
-        },
+            institution: 'Lycée libérter de Jendouba',
+            degree: 'Baccalauréat Techniques',
+            duration: '2003 - 2004'
+        }
     ]
 }
 
 const skills = {
     title: 'Mes Compétances',
-    description: "J'ai toutes les compétences nécessaires (Back-End, Front-End, UX/UI, architecture…) à la création d’un site d’un sa globalité (création, développement, codage…).",
+    description: [
+        "Enseignement de la pensée logique et de l’algorithmique à travers Scratch.",
+        "Initiation à la programmation mobile avec App Inventor pour les élèves de 9e année.",
+        "Introduction à l’électronique et la programmation embarquée via Micro:bit.",
+        "Conception d’activités interactives pour développer les compétences en résolution de problèmes.",
+        "Participation à l’élaboration de supports pédagogiques innovants.",
+        "Suivi individuel des élèves et accompagnement dans leurs projets informatiques.",
+    ],
     skilList: [
         {
-            icon: <FaHtml5 />,
-            name: 'html 5'
+            icon: <SiScratch />,
+            name: 'scratch'
         },
         {
-            icon: <FaCss3 />,
-            name: 'css3 5'
+            icon: <SiAppian />,
+            name: 'app inventor'
         },
         {
-            icon: <FaJs />,
-            name: 'javascript'
-        },
-        {
-            icon: <FaReact />,
-            name: 'reactJS'
-        }, {
-            icon: <SiNextdotjs />,
-            name: 'nextJS'
-        },
-        {
-            icon: <SiTailwindcss />,
-            name: 'tailwind'
-        },
-        {
-            icon: <FiFigma />,
-            name: 'figma'
-        },
-        {
-            icon: <FaNodeJs />,
-            name: 'nodeJS'
+            icon: <SiMicrobit />,
+            name: 'microbit'
         },
     ]
 }
@@ -198,31 +165,43 @@ const Resume = () => {
                                 </ScrollArea>
                             </div>
                         </TabsContent>
-                        <TabsContent value='skills' className="w-full h-full">
+                        <TabsContent value="skills" className="w-full h-full">
                             <div className="flex flex-col gap-7">
                                 <div className="flex flex-col gap-7 text-center xl:text-left">
                                     <h3 className="text-4xl font-bold">{skills.title}</h3>
-                                    <p className="max-w-[600px] text-white/60 mx-auto xl:mx-0">{skills.description}</p>
-                                </div>
-                                <ul className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-0 xl:gap-7 md:gap-7">
-                                    {
-                                        skills.skilList.map((skill, index) => {
+                                    <div className="w-full text-white/60 text-center xl:text-left mx-auto xl:mx-0">
+                                        {skills.description.map((item, index) => {
                                             return (
-                                                <li key={index} >
-                                                    <TooltipProvider delayDuration={100}>
-                                                        <Tooltip>
-                                                            <TooltipTrigger className="w-full h-[150px] xl:rounded-xl md:rounded-xl bg-[#232329] flex justify-center items-center group">
-                                                                <div className="text-6xl group-hover:text-accent transition-all duration-300">{skill.icon}</div>
-                                                            </TooltipTrigger>
-                                                            <TooltipContent>
-                                                                <p className="capitalize">{skill.name}</p>
-                                                            </TooltipContent>
-                                                        </Tooltip>
-                                                    </TooltipProvider>
-                                                </li>
-                                            )
-                                        })
-                                    }
+                                                <p
+                                                    key={index}
+                                                    className="flex items-center justify-center xl:justify-start gap-2"
+                                                >
+                                                    <SiReact className="text-accent" />
+                                                    {item}
+                                                </p>
+                                            );
+                                        })}
+                                    </div>
+                                </div>
+                                <ul className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-7">
+                                    {skills.skilList.map((skill, index) => {
+                                        return (
+                                            <li key={index}>
+                                                <TooltipProvider delayDuration={100}>
+                                                    <Tooltip>
+                                                        <TooltipTrigger className="w-full h-[150px] xl:rounded-xl md:rounded-xl bg-[#232329] flex justify-center items-center group">
+                                                            <div className="text-6xl group-hover:text-accent transition-all duration-300">
+                                                                {skill.icon}
+                                                            </div>
+                                                        </TooltipTrigger>
+                                                        <TooltipContent>
+                                                            <p className="capitalize">{skill.name}</p>
+                                                        </TooltipContent>
+                                                    </Tooltip>
+                                                </TooltipProvider>
+                                            </li>
+                                        );
+                                    })}
                                 </ul>
                             </div>
                         </TabsContent>
@@ -247,8 +226,8 @@ const Resume = () => {
                         </TabsContent>
                     </div>
                 </Tabs>
-            </div>
-        </AnimatedContent>
+            </div >
+        </AnimatedContent >
     );
 }
 export default Resume;
