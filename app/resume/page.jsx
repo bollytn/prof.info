@@ -1,5 +1,6 @@
 import { SiReact, SiScratch, SiMicrobit } from "react-icons/si";
 import { SiAppian } from "react-icons/si";
+import { BiCaretRight } from "react-icons/bi";
 
 import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs';
 import { ScrollArea } from "@/components/ui/scroll-area";
@@ -174,9 +175,9 @@ const Resume = () => {
                                             return (
                                                 <p
                                                     key={index}
-                                                    className="flex items-center justify-center xl:justify-start gap-2"
+                                                    className="flex items-center justify-center text-sm md:text-lg xl:justify-start gap-2 mb-2"
                                                 >
-                                                    <SiReact className="text-accent" />
+                                                    <BiCaretRight className="text-accent" />
                                                     {item}
                                                 </p>
                                             );
