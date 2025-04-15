@@ -1,3 +1,4 @@
+import Image from "next/image"; // Import the Image component
 import { SiReact, SiScratch, SiMicrobit } from "react-icons/si";
 import { SiAppian } from "react-icons/si";
 import { BiCaretRight } from "react-icons/bi";
@@ -9,7 +10,8 @@ import AnimatedContent from '@/components/shared/AnimatedContent';
 import { TooltipProvider, TooltipTrigger, Tooltip, TooltipContent } from "@/components/ui/tooltip";
 
 const about = {
-    title: "À PROPOS DE MOI",
+    title: "A Propos De Moi",
+    icon: '/assets/resume/about.svg', // Path to about.svg image
     description: "Enseignant d'informatique passionné avec plus de 15 ans d’expérience, Spécialisé dans l’enseignement de la pensée logique et du développement de compétences en programmation chez les collégiens. Ma pédagogie repose sur une approche ludique et interactive, utilisant des outils modernes tels que Scratch, App Inventor et Micro:bit pour éveiller l’intérêt des élèves à l’univers numérique.",
     info: [
         {
@@ -40,7 +42,7 @@ const about = {
 }
 
 const experience = {
-    icon: '/public/assets/resume/badge.svg',
+    icon: '/assets/resume/exprience.svg', // Path to badge.svg
     title: 'Mon Expérience',
     description: "J'ai plus de 15 ans d'expérience dans le développement web et l'enseignement de la programmation. J'ai travaillé pour des entreprises de taille moyenne et grande, et j'ai également enseigné la programmation à des étudiants de tous niveaux.",
     items: [
@@ -58,7 +60,7 @@ const experience = {
 }
 
 const education = {
-    icon: '/public/assets/resume/cap.svg',
+    icon: '/assets/resume/education.svg', // Path to cap.svg
     title: 'Mon Education',
     description: "Je suis toujours à la recherche de nouveaux outils, de meilleures pratiques et des dernières technologies pour améliorer mon travail.",
     items: [
@@ -76,6 +78,7 @@ const education = {
 }
 
 const skills = {
+    icon: '/assets/resume/skills.svg', // Path to cap.svg
     title: 'Mes Compétances',
     description: [
         "Enseignement de la pensée logique et de l’algorithmique à travers Scratch.",
@@ -107,6 +110,7 @@ const Resume = () => {
             <div className="container mx-auto">
                 <Tabs defaultValue="experience" className="flex flex-col xl:flex-row gap-8">
                     <TabsList className="flex flex-col w-full max-w-[380px] mx-auto xl:mx-0 gap-6">
+
                         <TabsTrigger value="experience">Experience</TabsTrigger>
                         <TabsTrigger value="education">Education</TabsTrigger>
                         <TabsTrigger value="skills">Compétances</TabsTrigger>
@@ -117,7 +121,17 @@ const Resume = () => {
                         {/* experience */}
                         <TabsContent value='experience' className="w-full">
                             <div className="flex flex-col gap-7 text-center xl:text-left">
-                                <h3 className="text-4xl  font-bold">{experience.title}</h3>
+                                {/* Badge Icon */}
+                                <div className="flex justify-center xl:justify-start">
+                                    <Image
+                                        src={experience.icon}
+                                        alt="Badge Icon"
+                                        width={50}
+                                        height={50}
+                                    />
+                                    <h3 className="text-4xl font-bold mt-1 ml-1">{experience.title}</h3>
+                                </div>
+
                                 <p className="max-w-[600px] text-white/60 mx-auto xl:mx-0">{experience.description}</p>
 
                                 <ScrollArea className="h-[400px]">
@@ -143,7 +157,17 @@ const Resume = () => {
                         </TabsContent>
                         <TabsContent value='education' className="w-full">
                             <div className="flex flex-col gap-7 text-center xl:text-left">
-                                <h3 className="text-4xl  font-bold">{education.title}</h3>
+                                {/* Cap Icon */}
+                                <div className="flex justify-center xl:justify-start">
+                                    <Image
+                                        src={education.icon}
+                                        alt="Cap Icon"
+                                        width={50}
+                                        height={50}
+                                    />
+                                    <h3 className="text-4xl font-bold mt-1 ml-1">{education.title}</h3>
+                                </div>
+
                                 <p className="max-w-[600px] text-white/60 mx-auto xl:mx-0">{education.description}</p>
                                 <ScrollArea className="h-[400px]">
                                     <ul className="grid grid-cols-1 lg:grid-cols-2 gap-7">
@@ -169,7 +193,16 @@ const Resume = () => {
                         <TabsContent value="skills" className="w-full h-full">
                             <div className="flex flex-col gap-7">
                                 <div className="flex flex-col gap-7 text-center xl:text-left">
-                                    <h3 className="text-4xl font-bold">{skills.title}</h3>
+                                    {/* Cap Icon */}
+                                    <div className="flex justify-center xl:justify-start">
+                                        <Image
+                                            src={skills.icon}
+                                            alt="Cap Icon"
+                                            width={50}
+                                            height={50}
+                                        />
+                                        <h3 className="text-4xl font-bold mt-1 ml-1">{skills.title}</h3>
+                                    </div>
                                     <div className="w-full text-white/60 text-center xl:text-left mx-auto xl:mx-0">
                                         {skills.description.map((item, index) => {
                                             return (
@@ -208,7 +241,17 @@ const Resume = () => {
                         </TabsContent>
                         <TabsContent value='about' className="w-full text-center xl:text-left">
                             <div className="flex flex-col gap-7">
-                                <h3 className="text-4xl font-bold">{about.title}</h3>
+                                {/* Badge Icon */}
+                                <div className="flex justify-center xl:justify-start">
+                                    <Image
+                                        src={about.icon}
+                                        alt="Badge Icon"
+                                        width={50}
+                                        height={50}
+                                    />
+                                    <h3 className="text-4xl font-bold mt-1 ml-1">{about.title}</h3>
+                                </div>
+
                                 <p className="max-w-[600px] xl:max-w-[700px] text-white/60 mx-auto xl:mx-0">{about.description}</p>
                                 <ul className="grid grid-cols-1 xl:grid-cols-2 gap-y-2 max-w-[750px] mx-auto xl:mx-0">
                                     {about.info.map((item, index) => {
