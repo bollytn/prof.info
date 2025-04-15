@@ -215,8 +215,8 @@ const Resume = () => {
                                         <div className="w-full text-white/60 text-center xl:text-left mx-auto xl:mx-0">
                                             {skills.description.map((item, index) => (
                                                 <AnimatedContent key={index}>
-                                                    <p className="flex items-center justify-center text-sm md:text-lg xl:justify-start gap-2 mb-2">
-                                                        <BiCaretRight className="text-accent" />
+                                                    <p className="flex group hover:cursor-pointer items-center justify-center text-sm md:text-lg xl:justify-start gap-2 mb-2">
+                                                        <BiCaretRight className="text-accent group-hover:rotate-180 group-hover:translate-x-2 transition-all duration-300 ease-in-out" />
                                                         {item}
                                                     </p>
                                                 </AnimatedContent>
