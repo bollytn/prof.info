@@ -153,12 +153,22 @@ const projects = [
         num: '16',
         classe:  ['7ᵉ année'],
         category: 'Scratch ',
-        title: "Project de révision",
+        title: "Juice Truck",
         description: "Good evening, Project n°1 of 7ᵉ Pilot Year. I hope you enjoy it, dear colleagues.",
-        stack: [{ name: 'Project' }, { name: "Loops" }, { name: "effect" }, { name: "instructions conditionnelles" }, { name: "message" }, { name: "opérateurs" }],
+        stack: [{ name: 'Project' }, { name: "Loops" }, { name: "effect" }, { name: "conditions" }, { name: "messages" }, { name: "operaateurs" }, { name: "sensors" }],
         image: '/assets/work/thumb16.png',
         live: 'https://mega.nz/file/8uA3SDaY#WbPMS7URZ9qDrkXbRpceArXhkwaVFoXR-Px_GJ5kWTw',
     },
+    {
+        num: '17',
+        classe:  ['8ᵉ année'],
+        category: 'Scratch ',
+        title: "Crazy Frog",
+        description: "Good evening, Project n°1 of 8ᵉ Pilot Year. I hope you enjoy it, dear colleagues.",
+        stack: [{ name: 'Project' }, { name: "Loops" }, { name: "randomization" }, { name: "conditions" }, { name: "message" }, { name: "sound" }, { name: "operaateurs" }, { name: "variables" }, { name: "sensors" }],
+        image: '/assets/work/thumb17.png',
+        live: 'https://mega.nz/file/lywFybaY#4mgOreGL-4cSPkXpYPsKfhmqYkk-yyLzKhDeGQlyyKU',
+    }
 ]
 
 export default projects;
