@@ -267,7 +267,7 @@ const ProjectPage = async ({ params }) => {
                                 </a>
                             </h2>
                             <Image
-                                src={`/assets/work/8/jeux/${index + 1}.png`} // Dynamically load images
+                                src={`/assets/work/8/jeux/${index + 1}.PNG`} // Dynamically load images
                                 alt={`Game ${game.name}`}
                                 width={1920} // Full width for large screens
                                 height={1080} // Maintain aspect ratio
