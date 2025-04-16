@@ -4,36 +4,34 @@ import projects from "@/components/data/data"; // Import your project data
 import AnimatedContent from "@/components/shared/AnimatedContent";
 import { HiOutlineDownload } from "react-icons/hi";
 
-const ProjectPage = async ({ params }) => {
+const gameName = [
+    { name: "baguette", file: "1.sb2" },
+    { name: "balon", file: "2.sb2" },
+    { name: "blue sky", file: "3.sb2" },
+    { name: "chasse clé", file: "4.sb2" },
+    { name: "chasse aux sorciere", file: "5.sb2" },
+    { name: "circulation", file: "6.sb2" },
+    { name: "jeux robot", file: "7.sb2" },
+    { name: "labyrinthe", file: "8.sb2" },
+    { name: "poursuite dangereuse", file: "9.sb2" },
+    { name: "rebond solo", file: "10.sb2" },
+    { name: "singe", file: "11.sb2" },
+];
 
-    const { num } = await params; // Await the params object to access its properties
+const ProjectPage = async ({ params, searchParams }) => {
+    const { num } = await params; // Extract the project number from params
+    const selectedClass = searchParams?.selectedClass || "9ème année"; // Extract the selected class from searchParams
 
-    // Find the project based on the number
+
     const project = projects.find((p) => p.num === num);
 
     if (!project) {
-        return <p className="text-center text-white">Project not found</p>;
+        return <p className="text-center text-white flex justify-center items-center h-screen text-4xl font-bold">Project not found</p>;
     }
-
-    const gameName = [
-        { name: "baguette", file: "1.sb2" },
-        { name: "balon", file: "2.sb2" },
-        { name: "blue sky", file: "3.sb2" },
-        { name: "chasse clé", file: "4.sb2" },
-        { name: "chasse aux sorciere", file: "5.sb2" },
-        { name: "circulation", file: "6.sb2" },
-        { name: "jeux robot", file: "7.sb2" },
-        { name: "labyrinthe", file: "8.sb2" },
-        { name: "poursuite dangereuse", file: "9.sb2" },
-        { name: "rebond solo", file: "10.sb2" },
-        { name: "singe", file: "11.sb2" },
-    ];
-
-
 
     return (
         <div className="container mx-auto py-12">
-            <h1 className="text-4xl font-bold text-center text-accent">{project.classe}</h1>
+            <h1 className="text-4xl font-semibold text-center mt-4 text-accent">{selectedClass}</h1>
             <h2 className="text-3xl font-semibold text-center mt-4">{project.title}</h2>
             <p className="text-center text-white/60 mt-4 mb-8">{project.description}</p>
             {/* Display all images for project 1 */}
@@ -44,7 +42,7 @@ const ProjectPage = async ({ params }) => {
                             <h2></h2>
                             <Image
                                 src={`/assets/work/9/mangeoire/cour${index}.png`} // Dynamically load images
-                                alt={`Project 1 Image ${index}`}
+                                alt={project.title}
                                 width={1920} // Full width for large screens
                                 height={1080} // Maintain aspect ratio
                                 className="rounded-lg shadow-lg"

@@ -1,3 +1,4 @@
+// c:\Users\admin\web\prof.info\app\work\page.jsx
 'use client';
 import { useRef, useState } from 'react';
 import projects from '@/components/data/data';
@@ -8,11 +9,13 @@ import AnimatedContent from '@/components/shared/AnimatedContent';
 import { Reveal } from '@/components/shared/Reveal'; // Import the Reveal component
 
 import Link from "next/link"; // Import Link from Next.js
+import { useRouter } from "next/navigation";
 
 const gradient = (mask) =>
     `conic-gradient(black 0%, black ${mask ? 0 : 100}%, transparent ${mask ? 0 : 100}%, transparent 100%)`;
 
 const ScrollImage = ({ project }) => {
+    // ... (ScrollImage component remains the same)
     const target = useRef(null);
     const { scrollYProgress } = useScroll({
         target,
@@ -47,6 +50,13 @@ const ScrollImage = ({ project }) => {
 
 const Work = () => {
     const [selectedClass, setSelectedClass] = useState('9ᵉ année'); // Default selected class
+    const router = useRouter(); // Initialize the router
+
+    // Remove this function - no longer needed for the link
+    const handleProjectClick = (num) => {
+        router.push(`/work/projects/${num}?selectedClass=${encodeURIComponent(selectedClass)}`);
+    };
+
     const filteredProjects = projects.filter((project) =>
         project.classe.includes(selectedClass) // Check if selectedClass exists in the classe array
     );
@@ -91,7 +101,6 @@ const Work = () => {
                                 <AnimatedContent key={index}>
                                     <div className="relative group mb-2 p-6 bg-gray-800 rounded-lg shadow-lg transition-all duration-300 hover:shadow-2xl hover:scale-105 hover:bg-gray-700">
                                         {/* Divider Line */}
-
                                         <h3 className="flex mb-4 items-center w-full">
                                             <span className="flex-grow bg-yellow-300 shadow-[0_0_5px_yellow] rounded h-px"></span>
                                             <span className="uppercase mx-3 text-lg font-medium text-accent/60 animate-bounce">
@@ -99,7 +108,6 @@ const Work = () => {
                                             </span>
                                             <span className="flex-grow bg-yellow-300 shadow-[0_0_5px_yellow] rounded h-px"></span>
                                         </h3>
-
 
                                         {/* Project Title */}
                                         <Reveal>
@@ -132,16 +140,20 @@ const Work = () => {
                                         {/* Project Image with Scroll Animation */}
                                         <ScrollImage project={project} />
 
-                                        {/* Project Link */}
+                                        {/* Project Link - MODIFIED HERE */}
                                         <div className="mt-4 flex justify-center">
                                             <Reveal>
                                                 <Link
-                                                    href={`/work/projects/${project.num}`} // Dynamic route based on project number
+                                                    // Pass the selectedClass directly in the href
+                                                    href={`/work/projects/${project.num}?selectedClass=${encodeURIComponent(selectedClass)}`}
                                                     className="mt-4 inline-block text-accent group-hover:text-yellow-300 transition-all duration-300 relative text-center rounded-lg px-4 py-2 hover:bg-gray-800 shadow-lg hover:shadow-2xl mx-auto"
                                                     style={{ display: 'block' }} // Ensures the button is centered
                                                 >
                                                     <span className="absolute inset-0 scale-0 group-hover:border-b-2 group-hover:border-yellow-300 group-hover:scale-100 opacity-50 transition-transform duration-300 rounded-lg"></span>
-                                                    <span className="relative z-10">Ouvrir le projet</span>
+                                                    {/* Remove the onClick handler from the span */}
+                                                    <span
+                                                        onClick={() => handleProjectClick(project.num)} // Optional: keep this for any additional logic
+                                                        className="relative z-10">Ouvrir le projet</span>
                                                 </Link>
                                             </Reveal>
                                         </div>
