@@ -205,7 +205,17 @@ const projects = [
         stack: [{ name: 'Scratch ', }, { name: "activité débranché" }, { name: "activité pratique" }],
         image: '/assets/work/cover/thumb18.png',
         live: 'https://mega.nz/file/4zwklbpT#PsPXlAP9YuTXtKPDlwDTNo0D3P5Gtuua6NcvhE62f-Y',
+    },{
+        num: '21',
+        classe:  ['8ᵉ année'],
+        category: 'Scratch',
+        title: "Devoir de synthèse",
+        description: "devoir de synthèse de 8ᵉ année (2eme trimestre) théorique + pratique",
+        stack: [{ name: 'Scratch ', }, { name: "activité débranché" }, { name: "activité pratique" }],
+        image: '/assets/work/cover/thumb19.png',
+        live: 'https://drive.google.com/file/d/1tcDAfBRY0VWm0wfCVGwBcJFxuSriECnX/view?usp=sharing',
     }
+
 ]
 
 export default projects;
