@@ -20,7 +20,7 @@ const gameName = [
 
 const ProjectPage = async ({ params, searchParams }) => {
     const { num } = await params; // Extract the project number from params
-    const selectedClass = searchParams?.selectedClass || "9ème année"; // Extract the selected class from searchParams
+    const selectedClas = searchParams?.selectedClass || "default class"; // Get the selected class from query parameters
 
 
     const project = projects.find((p) => p.num === num);
@@ -31,7 +31,7 @@ const ProjectPage = async ({ params, searchParams }) => {
 
     return (
         <div className="container mx-auto py-12">
-            <h1 className="text-4xl font-semibold text-center mt-4 text-accent">{selectedClass}</h1>
+            <h1 className="text-4xl font-semibold text-center mt-4 text-accent">{selectedClas}</h1>
             <h2 className="text-3xl font-semibold text-center mt-4">{project.title}</h2>
             <p className="text-center text-white/60 mt-4 mb-8">{project.description}</p>
             {/* Display all images for project 1 */}
@@ -334,6 +334,23 @@ const ProjectPage = async ({ params, searchParams }) => {
                         <AnimatedContent key={index} className="relative w-full max-w-4xl h-auto rounded-lg overflow-hidden shadow-md shadow-accent-hover">
                             <Image
                                 src={`/assets/work/8/game/frog/cour${index}.png`} // Dynamically load images
+                                alt={`Project 1 Image ${index}`}
+                                width={1920} // Full width for large screens
+                                height={1080} // Maintain aspect ratio
+                                className="rounded-lg shadow-lg"
+                            />
+                        </AnimatedContent>
+                    ))}
+                </div>
+            )}
+
+            {/* Display all images for project 20 */}
+            {num === "20" && (
+                <div className="flex flex-row flex-wrap justify-center items-center gap-4 mt-2">
+                    {[1, 2, 3].map((index) => (
+                        <AnimatedContent key={index} className="relative w-full max-w-4xl h-auto rounded-lg overflow-hidden shadow-md shadow-accent-hover">
+                            <Image
+                                src={`/assets/work/8/devoirs/ds12024/cour${index}.png`} // Dynamically load images
                                 alt={`Project 1 Image ${index}`}
                                 width={1920} // Full width for large screens
                                 height={1080} // Maintain aspect ratio

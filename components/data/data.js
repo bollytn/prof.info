@@ -195,6 +195,16 @@ const projects = [
         stack: [{ name: 'Project' }, { name: "Loops" }, { name: "randomization" }, { name: "conditions" }, { name: "message" }, { name: "sound" }, { name: "operaateurs" }, { name: "variables" }, { name: "sensors" }],
         image: '/assets/work/cover/thumb17.png',
         live: 'https://mega.nz/file/lywFybaY#4mgOreGL-4cSPkXpYPsKfhmqYkk-yyLzKhDeGQlyyKU',
+    },
+    {
+        num: '20',
+        classe:  ['8ᵉ année'],
+        category: 'Scratch',
+        title: "Devoir de synthèse",
+        description: "devoir de synthèse de 8ᵉ année (1ere trimestre) théorique + pratique",
+        stack: [{ name: 'Scratch ', }, { name: "activité débranché" }, { name: "activité pratique" }],
+        image: '/assets/work/cover/thumb18.png',
+        live: 'https://mega.nz/file/4zwklbpT#PsPXlAP9YuTXtKPDlwDTNo0D3P5Gtuua6NcvhE62f-Y',
     }
 ]
 
