@@ -210,6 +210,23 @@ const ProjectPage = async ({ params }) => {
                     ></iframe>
                 </div>
             )}
+
+            {/* Display all images for project 13 */}
+            {num === "13" && (
+                <div className="flex flex-row flex-wrap justify-center items-center gap-4 mt-2">
+                    {[1, 2].map((index) => (
+                        <AnimatedContent key={index} className="relative w-full max-w-4xl h-auto rounded-lg overflow-hidden shadow-md shadow-accent-hover">
+                            <Image
+                                src={`/assets/work/8/guide/cour${index}.png`} // Dynamically load images
+                                alt={`Project 1 Image ${index}`}
+                                width={1920} // Full width for large screens
+                                height={1080} // Maintain aspect ratio
+                                className="rounded-lg shadow-lg"
+                            />
+                        </AnimatedContent>
+                    ))}
+                </div>
+            )}
         </div>
     );
 };
