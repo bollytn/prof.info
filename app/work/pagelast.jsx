@@ -7,6 +7,8 @@ import Image from 'next/image';
 import AnimatedContent from '@/components/shared/AnimatedContent';
 import { Reveal } from '@/components/shared/Reveal'; // Import the Reveal component
 
+import Link from "next/link"; // Import Link from Next.js
+
 const gradient = (mask) =>
     `conic-gradient(black 0%, black ${mask ? 0 : 100}%, transparent ${mask ? 0 : 100}%, transparent 100%)`;
 
@@ -133,16 +135,14 @@ const Work = () => {
                                         {/* Project Link */}
                                         <div className="mt-4 flex justify-center">
                                             <Reveal>
-                                                <a
-                                                    href={project.live}
-                                                    target="_blank"
-                                                    rel="noopener noreferrer"
+                                                <Link
+                                                    href={`/work/projects/${project.num}`} // Dynamic route based on project number
                                                     className="mt-4 inline-block text-accent group-hover:text-yellow-300 transition-all duration-300 relative text-center rounded-lg px-4 py-2 hover:bg-gray-800 shadow-lg hover:shadow-2xl mx-auto"
                                                     style={{ display: 'block' }} // Ensures the button is centered
                                                 >
                                                     <span className="absolute inset-0 scale-0 group-hover:border-b-2 group-hover:border-yellow-300 group-hover:scale-100 opacity-50 transition-transform duration-300 rounded-lg"></span>
-                                                    <span className="relative z-10">Télécharger</span>
-                                                </a>
+                                                    <span className="relative z-10">Ouvrir le projet</span>
+                                                </Link>
                                             </Reveal>
                                         </div>
                                     </div>
