@@ -112,7 +112,40 @@ const ProjectPage = async ({ params }) => {
                 </div>
             )}
 
+            {/* Display all images for project 6 */}
 
+            {num === "06" && (
+                <div className="flex flex-row flex-wrap justify-center items-center gap-4 mt-2">
+                    {[1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29].map((index) => (
+                        <AnimatedContent key={index} className="relative w-full max-w-4xl h-auto rounded-lg overflow-hidden shadow-md shadow-accent-hover">
+                            <Image
+                                src={`/assets/work/8/fiche/cour${index}.png`} // Dynamically load images
+                                alt={`Project 1 Image ${index}`}
+                                width={1920} // Full width for large screens
+                                height={1080} // Maintain aspect ratio
+                                className="rounded-lg shadow-lg"
+                            />
+                        </AnimatedContent>
+                    ))}
+                </div>
+            )}
+
+            {/* Display all images for project 8 */}
+            {num === "08" && (
+                <div className="flex flex-row flex-wrap justify-center items-center gap-4 mt-2">
+                    {[1, 2, 3].map((index) => (
+                        <AnimatedContent key={index} className="relative w-full max-w-4xl h-auto rounded-lg overflow-hidden shadow-md shadow-accent-hover">
+                            <Image
+                                src={`/assets/work/8/ds12022/cour${index}.png`} // Dynamically load images
+                                alt={`Project 1 Image ${index}`}
+                                width={1920} // Full width for large screens
+                                height={1080} // Maintain aspect ratio
+                                className="rounded-lg shadow-lg"
+                            />
+                        </AnimatedContent>
+                    ))}
+                </div>
+            )}
         </div>
     );
 };
