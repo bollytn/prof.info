@@ -93,7 +93,7 @@ const projects = [
         title: "4 devoirs théoriques",
         description: "بما ان قلة الحواسيب لا تمكننا من إنجاز فرض تطبقي ولا عامل الوقت يسمح لنا بإنجاز فرض نصفه تطبيقي و النصف الأخر نظري فهكذا كانت الخلاصة...",
         stack: [{ name: 'scratch' }, { name: "activité débranché" }, { name: "pensée logique" }],
-        image: '/assets/work/thumb9.png',
+        image: '/assets/work/cover/thumb9.png',
         live: 'https://drive.google.com/drive/folders/1V6bl3H2tD5vyveHLp8zECg4tb3CN-Bwg?usp=drive_link',
     },
     {
@@ -103,7 +103,7 @@ const projects = [
         title: "5 devoirs Pratiques",
         description: "لزملائي الأعزاء الذين لم يعدو بعد فروضهم اقترح عليهم بعض المواضيع ذات الطابع التطبيقي.",
         stack: [{ name: 'scratch' }, { name: "sous programme" }, { name: "activité pratique" }],
-        image: '/assets/work/thumb10.png',
+        image: '/assets/work/cover/thumb10.png',
         live: 'https://drive.google.com/drive/folders/1w061opt93tx_dKCnQoQFFrMZl34yIS77?usp=drive_link',
     },
     {
@@ -113,7 +113,7 @@ const projects = [
         title: "4 series théoriques",
         description: "Pour vous préparer au devoir de synthèse je vous propose cinq types de sujets.vous devrez réaliser des exercices sur les instructions...",
         stack: [{ name: 'boucles' }, { name: "variables" }, { name: "instructions conditionnelles" }, { name: "fonctions" }, { name: "opérateurs" }],
-        image: '/assets/work/thumb11.png',
+        image: '/assets/work/cover/thumb11.png',
         live: 'https://drive.google.com/drive/folders/1kFdFoKSBu5eos9zjYV7jmF5QOUYJJ4y_?usp=drive_link',
     },
     {
@@ -123,7 +123,7 @@ const projects = [
         title: "Rappel interactive",
         description: "Algorithme de rappel interactive sur les instructions conditionnelles et les boucles.",
         stack: [{ name: 'les instructions' }, { name: "boucle" }, { name: "instructions conditionnelles" }],
-        image: '/assets/work/thumb12.png',
+        image: '/assets/work/cover/thumb12.png',
         live: 'https://drive.google.com/file/d/1IIqW8EYKXaH5i9A8zqLFEghIxgWM9FLM/view?usp=sharing',
     },
     {
@@ -133,7 +133,7 @@ const projects = [
         title: "Guide de révision",
         description: "Guide de programmation + Grille de suivi et d'évaluation",
         stack: [{ name: 'evaluation' }, { name: "scratch" }],
-        image: '/assets/work/thumb13.png',
+        image: '/assets/work/cover/thumb13.png',
         live: 'https://drive.google.com/drive/folders/17u5QeQiWsVxcM9jzR61jjubWQvl5liVd?usp=drive_link',
     },
     {
@@ -143,7 +143,7 @@ const projects = [
         title: "11 Projets de révision",
         description: "Quelques projets réalisable avec une guide de programmation pour bien développer des techniques de jeux.",
         stack: [{ name: 'baguette' }, { name: "balon" }, { name: "blue sky" }, { name: "chasse clé" }, { name: "robot" }, { name: "chasse aux sorciere" }, { name: "circulation" }, { name: "labyrinthe" }, { name: "rebond solo" }, { name: "singe et pomme" }],
-        image: '/assets/work/thumb14.png',
+        image: '/assets/work/cover/thumb14.png',
         live: 'https://drive.google.com/drive/folders/1s70KInaWcq39YQ-UuGMAtbq3g7irZSN9?usp=drive_link',
     },
     {
@@ -153,7 +153,7 @@ const projects = [
         title: "Activites débranchées niveau 1",
         description: "Chers collègues, lorsque vous présentez une nouvelle notion aux élèves avec Scratch, je vous invite à le présenter (d'abord) avec des activités débranchées (sans ordinateur). par exemple Il y a 3 séries de 10 cartes, de difficultés différentes :",
         stack: [{ name: 'Série de cartes vertes : une seule boucle.' }],
-        image: '/assets/work/thumb15.png',
+        image: '/assets/work/cover/thumb15.png',
         live: 'https://drive.google.com/drive/folders/1tGbXvztXH7MDS-U-j_8FFpD8Opqslb43?usp=sharing',
     },
     {
@@ -183,7 +183,7 @@ const projects = [
         title: "Juice Truck",
         description: "Good evening, Project n°1 of 7ᵉ Pilot Year. I hope you enjoy it, dear colleagues.",
         stack: [{ name: 'Project' }, { name: "Loops" }, { name: "effect" }, { name: "conditions" }, { name: "messages" }, { name: "operaateurs" }, { name: "sensors" }],
-        image: '/assets/work/thumb16.png',
+        image: '/assets/work/cover/thumb16.png',
         live: 'https://mega.nz/file/8uA3SDaY#WbPMS7URZ9qDrkXbRpceArXhkwaVFoXR-Px_GJ5kWTw',
     },
     {
@@ -193,7 +193,7 @@ const projects = [
         title: "Crazy Frog",
         description: "Good evening, Project n°1 of 8ᵉ Pilot Year. I hope you enjoy it, dear colleagues.",
         stack: [{ name: 'Project' }, { name: "Loops" }, { name: "randomization" }, { name: "conditions" }, { name: "message" }, { name: "sound" }, { name: "operaateurs" }, { name: "variables" }, { name: "sensors" }],
-        image: '/assets/work/thumb17.png',
+        image: '/assets/work/cover/thumb17.png',
         live: 'https://mega.nz/file/lywFybaY#4mgOreGL-4cSPkXpYPsKfhmqYkk-yyLzKhDeGQlyyKU',
     }
 ]
