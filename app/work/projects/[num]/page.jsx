@@ -180,6 +180,36 @@ const ProjectPage = async ({ params }) => {
                     ))}
                 </div>
             )}
+
+            {/* Display all images for project 11 */}
+            {num === "11" && (
+                <div className="flex flex-row flex-wrap justify-center items-center gap-4 mt-2">
+                    {[1, 2, 3, 4].map((index) => (
+                        <AnimatedContent key={index} className="relative w-full max-w-4xl h-auto rounded-lg overflow-hidden shadow-md shadow-accent-hover">
+                            <Image
+                                src={`/assets/work/8/test/cour${index}.png`} // Dynamically load images
+                                alt={`Project 1 Image ${index}`}
+                                width={1920} // Full width for large screens
+                                height={1080} // Maintain aspect ratio
+                                className="rounded-lg shadow-lg"
+                            />
+                        </AnimatedContent>
+                    ))}
+                </div>
+            )}
+
+            {/* Embed the quiz/data/index.html file only for project 12 */}
+            {num === "12" && (
+                <div className="mt-12">
+                    <iframe
+                        src="/assets/work/8/rappel/index.html" // Correct path to the HTML file in the public directory
+                        width="100%"
+                        height="700px"
+                        className="border-none"
+                        allowFullScreen
+                    ></iframe>
+                </div>
+            )}
         </div>
     );
 };

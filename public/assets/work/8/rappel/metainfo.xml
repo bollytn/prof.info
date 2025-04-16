@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<presentation availableOffline="1" guid="9EC2F63F-3E51-4BFE-8E40-211EA7C49B38" version="0">
+	<info>
+		<title>rappel</title>
+		<description/>
+	</info>
+	<files index="id48" thumbnail="id44" totalSize="4647646">
+		<file id="id0">data/apple-touch-icon.png</file>
+		<file id="id1">data/browsersupport.js</file>
+		<file id="id2">data/favicon.ico</file>
+		<file id="id3">data/fonts/fnt0.woff</file>
+		<file id="id4">data/fonts/fnt1.woff</file>
+		<file id="id5">data/fonts/fnt2.woff</file>
+		<file id="id6">data/fonts/fnt3.woff</file>
+		<file id="id7">data/fonts/fnt4.woff</file>
+		<file id="id8">data/fonts/fnt5.woff</file>
+		<file id="id9">data/html5-unsupported.html</file>
+		<file id="id10">data/html5.png</file>
+		<file id="id11">data/images/img-039b770eacef77c75ed09fac56b22cfb8af4075e.png</file>
+		<file id="id12">data/images/img-06110e1e39a71584c6351e9f68ede30611efb155.jpg</file>
+		<file id="id13">data/images/img-0c84807a3f181aeca45526b934162e201301f6f5.jpg</file>
+		<file id="id14">data/images/img-164523219006bd55890ffa474fe1bad8eb955105.jpg</file>
+		<file id="id15">data/images/img-191d5a8d91f0cdfddda468ed8c23260dd6c640b4.jpg</file>
+		<file id="id16">data/images/img-1d001b7647ffda9416c1b9df2febe4db72c2bbdb.jpg</file>
+		<file id="id17">data/images/img-25410bd4a586039b434e3af719e181a0109e9f4b.jpg</file>
+		<file id="id18">data/images/img-2ae4e3464ac0b400a609c153c4024316640bf5ff.jpg</file>
+		<file id="id19">data/images/img-32e181f721032cf52dd0b30b64705ba109bf5650.jpg</file>
+		<file id="id20">data/images/img-449c1bab229a95b3f9959227dc483c5706236aa4.PNG</file>
+		<file id="id21">data/images/img-49975110eefd747ab1bec4d72c54078f7449eb6a.PNG</file>
+		<file id="id22">data/images/img-5a306d5e75bd79bb9a4811032c0e1aefe13c1039.jpg</file>
+		<file id="id23">data/images/img-5f5f6f33b4f355f7de0271c09cb20b41d27b6f63.png</file>
+		<file id="id24">data/images/img-6d8dbb63c70ef9ad45cb960b74d56fa9b54007ac.PNG</file>
+		<file id="id25">data/images/img-717cde45fad23a0a9be28d39be7ef2a9aca17248.png</file>
+		<file id="id26">data/images/img-7c6448c04beeccb87957aba7464ee5ab2f0288a3.jpg</file>
+		<file id="id27">data/images/img-96451beb3ec1fea6cadc0998c7d49ea232eb5783.PNG</file>
+		<file id="id28">data/images/img-a065abf2afb0d7663188306a1572e3c10fc6ccaa.PNG</file>
+		<file id="id29">data/images/img-a632c60ac2ef091507585d5eff384120cac20484.png</file>
+		<file id="id30">data/images/img-a8082eee7f3d87b27d270940f1759c0e2cbc7a3b.PNG</file>
+		<file id="id31">data/images/img-ab258cf4ad5dd02c94b4fa4c12c98c167c652a80.jpg</file>
+		<file id="id32">data/images/img-b219d2f521de799d2f4fd876a0f178d59e4156ac.jpg</file>
+		<file id="id33">data/images/img-b34f5482fd829b3e790d2f9023ab6dbcec4b43aa.png</file>
+		<file id="id34">data/images/img-b4ab7ce002912661085dff911ab10fb7c4ef9c23.png</file>
+		<file id="id35">data/images/img-cd539eebbaa6ef39765d341e809ee3e76d82dbb9.png</file>
+		<file id="id36">data/images/img-d1ef043578b2352a372d736006868cf9ffe4df09.PNG</file>
+		<file id="id37">data/images/img-da596bb7e45b51e1b1bbd62153320a95cc3562cf.jpg</file>
+		<file id="id38">data/images/img-dc3a489b7c09b3477e49e6fa5319ab2fea40a08b.PNG</file>
+		<file id="id39">data/images/img-e1370aa8d1f938d80d4371b165c81a1bfd3974ea.png</file>
+		<file id="id40">data/images/img-e2a178e267e612c74704111aebb29d23484b5595.jpg</file>
+		<file id="id41">data/images/img-ecc6e739293448defb8d004e1414511d5a975fc5.PNG</file>
+		<file id="id42">data/ismplayer/app_store2x.png</file>
+		<file id="id43">data/ismplayer/play.svg</file>
+		<file id="id44">data/ismplayer/preview.png</file>
+		<file id="id45">data/ismplayer/style.css</file>
+		<file id="id46">data/ismplayer/style_mini.css</file>
+		<file id="id47">data/player.js</file>
+		<file id="id48">index.html</file>
+		<file id="id49">ismplayer.html</file>
+		<file id="id50">preview.png</file>
+	</files>
+</presentation>
+
