@@ -23,7 +23,7 @@ const projects = [
         title: 'Quiz',
         description: 'Ce quiz permet aux enfants de tester leurs connaissances et de vérifier s’ils ont les bons réflexes.',
         stack: [{ name: 'sécuriser les données' }, { name: "vie privée" }, { name: "malware" }],
-        image: '/assets/work/thumb2.png',
+        image: '/assets/work/cover/thumb2.png',
         live: 'https://drive.google.com/drive/folders/1XoQSqq5mlVMRSqibavfnEmRsvCCLNTfb?usp=drive_link',
     },
     {
@@ -33,7 +33,7 @@ const projects = [
         title: 'Quiz',
         description: 'mon premier test appinventor (exécutable fichier index).',
         stack: [{ name: 'pédometre' }, { name: "traduire" }, { name: "composants non visibles" }],
-        image: '/assets/work/thumb3.png',
+        image: '/assets/work/cover/thumb3.png',
         live: 'https://drive.google.com/file/d/1AhCTDfHtT27kt2frgygyiPm7nbLn41Zq/view?usp=sharing',
     },
     {
@@ -43,7 +43,7 @@ const projects = [
         title: "cahier d'activité",
         description: ' .أعدت صياغة كتاب التمارين في نسخته الجديدة، أرجوا أن تعم الفائدة',
         stack: [{ name: 'boucle' }, { name: "instruction conditionnelle" }, { name: "variable" }, { name: "bloc d'instructions" }],
-        image: '/assets/work/thumb4.png',
+        image: '/assets/work/cover/thumb4.png',
         live: 'https://drive.google.com/file/d/10scm-92_kSG3fi1T9l1LURWWFb9SyHQw/view?usp=sharing',
     },
     {
@@ -53,7 +53,7 @@ const projects = [
         title: "cahier d'activité",
         description: "السلام عليكم، قمت بإنشاء تحتوي على تلاخيص، تمارين و مشاريع مقسمة كالآتي:",
         stack: [{ name: 'chiffre de césar' }, { name: "crabe aux pinces magiques" }, { name: "jeu de nim" }, { name: "le mage et la grenouille" }],
-        image: '/assets/work/thumb5.png',
+        image: '/assets/work/cover/thumb5.png',
         live: 'https://drive.google.com/file/d/1ifZuzfKIPBJYcCFr1ZzltU4Q5qV7EHa2/view?usp=sharing',
     },
     {
@@ -63,7 +63,7 @@ const projects = [
         title: "fiche pédagogique",
         description: "Bonjour chers collègues, je partage ma répartition que j'ai préparée pour 8ᵉ presque 15 séances sous forme des fiches pédagogiques.J'espère que vous aidez...",
         stack: [{ name: 'scratch' }, { name: "activité débranché" }, { name: "activité pratique" }],
-        image: '/assets/work/thumb6.png',
+        image: '/assets/work/cover/thumb6.png',
         live: 'https://mega.nz/folder/4yoXDTjb#XrJkt9u0JY2v2PBhv-wrTA',
     },
     {
@@ -73,7 +73,7 @@ const projects = [
         title: "fiche pédagogique",
         description: "Bonjour chers collègues, je partage ma répartition que j'ai préparée pour 9ᵉ presque 15 séances sous forme des fiches pédagogiques.J'espère que vous aidez...",
         stack: [{ name: 'microbit' }, { name: "reconnaissance vocale" }, { name: "compteur de temps" }, { name: "détecteur de mouvement" }, { name: "pédommètre" }],
-        image: '/assets/work/thumb7.png',
+        image: '/assets/work/cover/thumb7.png',
         live: 'https://mega.nz/file/l3Y2GJ4Q#Lvs_UbXCR9aR50StOcsktL9SXt5ArG9oE5cN6ievOVo',
     },
     {
@@ -83,7 +83,7 @@ const projects = [
         title: "Devoir de synthèse",
         description: "examain théorique et pratique de 8ᵉ année",
         stack: [{ name: 'scratch' }, { name: "mot croisés" }, { name: "activité débranché" }, { name: "activité pratique" }],
-        image: '/assets/work/thumb8.png',
+        image: '/assets/work/cover/thumb8.png',
         live: 'https://drive.google.com/file/d/1PgelJW8Tw2dCDr36DdFOkV_ODpce3jdc/view?usp=sharing',
     },
     {
