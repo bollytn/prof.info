@@ -312,13 +312,13 @@ const ProjectPage = async ({ params }) => {
                 </div>
             )}
 
-            {/* Display all images for project 15 */}
-            {num === "15" && (
+            {/* Display all images for project 18 */}
+            {num === "18" && (
                 <div className="flex flex-row flex-wrap justify-center items-center gap-4 mt-2">
                     {[1, 2, 3, 4, 5].map((index) => (
                         <AnimatedContent key={index} className="relative w-full max-w-4xl h-auto rounded-lg overflow-hidden shadow-md shadow-accent-hover">
                             <Image
-                                src={`/assets/work/8/cartes/vert/cour${index}.png`} // Dynamically load images
+                                src={`/assets/work/7/juice/cour${index}.png`} // Dynamically load images
                                 alt={`Project 1 Image ${index}`}
                                 width={1920} // Full width for large screens
                                 height={1080} // Maintain aspect ratio
@@ -328,6 +328,25 @@ const ProjectPage = async ({ params }) => {
                     ))}
                 </div>
             )}
+
+            {/* Display all images for project 19 */}
+            {num === "19" && (
+                <div className="flex flex-row flex-wrap justify-center items-center gap-4 mt-2">
+                    {[1, 2, 3, 4, 5].map((index) => (
+                        <AnimatedContent key={index} className="relative w-full max-w-4xl h-auto rounded-lg overflow-hidden shadow-md shadow-accent-hover">
+                            <Image
+                                src={`/assets/work/8/game/frog/cour${index}.png`} // Dynamically load images
+                                alt={`Project 1 Image ${index}`}
+                                width={1920} // Full width for large screens
+                                height={1080} // Maintain aspect ratio
+                                className="rounded-lg shadow-lg"
+                            />
+                        </AnimatedContent>
+                    ))}
+                </div>
+            )}
+
+
 
         </div>
     );
