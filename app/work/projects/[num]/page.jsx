@@ -1,8 +1,11 @@
+
 import Image from "next/image"; // Import the Image component
 import projects from "@/components/data/data"; // Import your project data
 import AnimatedContent from "@/components/shared/AnimatedContent";
+import { HiOutlineDownload } from "react-icons/hi";
 
 const ProjectPage = async ({ params }) => {
+
     const { num } = await params; // Await the params object to access its properties
 
     // Find the project based on the number
@@ -11,6 +14,22 @@ const ProjectPage = async ({ params }) => {
     if (!project) {
         return <p className="text-center text-white">Project not found</p>;
     }
+
+    const gameName = [
+        { name: "baguette", file: "1.sb2" },
+        { name: "balon", file: "2.sb2" },
+        { name: "blue sky", file: "3.sb2" },
+        { name: "chasse clé", file: "4.sb2" },
+        { name: "chasse aux sorciere", file: "5.sb2" },
+        { name: "circulation", file: "6.sb2" },
+        { name: "jeux robot", file: "7.sb2" },
+        { name: "labyrinthe", file: "8.sb2" },
+        { name: "poursuite dangereuse", file: "9.sb2" },
+        { name: "rebond solo", file: "10.sb2" },
+        { name: "singe", file: "11.sb2" },
+    ];
+
+
 
     return (
         <div className="container mx-auto py-12">
@@ -22,6 +41,7 @@ const ProjectPage = async ({ params }) => {
                 <div className="flex flex-row flex-wrap justify-center items-center gap-4 mt-2">
                     {[1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12].map((index) => (
                         <AnimatedContent key={index} className="relative w-full max-w-4xl h-auto rounded-lg overflow-hidden shadow-md shadow-accent-hover">
+                            <h2></h2>
                             <Image
                                 src={`/assets/work/9/mangeoire/cour${index}.png`} // Dynamically load images
                                 alt={`Project 1 Image ${index}`}
@@ -227,6 +247,38 @@ const ProjectPage = async ({ params }) => {
                     ))}
                 </div>
             )}
+
+            {/* Display all games for project 14 */}
+            {num === "14" && (
+                <div className="flex flex-col items-center gap-4 mt-2">
+                    {gameName.map((game, index) => (
+                        <div
+                            key={index}
+                            className="relative w-full max-w-4xl h-auto"
+                        >
+                            <h2 className="text-lg uppercase px-4 py-2 font-semibold text-center mt-8">
+                                <a
+                                    className="hover:text-yellow-300 hover:underline transition-all duration-300"
+                                    href={`/assets/work/8/jeux/${game.file}`} // Path to the .sb2 file
+                                    download={game.file} // Trigger file download
+                                >
+                                    {game.name}
+                                    <HiOutlineDownload className="animate-bounce duration-700 inline-block ml-2 text-accent" />
+                                </a>
+                            </h2>
+                            <Image
+                                src={`/assets/work/8/jeux/${index + 1}.png`} // Dynamically load images
+                                alt={`Game ${game.name}`}
+                                width={1920} // Full width for large screens
+                                height={1080} // Maintain aspect ratio
+                                className="rounded-lg"
+                            />
+                        </div>
+                    ))}
+                </div>
+
+            )}
+
         </div>
     );
 };
