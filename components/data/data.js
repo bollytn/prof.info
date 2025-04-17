@@ -269,11 +269,31 @@ const projects = [
         classe:  ['7ᵉ année'],
         category: 'Scratch',
         title: "TP",
-        description: "des xxercices théorique + pratique avec un guide de programmation",
-        stack: [{ name: 'AppInventor ', }, { name: "activité débranché" }, { name: "activité pratique" }],
+        description: "des exercices théorique + pratique avec un guide de programmation",
+        stack: [{ name: 'Scratch ', }, { name: "activité débranché" }, { name: "activité pratique" }],
         image: '/assets/work/cover/thumb25.png',
         live: 'https://drive.google.com/file/d/16sKHvMLjos4eT_TAPDQRuu4OEsuoGzGx/view?usp=sharing',
-    }
+    },
+    {
+        num: '28',
+        classe:  ['7ᵉ année'],
+        category: 'Scratch',
+        title: "TP",
+        description: "des exercices pratique avec un guide de programmation",
+        stack: [{ name: 'Scratch ', }, { name: "activité débranché" }, { name: "activité pratique" }],
+        image: '/assets/work/cover/thumb26.png',
+        live: 'https://drive.google.com/file/d/1Uo4es5wG6grhkvVN3HXaUWh2k5r2akan/view?usp=sharing',
+    },
+    {
+        num: '29',
+        classe:  ['8ᵉ année'],
+        category: 'Scratch',
+        title: "TP",
+        description: "des exercices pratique avec un guide de programmation",
+        stack: [{ name: 'Scratch ', }, { name: "activité débranché" }, { name: "activité pratique" }],
+        image: '/assets/work/cover/thumb26.png',
+        live: 'https://drive.google.com/file/d/1RJT-Kg4AgVX-0ge5IJ20gDqa_5XdWnlw/view?usp=sharing',
+    },
 ]
 
 export default projects;
