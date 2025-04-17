@@ -264,6 +264,16 @@ const projects = [
         image: '/assets/work/cover/thumb24.png',
         live: 'https://drive.google.com/file/d/1HxR7VBvnGxahT0VXd5NlFsukbBR0EB_i/view?usp=sharing',
     },
+    {
+        num: '27',
+        classe:  ['7ᵉ année'],
+        category: 'Scratch',
+        title: "TP",
+        description: "des xxercices théorique + pratique avec un guide de programmation",
+        stack: [{ name: 'AppInventor ', }, { name: "activité débranché" }, { name: "activité pratique" }],
+        image: '/assets/work/cover/thumb25.png',
+        live: 'https://drive.google.com/file/d/16sKHvMLjos4eT_TAPDQRuu4OEsuoGzGx/view?usp=sharing',
+    }
 ]
 
 export default projects;
