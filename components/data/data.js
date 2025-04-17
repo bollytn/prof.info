@@ -218,9 +218,9 @@ const projects = [
     {
         num: '22',
         classe:  ['8ᵉ année'],
-        category: 'Scratch',
+        category: 'sécurité informatique',
         title: "Devoir de synthèse",
-        description: "devoir de synthèse de 8ᵉ année (3eme trimestre) intéractif",
+        description: "devoir de synthèse de 8ᵉ année (1ere trimestre) intéractif",
         stack: [{ name: "droit de l'image", }, { name: "sécurite informatique" }, { name: "exmain intéractif" }],
         image: '/assets/work/cover/thumb20.png',
         live: 'https://drive.google.com/file/d/16sKHvMLjos4eT_TAPDQRuu4OEsuoGzGx/view?usp=sharing',
@@ -234,8 +234,17 @@ const projects = [
         stack: [{ name: "support de stockage", }, { name: "sécurite informatique" }, { name: "fichier" }, { name: "exmain intéractif" }],
         image: '/assets/work/cover/thumb21.png',
         live: 'https://drive.google.com/file/d/1gVSIMqdqcXeK5QckY57APl0d6nQUZ2GF/view?usp=sharing',
+    },
+    {
+        num: '24',
+        classe:  ['8ᵉ année'],
+        category: 'envirenment informatique',
+        title: "Evaluation",
+        description: "domaines d'apprentissage : vie privée, sécurité informatique, environnement informatique",
+        stack: [{ name: "droit de l'image", }, { name: "sécurite informatique" }, { name: "environnement informatique" }, { name: "exmain intéractif" }, { name: "vie privée" }],
+        image: '/assets/work/cover/thumb22.png',
+        live: 'https://drive.google.com/file/d/1tOcmiR8QvLPAUvodtox6juNXujTXFoKV/view?usp=sharing',
     }
-
 ]
 
 export default projects;
