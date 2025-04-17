@@ -258,7 +258,7 @@ const ProjectPage = async ({ params, searchParams }) => {
                                 <a
                                     className="hover:text-yellow-300 hover:underline transition-all duration-300"
                                     href={`/assets/work/8/jeux/${game.file}`} // Path to the .sb2 file
-                                    download={game.file} // Trigger file download
+                                    download={game.name} // Trigger file download
                                 >
                                     {game.name}
                                     <HiOutlineDownload className="animate-bounce duration-700 inline-block ml-2 text-accent" />
@@ -363,18 +363,33 @@ const ProjectPage = async ({ params, searchParams }) => {
 
             {/* Display all images for project 21 */}
             {num === "21" && (
-                <div className="flex flex-row flex-wrap justify-center items-center gap-4 mt-2">
-                    {[1, 2, 3].map((index) => (
-                        <AnimatedContent key={index} className="relative w-full max-w-4xl h-auto rounded-lg overflow-hidden shadow-md shadow-accent-hover">
-                            <Image
-                                src={`/assets/work/8/devoirs/ds22019/cour${index}.png`} // Dynamically load images
-                                alt={`Project 1 Image ${index}`}
-                                width={1920} // Full width for large screens
-                                height={1080} // Maintain aspect ratio
-                                className="rounded-lg shadow-lg"
-                            />
-                        </AnimatedContent>
-                    ))}
+                <div className="flex flex-col items-center gap-4 mt-2">
+                    <h2 className="text-2xl font-semibold text-center">
+                        <a
+                            href="/assets/work/8/devoirs/ds22019/maison.sb2" // Path to the file
+                            download="maison.sb2" // File name for download
+                            className="hover:text-accent hover:underline"
+                        >
+                            Télécharger le fichier maison.sb2
+                            <HiOutlineDownload className="animate-bounce duration-700 inline-block ml-2 text-accent" />
+                        </a>
+                    </h2>
+                    <div className="flex flex-row flex-wrap justify-center items-center gap-4 mt-4">
+                        {[1, 2, 3].map((index) => (
+                            <AnimatedContent
+                                key={index}
+                                className="relative w-full max-w-4xl h-auto rounded-lg overflow-hidden shadow-md shadow-accent-hover"
+                            >
+                                <Image
+                                    src={`/assets/work/8/devoirs/ds22019/cour${index}.png`} // Dynamically load images
+                                    alt={`Project 1 Image ${index}`}
+                                    width={1920} // Full width for large screens
+                                    height={1080} // Maintain aspect ratio
+                                    className="rounded-lg shadow-lg"
+                                />
+                            </AnimatedContent>
+                        ))}
+                    </div>
                 </div>
             )}
 
