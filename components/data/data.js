@@ -244,7 +244,26 @@ const projects = [
         stack: [{ name: "droit de l'image", }, { name: "sécurite informatique" }, { name: "environnement informatique" }, { name: "exmain intéractif" }, { name: "vie privée" }],
         image: '/assets/work/cover/thumb22.png',
         live: 'https://drive.google.com/file/d/1tOcmiR8QvLPAUvodtox6juNXujTXFoKV/view?usp=sharing',
-    }
+    },{
+        num: '25',
+        classe:  ['8ᵉ année'],
+        category: 'Scratch',
+        title: "Devoir de synthèse",
+        description: "devoir de synthèse de 8ᵉ année (2eme trimestre) théorique + pratique",
+        stack: [{ name: 'Scratch ', }, { name: "activité débranché" }, { name: "activité pratique" }],
+        image: '/assets/work/cover/thumb23.png',
+        live: 'https://drive.google.com/file/d/1dPdW1WCSEfeEnZfjYcumxsRY1eF7onVt/view?usp=sharing',
+    },
+    {
+        num: '26',
+        classe:  ['9ᵉ année'],
+        category: 'AppInventor',
+        title: "Devoir de synthèse",
+        description: "devoir de synthèse de 9ᵉ année (1ere trimestre) théorique + pratique",
+        stack: [{ name: 'AppInventor ', }, { name: "activité débranché" }, { name: "activité pratique" }],
+        image: '/assets/work/cover/thumb24.png',
+        live: 'https://drive.google.com/file/d/1HxR7VBvnGxahT0VXd5NlFsukbBR0EB_i/view?usp=sharing',
+    },
 ]
 
 export default projects;
