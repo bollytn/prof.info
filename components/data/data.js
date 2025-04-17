@@ -214,7 +214,17 @@ const projects = [
         stack: [{ name: 'Scratch ', }, { name: "activité débranché" }, { name: "activité pratique" }],
         image: '/assets/work/cover/thumb19.png',
         live: 'https://drive.google.com/file/d/1tcDAfBRY0VWm0wfCVGwBcJFxuSriECnX/view?usp=sharing',
-    }
+    },
+    {
+        num: '22',
+        classe:  ['8ᵉ année'],
+        category: 'Scratch',
+        title: "Devoir de synthèse",
+        description: "devoir de synthèse de 8ᵉ année (3eme trimestre) intéractif",
+        stack: [{ name: "droit de l'image", }, { name: "sécurite informatique" }, { name: "exmain intéractif" }],
+        image: '/assets/work/cover/thumb20.png',
+        live: 'https://drive.google.com/file/d/16sKHvMLjos4eT_TAPDQRuu4OEsuoGzGx/view?usp=sharing',
+    },
 
 ]
 

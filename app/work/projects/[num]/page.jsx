@@ -393,7 +393,18 @@ const ProjectPage = async ({ params, searchParams }) => {
                 </div>
             )}
 
-
+            {/* Embed the quiz/data/index.html file only for project 22 */}
+            {num === "22" && (
+                <div className="mt-12">
+                    <iframe
+                        src="/assets/work/8/devoirs/ds12018/index.html" // Correct path to the HTML file in the public directory
+                        width="100%"
+                        height="700px"
+                        className="border-none"
+                        allowFullScreen
+                    ></iframe>
+                </div>
+            )}
 
         </div>
     );
