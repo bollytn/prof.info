@@ -148,7 +148,7 @@ const projects = [
     },
     {
         num: '15',
-        classe:  ['8ᵉ année'],
+        classe:  ['8ᵉ année','7ᵉ année'],
         category: 'Scratch ',
         title: "Activites débranchées niveau 1",
         description: "Chers collègues, lorsque vous présentez une nouvelle notion aux élèves avec Scratch, je vous invite à le présenter (d'abord) avec des activités débranchées (sans ordinateur). par exemple Il y a 3 séries de 10 cartes, de difficultés différentes :",
