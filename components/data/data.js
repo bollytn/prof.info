@@ -225,6 +225,16 @@ const projects = [
         image: '/assets/work/cover/thumb20.png',
         live: 'https://drive.google.com/file/d/16sKHvMLjos4eT_TAPDQRuu4OEsuoGzGx/view?usp=sharing',
     },
+    {
+        num: '23',
+        classe:  ['7ᵉ année'],
+        category: 'envirenment informatique',
+        title: "Devoir de synthèse",
+        description: "devoir de synthèse de 7ᵉ année (1eme trimestre) intéractif",
+        stack: [{ name: "support de stockage", }, { name: "sécurite informatique" }, { name: "fichier" }, { name: "exmain intéractif" }],
+        image: '/assets/work/cover/thumb21.png',
+        live: 'https://drive.google.com/file/d/1gVSIMqdqcXeK5QckY57APl0d6nQUZ2GF/view?usp=sharing',
+    }
 
 ]
 
