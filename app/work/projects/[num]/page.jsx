@@ -20,7 +20,7 @@ const gameName = [
 
 const ProjectPage = async ({ params, searchParams }) => {
     const { num } = await params; // Extract the project number from params
-    const selectedClas = searchParams?.selectedClass || "default class"; // Get the selected class from query parameters
+    const selectedClas = (await searchParams)?.selectedClass || "default class"; // Get the selected class from query parameters
 
 
     const project = projects.find((p) => p.num === num);
