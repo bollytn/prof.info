@@ -1,21 +1,54 @@
-// Import the functions you need from the SDKs you need
-import { initializeApp } from "firebase/app";
-import { getAnalytics } from "firebase/analytics";
-// TODO: Add SDKs for Firebase products that you want to use
-// https://firebase.google.com/docs/web/setup#available-libraries
+// Import Firebase SDK
+import { initializeApp } from 'firebase/app';
+import { getStorage, ref, listAll, getDownloadURL } from 'firebase/storage';
 
-// Your web app's Firebase configuration
-// For Firebase JS SDK v7.20.0 and later, measurementId is optional
+// Your Firebase configuration
 const firebaseConfig = {
-  apiKey: "AIzaSyAiSXhnsAmqqvRh_nNo9De9B-gQKHKJFvo",
-  authDomain: "prof-info-7be40.firebaseapp.com",
-  projectId: "prof-info-7be40",
-  storageBucket: "prof-info-7be40.firebasestorage.app",
-  messagingSenderId: "595167912868",
-  appId: "1:595167912868:web:e5aca9f4714062f6ab9731",
-  measurementId: "G-4K3YZ4JSP4"
+  apiKey: process.env.NEXT_PUBLIC_FIREBASE_API_KEY,
+  authDomain: process.env.NEXT_PUBLIC_FIREBASE_AUTH_DOMAIN,
+  projectId: process.env.NEXT_PUBLIC_FIREBASE_PROJECT_ID,
+  storageBucket: process.env.NEXT_PUBLIC_FIREBASE_STORAGE_BUCKET,
+  messagingSenderId: process.env.NEXT_PUBLIC_FIREBASE_MESSAGING_SENDER_ID,
+  appId: process.env.NEXT_PUBLIC_FIREBASE_APP_ID
 };
 
 // Initialize Firebase
 const app = initializeApp(firebaseConfig);
-const analytics = getAnalytics(app);
+const storage = getStorage(app);
+
+/**
+ * Fetches all images from a specific path in Firebase Storage
+ * @param {string} path - The path in storage to fetch images from (e.g., 'images/')
+ * @returns {Promise<Array>} - Array of objects with image URLs and metadata
+ */
+export async function getAllImagesFromStorage(path = '') {
+  try {
+    const storageRef = ref(storage, path);
+    const result = await listAll(storageRef);
+    
+    // Get download URLs for all items
+    const imagePromises = result.items.map(async (itemRef) => {
+      const url = await getDownloadURL(itemRef);
+      return {
+        url,
+        name: itemRef.name,
+        fullPath: itemRef.fullPath
+      };
+    });
+    
+    // Also get images from subdirectories if needed
+    const folderPromises = result.prefixes.map(folderRef => 
+      getAllImagesFromStorage(folderRef.fullPath)
+    );
+    
+    // Combine results from current directory and subdirectories
+    const itemResults = await Promise.all(imagePromises);
+    const folderResults = await Promise.all(folderPromises);
+    
+    // Flatten the array of arrays from subdirectories
+    return [...itemResults, ...folderResults.flat()];
+  } catch (error) {
+    console.error("Error fetching images from Firebase Storage:", error);
+    return [];
+  }
+}
