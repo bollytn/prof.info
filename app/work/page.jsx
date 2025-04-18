@@ -1,6 +1,6 @@
 // c:\Users\admin\web\prof.info\app\work\page.jsx
 'use client';
-import { useRef, useState } from 'react';
+import { useRef, useState, useEffect } from 'react';
 import projects from '@/components/data/data';
 import { SlideTabsExample } from '@/components/SlideTabsExample';
 import { motion, useScroll, useTransform, useSpring } from 'framer-motion';
@@ -10,6 +10,9 @@ import { Reveal } from '@/components/shared/Reveal'; // Import the Reveal compon
 
 import Link from "next/link"; // Import Link from Next.js
 import { useRouter } from "next/navigation";
+import { getFirestore, collection, getDocs } from "firebase/firestore"; // Import Firestore functions
+import app from "@/components/data/FirebaseConfig"; // Import the Firebase app configuration
+
 
 const gradient = (mask) =>
     `conic-gradient(black 0%, black ${mask ? 0 : 100}%, transparent ${mask ? 0 : 100}%, transparent 100%)`;
@@ -49,6 +52,27 @@ const ScrollImage = ({ project }) => {
 };
 
 const Work = () => {
+
+    {/*// Initialize Firestore
+    const [projects, setProjects] = useState([]); // State to store the fetched projects
+
+    useEffect(() => {
+        getProjects();
+    }, []);
+
+    const getProjects = async () => {
+        try {
+            const querySnapshot = await getDocs(collection(db, 'projects'));
+            const fetchedProjects = querySnapshot.docs.map((doc) => ({
+                id: doc.id,
+                ...doc.data(),
+            }));
+            setProjects(fetchedProjects);
+        } catch (error) {
+            console.error('Error fetching projects:', error);
+        }
+    }*/}
+
     const [selectedClass, setSelectedClass] = useState('9ᵉ année'); // Default selected class
     const router = useRouter(); // Initialize the router
 

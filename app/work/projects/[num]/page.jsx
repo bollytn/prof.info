@@ -4,6 +4,7 @@ import projects from "@/components/data/data"; // Import your project data
 import AnimatedContent from "@/components/shared/AnimatedContent";
 import { HiOutlineDownload } from "react-icons/hi";
 
+
 const gameName = [
     { name: "baguette", file: "1.sb2" },
     { name: "balon", file: "2.sb2" },
@@ -20,10 +21,11 @@ const gameName = [
 
 const ProjectPage = async ({ params, searchParams }) => {
     const { num } = await params; // Extract the project number from params
-    const selectedClas = searchParams?.selectedClass || "default class"; // Get the selected class from query parameters
-
+    const selectedClas = (await searchParams)?.selectedClass || "default class"; // Get the selected class from query parameters
 
     const project = projects.find((p) => p.num === num);
+
+
 
     if (!project) {
         return <p className="text-center text-white flex justify-center items-center h-screen text-4xl font-bold">Project not found</p>;
