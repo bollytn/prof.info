@@ -52,3 +52,18 @@ export async function getAllImagesFromStorage(path = '') {
     return [];
   }
 }
+
+/**
+ * Get a single image URL from Firebase Storage
+ * @param {string} path - Path to the image in Firebase Storage
+ * @returns {Promise<string>} - The download URL of the image
+ */
+export async function getImageFromStorage(path) {
+  try {
+    const imageRef = ref(storage, path);
+    return await getDownloadURL(imageRef);
+  } catch (error) {
+    console.error(`Error fetching image from path ${path}:`, error);
+    return null;
+  }
+}
