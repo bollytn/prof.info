@@ -1,0 +1,20 @@
+{
+    "name": "My Portfolio",
+    "short_name": "Portfolio",
+    "description": "A portfolio showcasing my projects, skills, and achievements.",
+    "start_url": "/",
+    "display": "standalone",
+    "background_color": "#ffffff",
+    "theme_color": "#1a202c",
+    "orientation": "portrait",
+    "icons": [
+        {
+            "src": "/iconLarge.png",
+            "sizes": "512x512",
+            "type": "image/png"
+        }
+    ],
+    "lang": "fr",
+    "scope": "/",
+    "categories": ["portfolio", "mahjoubi bilel", "prof informatique","enseignant informatique","scratch","appinventer","microbit"]
+}
