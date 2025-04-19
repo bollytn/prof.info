@@ -1,7 +1,7 @@
 {
-    "name": "My Portfolio",
-    "short_name": "Portfolio",
-    "description": "A portfolio showcasing my projects, skills, and achievements.",
+    "name": "prof informatique",
+    "short_name": "mahjoubi bilel",
+    "description": "enseignant informatique et formateur en scratch, appinventer et microbit",
     "start_url": "/",
     "display": "standalone",
     "background_color": "#ffffff",
