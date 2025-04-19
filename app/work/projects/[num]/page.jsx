@@ -97,7 +97,6 @@ const ProjectPage = async ({ params, searchParams }) => {
             )}
 
 
-
             {/* Display all images for project 4 */}
             {num === "04" && (
                 <div className="flex flex-row flex-wrap justify-center items-center gap-4 mt-2">
@@ -106,7 +105,7 @@ const ProjectPage = async ({ params, searchParams }) => {
                         width={1920}
                         height={1080}
                         className="rounded-lg shadow-lg w-full" />
-                    {[1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16].map((index) => (
+                    {[1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19].map((index) => (
                         <AnimatedContent key={index} className="relative w-full max-w-4xl h-auto rounded-lg overflow-hidden shadow-md shadow-accent-hover">
                             <Image
                                 src={`/assets/work/8/cahier/cour${index}.png`} // Dynamically load images
