@@ -680,7 +680,7 @@ const ProjectPage = async ({ params, searchParams }) => {
                 </div>
             )}
 
-            {/* Embed the quiz/data/index.html file only for project 24 */}
+            {/* Embed the quiz/data/index.html file only for project 30 */}
             {num === "30" && (
                 <div className="mt-12">
                     <Image src="/assets/work/cover/thumb27.png"
