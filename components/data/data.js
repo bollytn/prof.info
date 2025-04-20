@@ -248,7 +248,7 @@ const projects = [
         num: '25',
         classe:  ['8ᵉ année'],
         category: 'Scratch',
-        title: "Devoir de synthèse",
+        title: "Devoir de synthèse N°2",
         description: "devoir de synthèse de 8ᵉ année (2eme trimestre) théorique + pratique",
         stack: [{ name: 'Scratch ', }, { name: "activité débranché" }, { name: "activité pratique" }],
         image: '/assets/work/cover/thumb23.png',
@@ -258,7 +258,7 @@ const projects = [
         num: '26',
         classe:  ['9ᵉ année'],
         category: 'AppInventor',
-        title: "Devoir de synthèse",
+        title: "Devoir de synthèse N°1",
         description: "devoir de synthèse de 9ᵉ année (1ere trimestre) théorique + pratique",
         stack: [{ name: 'AppInventor ', }, { name: "activité débranché" }, { name: "activité pratique" }],
         image: '/assets/work/cover/thumb24.png',
@@ -294,6 +294,17 @@ const projects = [
         image: '/assets/work/cover/thumb26.png',
         live: 'https://drive.google.com/file/d/1RJT-Kg4AgVX-0ge5IJ20gDqa_5XdWnlw/view?usp=sharing',
     },
+    {
+        num: '30',
+        classe:  ['8ᵉ année'],
+        category: 'Scratch',
+        title: "Theoretical evaluation english",
+        description: "five questions about scratch",
+        stack: [{ name: 'Scratch ' }, { name: "looks" }, { name: "motion" }, { name: "controls" }, { name: "events" }],
+        image: '/assets/work/cover/thumb27.png',
+        live: 'https://drive.google.com/file/d/1RJT-Kg4AgVX-0ge5IJ20gDqa_5XdWnlw/view?usp=sharing',
+
+    }
 ]
 
 export default projects;
