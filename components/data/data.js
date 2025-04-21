@@ -299,7 +299,7 @@ const projects = [
         classe:  ['7ᵉ année'],
         category: 'Scratch',
         title: "Theoretical evaluation english",
-        description: "five questions about scratch",
+        description: "10 questions about scratch",
         stack: [{ name: 'Scratch ' }, { name: "looks" }, { name: "motion" }, { name: "controls" }, { name: "events" }],
         image: '/assets/work/cover/thumb27.png',
         live: 'https://drive.google.com/drive/folders/1Fce-t3eBIeFFschI69ZezzVfeSbEQmq4?usp=sharing',
