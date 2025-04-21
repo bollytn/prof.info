@@ -298,7 +298,7 @@ const projects = [
         num: '30',
         classe:  ['7ᵉ année'],
         category: 'Scratch',
-        title: "Theoretical evaluation english",
+        title: "Theoretical evaluation",
         description: "10 questions about scratch",
         stack: [{ name: 'Scratch ' }, { name: "looks" }, { name: "motion" }, { name: "controls" }, { name: "events" }],
         image: '/assets/work/cover/thumb27.png',
