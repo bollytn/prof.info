@@ -237,7 +237,7 @@ const projects = [
     },
     {
         num: '24',
-        classe:  ['8ᵉ année'],
+        classe:  ['8ᵉ année', '7ᵉ année'],
         category: 'envirenment informatique',
         title: "Evaluation",
         description: "domaines d'apprentissage : vie privée, sécurité informatique, environnement informatique",
@@ -303,7 +303,6 @@ const projects = [
         stack: [{ name: 'Scratch ' }, { name: "looks" }, { name: "motion" }, { name: "controls" }, { name: "events" }],
         image: '/assets/work/cover/thumb27.png',
         live: 'https://drive.google.com/drive/folders/1Fce-t3eBIeFFschI69ZezzVfeSbEQmq4?usp=sharing',
-
     }
 ]
 

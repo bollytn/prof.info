@@ -692,7 +692,7 @@ const ProjectPage = async ({ params, searchParams }) => {
                         src="/assets/work/8/quiz/testn12025/index.html" // Correct path to the HTML file in the public directory
                         width="100%"
                         height="700px"
-                        className="border-none"
+                        className="border-none w-full"
                         allowFullScreen
                     ></iframe>
                 </div>
