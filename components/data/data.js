@@ -333,6 +333,16 @@ const projects = [
         stack: [{ name: 'Scratch ' }, { name: "looks" }, { name: "motion" }, { name: "controls" }, { name: "events" }],
         image: '/assets/work/cover/thumb27.png',
         live: 'https://drive.google.com/drive/folders/1Fce-t3eBIeFFschI69ZezzVfeSbEQmq4?usp=sharing',
+    },
+    {
+        num: '34',
+        classe:  ['8ᵉ année', '7ᵉ année'],
+        category: 'Scratch',
+        title: "10 Scratch Programming Questions part 4",
+        description: "10 questions about scratch",
+        stack: [{ name: 'Scratch ' }, { name: "looks" }, { name: "motion" }, { name: "controls" }, { name: "events" }],
+        image: '/assets/work/cover/thumb27.png',
+        live: 'https://drive.google.com/drive/folders/1Fce-t3eBIeFFschI69ZezzVfeSbEQmq4?usp=sharing',
     }
 
 ]

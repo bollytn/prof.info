@@ -752,6 +752,24 @@ const ProjectPage = async ({ params, searchParams }) => {
                 </div>
             )}
 
+            {/* Embed the quiz/data/index.html file only for project 34 */}
+            {num === "34" && (
+                <div className="mt-12">
+                    <Image src="/assets/work/cover/thumb27.png"
+                        alt={project.title}
+                        width={1920}
+                        height={1080}
+                        className="rounded-lg shadow-lg w-full" />
+                    <iframe
+                        src="/assets/work/7/quiz/quizpart4/index.html" // Correct path to the HTML file in the public directory
+                        width="100%"
+                        height="700px"
+                        className="border-none w-full"
+                        allowFullScreen
+                    ></iframe>
+                </div>
+            )}
+
         </div>
     );
 };
