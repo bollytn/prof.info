@@ -303,7 +303,38 @@ const projects = [
         stack: [{ name: 'Scratch ' }, { name: "looks" }, { name: "motion" }, { name: "controls" }, { name: "events" }],
         image: '/assets/work/cover/thumb27.png',
         live: 'https://drive.google.com/drive/folders/1Fce-t3eBIeFFschI69ZezzVfeSbEQmq4?usp=sharing',
+    },
+    {
+        num: '31',
+        classe:  ['7ᵉ année'],
+        category: 'Scratch',
+        title: "10 Scratch Programming Questions part 1",
+        description: "10 questions about scratch",
+        stack: [{ name: 'Scratch ' }, { name: "looks" }, { name: "motion" }, { name: "controls" }, { name: "events" }],
+        image: '/assets/work/cover/thumb27.png',
+        live: 'https://drive.google.com/drive/folders/1Fce-t3eBIeFFschI69ZezzVfeSbEQmq4?usp=sharing',
+    },
+    {
+        num: '32',
+        classe:  ['7ᵉ année'],
+        category: 'Scratch',
+        title: "10 Scratch Programming Questions part 2",
+        description: "10 questions about scratch",
+        stack: [{ name: 'Scratch ' }, { name: "looks" }, { name: "motion" }, { name: "controls" }, { name: "events" }],
+        image: '/assets/work/cover/thumb27.png',
+        live: 'https://drive.google.com/drive/folders/1Fce-t3eBIeFFschI69ZezzVfeSbEQmq4?usp=sharing',
+    },
+    {
+        num: '33',
+        classe:  ['7ᵉ année'],
+        category: 'Scratch',
+        title: "10 Scratch Programming Questions part 3",
+        description: "10 questions about scratch",
+        stack: [{ name: 'Scratch ' }, { name: "looks" }, { name: "motion" }, { name: "controls" }, { name: "events" }],
+        image: '/assets/work/cover/thumb27.png',
+        live: 'https://drive.google.com/drive/folders/1Fce-t3eBIeFFschI69ZezzVfeSbEQmq4?usp=sharing',
     }
+
 ]
 
 export default projects;

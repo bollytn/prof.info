@@ -689,7 +689,61 @@ const ProjectPage = async ({ params, searchParams }) => {
                         height={1080}
                         className="rounded-lg shadow-lg w-full" />
                     <iframe
-                        src="/assets/work/8/quiz/testn12025/index.html" // Correct path to the HTML file in the public directory
+                        src="/assets/work/7/quiz/testn12025/index.html" // Correct path to the HTML file in the public directory
+                        width="100%"
+                        height="700px"
+                        className="border-none w-full"
+                        allowFullScreen
+                    ></iframe>
+                </div>
+            )}
+
+            {/* Embed the quiz/data/index.html file only for project 31 */}
+            {num === "31" && (
+                <div className="mt-12">
+                    <Image src="/assets/work/cover/thumb27.png"
+                        alt={project.title}
+                        width={1920}
+                        height={1080}
+                        className="rounded-lg shadow-lg w-full" />
+                    <iframe
+                        src="/assets/work/7/quiz/quizpart1/index.html" // Correct path to the HTML file in the public directory
+                        width="100%"
+                        height="700px"
+                        className="border-none w-full"
+                        allowFullScreen
+                    ></iframe>
+                </div>
+            )}
+
+            {/* Embed the quiz/data/index.html file only for project 32 */}
+            {num === "32" && (
+                <div className="mt-12">
+                    <Image src="/assets/work/cover/thumb27.png"
+                        alt={project.title}
+                        width={1920}
+                        height={1080}
+                        className="rounded-lg shadow-lg w-full" />
+                    <iframe
+                        src="/assets/work/7/quiz/quizpart2/index.html" // Correct path to the HTML file in the public directory
+                        width="100%"
+                        height="700px"
+                        className="border-none w-full"
+                        allowFullScreen
+                    ></iframe>
+                </div>
+            )}
+
+            {/* Embed the quiz/data/index.html file only for project 33 */}
+            {num === "33" && (
+                <div className="mt-12">
+                    <Image src="/assets/work/cover/thumb27.png"
+                        alt={project.title}
+                        width={1920}
+                        height={1080}
+                        className="rounded-lg shadow-lg w-full" />
+                    <iframe
+                        src="/assets/work/7/quiz/quizpart3/index.html" // Correct path to the HTML file in the public directory
                         width="100%"
                         height="700px"
                         className="border-none w-full"
