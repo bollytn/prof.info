@@ -70,7 +70,7 @@ const Work = () => {
             <div className='container mx-auto'>
                 <div className='flex flex-col xl:flex-row xl:gap-7'>
                     <div className='w-full xl:w-[50%] xl:h-[460px] flex flex-col xl:justify-between order-2 xl:order-none'>
-                        <div className='flex flex-col gap-7 h-[50%]'>
+                        <div className='flex flex-col gap-4 h-[50%] -mt-12'>
                             {/* Outline num */}
                             <AnimatedContent
                                 key={service.num} // Unique key for re-triggering animation
@@ -109,7 +109,7 @@ const Work = () => {
                                     variants={container}
                                     initial="hidden"
                                     animate="visible"
-                                    className='container flex flex-wrap gap-4'
+                                    className='container flex flex-wrap gap-2'
                                 >
                                     {service.description.points.map((point, idx) => (
                                         <motion.li key={idx} className='item text-accent' variants={item}>
@@ -126,7 +126,7 @@ const Work = () => {
                             >
                                 <span className="flex-grow bg-yellow-300 shadow-[0_0_5px_yellow] rounded h-px "></span>
                                 <span className="mx-3 text-lg font-medium text-accent/60 animate-bounce">
-                                    {service.title}
+                                    {service.category}
                                 </span>
                                 <span className="flex-grow bg-yellow-300 shadow-[0_0_5px_yellow] rounded h-px"></span>
                             </AnimatedContent>

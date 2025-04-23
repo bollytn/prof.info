@@ -2,6 +2,7 @@ const services = [
     {
         num: "01",
         title: "Nouvelles Technologies",
+        category: "Nouvelles Technologies",
         description: {
             points: [
                 "Formateur des nouvelles technologies pour les enseignants :",
@@ -32,20 +33,34 @@ const services = [
     },
     {
         num: "02",
-        title: "La programmation en 7ᵉ année",
+        title: "Grade 7ᵉ programming",
+        category: "Animation with Scratch",
         description: {
             points: [
-                "S’approprier un environnement informatique de travail.",
-                "Savoir coder ou décoder pour prévoir ou représenter des déplacements.",
-                "Programmer les déplacements d’un personnage à l’écran.",
-                "Réaliser un premier programme.",
-                "Modifier la scène.",
-                "Se familiariser avec le système de coordonnées.",
-                "Utiliser des événements.",
-                "Utiliser des sprites.",
-                 "creer une animation.",
-                "Utiliser des sons.",
-                "Utiliser des images.",
+                "Animations with Scratch :",
+                "",   
+                "Students are introduced ",
+                "to block programming",
+                "in Scratch",
+                "and how to think",
+                "like a programmer",
+                "while building fun",
+                "interactive projects",
+                "StoryLine",
+                "Animation",
+                "Conversation",
+                "Our unique class",
+                "uses the Scratch platform",
+                "to make learning",
+                "complex concepts",
+                "and advanced programming skills",
+                "more fun and engaging,",
+                "By the end of the course,",
+                "students will have",
+                "the ability to code",
+                "their own Animation",
+                "and will be well prepared",
+                "to enter Logic with Scratch."
             ]
         },
         link: "#",
@@ -53,19 +68,33 @@ const services = [
     },
     {
         num: "03",
-        title: "La programmation en 8ᵉ année",
+        title: "Grade 8ᵉ programming",
+        category: "Games with Scratch",
         description: {
             points: [
-                "Définir les mécanismes du jeu :",
-                "Compléter le programme.",
-                "Créer des boucles.",
-                "Programmer des instructions conditionnelles.",
-                "Compléter le programme en réinvestissant les notions de test,",
-                "condition et boucle.",
-                "Utiliser les variables.",
-                 "Utiliser des fonctions.",
-                "Utiliser des listes.",
-               
+                "Games with Scratch :",
+                "",   
+                "Students will learn",
+                "powerful programming",
+                "concepts",
+                "by using Scratch’s",
+                "easy-to-use interface.",
+                "Every lesson",
+                "is spent creating a game",
+                "that teaches",
+                "crucial",
+                "programming",
+                "skills",
+                "such as utilizing",
+                "and creating variables,",
+                "implementing loops,",
+                "and using conditionals.",
+                "By the end of the course,",
+                "students will have",
+                "the ability to code",
+                "their own games",
+                "and will be well prepared",
+                "to enter Logic with Scratch."
             ]
         },
         link: "#",
@@ -74,6 +103,7 @@ const services = [
     {
         num: "04",
         title: "AppInventor en 9ᵉ année",
+        category: "App Inventor",
         description: {
             points: [
                 "Création des applications fonctionnant sur tous les appareils android.",
