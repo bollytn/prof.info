@@ -8,6 +8,7 @@ import PageTransition from "@/components/PageTransition";
 import StairTransition from "@/components/StairTransition";
 
 import { Analytics } from "@vercel/analytics/react";
+import {GoogleAnalytics} from "@next/third-parties/google";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -90,8 +91,7 @@ export default function RootLayout({ children }) {
         <StairTransition />
         <PageTransition>
           {children} 
-           <Analytics />  
-          <SpeedInsights />
+           <GoogleAnalytics gaId="G-8WK8XLBXLV" />  
         </PageTransition>
       </body>
     </html>
