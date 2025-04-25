@@ -353,6 +353,16 @@ const projects = [
         image: '/assets/work/cover/thumb27.png',
         live: 'https://drive.google.com/drive/folders/1Fce-t3eBIeFFschI69ZezzVfeSbEQmq4?usp=sharing',
     },
+    {
+        num: '36',
+        classe:  ['9ᵉ année'],
+        category: 'App Inventor',
+        title: "10 projects about App Inventor with a guide",
+        description: "10 questions about App Inventor",
+        stack: [{ name: 'App Inventor ' }, { name: "Cliquez-moi" }, { name: "Trouver le nombre tiré au hasard" }, { name: "Daft Punk" }, { name: "Prise de rendez-vous" }, { name: "Calculatrice" }, { name: "Sandwich : mayo?Ketcheup?" }, { name: "Vibrations et codes barres" }, { name: "Photos et Videos" }, { name: "Table de multiplication" }, { name: "Boussol" }, { name: "Transmition radio" }, { name: "Capteur de température" }, { name: "Capteur de lumière" }, { name: "Capteur de mouvement" }, { name: "Compteur de temps" }, { name: "Pédomètre" }],
+        image: '/assets/work/cover/thumb28.png',
+        live: 'https://drive.google.com/drive/folders/1Fce-t3eBIeFFschI69ZezzVfeSbEQmq4?usp=sharing',
+    },
 
 ]
 
