@@ -91,7 +91,7 @@ export default function RootLayout({ children }) {
         <StairTransition />
         <PageTransition>
           {children} 
-           <GoogleAnalytics gaId="G-8WK8XLBXLV" />  
+           <GoogleAnalytics gaId="G-YTT7VFLWN2" />  
         </PageTransition>
       </body>
     </html>
