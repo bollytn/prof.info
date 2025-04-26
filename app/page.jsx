@@ -6,6 +6,7 @@ import { FiDownload } from "react-icons/fi";
 import Link from 'next/link';
 
 import AnimatedBox from '@/components/shared/AnimatedBox';
+import Counter from '@/components/shared/Counter';
 
 export default function Home() {
   return (
@@ -21,6 +22,19 @@ export default function Home() {
               salut, Je suis <br /> <span className='text-accent capitalize h1'>mahjoubi bilel</span>
             </h1>
             <p className='max-w-[500px] mb-6 text-white/80'>Enseignant multidisciplinaires, professionnel dynamique et respecté, affichant une feuille de route exemplaire pour ce qui est de concevoir et d’offrir d’excellents plans de cours interactifs spécialement adaptés aux besoins de chaque élève.</p>
+
+
+            {/* counter vistor website */}
+            <div className='flex flex-col xl:flex-row gap-8 mb-4 xl:mb-0'>
+              <div className='flex items-center justify-center gap-4'>
+                <span className=' text-2xl font-semibold'>Visiteurs :</span>
+                <Counter
+                  containerStyles='flex items-center'
+                  iconStyles='w-16 h-16 border border-accent rounded-full flex justify-center items-center text-accent text-2xl'
+                />
+              </div>
+            </div>
+
             {/* btn && social */}
             <div className='flex flex-col xl:flex-row items-center gap 8'>
               <AnimatedBox>
@@ -40,6 +54,7 @@ export default function Home() {
                   iconStyles='w-9 h-9 border border-accent rounded-full flex justify-center items-center text-accent text-base
               hover:bg-accent hover:text-primary hover:transition-all duration-500'/>
               </div>
+
             </div>
           </div>
           {/* photo */}
