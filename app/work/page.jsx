@@ -1,4 +1,3 @@
-// c:\Users\admin\web\prof.info\app\work\page.jsx
 'use client';
 import { useRef, useState, useEffect } from 'react';
 import projects from '@/components/data/data';
@@ -6,18 +5,22 @@ import { SlideTabsExample } from '@/components/SlideTabsExample';
 import { motion, useScroll, useTransform, useSpring } from 'framer-motion';
 import Image from 'next/image';
 import AnimatedContent from '@/components/shared/AnimatedContent';
-import { Reveal } from '@/components/shared/Reveal'; // Import the Reveal component
-
-import Link from "next/link"; // Import Link from Next.js
+import { Reveal } from '@/components/shared/Reveal';
+import Link from "next/link";
 import { useRouter } from "next/navigation";
+<<<<<<< HEAD
 import { getFirestore, collection, getDocs } from "firebase/firestore"; // Import Firestore functions
 import app from "@/components/data/FirebaseConfig"; // Import the Firebase app configuration
 
+=======
+import { getAllImagesFromStorage } from '@/components/data/firebaseConfig';
+>>>>>>> f7d650f49ef461d8c3daf23bef459cab206ad493
 
 const gradient = (mask) =>
     `conic-gradient(black 0%, black ${mask ? 0 : 100}%, transparent ${mask ? 0 : 100}%, transparent 100%)`;
 
 const ScrollImage = ({ project }) => {
+
     // ... (ScrollImage component remains the same)
     const target = useRef(null);
     const { scrollYProgress } = useScroll({
@@ -52,6 +55,7 @@ const ScrollImage = ({ project }) => {
 };
 
 const Work = () => {
+<<<<<<< HEAD
 
     {/*// Initialize Firestore
     const [projects, setProjects] = useState([]); // State to store the fetched projects
@@ -75,6 +79,31 @@ const Work = () => {
 
     const [selectedClass, setSelectedClass] = useState('9ᵉ année'); // Default selected class
     const router = useRouter(); // Initialize the router
+=======
+    const [selectedClass, setSelectedClass] = useState('9ᵉ année');
+    const [firebaseImages, setFirebaseImages] = useState([]);
+    const [loading, setLoading] = useState(true);
+    const router = useRouter();
+
+    useEffect(() => {
+        // Fetch images when component mounts
+        const fetchImages = async () => {
+            try {
+                setLoading(true);
+                // You can specify a path like 'projects/' or leave empty to get all images
+                const images = await getAllImagesFromStorage('projects/');
+                setFirebaseImages(images);
+                console.log('Fetched images:', images);
+            } catch (error) {
+                console.error('Error fetching images:', error);
+            } finally {
+                setLoading(false);
+            }
+        };
+
+        fetchImages();
+    }, []);
+>>>>>>> f7d650f49ef461d8c3daf23bef459cab206ad493
 
     // Remove this function - no longer needed for the link
     const handleProjectClick = (num) => {
@@ -104,7 +133,15 @@ const Work = () => {
                 className="fixed top-0 left-0 right-0 h-1 bg-yellow-300 origin-left z-50"
                 style={{ scaleX }}
             />
+    {/* Loading indicator */}
+    {loading && (
+                <div className="fixed inset-0 flex items-center justify-center bg-black/50 z-50">
+                    <div className="animate-spin rounded-full h-12 w-12 border-t-2 border-b-2 border-yellow-300"></div>
+                </div>
+            )}
 
+            {/* Rest of your component */}
+            {/* ... */}
             <motion.section
                 initial={{ opacity: 0 }}
                 animate={{
