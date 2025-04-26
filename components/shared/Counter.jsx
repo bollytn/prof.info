@@ -19,7 +19,7 @@ const Counter = ({ containerStyles, iconStyles }) => {
             <div className={containerStyles}>
                 <div className={iconStyles}>
                     {startCounter && (
-                        <CountUp start={0} end={320} duration={10} delay={0}>
+                        <CountUp start={0} end={325} duration={10} delay={0}>
                             {({ countUpRef }) => (
                                 <span ref={countUpRef} className="text-2xl font-bold text-accent" />
                             )}
