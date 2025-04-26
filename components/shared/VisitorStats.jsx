@@ -4,30 +4,33 @@ import React, { useState, useEffect } from 'react';
 const VisitorStats = () => {
     const [stats, setStats] = useState({
         today: 0,
-        topDay: { count: 0, date: '' },
+        topDay: { count: 0 },
         online: 0,
     });
 
     useEffect(() => {
         const fetchStats = async () => {
             try {
-                const response = await fetch('@/api/visitor-stats'); // API pour récupérer les statistiques
+                const response = await fetch('/api/visitor-stats');
+                if (!response.ok) {
+                    throw new Error(`HTTP error! status: ${response.status}`);
+                }
                 const data = await response.json();
                 setStats({
                     today: data.today || 0,
-                    topDay: data.topDay || { count: 0, date: '' },
+                    topDay: data.topDay || { count: 0 },
                     online: data.online || 0,
                 });
             } catch (error) {
-                console.error('Erreur lors de la récupération des statistiques :', error);
+                console.error('Error fetching visitor stats:', error);
             }
         };
 
-        // Appeler l'API toutes les 5 secondes pour des mises à jour en temps réel
+        // Fetch stats every 5 seconds for real-time updates
         fetchStats();
         const interval = setInterval(fetchStats, 5000);
 
-        return () => clearInterval(interval); // Nettoyer l'intervalle lors du démontage
+        return () => clearInterval(interval); // Cleanup interval on component unmount
     }, []);
 
     return (
@@ -48,7 +51,6 @@ const VisitorStats = () => {
             <p style={{ fontSize: '1rem' }}>Visites aujourd'hui : {stats.today}</p>
             <p style={{ fontSize: '1rem' }}>
                 Top visites par jour : {stats.topDay.count} <br />
-                Le {stats.topDay.date}
             </p>
             <p style={{ fontSize: '1rem' }}>Visiteurs en ligne : {stats.online}</p>
         </div>
