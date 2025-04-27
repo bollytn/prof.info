@@ -1,5 +1,4 @@
 body {
     -webkit-user-select: none; /* Disable text selection */
     -webkit-touch-callout: none; /* Disable callout on touch devices */
-    pointer-events: none; /* Disable pointer events */
 }
