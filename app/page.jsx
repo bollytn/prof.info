@@ -7,9 +7,10 @@ import { FiDownload } from "react-icons/fi";
 import Link from 'next/link';
 
 import AnimatedBox from '@/components/shared/AnimatedBox';
-import Counter from '@/components/shared/Counter';
+
 import VisitorStats from '@/components/shared/VisitorStats';
 
+import '@/app/styles/globals.css';
 
 
 export default function Home() {
