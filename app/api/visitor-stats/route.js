@@ -1,13 +1,25 @@
-let visitorCount = 60; // Nombre de visites aujourd'hui
-let topDay = { count: 500}; // Top visites par jour
-let onlineVisitors = 5; // Nombre de visiteurs en ligne
+let visitorCount = 95; // Nombre de visites aujourd'hui
+let topDay = { count: 537 }; // Top visites par jour
+let onlineVisitors = 2; // Nombre de visiteurs en ligne
+let lastUpdateDate = new Date().toLocaleDateString(); // Track the last update date
 
 export async function GET(request) {
-    // Simuler une augmentation des visiteurs en ligne
-    onlineVisitors = Math.floor(Math.random() * 50) + 5;
+    const currentDate = new Date().toLocaleDateString();
 
-    // Simuler une augmentation des visites aujourd'hui
-    visitorCount += Math.floor(Math.random() * 1);
+    // Check if the date has changed
+    if (currentDate !== lastUpdateDate) {
+        // Update visitorCount with a random value between 80 and 200
+        visitorCount = Math.floor(Math.random() * (200 - 80 + 1)) + 80;
+        lastUpdateDate = currentDate; // Update the last update date
+
+        // Optionally update topDay if visitorCount exceeds the current topDay count
+        if (visitorCount > topDay.count) {
+            topDay = { count: visitorCount };
+        }
+    }
+
+    // Simulate an increase in online visitors
+    onlineVisitors = Math.floor(Math.random() * 4) + 1; // Random number between 1 and 4
 
     return new Response(
         JSON.stringify({

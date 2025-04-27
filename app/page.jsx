@@ -7,6 +7,7 @@ import Link from 'next/link';
 
 import AnimatedBox from '@/components/shared/AnimatedBox';
 import Counter from '@/components/shared/Counter';
+import VisitorStats from '@/components/shared/VisitorStats';
 
 export default function Home() {
   return (
@@ -24,7 +25,7 @@ export default function Home() {
             <p className='max-w-[500px] mb-6 text-white/80'>Enseignant multidisciplinaires, professionnel dynamique et respecté, affichant une feuille de route exemplaire pour ce qui est de concevoir et d’offrir d’excellents plans de cours interactifs spécialement adaptés aux besoins de chaque élève.</p>
 
 
-            {/* counter vistor website */}
+            {/* counter vistor website
             <div className='flex flex-col xl:flex-row gap-8 mb-4 xl:mb-0'>
               <div className='flex items-center justify-center gap-4'>
                 <span className=' text-2xl font-semibold'>Visiteurs :</span>
@@ -33,10 +34,12 @@ export default function Home() {
                   iconStyles='w-16 h-16 border border-accent rounded-full flex justify-center items-center text-accent text-2xl'
                 />
               </div>
-            </div>
+            </div> */}
+            {/* Statistiques des visiteurs */}
+            <VisitorStats />
 
             {/* btn && social */}
-            <div className='flex flex-col xl:flex-row items-center gap 8'>
+            <div className='flex flex-col xl:flex-row items-center gap 8 mt-6 xl:mt-0'>
               <AnimatedBox>
                 <Button
                   variant="outline"
