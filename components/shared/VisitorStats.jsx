@@ -6,7 +6,7 @@ const VisitorStats = () => {
     const [stats, setStats] = useState({
         today: 0,
         topDay: { count: 0 },
-        online: 0,
+        online: 1,
     });
     const [startCount, setStartCount] = useState(false); // State to control when the count starts
 
@@ -21,7 +21,7 @@ const VisitorStats = () => {
                 setStats({
                     today: data.today || 0,
                     topDay: data.topDay || { count: 0 },
-                    online: data.online || 0,
+                    online: data.online || 1,
                 });
             } catch (error) {
                 console.error('Error fetching visitor stats:', error);
