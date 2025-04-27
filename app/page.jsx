@@ -1,4 +1,4 @@
-
+'use client';
 // Project: portfolio
 import Photo from '@/components/Photo';
 import Social from '@/components/Social';
@@ -10,10 +10,33 @@ import AnimatedBox from '@/components/shared/AnimatedBox';
 
 import VisitorStats from '@/components/shared/VisitorStats';
 
+import { useEffect } from 'react';
 import '@/app/styles/globals.css';
 
 
 export default function Home() {
+
+  useEffect(() => {
+    const handleKeyDown = (e) => {
+      if (e.key === 'PrintScreen') {
+        navigator.clipboard.writeText('Screenshots are disabled!');
+        alert('Screenshots are disabled on this site.');
+      }
+    };
+
+    const handlePaste = (e) => {
+      e.preventDefault();
+      alert('Pasting screenshots is disabled!');
+    };
+
+    window.addEventListener('keydown', handleKeyDown);
+    window.addEventListener('paste', handlePaste);
+
+    return () => {
+      window.removeEventListener('keydown', handleKeyDown);
+      window.removeEventListener('paste', handlePaste);
+    };
+  }, []);
 
   return (
     <section className='h-screen flex items-center justify-center'>
