@@ -1,3 +1,4 @@
+
 // Project: portfolio
 import Photo from '@/components/Photo';
 import Social from '@/components/Social';
@@ -10,7 +11,9 @@ import Counter from '@/components/shared/Counter';
 import VisitorStats from '@/components/shared/VisitorStats';
 
 
+
 export default function Home() {
+
   return (
     <section className='h-screen flex items-center justify-center'>
       <div className="container mx-auto h-full">

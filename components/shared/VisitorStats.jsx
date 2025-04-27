@@ -1,8 +1,11 @@
 'use client';
+
 import React, { useState, useEffect } from 'react';
 import CountUp from 'react-countup';
+import useVisitors from '@/app/hooks/useVisitors';
 
 const VisitorStats = () => {
+    const count = useVisitors(); // Fetch visitor count from the custom hook
     const [stats, setStats] = useState({
         today: 0,
         topDay: { count: 0 },
@@ -85,15 +88,8 @@ const VisitorStats = () => {
             </p>
             <p style={{ fontSize: '1rem' }}>
                 Visiteurs en ligne :{' '}
-                {startCount && (
-                    <CountUp
-                        start={0}
-                        end={stats.online}
-                        duration={10}
-                        separator=","
-                        style={{ fontWeight: 'bold', fontSize: '1.2rem' }}
-                    />
-                )}
+                {/* use count from the custom hook */}
+                {count}
             </p>
         </div>
     );
