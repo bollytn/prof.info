@@ -1,4 +1,4 @@
-let visitorCount = 95; // Nombre de visites aujourd'hui
+let visitorCount = 150; // Nombre de visites aujourd'hui
 let topDay = { count: 537 }; // Top visites par jour
 let onlineVisitors = 2; // Nombre de visiteurs en ligne
 let lastUpdateDate = new Date().toLocaleDateString(); // Track the last update date
