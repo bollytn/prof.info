@@ -19,7 +19,7 @@ export async function GET(request) {
     }
 
     // Simulate an increase in online visitors
-    onlineVisitors = Math.floor(Math.random() * 4) + 1; // Random number between 1 and 4
+    onlineVisitors = Math.floor(Math.random() * 2) + 1; 
 
     return new Response(
         JSON.stringify({
