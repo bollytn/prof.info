@@ -21,17 +21,20 @@ export default function Home() {
       if (e.key === 'PrintScreen') {
         navigator.clipboard.writeText('Screenshots are disabled!');
         alert('Screenshots are disabled on this site.');
+        e.preventDefault(); // Empêche le comportement par défaut
       }
     };
 
     const handlePaste = (e) => {
       e.preventDefault();
-      alert('Pasting screenshots is disabled!');
+      alert('Le collage de captures d’écran est désactivé !');
     };
 
+    // Ajouter les écouteurs d'événements
     window.addEventListener('keydown', handleKeyDown);
     window.addEventListener('paste', handlePaste);
 
+    // Nettoyer les écouteurs d'événements lors du démontage
     return () => {
       window.removeEventListener('keydown', handleKeyDown);
       window.removeEventListener('paste', handlePaste);
@@ -39,7 +42,7 @@ export default function Home() {
   }, []);
 
   return (
-    <section className='h-screen flex items-center justify-center'>
+    <section className='h-screen flex items-center justify-center '>
       <div className="container mx-auto h-full">
         <div className="flex flex-col xl:flex-row items-center justify-between xl:pt-8 xl:pb-24">
           {/* text */}

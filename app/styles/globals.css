@@ -1,4 +1,16 @@
 body {
-    -webkit-user-select: none; /* Disable text selection */
-    -webkit-touch-callout: none; /* Disable callout on touch devices */
+    -webkit-user-select: none; /* Désactiver la sélection de texte */
+    -webkit-touch-callout: none; /* Désactiver les menus contextuels sur les appareils tactiles */
+    user-select: none; /* Désactiver la sélection de texte pour tous les navigateurs */
+}
+
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0); /* Couleur transparente */
+    z-index: 9999;
+    pointer-events: none; /* Empêche les interactions */
 }
