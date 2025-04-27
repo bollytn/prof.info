@@ -58,7 +58,7 @@ const VisitorStats = () => {
             <p style={{ fontSize: '1.2rem', fontWeight: 'bold' }}>
                 Aujourd'hui : {new Date().toLocaleDateString('fr-FR', { day: '2-digit', month: '2-digit', year: 'numeric' })}
             </p>
-            <p style={{ fontSize: '1rem' }}>
+            {/*<p style={{ fontSize: '1rem' }}>
                 Visites aujourd'hui :{' '}
                 {startCount && (
                     <CountUp
@@ -69,7 +69,7 @@ const VisitorStats = () => {
                         style={{ fontWeight: 'bold', fontSize: '1.2rem' }}
                     />
                 )}
-            </p>
+            </p>*/}
             <p style={{ fontSize: '1rem' }}>
                 Top visites par jour :{' '}
                 {startCount && (
