@@ -48,22 +48,22 @@ const experience = {
     items: [
         {
             company: 'Ecole Préparatoire bousalem',
-            position: 'enseignant informatique',
+            position: 'enseignant en informatique',
             duration: '2012 - Présent'
         },
         {
             company: 'centre pilote "المركز النموذجي للدعم المدرسي"',
-            position: 'enseignant informatique',
+            position: 'enseignant en informatique',
             duration: '2025 - Présent'
         },
         {
             company: 'Ecole Privée les génies',
-            position: 'enseignant informatique',
+            position: 'enseignant en informatique',
             duration: '2023 - Présent'
         },
         {
             company: 'Tanit-School (Tunisie)',
-            position: 'enseignant informatique',
+            position: 'enseignant en informatique',
             duration: '2010 - 2012'
         }
     ]
