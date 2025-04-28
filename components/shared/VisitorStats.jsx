@@ -37,7 +37,7 @@ const VisitorStats = () => {
             setStartCount(true);
         }, 2000); // 2-second delay
 
-        const interval = setInterval(fetchStats, 10000); // Fetch stats every 5 seconds
+        const interval = setInterval(fetchStats, 10000); // Fetch stats every 10 seconds
 
         return () => {
             clearTimeout(timer); // Cleanup the timer
@@ -54,25 +54,13 @@ const VisitorStats = () => {
                 borderRadius: '10px',
                 color: 'white',
                 fontFamily: 'Arial, sans-serif',
-                textAlign: 'center',
+                textAlign: 'center', // Centrer le contenu
                 boxShadow: '0 4px 6px rgba(0, 0, 0, 0.1)',
             }}
         >
             <p style={{ fontSize: '1.2rem', fontWeight: 'bold' }}>
                 Aujourd'hui : {new Date().toLocaleDateString('fr-FR', { day: '2-digit', month: '2-digit', year: 'numeric' })}
             </p>
-            {/*<p style={{ fontSize: '1rem' }}>
-                Visites aujourd'hui :{' '}
-                {startCount && (
-                    <CountUp
-                        start={0}
-                        end={stats.today}
-                        duration={10}
-                        separator=","
-                        style={{ fontWeight: 'bold', fontSize: '1.2rem' }}
-                    />
-                )}
-            </p>*/}
             <p style={{ fontSize: '1rem' }}>
                 Top visites par jour :{' '}
                 {startCount && (
@@ -87,10 +75,47 @@ const VisitorStats = () => {
                 <br />
             </p>
             <p style={{ fontSize: '1rem' }}>
-                Visiteurs en ligne :{' '}
-                {/* use count from the custom hook */}
-                {count}
+                Visiteurs en ligne {' '}
+
             </p>
+
+            {/* Nouveau code du compteur de visites */}
+            <div id="sfcqtw2p1a3d5chjtu23c8gtbfyfglu59ft"></div>
+            <script
+                type="text/javascript"
+                src="https://counter4.optistats.ovh/private/counter.js?c=qtw2p1a3d5chjtu23c8gtbfyfglu59ft&down=async"
+                async
+            ></script>
+            <noscript>
+                <a
+                    href="https://www.compteurdevisite.com"
+                    title="compteur de visite pour blog"
+                    style={{ display: 'inline-block', margin: '10px auto' }} // Centrer le lien
+                >
+                    <img
+                        src="https://counter4.optistats.ovh/private/compteurdevisite.php?c=qtw2p1a3d5chjtu23c8gtbfyfglu59ft"
+                        border="0"
+                        title="compteur de visite pour blog"
+                        alt="compteur de visite pour blog"
+                        width="100"
+                        height="20"
+                    />
+                </a>
+            </noscript>
+            <a
+                href="https://www.compteurdevisite.com"
+                title="compteur de visite pour blog"
+                style={{ display: 'inline-block', margin: '10px 0px auto' }} // Centrer le lien
+            >
+                <img
+                    src="https://counter4.optistats.ovh/private/compteurdevisite.php?c=qtw2p1a3d5chjtu23c8gtbfyfglu59ft"
+                    border="0"
+                    title="compteur de visite pour blog"
+                    alt="compteur de visite pour blog"
+                    width="100"
+                    height="20"
+                />
+            </a>
         </div>
     );
 };

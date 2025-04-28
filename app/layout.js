@@ -9,6 +9,7 @@ import StairTransition from "@/components/StairTransition";
 
 import { Analytics } from "@vercel/analytics/react";
 import {GoogleAnalytics} from "@next/third-parties/google";
+import Image from "next/image";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
