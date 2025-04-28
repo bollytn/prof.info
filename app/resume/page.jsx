@@ -53,7 +53,7 @@ const experience = {
         },
         {
             company: 'centre pilote "المركز النموذجي للدعم المدرسي"',
-            position: 'enseignant en informatique',
+            position: 'computer science teacher',
             duration: '2025 - Présent'
         },
         {
