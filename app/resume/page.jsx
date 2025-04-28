@@ -52,6 +52,11 @@ const experience = {
             duration: '2012 - Présent'
         },
         {
+            company: 'الجمعية التونسية للبرمجة و الروبوتيك',
+            position: 'Formateur HTML/CSS/JS/PHP/MySQL',
+            duration: '2022 - Présent'
+        },
+        {
             company: 'centre pilote "المركز النموذجي للدعم المدرسي"',
             position: 'computer science teacher',
             duration: '2025 - Présent'
