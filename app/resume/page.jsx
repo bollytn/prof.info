@@ -44,12 +44,22 @@ const about = {
 const experience = {
     icon: '/assets/resume/exprience.svg', // Path to badge.svg
     title: 'Mon Expérience',
-    description: "J'ai plus de 15 ans d'expérience dans le développement web et l'enseignement de la programmation. J'ai travaillé pour des entreprises de taille moyenne et grande, et j'ai également enseigné la programmation à des étudiants de tous niveaux.",
+    description: "J'ai plus de 15 ans d'expérience dans l'enseignement de la programmation. j'ai également enseigné la programmation à des étudiants de tous niveaux.",
     items: [
         {
             company: 'Ecole Préparatoire bousalem',
             position: 'enseignant informatique',
             duration: '2012 - Présent'
+        },
+        {
+            company: 'centre pilote',
+            position: 'enseignant informatique',
+            duration: '2025 - Présent'
+        },
+        {
+            company: 'Ecole Privée les génies',
+            position: 'enseignant informatique',
+            duration: '2023 - Présent'
         },
         {
             company: 'Tanit-School (Tunisie)',
