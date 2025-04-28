@@ -52,7 +52,7 @@ const experience = {
             duration: '2012 - Présent'
         },
         {
-            company: 'centre pilote',
+            company: 'centre pilote "المركز النموذجي للدعم المدرسي"',
             position: 'enseignant informatique',
             duration: '2025 - Présent'
         },
