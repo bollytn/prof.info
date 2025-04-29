@@ -363,6 +363,16 @@ const projects = [
         image: '/assets/work/cover/thumb28.png',
         live: 'https://drive.google.com/drive/folders/1Fce-t3eBIeFFschI69ZezzVfeSbEQmq4?usp=sharing',
     },
+    {
+        num: '37',
+        classe:  ['7ᵉ année'],
+        category: 'Scratch',
+        title: "Running unicorn",
+        description: "Good evening, Project n°2 of 7ᵉ Pilot Year. I hope you enjoy it, dear colleagues.",
+        stack: [{ name: 'Project' }, { name: "motion" }, { name: "looks" }, { name: "repeat" }, { name: "event" }, { name: "animation" }],
+        image: '/assets/work/cover/thumb29.png',
+        live: 'https://mega.nz/file/8uA3SDaY#WbPMS7URZ9qDrkXbRpceArXhkwaVFoXR-Px_GJ5kWTw',
+    },
 
 ]
 

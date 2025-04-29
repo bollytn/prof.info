@@ -810,6 +810,28 @@ const ProjectPage = async ({ params, searchParams }) => {
                 </div>
             )}
 
+            {/* Display all images for project 37 */}
+            {num === "37" && (
+                <div className="flex flex-row flex-wrap justify-center items-center gap-4 mt-2">
+                    <Image src="/assets/work/cover/thumb29.png"
+                        alt={project.title}
+                        width={1920}
+                        height={1080}
+                        className="rounded-lg shadow-lg w-full" />
+                    {[1, 2, 3, 4, 5, 6].map((index) => (
+                        <AnimatedContent key={index} className="relative w-full max-w-4xl h-auto rounded-lg overflow-hidden shadow-md shadow-accent-hover">
+                            <Image
+                                src={`/assets/work/7/tp/unicorn/${index}.png`} // Dynamically load images
+                                alt={project.title}
+                                width={1920} // Full width for large screens
+                                height={1080} // Maintain aspect ratio
+                                className="rounded-lg shadow-lg"
+                            />
+                        </AnimatedContent>
+                    ))}
+                </div>
+            )}
+
 
         </div>
     );
