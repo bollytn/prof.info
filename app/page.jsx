@@ -83,7 +83,7 @@ export default function Home() {
                   </Link>
                 </Button>
               </AnimatedBox>
-              <div className='ml-0 mt-8 xl:mb-8 xl:ml-8'>
+              <div className='ml-0 mt-8 xl:mb-8 xl:ml-8 mb-8'>
                 <Social containerStyles='flex gap-6'
                   iconStyles='w-9 h-9 border border-accent rounded-full flex justify-center items-center text-accent text-base
               hover:bg-accent hover:text-primary hover:transition-all duration-500'/>
