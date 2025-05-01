@@ -177,7 +177,7 @@ const Work = () => {
                                                     {/* Remove the onClick handler from the span */}
                                                     <span
                                                         onClick={() => handleProjectClick(project.num)} // Optional: keep this for any additional logic
-                                                        className="relative z-10">Ouvrir le projet</span>
+                                                        className="relative z-10">Ouvrir</span>
                                                 </Link>
                                             </Reveal>
                                         </div>
