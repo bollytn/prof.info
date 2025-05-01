@@ -3,7 +3,7 @@ const links = [
     { name: 'Services', path: '/service' },
     { name: 'Curriculum vitae', path: '/resume' },
     { name: 'Atelier', path: '/atelier' },
-    { name: 'Cours', path: '/work' },
+    { name: 'Contenu', path: '/work' },
    // { name: 'Contact', path: '/contact' },
   
 ]
