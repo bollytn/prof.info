@@ -3,7 +3,7 @@ const projects = [
         num: '01',
         classe: ['9ᵉ année'],
         category: 'microbit',
-        title: 'Fabrique une mangeoire',
+        title: 'Fabriquer une mangeoire',
         description: 'Bonjour à tous, je partage avec vous ma première TP bien détaillé, dans le domaine de la programmation des cartes Micro:Bit en utilisant la logiciel scratch dans un premier temps. Dans cette activité, nous allons créer une mangeoire pour oiseaux. Nous allons utiliser un capteur de température et d’humidité pour détecter les conditions météorologiques et un capteur de lumière pour détecter la luminosité ambiante. En fonction des données recueillies, nous allons activer un moteur pour ouvrir ou fermer la mangeoire.',
         stack: [{ name: 'microbit' }, { name: "boussol" }, { name: "transmission radio" }],
         image: '/assets/work/cover/thumb1.png',
