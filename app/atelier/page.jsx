@@ -9,9 +9,9 @@ const isArabic = (text) => /[\u0600-\u06FF]/.test(text);
 
 const ateliers = [
     {
-        title: 'Atelier Scratch "Histoire Animée"',
+        title: 'scratch workshop "Animated Story"',
         description:
-            'Un atelier interactif pour apprendre les bases de la programmation avec Scratch. Idéal pour les débutants et les jeunes apprenants.',
+            'An interactive workshop to learn the basics of programming with Scratch. Ideal for beginners and young learners.',
         images: [
             '/assets/atelier/scratch1.png', // Remplacez par vos images
         ],
