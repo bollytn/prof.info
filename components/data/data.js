@@ -383,6 +383,16 @@ const projects = [
         image: '/assets/work/cover/thumb30.png',
         live: 'https://drive.google.com/file/d/1HxR7VBvnGxahT0VXd5NlFsukbBR0EB_i/view?usp=sharing',
     },
+    {
+        num: '39',
+        classe:  ['8ᵉ année'],
+        category: 'Scratch',
+        title: "Devoir de synthèse N°3",
+        description: "devoir de synthèse de 8ᵉ année (3eme trimestre) théorique + pratique",
+        stack: [{ name: 'Scratch ', }, { name: "activité débranché" }, { name: "activité pratique" }],
+        image: '/assets/work/cover/thumb31.png',
+        live: 'https://drive.google.com/file/d/1dPdW1WCSEfeEnZfjYcumxsRY1eF7onVt/view?usp=sharing',
+    },
 
 ]
 
