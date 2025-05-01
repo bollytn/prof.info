@@ -47,16 +47,6 @@ const experience = {
     description: "J'ai plus de 15 ans d'expérience dans l'enseignement de la programmation. j'ai également enseigné la programmation à des étudiants de tous niveaux.",
     items: [
         {
-            company: 'Ecole Préparatoire bousalem',
-            position: 'enseignant en informatique',
-            duration: '2012 - Présent'
-        },
-        {
-            company: 'الجمعية التونسية للبرمجة و الروبوتيك',
-            position: 'Formateur HTML/CSS/JS/PHP/MySQL',
-            duration: '2022 - Présent'
-        },
-        {
             company: 'centre pilote "المركز النموذجي للدعم المدرسي"',
             position: 'computer science teacher',
             duration: '2025 - Présent'
@@ -65,6 +55,16 @@ const experience = {
             company: 'Ecole Privée les génies',
             position: 'enseignant en informatique',
             duration: '2023 - Présent'
+        },
+        {
+            company: 'الجمعية التونسية للبرمجة و الروبوتيك',
+            position: 'Formateur HTML/CSS/JS/PHP/MySQL',
+            duration: '2022 - Présent'
+        },
+        {
+            company: 'Ecole Préparatoire bousalem',
+            position: 'enseignant en informatique',
+            duration: '2012 - Présent'
         },
         {
             company: 'Tanit-School (Tunisie)',
