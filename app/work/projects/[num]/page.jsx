@@ -836,7 +836,7 @@ const ProjectPage = async ({ params, searchParams }) => {
             {/* Display all images for project 38 */}
             {num === "38" && (
                 <div className="flex flex-row flex-wrap justify-center items-center gap-4 mt-2">
-                    <Image src="/assets/work/cover/thumb29.png"
+                    <Image src="/assets/work/cover/thumb30.png"
                         alt={project.title}
                         width={1920}
                         height={1080}
