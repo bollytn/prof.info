@@ -1,8 +1,8 @@
 const services = [
     {
         num: "01",
-        title: "Nouvelles Technologies",
-        category: "Nouvelles Technologies",
+        title: "Formation pour les Instituteurs et enseignants",
+        category: "Utiliser les technologies modernes dans l'éducation",
         description: {
             points: [
                 "Formateur des nouvelles technologies pour les enseignants :",
@@ -103,10 +103,10 @@ const services = [
     {
         num: "04",
         title: "AppInventor en 9ᵉ année",
-        category: "App Inventor",
+        category: "Microbit et App Inventor",
         description: {
             points: [
-                "Création des applications fonctionnant sur tous les appareils android.",
+                "Création des applications fonctionnant sur tous les appareils android :",
                 "App Inventor et le Bluetooth.",
                 "App Inventor et la géolocalisation.",
                 "App Inventor et le GPS.",
@@ -115,7 +115,6 @@ const services = [
                 "App Inventor et le capteur de température.",
                 "App Inventor et le capteur de pression.",
                 "App inventor et bluetooth.",
-
             ]
         },
         link: "#",

@@ -60,7 +60,6 @@ const Work = () => {
     };
 
 
-
     return (
         <motion.section
             initial={{ opacity: 0 }}
@@ -131,7 +130,8 @@ const Work = () => {
                                 <span className="flex-grow bg-yellow-300 shadow-[0_0_5px_yellow] rounded h-px"></span>
                             </AnimatedContent>
 
-                            {/* Live project button */}
+
+                            {/* Live project button 
                             <AnimatedContent
                                 key={`${service.num}-live-button`} // Unique key for re-triggering animation
                                 className='flex gap-4'
@@ -151,9 +151,11 @@ const Work = () => {
                                     </Link>
                                 </AnimatedBox>
                             </AnimatedContent>
+                            */}
                         </div>
                     </div>
-                    <div className='w-full xl:w-[50%]'>
+                    {/* Image slider */}
+                    <div className='w-full xl:w-[50%] order-2 xl:order-none'>
                         <Swiper className='xl:h-[520px] mb-12'
                             spaceBetween={30}
                             slidesPerView={1}
