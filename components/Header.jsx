@@ -5,7 +5,7 @@ import MobileNav from './MobileNav';
 import { Button } from './ui/button';
 import AnimatedBox from './shared/AnimatedBox';
 import { motion } from 'framer-motion';
-import AnimatedContent from './shared/AnimatedContent';
+
 
 const Header = () => {
     return (
