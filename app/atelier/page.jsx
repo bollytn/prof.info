@@ -30,6 +30,18 @@ const ateliers = [
         ],
     },
     {
+        title: 'التقنيات الحديثة في التعليم',
+        description:
+            'الملتقى الوطني للبرمجة و الروبوتيك بالشراكة مع وزارة التربية تحت إشراف المندوبية الجهوية للتربية \n' +
+            'تنظيم دورات تكوينية في استعمال التكنولوجيات الحديثة في التعليم لإطار التدريس ابتدائي و ثانوي \n' +
+            'المكان: شارع الهادي شاكر عمارة السلامي-الطابق الأول \n' +
+            'التاريخ: 26 ديسمبر 2024 \n' +
+            'المدرب: بلال المحجوبي \n',
+        images: [
+            '/assets/atelier/tech.png', // Remplacez par vos images
+        ],
+    },
+    {
         title: 'حفل اختتام السنة الدراسية 2023 -2024',
         description:
             'اختتتام الدورة التكوينيةً لسنة 2023-2024  و افتتاح دورة جديدة تحت شعار « نحن نصنع المستقبل »و من بين أهداف هذه الدورة :\n' +
@@ -59,17 +71,21 @@ const ateliers = [
         ],
     },
     {
-        title: 'التقنيات الحديثة في التعليم',
+        title: 'Atelier web "Développement Full Stack"',
         description:
-            'الملتقى الوطني للبرمجة و الروبوتيك بالشراكة مع وزارة التربية تحت إشراف المندوبية الجهوية للتربية \n' +
-            'تنظيم دورات تكوينية في استعمال التكنولوجيات الحديثة في التعليم لإطار التدريس ابتدائي و ثانوي \n' +
-            'المكان: شارع الهادي شاكر عمارة السلامي-الطابق الأول \n' +
-            'التاريخ: 16 ديسمبر 2024 \n' +
-            'المدرب: بلال المحجوبي \n',
+            'un atelier pour apprendre à créer des sites web modernes et réactifs. Idéal pour les passionnés de technologie et de programmation web. \n' +
+            'Html, Css, Javascript \n' +
+            'Php ,mysql \n' +
+            'Durée du formation : 16h \n' +
+            '95 av Hedi Chaker  imm.Sellami premier étage jendouba 8100 \n' +
+            'Les places sont limitées \n' +
+            '22 décembre 2024 \n' +
+            'Formateur : Mahjoubi Bilel\n',
         images: [
-            '/assets/atelier/tech.png', // Remplacez par vos images
+            '/assets/atelier/web4.png', // Remplacez par vos images
         ],
     },
+
 ];
 
 export default function Atelier() {
