@@ -39,7 +39,7 @@ const ProjectPage = async ({ params, searchParams }) => {
             {/* Display all images for project 1 */}
             {num === "01" && (
                 <div className="flex flex-row flex-wrap justify-center items-center gap-4 mt-2">
-                    <Image src="/assets/work/cover/thumb1.png"
+                    <Image src={project.image}
                         alt={project.title}
                         width={1920}
                         height={1080}
@@ -62,7 +62,7 @@ const ProjectPage = async ({ params, searchParams }) => {
             {/* Embed the quiz/data/index.html file only for project 02 */}
             {num === "02" && (
                 <div className="mt-12">
-                    <Image src="/assets/work/cover/thumb2.png"
+                    <Image src={project.image}
                         alt={project.title}
                         width={1920}
                         height={1080}
@@ -81,7 +81,7 @@ const ProjectPage = async ({ params, searchParams }) => {
             {/* Embed the quiz/data/index.html file only for project 03 */}
             {num === "03" && (
                 <div className="mt-12">
-                    <Image src="/assets/work/cover/thumb3.png"
+                    <Image src={project.image}
                         alt={project.title}
                         width={1920}
                         height={1080}
@@ -100,7 +100,7 @@ const ProjectPage = async ({ params, searchParams }) => {
             {/* Display all images for project 4 */}
             {num === "04" && (
                 <div className="flex flex-row flex-wrap justify-center items-center gap-4 mt-2">
-                    <Image src="/assets/work/cover/thumb4.png"
+                    <Image src={project.image}
                         alt={project.title}
                         width={1920}
                         height={1080}
@@ -122,7 +122,7 @@ const ProjectPage = async ({ params, searchParams }) => {
             {/* Display all images for project 5 */}
             {num === "05" && (
                 <div className="flex flex-row flex-wrap justify-center items-center gap-4 mt-2">
-                    <Image src="/assets/work/cover/thumb5.png"
+                    <Image src={project.image}
                         alt={project.title}
                         width={1920}
                         height={1080}
@@ -145,7 +145,7 @@ const ProjectPage = async ({ params, searchParams }) => {
 
             {num === "06" && (
                 <div className="flex flex-row flex-wrap justify-center items-center gap-4 mt-2">
-                    <Image src="/assets/work/cover/thumb6.png"
+                    <Image src={project.image}
                         alt={project.title}
                         width={1920}
                         height={1080}
@@ -167,7 +167,7 @@ const ProjectPage = async ({ params, searchParams }) => {
             {/* Display all images for project 7 */}
             {num === "07" && (
                 <div className="flex flex-row flex-wrap justify-center items-center gap-4 mt-2">
-                    <Image src="/assets/work/cover/thumb7.png"
+                    <Image src={project.image}
                         alt={project.title}
                         width={1920}
                         height={1080}
@@ -190,7 +190,7 @@ const ProjectPage = async ({ params, searchParams }) => {
             {/* Display all images for project 8 */}
             {num === "08" && (
                 <div className="flex flex-row flex-wrap justify-center items-center gap-4 mt-2">
-                    <Image src="/assets/work/cover/thumb8.png"
+                    <Image src={project.image}
                         alt={project.title}
                         width={1920}
                         height={1080}
@@ -212,7 +212,7 @@ const ProjectPage = async ({ params, searchParams }) => {
             {/* Display all images for project 9 */}
             {num === "09" && (
                 <div className="flex flex-row flex-wrap justify-center items-center gap-4 mt-2">
-                    <Image src="/assets/work/cover/thumb9.png"
+                    <Image src={project.image}
                         alt={project.title}
                         width={1920}
                         height={1080}
@@ -234,7 +234,7 @@ const ProjectPage = async ({ params, searchParams }) => {
             {/* Display all images for project 10 */}
             {num === "10" && (
                 <div className="flex flex-row flex-wrap justify-center items-center gap-4 mt-2">
-                    <Image src="/assets/work/cover/thumb10.png"
+                    <Image src={project.image}
                         alt={project.title}
                         width={1920}
                         height={1080}
@@ -256,7 +256,7 @@ const ProjectPage = async ({ params, searchParams }) => {
             {/* Display all images for project 11 */}
             {num === "11" && (
                 <div className="flex flex-row flex-wrap justify-center items-center gap-4 mt-2">
-                    <Image src="/assets/work/cover/thumb11.png"
+                    <Image src={project.image}
                         alt={project.title}
                         width={1920}
                         height={1080}
@@ -278,7 +278,7 @@ const ProjectPage = async ({ params, searchParams }) => {
             {/* Embed the quiz/data/index.html file only for project 12 */}
             {num === "12" && (
                 <div className="mt-12">
-                    <Image src="/assets/work/cover/thumb12.png"
+                    <Image src={project.image}
                         alt={project.title}
                         width={1920}
                         height={1080}
@@ -296,7 +296,7 @@ const ProjectPage = async ({ params, searchParams }) => {
             {/* Display all images for project 13 */}
             {num === "13" && (
                 <div className="flex flex-row flex-wrap justify-center items-center gap-4 mt-2">
-                    <Image src="/assets/work/cover/thumb13.png"
+                    <Image src={project.image}
                         alt={project.title}
                         width={1920}
                         height={1080}
@@ -318,7 +318,7 @@ const ProjectPage = async ({ params, searchParams }) => {
             {/* Display all games for project 14 */}
             {num === "14" && (
                 <div className="flex flex-col items-center gap-4 mt-2">
-                    <Image src="/assets/work/cover/thumb14.png"
+                    <Image src={project.image}
                         alt={project.title}
                         width={1920}
                         height={1080}
@@ -353,7 +353,7 @@ const ProjectPage = async ({ params, searchParams }) => {
             {/* Display all images for project 15 */}
             {num === "15" && (
                 <div className="flex flex-row flex-wrap justify-center items-center gap-4 mt-2">
-                    <Image src="/assets/work/cover/thumb15.png"
+                    <Image src={project.image}
                         alt={project.title}
                         width={1920}
                         height={1080}
@@ -375,7 +375,7 @@ const ProjectPage = async ({ params, searchParams }) => {
             {/* Display all images for project 16 */}
             {num === "16" && (
                 <div className="flex flex-row flex-wrap justify-center items-center gap-4 mt-2">
-                    <Image src="/assets/work/cover/thumb15.png"
+                    <Image src={project.image}
                         alt={project.title}
                         width={1920}
                         height={1080}
@@ -397,7 +397,7 @@ const ProjectPage = async ({ params, searchParams }) => {
             {/* Display all images for project 17 */}
             {num === "17" && (
                 <div className="flex flex-row flex-wrap justify-center items-center gap-4 mt-2">
-                    <Image src="/assets/work/cover/thumb15.png"
+                    <Image src={project.image}
                         alt={project.title}
                         width={1920}
                         height={1080}
@@ -419,7 +419,7 @@ const ProjectPage = async ({ params, searchParams }) => {
             {/* Display all images for project 18 */}
             {num === "18" && (
                 <div className="flex flex-row flex-wrap justify-center items-center gap-4 mt-2">
-                    <Image src="/assets/work/cover/thumb16.png"
+                    <Image src={project.image}
                         alt={project.title}
                         width={1920}
                         height={1080}
@@ -441,7 +441,7 @@ const ProjectPage = async ({ params, searchParams }) => {
             {/* Display all images for project 19 */}
             {num === "19" && (
                 <div className="flex flex-row flex-wrap justify-center items-center gap-4 mt-2">
-                    <Image src="/assets/work/cover/thumb17.png"
+                    <Image src={project.image}
                         alt={project.title}
                         width={1920}
                         height={1080}
@@ -463,6 +463,11 @@ const ProjectPage = async ({ params, searchParams }) => {
             {/* Display all images for project 20 */}
             {num === "20" && (
                 <div className="flex flex-row flex-wrap justify-center items-center gap-4 mt-2">
+                    <Image src={project.image}
+                        alt={project.title}
+                        width={1920}
+                        height={1080}
+                        className="rounded-lg shadow-lg w-full" />
                     {[1, 2, 3].map((index) => (
                         <AnimatedContent key={index} className="relative w-full max-w-4xl h-auto rounded-lg overflow-hidden shadow-md shadow-accent-hover">
                             <Image
@@ -490,7 +495,7 @@ const ProjectPage = async ({ params, searchParams }) => {
                             <HiOutlineDownload className="animate-bounce duration-700 inline-block ml-2 text-accent" />
                         </a>
                     </h2>
-                    <Image src="/assets/work/cover/thumb19.png"
+                    <Image src={project.image}
                         alt={project.title}
                         width={1920}
                         height={1080}
@@ -517,7 +522,7 @@ const ProjectPage = async ({ params, searchParams }) => {
             {/* Embed the quiz/data/index.html file only for project 22 */}
             {num === "22" && (
                 <div className="mt-12">
-                    <Image src="/assets/work/cover/thumb20.png"
+                    <Image src={project.image}
                         alt={project.title}
                         width={1920}
                         height={1080}
@@ -535,7 +540,7 @@ const ProjectPage = async ({ params, searchParams }) => {
             {/* Embed the quiz/data/index.html file only for project 23 */}
             {num === "23" && (
                 <div className="mt-12">
-                    <Image src="/assets/work/cover/thumb21.png"
+                    <Image src={project.image}
                         alt={project.title}
                         width={1920}
                         height={1080}
@@ -553,7 +558,7 @@ const ProjectPage = async ({ params, searchParams }) => {
             {/* Embed the quiz/data/index.html file only for project 24 */}
             {num === "24" && (
                 <div className="mt-12">
-                    <Image src="/assets/work/cover/thumb22.png"
+                    <Image src={project.image}
                         alt={project.title}
                         width={1920}
                         height={1080}
@@ -571,7 +576,7 @@ const ProjectPage = async ({ params, searchParams }) => {
             {/* Display all images for project 25 */}
             {num === "25" && (
                 <div className="flex flex-row flex-wrap justify-center items-center gap-4 mt-2">
-                    <Image src="/assets/work/cover/thumb23.png"
+                    <Image src={project.image}
                         alt={project.title}
                         width={1920}
                         height={1080}
@@ -594,7 +599,7 @@ const ProjectPage = async ({ params, searchParams }) => {
             {/* Display all images for project 26 */}
             {num === "26" && (
                 <div className="flex flex-row flex-wrap justify-center items-center gap-4 mt-2">
-                    <Image src="/assets/work/cover/thumb24.png"
+                    <Image src={project.image}
                         alt={project.title}
                         width={1920}
                         height={1080}
@@ -616,7 +621,7 @@ const ProjectPage = async ({ params, searchParams }) => {
             {/* Display all images for project 27 */}
             {num === "27" && (
                 <div className="flex flex-row flex-wrap justify-center items-center gap-4 mt-2">
-                    <Image src="/assets/work/cover/thumb25.png"
+                    <Image src={project.image}
                         alt={project.title}
                         width={1920}
                         height={1080}
@@ -638,7 +643,7 @@ const ProjectPage = async ({ params, searchParams }) => {
             {/* Display all images for project 28 */}
             {num === "28" && (
                 <div className="flex flex-row flex-wrap justify-center items-center gap-4 mt-2">
-                    <Image src="/assets/work/cover/thumb26.png"
+                    <Image src={project.image}
                         alt={project.title}
                         width={1920}
                         height={1080}
@@ -661,7 +666,7 @@ const ProjectPage = async ({ params, searchParams }) => {
             {/* Display all images for project 29 */}
             {num === "29" && (
                 <div className="flex flex-row flex-wrap justify-center items-center gap-4 mt-2">
-                    <Image src="/assets/work/cover/thumb26.png"
+                    <Image src={project.image}
                         alt={project.title}
                         width={1920}
                         height={1080}
@@ -683,7 +688,7 @@ const ProjectPage = async ({ params, searchParams }) => {
             {/* Embed the quiz/data/index.html file only for project 30 */}
             {num === "30" && (
                 <div className="mt-12">
-                    <Image src="/assets/work/cover/thumb27.png"
+                    <Image src={project.image}
                         alt={project.title}
                         width={1920}
                         height={1080}
@@ -701,7 +706,7 @@ const ProjectPage = async ({ params, searchParams }) => {
             {/* Embed the quiz/data/index.html file only for project 31 */}
             {num === "31" && (
                 <div className="mt-12">
-                    <Image src="/assets/work/cover/thumb27.png"
+                    <Image src={project.image}
                         alt={project.title}
                         width={1920}
                         height={1080}
@@ -719,7 +724,7 @@ const ProjectPage = async ({ params, searchParams }) => {
             {/* Embed the quiz/data/index.html file only for project 32 */}
             {num === "32" && (
                 <div className="mt-12">
-                    <Image src="/assets/work/cover/thumb27.png"
+                    <Image src={project.image}
                         alt={project.title}
                         width={1920}
                         height={1080}
@@ -737,7 +742,7 @@ const ProjectPage = async ({ params, searchParams }) => {
             {/* Embed the quiz/data/index.html file only for project 33 */}
             {num === "33" && (
                 <div className="mt-12">
-                    <Image src="/assets/work/cover/thumb27.png"
+                    <Image src={project.image}
                         alt={project.title}
                         width={1920}
                         height={1080}
@@ -755,7 +760,7 @@ const ProjectPage = async ({ params, searchParams }) => {
             {/* Embed the quiz/data/index.html file only for project 34 */}
             {num === "34" && (
                 <div className="mt-12">
-                    <Image src="/assets/work/cover/thumb27.png"
+                    <Image src={project.image}
                         alt={project.title}
                         width={1920}
                         height={1080}
@@ -773,7 +778,7 @@ const ProjectPage = async ({ params, searchParams }) => {
             {/* Embed the quiz/data/index.html file only for project 35 */}
             {num === "35" && (
                 <div className="mt-12">
-                    <Image src="/assets/work/cover/thumb27.png"
+                    <Image src={project.image}
                         alt={project.title}
                         width={1920}
                         height={1080}
@@ -791,7 +796,7 @@ const ProjectPage = async ({ params, searchParams }) => {
             {/* Display all images for project 36 */}
             {num === "36" && (
                 <div className="flex flex-row flex-wrap justify-center items-center gap-4 mt-2">
-                    <Image src="/assets/work/cover/thumb28.png"
+                    <Image src={project.image}
                         alt={project.title}
                         width={1920}
                         height={1080}
@@ -813,7 +818,7 @@ const ProjectPage = async ({ params, searchParams }) => {
             {/* Display all images for project 37 */}
             {num === "37" && (
                 <div className="flex flex-row flex-wrap justify-center items-center gap-4 mt-2">
-                    <Image src="/assets/work/cover/thumb29.png"
+                    <Image src={project.image}
                         alt={project.title}
                         width={1920}
                         height={1080}
@@ -836,7 +841,7 @@ const ProjectPage = async ({ params, searchParams }) => {
             {/* Display all images for project 38 */}
             {num === "38" && (
                 <div className="flex flex-row flex-wrap justify-center items-center gap-4 mt-2">
-                    <Image src="/assets/work/cover/thumb30.png"
+                    <Image src={project.image}
                         alt={project.title}
                         width={1920}
                         height={1080}
