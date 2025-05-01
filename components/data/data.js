@@ -403,7 +403,16 @@ const projects = [
         image: '/assets/work/cover/thumb32.png',
         live: 'https://drive.google.com/file/d/1dPdW1WCSEfeEnZfjYcumxsRY1eF7onVt/view?usp=sharing',
     },
-
+    {
+        num: '41',
+        classe:  ['9ᵉ année'],
+        category: 'AppInventor',
+        title: "Devoir de synthèse N°2",
+        description: "devoir de synthèse de 9ᵉ année (2éme trimestre) théorique + pratique",
+        stack: [{ name: 'AppInventor ', }, { name: "activité débranché" }, { name: "activité pratique" }],
+        image: '/assets/work/cover/thumb33.png',
+        live: 'https://drive.google.com/file/d/1HxR7VBvnGxahT0VXd5NlFsukbBR0EB_i/view?usp=sharing',
+    },
 ]
 
 export default projects;
