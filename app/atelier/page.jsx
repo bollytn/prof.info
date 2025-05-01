@@ -58,19 +58,6 @@ const ateliers = [
         ],
     },
     {
-        title: 'Atelier Scratch avancé "Création de jeux"',
-        description:
-            'تنظم الجمعية التونسية للبرمجة و الروبوتيك بمناسبة العطلة الصيفية نادي سكراتش مستوى متقدم ينطلق يوم الجمعة 02 أوت 2024 .  \n' +
-            'تنطلق غدا الدورة التكوينية الخاصة ببرمجية السكراتش في مقر الجمعية ابتداء من الساعة العاشرة صباحا …. مرحبا بالجميع\n' +
-            'لا تفوّت هذه الورشة المميزة حول تصميم ألعاب الفيديو ! \n' +
-            'المكان: 95 نهج الهادي شاكر عمارة السلامي الطابق الاول جندوبة وراء البنك المركزي \n' +
-            'التاريخ: 02 أوت 2024 \n' +
-            'المدرب: بلال المحجوبي \n',
-        images: [
-            '/assets/atelier/scratch3.png', // Remplacez par vos images
-        ],
-    },
-    {
         title: 'Atelier web "Développement Full Stack"',
         description:
             'un atelier pour apprendre à créer des sites web modernes et réactifs. Idéal pour les passionnés de technologie et de programmation web. \n' +
@@ -83,6 +70,19 @@ const ateliers = [
             'Formateur : Mahjoubi Bilel\n',
         images: [
             '/assets/atelier/web4.png', // Remplacez par vos images
+        ],
+    },
+    {
+        title: 'Atelier Scratch avancé "Création de jeux"',
+        description:
+            'تنظم الجمعية التونسية للبرمجة و الروبوتيك بمناسبة العطلة الصيفية نادي سكراتش مستوى متقدم ينطلق يوم الجمعة 02 أوت 2024 .  \n' +
+            'تنطلق غدا الدورة التكوينية الخاصة ببرمجية السكراتش في مقر الجمعية ابتداء من الساعة العاشرة صباحا …. مرحبا بالجميع\n' +
+            'لا تفوّت هذه الورشة المميزة حول تصميم ألعاب الفيديو ! \n' +
+            'المكان: 95 نهج الهادي شاكر عمارة السلامي الطابق الاول جندوبة وراء البنك المركزي \n' +
+            'التاريخ: 02 أوت 2024 \n' +
+            'المدرب: بلال المحجوبي \n',
+        images: [
+            '/assets/atelier/scratch3.png', // Remplacez par vos images
         ],
     },
 
