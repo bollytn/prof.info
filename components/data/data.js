@@ -413,6 +413,16 @@ const projects = [
         image: '/assets/work/cover/thumb33.png',
         live: 'https://drive.google.com/file/d/1HxR7VBvnGxahT0VXd5NlFsukbBR0EB_i/view?usp=sharing',
     },
+    {
+        num: '42',
+        classe:  ['9ᵉ année'],
+        category: 'AppInventor',
+        title: "Devoir de synthèse N°3",
+        description: "devoir de synthèse de 9ᵉ année (3éme trimestre) théorique + pratique",
+        stack: [{ name: 'AppInventor ', }, { name: "activité débranché" }, { name: "activité pratique" }],
+        image: '/assets/work/cover/thumb34.png',
+        live: 'https://drive.google.com/file/d/1HxR7VBvnGxahT0VXd5NlFsukbBR0EB_i/view?usp=sharing',
+    },
 ]
 
 export default projects;

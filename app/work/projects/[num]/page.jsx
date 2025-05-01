@@ -926,6 +926,27 @@ const ProjectPage = async ({ params, searchParams }) => {
                 </div>
             )}
 
+            {/* Display all images for project 41 */}
+            {num === "42" && (
+                <div className="flex flex-row flex-wrap justify-center items-center gap-4 mt-2">
+                    <Image src={project.image}
+                        alt={project.title}
+                        width={1920}
+                        height={1080}
+                        className="rounded-lg shadow-lg w-full" />
+                    {[1, 2, 3, 4].map((index) => (
+                        <AnimatedContent key={index} className="relative w-full max-w-4xl h-auto rounded-lg overflow-hidden shadow-md shadow-accent-hover">
+                            <Image
+                                src={`/assets/work/9/devoirs/ds32023/${index}.png`} // Dynamically load images
+                                alt={project.title}
+                                width={1920} // Full width for large screens
+                                height={1080} // Maintain aspect ratio
+                                className="rounded-lg shadow-lg"
+                            />
+                        </AnimatedContent>
+                    ))}
+                </div>
+            )}
 
         </div>
     );
