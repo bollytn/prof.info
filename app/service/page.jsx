@@ -7,14 +7,11 @@ import { Swiper, SwiperSlide } from 'swiper/react'
 import 'swiper/css'
 
 import { LuExternalLink } from "react-icons/lu";
-
 import { Tooltip, TooltipContent, TooltipProvider, TooltipTrigger } from '@/components/ui/tooltip'
-
 import Link from 'next/link'
+
 import Image from 'next/image'
 import { WorkSliderBtn } from '@/components/shared/WorkSliderBtn'
-
-import AnimatedBox from '@/components/shared/AnimatedBox'
 
 import services from '@/components/data/services'
 
@@ -154,6 +151,7 @@ const Work = () => {
                             */}
                         </div>
                     </div>
+
                     {/* Image slider */}
                     <div className='w-full xl:w-[50%] order-2 xl:order-none'>
                         <Swiper className='xl:h-[520px] mb-12'
