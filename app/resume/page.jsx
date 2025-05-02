@@ -49,7 +49,7 @@ const experience = {
         {
             company: 'centre pilote "المركز النموذجي للدعم المدرسي"',
             position: 'computer science teacher',
-            duration: '2025 - Présent'
+            duration: '2024 - Présent'
         },
         {
             company: 'Ecole Privée les génies',
@@ -58,7 +58,7 @@ const experience = {
         },
         {
             company: 'الجمعية التونسية للبرمجة و الروبوتيك',
-            position: 'Formateur HTML/CSS/JS/PHP/MySQL',
+            position: 'Formateur html/css/js/php/mysql',
             duration: '2022 - Présent'
         },
         {
