@@ -11,7 +11,7 @@ import { TooltipProvider, TooltipTrigger, Tooltip, TooltipContent } from "@/comp
 
 const about = {
     title: "A Propos De Moi",
-    icon: '/assets/resume/about.svg', // Path to about.svg image
+    icon: '/assets/resume/about.gif', // Path to about.svg image
     description: "Enseignant d'informatique passionné avec plus de 15 ans d’expérience, Spécialisé dans l’enseignement de la pensée logique et du développement de compétences en programmation chez les collégiens. Ma pédagogie repose sur une approche ludique et interactive, utilisant des outils modernes tels que Scratch, App Inventor et Micro:bit pour éveiller l’intérêt des élèves à l’univers numérique.",
     info: [
         {
@@ -42,7 +42,7 @@ const about = {
 }
 
 const experience = {
-    icon: '/assets/resume/exprience.svg', // Path to badge.svg
+    icon: '/assets/resume/experience.gif', // Path to badge.svg
     title: 'Mon Expérience',
     description: "J'ai plus de 15 ans d'expérience dans l'enseignement de la programmation. j'ai également enseigné la programmation à des étudiants de tous niveaux.",
     items: [
@@ -75,7 +75,7 @@ const experience = {
 }
 
 const education = {
-    icon: '/assets/resume/education.svg', // Path to cap.svg
+    icon: '/assets/resume/education.gif', // Path to cap.svg
     title: 'Mon Education',
     description: "Je suis toujours à la recherche de nouveaux outils, de meilleures pratiques et des dernières technologies pour améliorer mon travail.",
     items: [
@@ -93,7 +93,7 @@ const education = {
 }
 
 const skills = {
-    icon: '/assets/resume/skills.svg', // Path to cap.svg
+    icon: '/assets/resume/skills.gif', // Path to cap.svg
     title: 'Mes Compétances',
     description: [
         "Enseignement de la pensée logique et de l’algorithmique à travers Scratch.",
