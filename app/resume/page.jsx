@@ -132,7 +132,7 @@ const Resume = () => {
 
                         <TabsTrigger value="skills">Compétances</TabsTrigger>
 
-                        <TabsTrigger value="about">A props De Moi</TabsTrigger>
+                        <TabsTrigger value="about">A props de moi</TabsTrigger>
 
                     </TabsList>
 
