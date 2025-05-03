@@ -143,6 +143,7 @@ const Resume = () => {
                                 <div className="flex flex-col gap-7 text-center xl:text-left">
                                     <div className="flex justify-center xl:justify-start">
                                         <Image
+
                                             src={experience.icon}
                                             alt="Badge Icon"
                                             width={50}
