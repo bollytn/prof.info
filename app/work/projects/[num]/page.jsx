@@ -13,6 +13,7 @@ const renderContent = (num, project) => {
                     width={1920}
                     height={1080}
                     loading="lazy"
+                    unoptimized
                     className="rounded-lg shadow-lg w-full"
                 />
                 {[...Array(count)].map((_, index) => (
@@ -26,6 +27,7 @@ const renderContent = (num, project) => {
                             width={1920}
                             height={1080}
                             loading="lazy"
+                            unoptimized
                             className="rounded-lg shadow-lg"
                         />
                     </AnimatedContent>
@@ -40,6 +42,7 @@ const renderContent = (num, project) => {
                     width={1920}
                     height={1080}
                     loading="lazy"
+                    unoptimized
                     className="rounded-lg shadow-lg w-full"
                 />
                 <iframe
@@ -85,9 +88,9 @@ const renderContent = (num, project) => {
                             width={300}
                             height={200}
                             loading="lazy"
+                            unoptimized
                             className="rounded-lg shadow-lg"
                         />
-
                         {/* Download Link */}
                         <a
                             className="hover:text-yellow-300 hover:underline transition-all duration-300"

@@ -43,7 +43,7 @@ const about = {
 
 const experience = {
     icon: '/assets/resume/experience.gif', // Path to badge.svg
-    title: 'Mon Expérience',
+    title: 'Expériences',
     description: "J'ai plus de 15 ans d'expérience dans l'enseignement de la programmation. j'ai également enseigné la programmation à des étudiants de tous niveaux.",
     items: [
         {
@@ -76,7 +76,7 @@ const experience = {
 
 const education = {
     icon: '/assets/resume/education.gif', // Path to cap.svg
-    title: 'Mon Education',
+    title: 'Educations',
     description: "Je suis toujours à la recherche de nouveaux outils, de meilleures pratiques et des dernières technologies pour améliorer mon travail.",
     items: [
         {
@@ -94,7 +94,7 @@ const education = {
 
 const skills = {
     icon: '/assets/resume/skills.gif', // Path to cap.svg
-    title: 'Mes Compétances',
+    title: 'Compétances',
     description: [
         "Enseignement de la pensée logique et de l’algorithmique à travers Scratch.",
         "Initiation à la programmation mobile avec App Inventor pour les élèves de 9e année.",
@@ -143,7 +143,6 @@ const Resume = () => {
                                 <div className="flex flex-col gap-7 text-center xl:text-left">
                                     <div className="flex justify-center xl:justify-start">
                                         <Image
-
                                             src={experience.icon}
                                             alt="Badge Icon"
                                             width={50}
