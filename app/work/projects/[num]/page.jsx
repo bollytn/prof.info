@@ -160,7 +160,14 @@ const renderContent = (num, project) => {
         case "20":
             return contentMap.images("/assets/work/8/devoirs/ds12024/cour", 3);
         case "21":
-            return contentMap.images("/assets/work/8/jeux/", 16);
+            return (
+                <>
+                    {contentMap.images("/assets/work/8/devoirs/ds22019/cour", 3)}
+                    {contentMap.downloads([
+                        { name: "maison", path: "/assets/work/8/devoirs/ds22019/maison.sb2" },
+                    ])}
+                </>
+            );
         case "22":
             return contentMap.iframe("/assets/work/8/devoirs/ds12018/index.html");
         case "23":
