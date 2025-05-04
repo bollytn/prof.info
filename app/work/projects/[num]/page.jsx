@@ -44,6 +44,7 @@ const ProjectPage = async ({ params, searchParams }) => {
                         width={1920}
                         height={1080}
                         loading="lazy"
+                        placeholder="blur"
                         className="rounded-lg shadow-lg w-full" />
                     {[1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12].map((index) => (
                         <AnimatedContent key={index} className="relative w-full max-w-4xl h-auto rounded-lg overflow-hidden shadow-md shadow-accent-hover">
@@ -54,6 +55,7 @@ const ProjectPage = async ({ params, searchParams }) => {
                                 width={1920} // Full width for large screens
                                 height={1080} // Maintain aspect ratio
                                 loading="lazy"
+                                placeholder="blur"
                                 className="rounded-lg shadow-lg"
                             />
                         </AnimatedContent>
@@ -69,6 +71,7 @@ const ProjectPage = async ({ params, searchParams }) => {
                         width={1920}
                         height={1080}
                         loading="lazy"
+                        placeholder="blur"
                         className="rounded-lg shadow-lg w-full" />
                     <iframe
                         src="/assets/work/8/quiz/index.html" // Correct path to the HTML file in the public directory
@@ -77,6 +80,7 @@ const ProjectPage = async ({ params, searchParams }) => {
                         className="border-none"
                         allowFullScreen
                         loading="lazy"
+                        placeholder="blur"
                     ></iframe>
                 </div>
             )}
@@ -89,6 +93,7 @@ const ProjectPage = async ({ params, searchParams }) => {
                         alt={project.title}
                         width={1920}
                         height={1080}
+                        placeholder="blur"
                         loading="lazy"
                         className="rounded-lg shadow-lg w-full" />
                     <iframe
@@ -97,6 +102,7 @@ const ProjectPage = async ({ params, searchParams }) => {
                         height="700px"
                         className="border-none"
                         loading="lazy"
+                        placeholder="blur"
                         allowFullScreen
                     ></iframe>
                 </div>
@@ -111,6 +117,7 @@ const ProjectPage = async ({ params, searchParams }) => {
                         width={1920}
                         height={1080}
                         loading="lazy"
+                        placeholder="blur"
                         className="rounded-lg shadow-lg w-full" />
                     {[1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19].map((index) => (
                         <AnimatedContent key={index} className="relative w-full max-w-4xl h-auto rounded-lg overflow-hidden shadow-md shadow-accent-hover">
@@ -120,6 +127,7 @@ const ProjectPage = async ({ params, searchParams }) => {
                                 width={1920} // Full width for large screens
                                 height={1080} // Maintain aspect ratio
                                 loading="lazy"
+                                placeholder="blur"
                                 className="rounded-lg shadow-lg"
                             />
                         </AnimatedContent>
@@ -135,6 +143,7 @@ const ProjectPage = async ({ params, searchParams }) => {
                         width={1920}
                         height={1080}
                         loading="lazy"
+                        placeholder="blur"
                         className="rounded-lg shadow-lg w-full" />
                     {[1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29].map((index) => (
                         <AnimatedContent key={index} className="relative w-full max-w-4xl h-auto rounded-lg overflow-hidden shadow-md shadow-accent-hover">
@@ -144,6 +153,7 @@ const ProjectPage = async ({ params, searchParams }) => {
                                 width={1920} // Full width for large screens
                                 height={1080} // Maintain aspect ratio
                                 loading="lazy"
+                                placeholder="blur"
                                 className="rounded-lg shadow-lg"
                             />
                         </AnimatedContent>
@@ -160,6 +170,7 @@ const ProjectPage = async ({ params, searchParams }) => {
                         width={1920}
                         height={1080}
                         loading="lazy"
+                        placeholder="blur"
                         className="rounded-lg shadow-lg w-full" />
                     {[1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15].map((index) => (
                         <AnimatedContent key={index} className="relative w-full max-w-4xl h-auto rounded-lg overflow-hidden shadow-md shadow-accent-hover">
@@ -169,6 +180,7 @@ const ProjectPage = async ({ params, searchParams }) => {
                                 width={1920} // Full width for large screens
                                 height={1080} // Maintain aspect ratio
                                 loading="lazy"
+                                placeholder="blur"
                                 className="rounded-lg shadow-lg"
                             />
                         </AnimatedContent>
@@ -184,6 +196,7 @@ const ProjectPage = async ({ params, searchParams }) => {
                         width={1920}
                         height={1080}
                         loading="lazy"
+                        placeholder="blur"
                         className="rounded-lg shadow-lg w-full" />
 
                     {[1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16].map((index) => (
@@ -194,6 +207,7 @@ const ProjectPage = async ({ params, searchParams }) => {
                                 width={1920} // Full width for large screens
                                 height={1080} // Maintain aspect ratio
                                 loading="lazy"
+                                placeholder="blur"
                                 className="rounded-lg shadow-lg"
                             />
                         </AnimatedContent>
@@ -209,6 +223,7 @@ const ProjectPage = async ({ params, searchParams }) => {
                         width={1920}
                         height={1080}
                         loading="lazy"
+                        placeholder="blur"
                         className="rounded-lg shadow-lg w-full" />
                     {[1, 2, 3].map((index) => (
                         <AnimatedContent key={index} className="relative w-full max-w-4xl h-auto rounded-lg overflow-hidden shadow-md shadow-accent-hover">
@@ -218,6 +233,7 @@ const ProjectPage = async ({ params, searchParams }) => {
                                 width={1920} // Full width for large screens
                                 height={1080} // Maintain aspect ratio
                                 loading="lazy"
+                                placeholder="blur"
                                 className="rounded-lg shadow-lg"
                             />
                         </AnimatedContent>
@@ -233,6 +249,7 @@ const ProjectPage = async ({ params, searchParams }) => {
                         width={1920}
                         height={1080}
                         loading="lazy"
+                        placeholder="blur"
                         className="rounded-lg shadow-lg w-full" />
                     {[1, 2, 3, 4, 5, 6, 7, 8].map((index) => (
                         <AnimatedContent key={index} className="relative w-full max-w-4xl h-auto rounded-lg overflow-hidden shadow-md shadow-accent-hover">
@@ -242,6 +259,7 @@ const ProjectPage = async ({ params, searchParams }) => {
                                 width={1920} // Full width for large screens
                                 height={1080} // Maintain aspect ratio
                                 loading="lazy"
+                                placeholder="blur"
                                 className="rounded-lg shadow-lg"
                             />
                         </AnimatedContent>
@@ -257,6 +275,7 @@ const ProjectPage = async ({ params, searchParams }) => {
                         width={1920}
                         height={1080}
                         loading="lazy"
+                        placeholder="blur"
                         className="rounded-lg shadow-lg w-full" />
                     {[1, 2, 3, 4, 5].map((index) => (
                         <AnimatedContent key={index} className="relative w-full max-w-4xl h-auto rounded-lg overflow-hidden shadow-md shadow-accent-hover">
@@ -266,6 +285,7 @@ const ProjectPage = async ({ params, searchParams }) => {
                                 width={1920} // Full width for large screens
                                 height={1080} // Maintain aspect ratio
                                 loading="lazy"
+                                placeholder="blur"
                                 className="rounded-lg shadow-lg"
                             />
                         </AnimatedContent>
@@ -281,6 +301,7 @@ const ProjectPage = async ({ params, searchParams }) => {
                         width={1920}
                         height={1080}
                         loading="lazy"
+                        placeholder="blur"
                         className="rounded-lg shadow-lg w-full" />
                     {[1, 2, 3, 4].map((index) => (
                         <AnimatedContent key={index} className="relative w-full max-w-4xl h-auto rounded-lg overflow-hidden shadow-md shadow-accent-hover">
@@ -290,6 +311,7 @@ const ProjectPage = async ({ params, searchParams }) => {
                                 width={1920} // Full width for large screens
                                 height={1080} // Maintain aspect ratio
                                 loading="lazy"
+                                placeholder="blur"
                                 className="rounded-lg shadow-lg"
                             />
                         </AnimatedContent>
@@ -305,6 +327,7 @@ const ProjectPage = async ({ params, searchParams }) => {
                         width={1920}
                         height={1080}
                         loading="lazy"
+                        placeholder="blur"
                         className="rounded-lg shadow-lg w-full" />
                     <iframe
                         src="/assets/work/8/rappel/index.html" // Correct path to the HTML file in the public directory
@@ -312,6 +335,7 @@ const ProjectPage = async ({ params, searchParams }) => {
                         height="700px"
                         className="border-none"
                         loading="lazy"
+                        placeholder="blur"
                         allowFullScreen
                     ></iframe>
                 </div>
@@ -325,6 +349,7 @@ const ProjectPage = async ({ params, searchParams }) => {
                         width={1920}
                         height={1080}
                         loading="lazy"
+                        placeholder="blur"
                         className="rounded-lg shadow-lg w-full" />
                     {[1, 2, 3, 4].map((index) => (
                         <AnimatedContent key={index} className="relative w-full max-w-4xl h-auto rounded-lg overflow-hidden shadow-md shadow-accent-hover">
@@ -334,6 +359,7 @@ const ProjectPage = async ({ params, searchParams }) => {
                                 width={1920} // Full width for large screens
                                 height={1080} // Maintain aspect ratio
                                 loading="lazy"
+                                placeholder="blur"
                                 className="rounded-lg shadow-lg"
                             />
                         </AnimatedContent>
@@ -349,6 +375,7 @@ const ProjectPage = async ({ params, searchParams }) => {
                         width={1920}
                         height={1080}
                         loading="lazy"
+                        placeholder="blur"
                         className="rounded-lg shadow-lg w-full" />
                     {gameName.map((game, index) => (
                         <div
@@ -371,6 +398,7 @@ const ProjectPage = async ({ params, searchParams }) => {
                                 width={1920} // Full width for large screens
                                 height={1080} // Maintain aspect ratio
                                 loading="lazy"
+                                placeholder="blur"
                                 className="rounded-lg"
                             />
                         </div>
@@ -386,6 +414,7 @@ const ProjectPage = async ({ params, searchParams }) => {
                         width={1920}
                         height={1080}
                         loading="lazy"
+                        placeholder="blur"
                         className="rounded-lg shadow-lg w-full" />
                     {[1, 2, 3, 4, 5].map((index) => (
                         <AnimatedContent key={index} className="relative w-full max-w-4xl h-auto rounded-lg overflow-hidden shadow-md shadow-accent-hover">
@@ -395,6 +424,7 @@ const ProjectPage = async ({ params, searchParams }) => {
                                 width={1920} // Full width for large screens
                                 height={1080} // Maintain aspect ratio
                                 loading="lazy"
+                                placeholder="blur"
                                 className="rounded-lg shadow-lg"
                             />
                         </AnimatedContent>
@@ -410,6 +440,7 @@ const ProjectPage = async ({ params, searchParams }) => {
                         width={1920}
                         height={1080}
                         loading="lazy"
+                        placeholder="blur"
                         className="rounded-lg shadow-lg w-full" />
                     {[1, 2, 3, 4, 5].map((index) => (
                         <AnimatedContent key={index} className="relative w-full max-w-4xl h-auto rounded-lg overflow-hidden shadow-md shadow-accent-hover">
@@ -419,6 +450,7 @@ const ProjectPage = async ({ params, searchParams }) => {
                                 width={1920} // Full width for large screens
                                 height={1080} // Maintain aspect ratio
                                 loading="lazy"
+                                placeholder="blur"
                                 className="rounded-lg shadow-lg"
                             />
                         </AnimatedContent>
@@ -434,6 +466,7 @@ const ProjectPage = async ({ params, searchParams }) => {
                         width={1920}
                         height={1080}
                         loading="lazy"
+                        placeholder="blur"
                         className="rounded-lg shadow-lg w-full" />
                     {[1, 2, 3, 4, 5].map((index) => (
                         <AnimatedContent key={index} className="relative w-full max-w-4xl h-auto rounded-lg overflow-hidden shadow-md shadow-accent-hover">
@@ -443,6 +476,7 @@ const ProjectPage = async ({ params, searchParams }) => {
                                 width={1920} // Full width for large screens
                                 height={1080} // Maintain aspect ratio
                                 loading="lazy"
+                                placeholder="blur"
                                 className="rounded-lg shadow-lg"
                             />
                         </AnimatedContent>
@@ -458,6 +492,7 @@ const ProjectPage = async ({ params, searchParams }) => {
                         width={1920}
                         height={1080}
                         loading="lazy"
+                        placeholder="blur"
                         className="rounded-lg shadow-lg w-full" />
                     {[1, 2, 3, 4, 5].map((index) => (
                         <AnimatedContent key={index} className="relative w-full max-w-4xl h-auto rounded-lg overflow-hidden shadow-md shadow-accent-hover">
@@ -467,6 +502,7 @@ const ProjectPage = async ({ params, searchParams }) => {
                                 width={1920} // Full width for large screens
                                 height={1080} // Maintain aspect ratio
                                 loading="lazy"
+                                placeholder="blur"
                                 className="rounded-lg shadow-lg"
                             />
                         </AnimatedContent>
@@ -482,6 +518,7 @@ const ProjectPage = async ({ params, searchParams }) => {
                         width={1920}
                         height={1080}
                         loading="lazy"
+                        placeholder="blur"
                         className="rounded-lg shadow-lg w-full" />
                     {[1, 2, 3, 4, 5].map((index) => (
                         <AnimatedContent key={index} className="relative w-full max-w-4xl h-auto rounded-lg overflow-hidden shadow-md shadow-accent-hover">
@@ -491,6 +528,7 @@ const ProjectPage = async ({ params, searchParams }) => {
                                 width={1920} // Full width for large screens
                                 height={1080} // Maintain aspect ratio
                                 loading="lazy"
+                                placeholder="blur"
                                 className="rounded-lg shadow-lg"
                             />
                         </AnimatedContent>
@@ -506,6 +544,7 @@ const ProjectPage = async ({ params, searchParams }) => {
                         width={1920}
                         height={1080}
                         loading="lazy"
+                        placeholder="blur"
                         className="rounded-lg shadow-lg w-full" />
                     {[1, 2, 3].map((index) => (
                         <AnimatedContent key={index} className="relative w-full max-w-4xl h-auto rounded-lg overflow-hidden shadow-md shadow-accent-hover">
@@ -515,6 +554,7 @@ const ProjectPage = async ({ params, searchParams }) => {
                                 width={1920} // Full width for large screens
                                 height={1080} // Maintain aspect ratio
                                 loading="lazy"
+                                placeholder="blur"
                                 className="rounded-lg shadow-lg"
                             />
                         </AnimatedContent>
@@ -540,6 +580,7 @@ const ProjectPage = async ({ params, searchParams }) => {
                         width={1920}
                         height={1080}
                         loading="lazy"
+                        placeholder="blur"
                         className="rounded-lg shadow-lg w-full" />
                     <div className="flex flex-row flex-wrap justify-center items-center gap-4 mt-4">
                         {[1, 2, 3].map((index) => (
@@ -553,6 +594,7 @@ const ProjectPage = async ({ params, searchParams }) => {
                                     width={1920} // Full width for large screens
                                     height={1080} // Maintain aspect ratio
                                     loading="lazy"
+                                    placeholder="blur"
                                     className="rounded-lg shadow-lg"
                                 />
                             </AnimatedContent>
@@ -569,6 +611,7 @@ const ProjectPage = async ({ params, searchParams }) => {
                         width={1920}
                         height={1080}
                         loading="lazy"
+                        placeholder="blur"
                         className="rounded-lg shadow-lg w-full" />
                     <iframe
                         src="/assets/work/8/devoirs/ds12018/index.html" // Correct path to the HTML file in the public directory
@@ -576,6 +619,7 @@ const ProjectPage = async ({ params, searchParams }) => {
                         height="700px"
                         className="border-none"
                         loading="lazy"
+                        placeholder="blur"
                         allowFullScreen
                     ></iframe>
                 </div>
@@ -589,6 +633,7 @@ const ProjectPage = async ({ params, searchParams }) => {
                         width={1920}
                         height={1080}
                         loading="lazy"
+                        placeholder="blur"
                         className="rounded-lg shadow-lg w-full" />
                     <iframe
                         src="/assets/work/7/devoirs/ds12018/index.html" // Correct path to the HTML file in the public directory
@@ -596,6 +641,7 @@ const ProjectPage = async ({ params, searchParams }) => {
                         height="700px"
                         className="border-none"
                         loading="lazy"
+                        placeholder="blur"
                         allowFullScreen
                     ></iframe>
                 </div>
@@ -609,6 +655,7 @@ const ProjectPage = async ({ params, searchParams }) => {
                         width={1920}
                         height={1080}
                         loading="lazy"
+                        placeholder="blur"
                         className="rounded-lg shadow-lg w-full" />
                     <iframe
                         src="/assets/work/8/quiz/test2021/index.html" // Correct path to the HTML file in the public directory
@@ -616,6 +663,7 @@ const ProjectPage = async ({ params, searchParams }) => {
                         height="700px"
                         className="border-none"
                         loading="lazy"
+                        placeholder="blur"
                         allowFullScreen
                     ></iframe>
                 </div>
@@ -629,6 +677,7 @@ const ProjectPage = async ({ params, searchParams }) => {
                         width={1920}
                         height={1080}
                         loading="lazy"
+                        placeholder="blur"
                         className="rounded-lg shadow-lg w-full" />
                     {[1, 2, 3, 4].map((index) => (
                         <AnimatedContent key={index} className="relative w-full max-w-4xl h-auto rounded-lg overflow-hidden shadow-md shadow-accent-hover">
@@ -638,6 +687,7 @@ const ProjectPage = async ({ params, searchParams }) => {
                                 width={1920} // Full width for large screens
                                 height={1080} // Maintain aspect ratio
                                 loading="lazy"
+                                placeholder="blur"
                                 className="rounded-lg shadow-lg"
                             />
                         </AnimatedContent>
@@ -654,6 +704,7 @@ const ProjectPage = async ({ params, searchParams }) => {
                         width={1920}
                         height={1080}
                         loading="lazy"
+                        placeholder="blur"
                         className="rounded-lg shadow-lg w-full" />
                     {[1, 2, 3].map((index) => (
                         <AnimatedContent key={index} className="relative w-full max-w-4xl h-auto rounded-lg overflow-hidden shadow-md shadow-accent-hover">
@@ -663,6 +714,7 @@ const ProjectPage = async ({ params, searchParams }) => {
                                 width={1920} // Full width for large screens
                                 height={1080} // Maintain aspect ratio
                                 loading="lazy"
+                                placeholder="blur"
                                 className="rounded-lg shadow-lg"
                             />
                         </AnimatedContent>
@@ -678,6 +730,7 @@ const ProjectPage = async ({ params, searchParams }) => {
                         width={1920}
                         height={1080}
                         loading="lazy"
+                        placeholder="blur"
                         className="rounded-lg shadow-lg w-full" />
                     {[1, 2, 3].map((index) => (
                         <AnimatedContent key={index} className="relative w-full max-w-4xl h-auto rounded-lg overflow-hidden shadow-md shadow-accent-hover">
@@ -687,6 +740,7 @@ const ProjectPage = async ({ params, searchParams }) => {
                                 width={1920} // Full width for large screens
                                 height={1080} // Maintain aspect ratio
                                 loading="lazy"
+                                placeholder="blur"
                                 className="rounded-lg shadow-lg"
                             />
                         </AnimatedContent>
@@ -702,6 +756,7 @@ const ProjectPage = async ({ params, searchParams }) => {
                         width={1920}
                         height={1080}
                         loading="lazy"
+                        placeholder="blur"
                         className="rounded-lg shadow-lg w-full" />
                     {[1, 2, 3].map((index) => (
                         <AnimatedContent key={index} className="relative w-full max-w-4xl h-auto rounded-lg overflow-hidden shadow-md shadow-accent-hover">
@@ -711,6 +766,7 @@ const ProjectPage = async ({ params, searchParams }) => {
                                 width={1920} // Full width for large screens
                                 height={1080} // Maintain aspect ratio
                                 loading="lazy"
+                                placeholder="blur"
                                 className="rounded-lg shadow-lg"
                             />
                         </AnimatedContent>
@@ -727,6 +783,7 @@ const ProjectPage = async ({ params, searchParams }) => {
                         width={1920}
                         height={1080}
                         loading="lazy"
+                        placeholder="blur"
                         className="rounded-lg shadow-lg w-full" />
                     {[1, 2, 3, 4, 5, 6].map((index) => (
                         <AnimatedContent key={index} className="relative w-full max-w-4xl h-auto rounded-lg overflow-hidden shadow-md shadow-accent-hover">
@@ -736,6 +793,7 @@ const ProjectPage = async ({ params, searchParams }) => {
                                 width={1920} // Full width for large screens
                                 height={1080} // Maintain aspect ratio
                                 loading="lazy"
+                                placeholder="blur"
                                 className="rounded-lg shadow-lg"
                             />
                         </AnimatedContent>
@@ -751,6 +809,7 @@ const ProjectPage = async ({ params, searchParams }) => {
                         width={1920}
                         height={1080}
                         loading="lazy"
+                        placeholder="blur"
                         className="rounded-lg shadow-lg w-full" />
                     <iframe
                         src="/assets/work/7/quiz/testn12025/index.html" // Correct path to the HTML file in the public directory
@@ -758,6 +817,7 @@ const ProjectPage = async ({ params, searchParams }) => {
                         height="700px"
                         className="border-none w-full"
                         loading="lazy"
+                        placeholder="blur"
                         allowFullScreen
                     ></iframe>
                 </div>
@@ -771,6 +831,7 @@ const ProjectPage = async ({ params, searchParams }) => {
                         width={1920}
                         height={1080}
                         loading="lazy"
+                        placeholder="blur"
                         className="rounded-lg shadow-lg w-full" />
                     <iframe
                         src="/assets/work/7/quiz/quizpart1/index.html" // Correct path to the HTML file in the public directory
@@ -778,6 +839,7 @@ const ProjectPage = async ({ params, searchParams }) => {
                         height="700px"
                         className="border-none w-full"
                         loading="lazy"
+                        placeholder="blur"
                         allowFullScreen
                     ></iframe>
                 </div>
@@ -791,6 +853,7 @@ const ProjectPage = async ({ params, searchParams }) => {
                         width={1920}
                         height={1080}
                         loading="lazy"
+                        placeholder="blur"
                         className="rounded-lg shadow-lg w-full" />
                     <iframe
                         src="/assets/work/7/quiz/quizpart2/index.html" // Correct path to the HTML file in the public directory
@@ -798,6 +861,7 @@ const ProjectPage = async ({ params, searchParams }) => {
                         height="700px"
                         className="border-none w-full"
                         loading="lazy"
+                        placeholder="blur"
                         allowFullScreen
                     ></iframe>
                 </div>
@@ -811,6 +875,7 @@ const ProjectPage = async ({ params, searchParams }) => {
                         width={1920}
                         height={1080}
                         loading="lazy"
+                        placeholder="blur"
                         className="rounded-lg shadow-lg w-full" />
                     <iframe
                         src="/assets/work/7/quiz/quizpart3/index.html" // Correct path to the HTML file in the public directory
@@ -818,6 +883,7 @@ const ProjectPage = async ({ params, searchParams }) => {
                         height="700px"
                         className="border-none w-full"
                         loading="lazy"
+                        placeholder="blur"
                         allowFullScreen
                     ></iframe>
                 </div>
@@ -831,6 +897,7 @@ const ProjectPage = async ({ params, searchParams }) => {
                         width={1920}
                         height={1080}
                         loading="lazy"
+                        placeholder="blur"
                         className="rounded-lg shadow-lg w-full" />
                     <iframe
                         src="/assets/work/7/quiz/quizpart4/index.html" // Correct path to the HTML file in the public directory
@@ -838,6 +905,7 @@ const ProjectPage = async ({ params, searchParams }) => {
                         height="700px"
                         className="border-none w-full"
                         loading="lazy"
+                        placeholder="blur"
                         allowFullScreen
                     ></iframe>
                 </div>
@@ -851,6 +919,7 @@ const ProjectPage = async ({ params, searchParams }) => {
                         width={1920}
                         height={1080}
                         loading="lazy"
+                        placeholder="blur"
                         className="rounded-lg shadow-lg w-full" />
                     <iframe
                         src="/assets/work/8/quiz/quizpart5/index.html" // Correct path to the HTML file in the public directory
@@ -858,6 +927,7 @@ const ProjectPage = async ({ params, searchParams }) => {
                         height="700px"
                         className="border-none w-full"
                         loading="lazy"
+                        placeholder="blur"
                         allowFullScreen
                     ></iframe>
                 </div>
@@ -870,6 +940,7 @@ const ProjectPage = async ({ params, searchParams }) => {
                         alt={project.title}
                         width={1920}
                         height={1080}
+                        placeholder="blur"
                         loading="lazy"
                         className="rounded-lg shadow-lg w-full" />
                     {[1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22].map((index) => (
@@ -880,6 +951,7 @@ const ProjectPage = async ({ params, searchParams }) => {
                                 width={1920} // Full width for large screens
                                 height={1080} // Maintain aspect ratio
                                 loading="lazy"
+                                placeholder="blur"
                                 className="rounded-lg shadow-lg"
                             />
                         </AnimatedContent>
@@ -894,6 +966,7 @@ const ProjectPage = async ({ params, searchParams }) => {
                         alt={project.title}
                         width={1920}
                         height={1080}
+                        placeholder="blur"
                         loading="lazy"
                         className="rounded-lg shadow-lg w-full" />
                     {[1, 2, 3, 4, 5, 6].map((index) => (
@@ -904,6 +977,7 @@ const ProjectPage = async ({ params, searchParams }) => {
                                 width={1920} // Full width for large screens
                                 height={1080} // Maintain aspect ratio
                                 loading="lazy"
+                                placeholder="blur"
                                 className="rounded-lg shadow-lg"
                             />
                         </AnimatedContent>
@@ -919,6 +993,7 @@ const ProjectPage = async ({ params, searchParams }) => {
                         alt={project.title}
                         width={1920}
                         height={1080}
+                        placeholder="blur"
                         loading="lazy"
                         className="rounded-lg shadow-lg w-full" />
                     {[1, 2, 3, 4].map((index) => (
@@ -929,6 +1004,7 @@ const ProjectPage = async ({ params, searchParams }) => {
                                 width={1920} // Full width for large screens
                                 height={1080} // Maintain aspect ratio
                                 loading="lazy"
+                                placeholder="blur"
                                 className="rounded-lg shadow-lg"
                             />
                         </AnimatedContent>
@@ -943,6 +1019,7 @@ const ProjectPage = async ({ params, searchParams }) => {
                         alt={project.title}
                         width={1920}
                         height={1080}
+                        placeholder="blur"
                         loading="lazy"
                         className="rounded-lg shadow-lg w-full" />
                     {[1, 2, 3, 4].map((index) => (
@@ -953,6 +1030,7 @@ const ProjectPage = async ({ params, searchParams }) => {
                                 width={1920} // Full width for large screens
                                 height={1080} // Maintain aspect ratio
                                 loading="lazy"
+                                placeholder="blur"
                                 className="rounded-lg shadow-lg"
                             />
                         </AnimatedContent>
@@ -967,6 +1045,7 @@ const ProjectPage = async ({ params, searchParams }) => {
                         alt={project.title}
                         width={1920}
                         height={1080}
+                        placeholder="blur"
                         loading="lazy"
                         className="rounded-lg shadow-lg w-full" />
                     {[1, 2, 3].map((index) => (
@@ -977,6 +1056,7 @@ const ProjectPage = async ({ params, searchParams }) => {
                                 width={1920} // Full width for large screens
                                 height={1080} // Maintain aspect ratio
                                 loading="lazy"
+                                placeholder="blur"
                                 className="rounded-lg shadow-lg"
                             />
                         </AnimatedContent>
@@ -992,6 +1072,7 @@ const ProjectPage = async ({ params, searchParams }) => {
                         width={1920}
                         height={1080}
                         loading="lazy"
+                        placeholder="blur"
                         className="rounded-lg shadow-lg w-full" />
                     {[1, 2, 3].map((index) => (
                         <AnimatedContent key={index} className="relative w-full max-w-4xl h-auto rounded-lg overflow-hidden shadow-md shadow-accent-hover">
@@ -1001,6 +1082,7 @@ const ProjectPage = async ({ params, searchParams }) => {
                                 width={1920} // Full width for large screens
                                 height={1080} // Maintain aspect ratio
                                 loading="lazy"
+                                placeholder="blur"
                                 className="rounded-lg shadow-lg"
                             />
                         </AnimatedContent>
@@ -1016,6 +1098,7 @@ const ProjectPage = async ({ params, searchParams }) => {
                         width={1920}
                         height={1080}
                         loading="lazy"
+                        placeholder="blur"
                         className="rounded-lg shadow-lg w-full" />
                     {[1, 2, 3, 4].map((index) => (
                         <AnimatedContent key={index} className="relative w-full max-w-4xl h-auto rounded-lg overflow-hidden shadow-md shadow-accent-hover">
@@ -1025,13 +1108,13 @@ const ProjectPage = async ({ params, searchParams }) => {
                                 width={1920} // Full width for large screens
                                 height={1080} // Maintain aspect ratio
                                 loading="lazy"
+                                placeholder="blur"
                                 className="rounded-lg shadow-lg"
                             />
                         </AnimatedContent>
                     ))}
                 </div>
             )}
-
         </div>
     );
 };
