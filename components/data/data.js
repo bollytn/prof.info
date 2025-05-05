@@ -433,6 +433,26 @@ const projects = [
         image: '/assets/work/cover/thumb35.png',
         live: 'https://drive.google.com/drive/folders/1Fce-t3eBIeFFschI69ZezzVfeSbEQmq4?usp=sharing',
     },
+    {
+        num: '44',
+        classe:  ['7ᵉ année'],
+        category: 'Scratch',
+        title: "10 Scratch Programming Questions level - beginner",
+        description: "Press on the corresponding point",
+        stack: [{ name: 'Scratch ' }, { name: "looks" }, { name: "motion" }, { name: "controls" }, { name: "events" }],
+        image: '/assets/work/cover/thumb36.png',
+        live: 'https://drive.google.com/drive/folders/1Fce-t3eBIeFFschI69ZezzVfeSbEQmq4?usp=sharing',
+    },
+    {
+        num: '45',
+        classe:  ['7ᵉ année'],
+        category: 'Scratch',
+        title: "10 Scratch Programming Questions level - medium",
+        description: "Press on the corresponding point",
+        stack: [{ name: 'Scratch ' }, { name: "looks" }, { name: "motion" }, { name: "controls" }, { name: "events" }],
+        image: '/assets/work/cover/thumb37.png',
+        live: 'https://drive.google.com/drive/folders/1Fce-t3eBIeFFschI69ZezzVfeSbEQmq4?usp=sharing',
+    },
 ]
 
 export default projects;

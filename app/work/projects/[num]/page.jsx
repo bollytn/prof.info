@@ -210,8 +210,12 @@ const renderContent = (num, project) => {
         case "42":
             return contentMap.images("/assets/work/9/devoirs/ds32023/", 4);
         case "43":
-                return contentMap.iframe("https://fr.educaplay.com/jeu/20813239-scratch.html");
-
+            return contentMap.iframe("https://fr.educaplay.com/jeu/20813239-scratch.html");
+        case "44":
+            return contentMap.iframe("https://fr.educaplay.com/jeu/5387362-instructions_scratch.html");
+        case "45":
+            return contentMap.iframe("https://fr.educaplay.com/jeu/5391296-activite_scratch.html");
+    
         default:
             return <p className="text-center text-white">No content available</p>;
     }
