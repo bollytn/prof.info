@@ -209,6 +209,9 @@ const renderContent = (num, project) => {
             return contentMap.images("/assets/work/8/devoirs/ds22024/", 3);
         case "42":
             return contentMap.images("/assets/work/9/devoirs/ds32023/", 4);
+        case "43":
+                return contentMap.iframe("https://fr.educaplay.com/jeu/20813239-scratch.html");
+
         default:
             return <p className="text-center text-white">No content available</p>;
     }

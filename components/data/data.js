@@ -423,6 +423,16 @@ const projects = [
         image: '/assets/work/cover/thumb34.png',
         live: 'https://drive.google.com/file/d/1HxR7VBvnGxahT0VXd5NlFsukbBR0EB_i/view?usp=sharing',
     },
+    {
+        num: '43',
+        classe:  ['7ᵉ année'],
+        category: 'Scratch',
+        title: "Theoretical evaluation part 2",
+        description: "10 questions about scratch",
+        stack: [{ name: 'Scratch ' }, { name: "looks" }, { name: "motion" }, { name: "controls" }, { name: "events" }],
+        image: '/assets/work/cover/thumb35.png',
+        live: 'https://drive.google.com/drive/folders/1Fce-t3eBIeFFschI69ZezzVfeSbEQmq4?usp=sharing',
+    },
 ]
 
 export default projects;
