@@ -58,7 +58,7 @@ const projects = [
     },
     {
         num: '06',
-        classe: ['8ᵉ année', '7ᵉ année'],
+        classe: ['8ᵉ année'],
         category: 'scratch',
         title: "fiche pédagogique",
         description: "Bonjour chers collègues, je partage ma répartition que j'ai préparée pour 8ᵉ presque 15 séances sous forme des fiches pédagogiques.J'espère que vous aidez...",
