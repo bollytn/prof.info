@@ -453,6 +453,16 @@ const projects = [
         image: '/assets/work/cover/thumb37.png',
         live: 'https://drive.google.com/drive/folders/1Fce-t3eBIeFFschI69ZezzVfeSbEQmq4?usp=sharing',
     },
+    {
+        num: '46',
+        classe:  ['7ᵉ année'],
+        category: 'Scratch',
+        title: "Mots Croisés level - medium",
+        description: "Mots Croisés",
+        stack: [{ name: 'Scratch ' }, { name: "looks" }, { name: "motion" }, { name: "controls" }, { name: "events" }],
+        image: '/assets/work/cover/thumb38.png',
+        live: 'https://drive.google.com/drive/folders/1Fce-t3eBIeFFschI69ZezzVfeSbEQmq4?usp=sharing',
+    },
 ]
 
 export default projects;
