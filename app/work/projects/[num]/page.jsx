@@ -133,7 +133,7 @@ const renderContent = (num, project) => {
         case "13":
             return contentMap.images("/assets/work/8/guide/cour", 4);
         case "14":
-            return contentMap.  ([
+            return contentMap.coversAndDownloads([
                 { name: "baguette", path: "/assets/work/8/jeux/1.sb2", cover: "/assets/work/8/jeux/covers/1.png" },
                 { name: "balon", path: "/assets/work/8/jeux/2.sb2", cover: "/assets/work/8/jeux/covers/2.png" },
                 { name: "blue sky", path: "/assets/work/8/jeux/3.sb2", cover: "/assets/work/8/jeux/covers/3.png" },
