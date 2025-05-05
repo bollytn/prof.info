@@ -84,11 +84,10 @@ const renderContent = (num, project) => {
                         {/* Cover Image */}
                         <Image
                             src={item.cover}
-                            alt={`Cover of ${item.name}`}
+                            alt={item.name}
                             width={300}
                             height={200}
                             loading="lazy"
-                            unoptimized
                             className="rounded-lg shadow-lg"
                         />
                         {/* Download Link */}
