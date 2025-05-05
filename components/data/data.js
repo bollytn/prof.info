@@ -473,6 +473,17 @@ const projects = [
         image: '/assets/work/cover/thumb39.png',
         live: 'https://drive.google.com/drive/folders/1Fce-t3eBIeFFschI69ZezzVfeSbEQmq4?usp=sharing',
     },
+    {
+        num: '48',
+        classe:  ['7ᵉ année'],
+        category: 'Scratch',
+        title: "Révision Scratch level - beginner",
+        description: "Révision Scratch",
+        stack: [{ name: 'Scratch ' }, { name: "looks" }, { name: "motion" }, { name: "controls" }, { name: "events" }],
+        image: '/assets/work/cover/thumb40.png',
+        live: 'https://drive.google.com/drive/folders/1Fce-t3eBIeFFschI69ZezzVfeSbEQmq4?usp=sharing',
+    },
+
 ]
 
 export default projects;
