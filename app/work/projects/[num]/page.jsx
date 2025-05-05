@@ -134,17 +134,17 @@ const renderContent = (num, project) => {
             return contentMap.images("/assets/work/8/guide/cour", 4);
         case "14":
             return contentMap.coversAndDownloads([
-                { name: "baguette", path: "/assets/work/8/jeux/1.sb2", cover: "/assets/work/8/jeux/covers/1.png" },
-                { name: "balon", path: "/assets/work/8/jeux/2.sb2", cover: "/assets/work/8/jeux/covers/2.png" },
-                { name: "blue sky", path: "/assets/work/8/jeux/3.sb2", cover: "/assets/work/8/jeux/covers/3.png" },
-                { name: "chasse clé", path: "/assets/work/8/jeux/4.sb2", cover: "/assets/work/8/jeux/covers/4.png" },
-                { name: "chasse aux sorciere", path: "/assets/work/8/jeux/5.sb2", cover: "/assets/work/8/jeux/covers/5.png" },
-                { name: "circulation", path: "/assets/work/8/jeux/6.sb2", cover: "/assets/work/8/jeux/covers/6.png" },
-                { name: "jeux robot", path: "/assets/work/8/jeux/7.sb2", cover: "/assets/work/8/jeux/covers/7.png" },
-                { name: "labyrinthe", path: "/assets/work/8/jeux/8.sb2", cover: "/assets/work/8/jeux/covers/8.png" },
-                { name: "poursuite dangereuse", path: "/assets/work/8/jeux/9.sb2", cover: "/assets/work/8/jeux/covers/9.png" },
-                { name: "rebond solo", path: "/assets/work/8/jeux/10.sb2", cover: "/assets/work/8/jeux/covers/10.png" },
-                { name: "singe", path: "/assets/work/8/jeux/11.sb2", cover: "/assets/work/8/jeux/covers/11.png" },
+                { name: "baguette", path: "/assets/work/8/jeux/1.sb2", cover: "/assets/work/8/jeux/covers/1.PNG" },
+                { name: "balon", path: "/assets/work/8/jeux/2.sb2", cover: "/assets/work/8/jeux/covers/2.PNG" },
+                { name: "blue sky", path: "/assets/work/8/jeux/3.sb2", cover: "/assets/work/8/jeux/covers/3.PNG" },
+                { name: "chasse clé", path: "/assets/work/8/jeux/4.sb2", cover: "/assets/work/8/jeux/covers/4.PNG" },
+                { name: "chasse aux sorciere", path: "/assets/work/8/jeux/5.sb2", cover: "/assets/work/8/jeux/covers/5.PNG" },
+                { name: "circulation", path: "/assets/work/8/jeux/6.sb2", cover: "/assets/work/8/jeux/covers/6.PNG" },
+                { name: "jeux robot", path: "/assets/work/8/jeux/7.sb2", cover: "/assets/work/8/jeux/covers/7.PNG" },
+                { name: "labyrinthe", path: "/assets/work/8/jeux/8.sb2", cover: "/assets/work/8/jeux/covers/8.PNG" },
+                { name: "poursuite dangereuse", path: "/assets/work/8/jeux/9.sb2", cover: "/assets/work/8/jeux/covers/9.PNG" },
+                { name: "rebond solo", path: "/assets/work/8/jeux/10.sb2", cover: "/assets/work/8/jeux/covers/10.PNG" },
+                { name: "singe", path: "/assets/work/8/jeux/11.sb2", cover: "/assets/work/8/jeux/covers/11.PNG" },
             ]);
         case "15":
             return contentMap.images("/assets/work/8/cartes/vert/cour", 5);
@@ -172,7 +172,7 @@ const renderContent = (num, project) => {
         case "23":
             return contentMap.iframe("/assets/work/7/devoirs/ds12018/index.html");
         case "24":
-            return contentMap.iframe("//assets/work/8/quiz/test2021/index.html");
+            return contentMap.iframe("/assets/work/8/quiz/test2021/index.html");
         case "25":
             return contentMap.images("/assets/work/8/devoirs/ds22020/cour", 4);
         case "26":
@@ -194,7 +194,7 @@ const renderContent = (num, project) => {
         case "34":
             return contentMap.iframe("/assets/work/7/quiz/quizpart4/index.html");
         case "35":
-            return contentMap.iframe("//assets/work/8/quiz/quizpart5/index.html");
+            return contentMap.iframe("/assets/work/8/quiz/quizpart5/index.html");
         case "36":
             return contentMap.images("/assets/work/9/books/book1/", 22);
         case "37":
