@@ -93,7 +93,7 @@ const Photo = () => {
                         priority
                         quality={100}
                         fill
-                        alt=""
+                        alt="mahjoubi bilel"
                         className="object-contain"
                         sizes="(max-width: 768px) 289px, (max-width: 1200px) 498px, 100vw"
                     />
