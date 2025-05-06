@@ -222,7 +222,13 @@ const renderContent = (num, project) => {
         case "48":
             return contentMap.iframe("https://fr.educaplay.com/jeu/19187172-jeu_des_blocs_de_scratch.html");
         case "49":
-            return contentMap.iframe("https://quizizz.com/embed/quiz/5da475b4513b43001bf1804b");    
+            return contentMap.iframe("https://quizizz.com/embed/quiz/5da475b4513b43001bf1804b");  
+        case "50":
+            return contentMap.iframe("https://quizizz.com/embed/quiz/603208d14db269001b0e7989");
+        case "51":
+            return contentMap.iframe("https://quizizz.com/embed/quiz/5f89026f7b4039001ba4ac74");      
+        case "52":
+            return contentMap.iframe("https://quizizz.com/embed/quiz/5e283f2021a465001cc19865");           
 
         default:
             return <p className="text-center text-white">No content available</p>;

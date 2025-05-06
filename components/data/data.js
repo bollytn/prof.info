@@ -493,6 +493,36 @@ const projects = [
         image: '/assets/work/cover/thumb41.jpg',
         live: 'https://drive.google.com/drive/folders/1Fce-t3eBIeFFschI69ZezzVfeSbEQmq4?usp=sharing',
     },
+    {
+        num: '50',
+        classe:  ['9ᵉ année'],
+        category: 'App Inventor',
+        title: "Révision App Inventor level - beginner",
+        description: "Révision App Inventor",
+        stack: [{ name: 'App Inventor ' }, { name: "Media" }, { name: "Properties" }, { name: "Animation" }, { name: ".aia" }],
+        image: '/assets/work/cover/thumb42.jpg',
+        live: 'https://drive.google.com/drive/folders/1Fce-t3eBIeFFschI69ZezzVfeSbEQmq4?usp=sharing',
+    },
+    {
+        num: '51',
+        classe:  ['9ᵉ année'],
+        category: 'App Inventor',
+        title: "Révision App Inventor level - beginner",
+        description: "Révision App Inventor",
+        stack: [{ name: 'App Inventor ' }, { name: "Media" }, { name: "Properties" }, { name: "Animation" }, { name: ".aia" }],
+        image: '/assets/work/cover/thumb43.jpg',
+        live: 'https://drive.google.com/drive/folders/1Fce-t3eBIeFFschI69ZezzVfeSbEQmq4?usp=sharing',
+    },
+    {
+        num: '52',
+        classe:  ['9ᵉ année'],
+        category: 'App Inventor',
+        title: "Révision App Inventor level - medium",
+        description: "Révision App Inventor",
+        stack: [{ name: 'App Inventor ' }, { name: "Media" }, { name: "Properties" }, { name: "Animation" }, { name: ".aia" }],
+        image: '/assets/work/cover/thumb44.jpg',
+        live: 'https://drive.google.com/drive/folders/1Fce-t3eBIeFFschI69ZezzVfeSbEQmq4?usp=sharing',
+    },
 
 ]
 
