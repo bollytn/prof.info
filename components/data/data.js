@@ -533,6 +533,26 @@ const projects = [
         image: '/assets/work/cover/thumb45.jpg',
         live: 'https://drive.google.com/drive/folders/1Fce-t3eBIeFFschI69ZezzVfeSbEQmq4?usp=sharing',
     },
+    {
+        num: '54',
+        classe:  ['9ᵉ année'],
+        category: 'App Inventor',
+        title: "Révision App Inventor level - beginner",
+        description: "21 QUESTIONS",
+        stack: [{ name: 'apk ' }, { name: "Components" }, { name: "sensors" }, { name: "Button " }, { name: "Number Data" }],
+        image: '/assets/work/cover/thumb46.jpg',
+        live: 'https://drive.google.com/drive/folders/1Fce-t3eBIeFFschI69ZezzVfeSbEQmq4?usp=sharing',
+    },
+    {
+        num: '55',
+        classe:  ['9ᵉ année'],
+        category: 'App Inventor',
+        title: "Révision App Inventor level - beginner",
+        description: "15 QUESTIONS",
+        stack: [{ name: 'User Interface' }, { name: "Textbox" }, { name: "programming loop." }, { name: "canvas " }, { name: "viewr" }],
+        image: '/assets/work/cover/thumb47.jpg',
+        live: 'https://drive.google.com/drive/folders/1Fce-t3eBIeFFschI69ZezzVfeSbEQmq4?usp=sharing',
+    },
 
 ]
 

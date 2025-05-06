@@ -230,7 +230,11 @@ const renderContent = (num, project) => {
         case "52":
             return contentMap.iframe("https://quizizz.com/embed/quiz/5e283f2021a465001cc19865");   
         case "53":
-            return contentMap.iframe("https://quizizz.com/embed/quiz/5cde6fff5401b8001a6a0a3e");            
+            return contentMap.iframe("https://quizizz.com/embed/quiz/5cde6fff5401b8001a6a0a3e");  
+        case "54":
+            return contentMap.iframe("https://quizizz.com/embed/quiz/5d3e5d61b85290001a5053d1");              
+        case "55":
+            return contentMap.iframe("https://quizizz.com/embed/quiz/5ff87fd73edc70001bd2248a"); 
 
         default:
             return <p className="text-center text-white">No content available</p>;
