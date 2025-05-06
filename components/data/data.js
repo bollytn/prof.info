@@ -483,6 +483,16 @@ const projects = [
         image: '/assets/work/cover/thumb40.png',
         live: 'https://drive.google.com/drive/folders/1Fce-t3eBIeFFschI69ZezzVfeSbEQmq4?usp=sharing',
     },
+    {
+        num: '49',
+        classe:  ['9ᵉ année'],
+        category: 'App Inventor',
+        title: "Révision App Inventor level - beginner",
+        description: "Révision App Inventor",
+        stack: [{ name: 'App Inventor ' }, { name: "Palette" }, { name: "Blocks" }, { name: "Boolean Data" }, { name: ".aia" }],
+        image: '/assets/work/cover/thumb41.jpg',
+        live: 'https://drive.google.com/drive/folders/1Fce-t3eBIeFFschI69ZezzVfeSbEQmq4?usp=sharing',
+    },
 
 ]
 

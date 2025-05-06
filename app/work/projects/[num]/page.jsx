@@ -221,6 +221,8 @@ const renderContent = (num, project) => {
             return contentMap.iframe("https://fr.educaplay.com/jeu/22548003-revision_scratch.html");
         case "48":
             return contentMap.iframe("https://fr.educaplay.com/jeu/19187172-jeu_des_blocs_de_scratch.html");
+        case "49":
+            return contentMap.iframe("https://quizizz.com/embed/quiz/5da475b4513b43001bf1804b");    
 
         default:
             return <p className="text-center text-white">No content available</p>;
