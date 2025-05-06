@@ -228,7 +228,9 @@ const renderContent = (num, project) => {
         case "51":
             return contentMap.iframe("https://quizizz.com/embed/quiz/5f89026f7b4039001ba4ac74");      
         case "52":
-            return contentMap.iframe("https://quizizz.com/embed/quiz/5e283f2021a465001cc19865");           
+            return contentMap.iframe("https://quizizz.com/embed/quiz/5e283f2021a465001cc19865");   
+        case "53":
+            return contentMap.iframe("https://quizizz.com/embed/quiz/5cde6fff5401b8001a6a0a3e");            
 
         default:
             return <p className="text-center text-white">No content available</p>;
