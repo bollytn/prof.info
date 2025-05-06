@@ -1,5 +1,5 @@
 import { Geist, Geist_Mono } from "next/font/google";
-import { SpeedInsights } from "@vercel/speed-insights/next"
+
 import "./globals.css";
 
 //Components
@@ -7,9 +7,9 @@ import Header from "@/components/Header";
 import PageTransition from "@/components/PageTransition";
 import StairTransition from "@/components/StairTransition";
 
-import { Analytics } from "@vercel/analytics/react";
+
 import {GoogleAnalytics} from "@next/third-parties/google";
-import Script from 'next/script';
+
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -95,10 +95,7 @@ export default function RootLayout({ children }) {
         <PageTransition>
           {children} 
            <GoogleAnalytics gaId="G-YTT7VFLWN2" />  
-           <Script
-          src="https://www.google-analytics.com/analytics.js"
-          strategy="lazyOnload"
-        />
+           
         </PageTransition>
        
       </body>
