@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import AnimatedContent from "@/components/shared/AnimatedContent";
 import ScrollImage from "@/components/shared/ScrollImage";
 import Link from "next/link";
@@ -7,6 +7,11 @@ const itemsPerPage = 6; // Number of items per page
 
 const PaginatedProjects = ({ projects, selectedClass }) => {
     const [currentPage, setCurrentPage] = useState(1);
+
+    // Reset pagination to page 1 when selectedClass changes
+    useEffect(() => {
+        setCurrentPage(1);
+    }, [selectedClass]);
 
     const paginatedProjects = projects.slice(
         (currentPage - 1) * itemsPerPage,
