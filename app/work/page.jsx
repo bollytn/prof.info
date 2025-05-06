@@ -13,6 +13,7 @@ import { useRouter } from "next/navigation";
 import { getFirestore, collection, getDocs } from "firebase/firestore"; // Import Firestore functions
 import app from "@/components/data/FirebaseConfig"; // Import the Firebase app configuration
 
+import PaginatedProjects from '@/components/shared/PaginatedProjects';
 
 const gradient = (mask) =>
     `conic-gradient(black 0%, black ${mask ? 0 : 100}%, transparent ${mask ? 0 : 100}%, transparent 100%)`;
@@ -120,70 +121,9 @@ const Work = () => {
                     </AnimatedContent>
 
                     <div className="flex flex-col xl:flex-row xl:gap-7 mt-8">
-                        <div className="w-full grid grid-cols-1 lg:grid-cols-2 gap-8 text-center">
-                            {filteredProjects.map((project, index) => (
-                                <AnimatedContent key={index}>
-                                    <div className="relative group mb-2 p-6 bg-gray-800 rounded-lg shadow-lg transition-all duration-300 hover:shadow-2xl hover:scale-105 hover:bg-gray-700">
-                                        {/* Divider Line */}
-                                        <h3 className="flex mb-4 items-center w-full">
-                                            <span className="flex-grow bg-yellow-300 shadow-[0_0_5px_yellow] rounded h-px"></span>
-                                            <span className="uppercase mx-3 text-lg font-medium text-accent/60 animate-bounce">
-                                                {project.category}
-                                            </span>
-                                            <span className="flex-grow bg-yellow-300 shadow-[0_0_5px_yellow] rounded h-px"></span>
-                                        </h3>
-
-                                        {/* Project Title */}
-                                        <Reveal>
-                                            <h2 className="text-4xl font-bold leading-none text-white capitalize group-hover:text-accent transition-all duration-300">
-                                                {project.title} - {selectedClass}
-                                            </h2>
-                                        </Reveal>
-
-                                        {/* Project Description */}
-                                        <Reveal>
-                                            <p className="text-white/60 mt-4 group-hover:text-white transition-all duration-300">
-                                                {project.description}
-                                            </p>
-                                        </Reveal>
-
-                                        {/* Project Stack */}
-                                        <Reveal>
-                                            <ul className="flex flex-wrap gap-4 mt-4 text-left">
-                                                {project.stack.map((item, idx) => (
-                                                    <li
-                                                        key={idx}
-                                                        className="text-accent group-hover:text-yellow-300 transition-all duration-300"
-                                                    >
-                                                        {item.name}
-                                                    </li>
-                                                ))}
-                                            </ul>
-                                        </Reveal>
-
-                                        {/* Project Image with Scroll Animation */}
-                                        <ScrollImage project={project} />
-
-                                        {/* Project Link - MODIFIED HERE */}
-                                        <div className="mt-4 flex justify-center">
-                                            <Reveal>
-                                                <Link
-                                                    // Pass the selectedClass directly in the href
-                                                    href={`/work/projects/${project.num}?selectedClass=${encodeURIComponent(selectedClass)}`}
-                                                    className="mt-4 inline-block text-accent group-hover:text-yellow-300 transition-all duration-300 relative text-center rounded-lg px-4 py-2 hover:bg-gray-800 shadow-lg hover:shadow-2xl mx-auto"
-                                                    style={{ display: 'block' }} // Ensures the button is centered
-                                                >
-                                                    <span className="absolute inset-0 scale-0 group-hover:border-b-2 group-hover:border-yellow-300 group-hover:scale-100 opacity-50 transition-transform duration-300 rounded-lg"></span>
-                                                    {/* Remove the onClick handler from the span */}
-                                                    <span
-                                                        onClick={() => handleProjectClick(project.num)} // Optional: keep this for any additional logic
-                                                        className="relative z-10">Ouvrir</span>
-                                                </Link>
-                                            </Reveal>
-                                        </div>
-                                    </div>
-                                </AnimatedContent>
-                            ))}
+                        <div className="w-full gap-8 text-center">
+                            {/* PaginatedProjects component */}
+                            <PaginatedProjects projects={filteredProjects} selectedClass={selectedClass} />
                         </div>
                     </div>
                 </div>
