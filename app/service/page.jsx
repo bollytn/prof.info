@@ -6,10 +6,6 @@ import { useState } from 'react'
 import { Swiper, SwiperSlide } from 'swiper/react'
 import 'swiper/css'
 
-import { LuExternalLink } from "react-icons/lu";
-import { Tooltip, TooltipContent, TooltipProvider, TooltipTrigger } from '@/components/ui/tooltip'
-import Link from 'next/link'
-
 import Image from 'next/image'
 import { WorkSliderBtn } from '@/components/shared/WorkSliderBtn'
 
