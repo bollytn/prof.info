@@ -67,7 +67,13 @@ const PaginatedProjects = ({ projects, selectedClass }) => {
             <div className="pagination-controls mt-4 flex justify-center items-center gap-4">
                 <AnimatedContent>
                     <button
-                        onClick={() => setCurrentPage((prev) => Math.max(prev - 1, 1))}
+                        onClick={() => {
+                            setCurrentPage((prev) => Math.max(prev - 1, 1));
+                            window.scrollTo({
+                                top: 0,
+                                behavior: "smooth", // Smooth scrolling
+                            });
+                        }}
                         disabled={currentPage === 1}
                         className="px-4 py-2 bg-gray-800 text-white rounded-lg transition-all duration-300 transform hover:scale-105 hover:bg-yellow-300 hover:text-black active:scale-95 active:bg-yellow-400 disabled:opacity-50 disabled:cursor-not-allowed"
                     >
@@ -79,11 +85,15 @@ const PaginatedProjects = ({ projects, selectedClass }) => {
                 )}`}</span>
                 <AnimatedContent>
                     <button
-                        onClick={() =>
+                        onClick={() => {
                             setCurrentPage((prev) =>
                                 Math.min(prev + 1, Math.ceil(projects.length / itemsPerPage))
-                            )
-                        }
+                            );
+                            window.scrollTo({
+                                top: 0,
+                                behavior: "smooth", // Smooth scrolling
+                            });
+                        }}
                         disabled={currentPage === Math.ceil(projects.length / itemsPerPage)}
                         className="px-4 py-2 bg-gray-800 text-white rounded-lg transition-all duration-300 transform hover:scale-105 hover:bg-yellow-300 hover:text-black active:scale-95 active:bg-yellow-400 disabled:opacity-50 disabled:cursor-not-allowed"
                     >
