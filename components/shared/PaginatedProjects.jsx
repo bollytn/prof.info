@@ -60,27 +60,31 @@ const PaginatedProjects = ({ projects, selectedClass }) => {
 
             {/* Pagination Controls */}
             <div className="pagination-controls mt-4 flex justify-center items-center gap-4">
-                <button
-                    onClick={() => setCurrentPage((prev) => Math.max(prev - 1, 1))}
-                    disabled={currentPage === 1}
-                    className="px-4 py-2 bg-gray-800 text-white rounded-lg"
-                >
-                    Previous
-                </button>
+                <AnimatedContent>
+                    <button
+                        onClick={() => setCurrentPage((prev) => Math.max(prev - 1, 1))}
+                        disabled={currentPage === 1}
+                        className="px-4 py-2 bg-gray-800 text-white rounded-lg transition-all duration-300 transform hover:scale-105 hover:bg-yellow-300 hover:text-black active:scale-95 active:bg-yellow-400 disabled:opacity-50 disabled:cursor-not-allowed"
+                    >
+                        Previous
+                    </button>
+                </AnimatedContent>
                 <span className="px-4 py-2">{`Page ${currentPage} of ${Math.ceil(
                     projects.length / itemsPerPage
                 )}`}</span>
-                <button
-                    onClick={() =>
-                        setCurrentPage((prev) =>
-                            Math.min(prev + 1, Math.ceil(projects.length / itemsPerPage))
-                        )
-                    }
-                    disabled={currentPage === Math.ceil(projects.length / itemsPerPage)}
-                    className="px-4 py-2 bg-gray-800 text-white rounded-lg"
-                >
-                    Next
-                </button>
+                <AnimatedContent>
+                    <button
+                        onClick={() =>
+                            setCurrentPage((prev) =>
+                                Math.min(prev + 1, Math.ceil(projects.length / itemsPerPage))
+                            )
+                        }
+                        disabled={currentPage === Math.ceil(projects.length / itemsPerPage)}
+                        className="px-4 py-2 bg-gray-800 text-white rounded-lg transition-all duration-300 transform hover:scale-105 hover:bg-yellow-300 hover:text-black active:scale-95 active:bg-yellow-400 disabled:opacity-50 disabled:cursor-not-allowed"
+                    >
+                        Next
+                    </button>
+                </AnimatedContent>
             </div>
         </div>
     );
