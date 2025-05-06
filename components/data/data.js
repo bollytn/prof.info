@@ -553,6 +553,16 @@ const projects = [
         image: '/assets/work/cover/thumb47.jpg',
         live: 'https://drive.google.com/drive/folders/1Fce-t3eBIeFFschI69ZezzVfeSbEQmq4?usp=sharing',
     },
+    {
+        num: '56',
+        classe:  ['7ᵉ année'],
+        category: 'Scratch',
+        title: "Révision Scratch level - beginner",
+        description: "Communication between sprites",
+        stack: [{ name: 'looks' }, { name: "motion" }, { name: "loop" }, { name: "event." }, { name: "broadcast " }, { name: "message" }],
+        image: '/assets/work/cover/thumb48.png',
+        live: 'https://drive.google.com/drive/folders/1Fce-t3eBIeFFschI69ZezzVfeSbEQmq4?usp=sharing',
+    },
 
 ]
 
