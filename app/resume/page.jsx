@@ -147,6 +147,7 @@ const Resume = () => {
                                             alt="Badge Icon"
                                             width={50}
                                             height={50}
+ unoptimized
                                         />
                                         <h3 className="text-4xl font-bold mt-1 ml-1">{experience.title}</h3>
                                     </div>
@@ -185,6 +186,7 @@ const Resume = () => {
                                             alt="Cap Icon"
                                             width={50}
                                             height={50}
+ unoptimized
                                         />
                                         <h3 className="text-4xl font-bold mt-1 ml-1">{education.title}</h3>
                                     </div>
@@ -224,6 +226,7 @@ const Resume = () => {
                                                 alt="Cap Icon"
                                                 width={50}
                                                 height={50}
+ unoptimized
                                             />
                                             <h3 className="text-4xl font-bold mt-1 ml-1">{skills.title}</h3>
                                         </div>
@@ -272,6 +275,7 @@ const Resume = () => {
                                             alt="Badge Icon"
                                             width={50}
                                             height={50}
+ unoptimized
                                         />
                                         <h3 className="text-4xl font-bold mt-1 ml-1">{about.title}</h3>
                                     </div>
