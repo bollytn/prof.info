@@ -1,3 +1,4 @@
+
 import { Geist, Geist_Mono } from "next/font/google";
 
 import "./globals.css";
@@ -8,6 +9,7 @@ import PageTransition from "@/components/PageTransition";
 import StairTransition from "@/components/StairTransition";
 
 import {GoogleAnalytics} from "@next/third-parties/google";
+
 
 
 const geistSans = Geist({
@@ -22,6 +24,7 @@ const geistMono = Geist_Mono({
   display: 'swap',
 });
 
+
 export const metadata = {
   title: "Mahjoubi Bilel - Portfolio Enseignant Informatique",
   description: "Découvrez le portfolio de Mahjoubi Bilel, enseignant en informatique. Explorez ses projets éducatifs, ses services et ses ressources pédagogiques.",
@@ -31,12 +34,17 @@ export const metadata = {
     icon: "/assets/icon.ico",
     shortcut: "/assets/icon.ico",
   },
+
+
 };
 
 export default function RootLayout({ children }) {
+
+
   return (
     <html lang="en" suppressHydrationWarning>
       <head>
+   
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{
