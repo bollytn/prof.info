@@ -22,7 +22,7 @@ const renderContent = (num, project) => {
                         className="relative w-full max-w-4xl h-auto rounded-lg overflow-hidden shadow-md shadow-accent-hover"
                     >
                         <Image
-                            src={`${path}${index + 1}.png`}
+                            src={`${path}${index + 1}.webp`}
                             alt={`${project.title} Image ${index + 1}`}
                             width={1920}
                             height={1080}

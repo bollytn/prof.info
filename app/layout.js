@@ -7,7 +7,6 @@ import Header from "@/components/Header";
 import PageTransition from "@/components/PageTransition";
 import StairTransition from "@/components/StairTransition";
 
-
 import {GoogleAnalytics} from "@next/third-parties/google";
 
 
@@ -96,7 +95,6 @@ export default function RootLayout({ children }) {
           {children} 
            <GoogleAnalytics gaId="G-YTT7VFLWN2" />  
         </PageTransition>
-       
       </body>
     </html>
   );

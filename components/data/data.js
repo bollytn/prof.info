@@ -6,14 +6,14 @@ const projects = [
         title: 'Fabriquer une mangeoire',
         description: 'Dans cette activité, nous allons créer une mangeoire pour oiseaux. Nous allons utiliser un capteur de température et d’humidité pour détecter les conditions météorologiques et un capteur de lumière pour détecter la luminosité ambiante.',
         stack: [{ name: 'microbit' }, { name: "boussol" }, { name: "transmission radio" }],
-        image: '/assets/work/cover/thumb1.png',
+        image: '/assets/work/cover/thumb1.webp',
         live: 'https://mega.nz/file/l3Y2GJ4Q#Lvs_UbXCR9aR50StOcsktL9SXt5ArG9oE5cN6ievOVo',
         contenu:[
-            { title: '1. Introduction',img:[{ src: '/assets/work/mangeoire/thumb1.png', alt: 'image1' }] },
-            { title: '2. Matériel nécessaire',img:[{ src: '/assets/work/mangeoire/thumb1.png', alt: 'image1' }] },
-            { title: '3. Étapes de fabrication',img:[{ src: '/assets/work/mangeoire/thumb1.png', alt: 'image1' }] },
-            { title: '4. Conclusion',img:[{ src: '/assets/work/mangeoire/thumb1.png', alt: 'image1' }] },
-            { title: '5. Conclusion',img:[{ src: '/assets/work/mangeoire/thumb1.png', alt: 'image1' }] },
+            { title: '1. Introduction',img:[{ src: '/assets/work/mangeoire/thumb1.webp', alt: 'image1' }] },
+            { title: '2. Matériel nécessaire',img:[{ src: '/assets/work/mangeoire/thumb1.webp', alt: 'image1' }] },
+            { title: '3. Étapes de fabrication',img:[{ src: '/assets/work/mangeoire/thumb1.webp', alt: 'image1' }] },
+            { title: '4. Conclusion',img:[{ src: '/assets/work/mangeoire/thumb1.webp', alt: 'image1' }] },
+            { title: '5. Conclusion',img:[{ src: '/assets/work/mangeoire/thumb1.webp', alt: 'image1' }] },
         ]
     },
     {
@@ -23,7 +23,7 @@ const projects = [
         title: 'Quiz',
         description: 'Ce quiz permet aux enfants de tester leurs connaissances et de vérifier s’ils ont les bons réflexes.',
         stack: [{ name: 'sécuriser les données' }, { name: "vie privée" }, { name: "malware" }],
-        image: '/assets/work/cover/thumb2.png',
+        image: '/assets/work/cover/thumb2.webp',
         live: 'https://drive.google.com/drive/folders/1XoQSqq5mlVMRSqibavfnEmRsvCCLNTfb?usp=drive_link',
     },
     {
@@ -33,7 +33,7 @@ const projects = [
         title: 'Quiz',
         description: 'mon premier test appinventor (exécutable fichier index).',
         stack: [{ name: 'pédometre' }, { name: "traduire" }, { name: "composants non visibles" }],
-        image: '/assets/work/cover/thumb3.png',
+        image: '/assets/work/cover/thumb3.webp',
         live: 'https://drive.google.com/file/d/1AhCTDfHtT27kt2frgygyiPm7nbLn41Zq/view?usp=sharing',
     },
     {
@@ -43,7 +43,7 @@ const projects = [
         title: "cahier d'activité",
         description: ' .أعدت صياغة كتاب التمارين في نسخته الجديدة، أرجوا أن تعم الفائدة',
         stack: [{ name: 'boucle' }, { name: "instruction conditionnelle" }, { name: "variable" }, { name: "bloc d'instructions" }],
-        image: '/assets/work/cover/thumb4.png',
+        image: '/assets/work/cover/thumb4.webp',
         live: 'https://drive.google.com/file/d/10scm-92_kSG3fi1T9l1LURWWFb9SyHQw/view?usp=sharing',
     },
     {
@@ -53,7 +53,7 @@ const projects = [
         title: "cahier d'activité",
         description: "السلام عليكم، قمت بإنشاء تحتوي على تلاخيص، تمارين و مشاريع مقسمة كالآتي:",
         stack: [{ name: 'chiffre de césar' }, { name: "crabe aux pinces magiques" }, { name: "jeu de nim" }, { name: "le mage et la grenouille" }],
-        image: '/assets/work/cover/thumb5.png',
+        image: '/assets/work/cover/thumb5.webp',
         live: 'https://drive.google.com/file/d/1ifZuzfKIPBJYcCFr1ZzltU4Q5qV7EHa2/view?usp=sharing',
     },
     {
@@ -63,7 +63,7 @@ const projects = [
         title: "fiche pédagogique",
         description: "Bonjour chers collègues, je partage ma répartition que j'ai préparée pour 8ᵉ presque 15 séances sous forme des fiches pédagogiques.J'espère que vous aidez...",
         stack: [{ name: 'scratch' }, { name: "activité débranché" }, { name: "activité pratique" }],
-        image: '/assets/work/cover/thumb6.png',
+        image: '/assets/work/cover/thumb6.webp',
         live: 'https://mega.nz/folder/4yoXDTjb#XrJkt9u0JY2v2PBhv-wrTA',
     },
     {
@@ -73,7 +73,7 @@ const projects = [
         title: "fiche pédagogique",
         description: "Bonjour chers collègues, je partage ma répartition que j'ai préparée pour 9ᵉ presque 15 séances sous forme des fiches pédagogiques.J'espère que vous aidez...",
         stack: [{ name: 'microbit' }, { name: "reconnaissance vocale" }, { name: "compteur de temps" }, { name: "détecteur de mouvement" }, { name: "pédommètre" }],
-        image: '/assets/work/cover/thumb7.png',
+        image: '/assets/work/cover/thumb7.webp',
         live: 'https://mega.nz/file/l3Y2GJ4Q#Lvs_UbXCR9aR50StOcsktL9SXt5ArG9oE5cN6ievOVo',
     },
     {
@@ -83,7 +83,7 @@ const projects = [
         title: "Devoir de synthèse N°1",
         description: "examain théorique et pratique de 8ᵉ année",
         stack: [{ name: 'scratch' }, { name: "mot croisés" }, { name: "activité débranché" }, { name: "activité pratique" }],
-        image: '/assets/work/cover/thumb8.png',
+        image: '/assets/work/cover/thumb8.webp',
         live: 'https://drive.google.com/file/d/1PgelJW8Tw2dCDr36DdFOkV_ODpce3jdc/view?usp=sharing',
     },
     {
@@ -93,7 +93,7 @@ const projects = [
         title: "4 devoirs théoriques",
         description: "بما ان قلة الحواسيب لا تمكننا من إنجاز فرض تطبقي ولا عامل الوقت يسمح لنا بإنجاز فرض نصفه تطبيقي و النصف الأخر نظري فهكذا كانت الخلاصة...",
         stack: [{ name: 'scratch' }, { name: "activité débranché" }, { name: "pensée logique" }],
-        image: '/assets/work/cover/thumb9.png',
+        image: '/assets/work/cover/thumb9.webp',
         live: 'https://drive.google.com/drive/folders/1V6bl3H2tD5vyveHLp8zECg4tb3CN-Bwg?usp=drive_link',
     },
     {
@@ -103,7 +103,7 @@ const projects = [
         title: "5 devoirs Pratiques",
         description: "لزملائي الأعزاء الذين لم يعدو بعد فروضهم اقترح عليهم بعض المواضيع ذات الطابع التطبيقي.",
         stack: [{ name: 'scratch' }, { name: "sous programme" }, { name: "activité pratique" }],
-        image: '/assets/work/cover/thumb10.png',
+        image: '/assets/work/cover/thumb10.webp',
         live: 'https://drive.google.com/drive/folders/1w061opt93tx_dKCnQoQFFrMZl34yIS77?usp=drive_link',
     },
     {
@@ -113,7 +113,7 @@ const projects = [
         title: "4 series théoriques",
         description: "Pour vous préparer au devoir de synthèse je vous propose cinq types de sujets.vous devrez réaliser des exercices sur les instructions...",
         stack: [{ name: 'boucles' }, { name: "variables" }, { name: "instructions conditionnelles" }, { name: "fonctions" }, { name: "opérateurs" }],
-        image: '/assets/work/cover/thumb11.png',
+        image: '/assets/work/cover/thumb11.webp',
         live: 'https://drive.google.com/drive/folders/1kFdFoKSBu5eos9zjYV7jmF5QOUYJJ4y_?usp=drive_link',
     },
     {
@@ -123,7 +123,7 @@ const projects = [
         title: "Rappel interactive",
         description: "Algorithme de rappel interactive sur les instructions conditionnelles et les boucles.",
         stack: [{ name: 'les instructions' }, { name: "boucle" }, { name: "instructions conditionnelles" }],
-        image: '/assets/work/cover/thumb12.png',
+        image: '/assets/work/cover/thumb12.webp',
         live: 'https://drive.google.com/file/d/1IIqW8EYKXaH5i9A8zqLFEghIxgWM9FLM/view?usp=sharing',
     },
     {
@@ -133,7 +133,7 @@ const projects = [
         title: "Guide de révision",
         description: "Guide de programmation + Grille de suivi et d'évaluation",
         stack: [{ name: 'evaluation' }, { name: "scratch" }],
-        image: '/assets/work/cover/thumb13.png',
+        image: '/assets/work/cover/thumb13.webp',
         live: 'https://drive.google.com/drive/folders/17u5QeQiWsVxcM9jzR61jjubWQvl5liVd?usp=drive_link',
     },
     {
@@ -143,7 +143,7 @@ const projects = [
         title: "11 Projets de révision",
         description: "Quelques projets réalisable avec une guide de programmation pour bien développer des techniques de jeux.",
         stack: [{ name: 'baguette' }, { name: "balon" }, { name: "blue sky" }, { name: "chasse clé" }, { name: "robot" }, { name: "chasse aux sorciere" }, { name: "circulation" }, { name: "labyrinthe" }, { name: "rebond solo" }, { name: "singe et pomme" }],
-        image: '/assets/work/cover/thumb14.png',
+        image: '/assets/work/cover/thumb14.webp',
         live: 'https://drive.google.com/drive/folders/1s70KInaWcq39YQ-UuGMAtbq3g7irZSN9?usp=drive_link',
     },
     {
@@ -153,7 +153,7 @@ const projects = [
         title: "Activites débranchées niveau 1",
         description: "Chers collègues, lorsque vous présentez une nouvelle notion aux élèves avec Scratch, je vous invite à le présenter (d'abord) avec des activités débranchées (sans ordinateur). par exemple Il y a 3 séries de 10 cartes, de difficultés différentes :",
         stack: [{ name: 'Série de cartes vertes : une seule boucle.' }],
-        image: '/assets/work/cover/thumb15.png',
+        image: '/assets/work/cover/thumb15.webp',
         live: 'https://drive.google.com/drive/folders/1tGbXvztXH7MDS-U-j_8FFpD8Opqslb43?usp=sharing',
     },
     {
@@ -163,7 +163,7 @@ const projects = [
         title: "Activites débranchées niveau 2",
         description: "Chers collègues, lorsque vous présentez une nouvelle notion aux élèves avec Scratch, je vous invite à le présenter (d'abord) avec des activités débranchées (sans ordinateur). par exemple Il y a 3 séries de 10 cartes, de difficultés différentes :",
         stack: [{ name: "Série de cartes bleues : boucles imbriquées + utilisation de blocs créés." }],
-        image: '/assets/work/8/cartes/bleu/cour1.png',
+        image: '/assets/work/8/cartes/bleu/cour1.webp',
         live: 'https://drive.google.com/drive/folders/1tGbXvztXH7MDS-U-j_8FFpD8Opqslb43?usp=sharing',
     },
     {
@@ -173,7 +173,7 @@ const projects = [
         title: "Activites débranchées niveau 3",
         description: "Chers collègues, lorsque vous présentez une nouvelle notion aux élèves avec Scratch, je vous invite à le présenter (d'abord) avec des activités débranchées (sans ordinateur). par exemple Il y a 3 séries de 10 cartes, de difficultés différentes :",
         stack: [{ name: "Série de cartes rouges : boucles imbriquées + utilisation de blocs créés + variables" }],
-        image: '/assets/work/8/cartes/rouge/cour1.png',
+        image: '/assets/work/8/cartes/rouge/cour1.webp',
         live: 'https://drive.google.com/drive/folders/1tGbXvztXH7MDS-U-j_8FFpD8Opqslb43?usp=sharing',
     },
     {
@@ -183,7 +183,7 @@ const projects = [
         title: "Juice Truck",
         description: "Good evening, Project n°1 of 7ᵉ Pilot Year. I hope you enjoy it, dear colleagues.",
         stack: [{ name: 'Project' }, { name: "Loops" }, { name: "effect" }, { name: "conditions" }, { name: "messages" }, { name: "operaateurs" }, { name: "sensors" }],
-        image: '/assets/work/cover/thumb16.png',
+        image: '/assets/work/cover/thumb16.webp',
         live: 'https://mega.nz/file/8uA3SDaY#WbPMS7URZ9qDrkXbRpceArXhkwaVFoXR-Px_GJ5kWTw',
     },
     {
@@ -193,7 +193,7 @@ const projects = [
         title: "Crazy Frog",
         description: "Good evening, Project n°1 of 8ᵉ Pilot Year. I hope you enjoy it, dear colleagues.",
         stack: [{ name: 'Project' }, { name: "Loops" }, { name: "randomization" }, { name: "conditions" }, { name: "message" }, { name: "sound" }, { name: "operaateurs" }, { name: "variables" }, { name: "sensors" }],
-        image: '/assets/work/cover/thumb17.png',
+        image: '/assets/work/cover/thumb17.webp',
         live: 'https://mega.nz/file/lywFybaY#4mgOreGL-4cSPkXpYPsKfhmqYkk-yyLzKhDeGQlyyKU',
     },
     {
@@ -203,7 +203,7 @@ const projects = [
         title: "Devoir de synthèse N°1",
         description: "devoir de synthèse de 8ᵉ année (1ere trimestre) théorique + pratique",
         stack: [{ name: 'Scratch ', }, { name: "activité débranché" }, { name: "activité pratique" }],
-        image: '/assets/work/cover/thumb18.png',
+        image: '/assets/work/cover/thumb18.webp',
         live: 'https://mega.nz/file/4zwklbpT#PsPXlAP9YuTXtKPDlwDTNo0D3P5Gtuua6NcvhE62f-Y',
     },{
         num: '21',
@@ -212,7 +212,7 @@ const projects = [
         title: "Devoir de synthèse N°2",
         description: "devoir de synthèse de 8ᵉ année (2eme trimestre) théorique + pratique",
         stack: [{ name: 'Scratch ', }, { name: "activité débranché" }, { name: "activité pratique" }],
-        image: '/assets/work/cover/thumb19.png',
+        image: '/assets/work/cover/thumb19.webp',
         live: 'https://drive.google.com/file/d/1tcDAfBRY0VWm0wfCVGwBcJFxuSriECnX/view?usp=sharing',
     },
     {
@@ -222,7 +222,7 @@ const projects = [
         title: "Devoir de synthèse N°3",
         description: "devoir de synthèse de 8ᵉ année (3eme trimestre) intéractif",
         stack: [{ name: "droit de l'image", }, { name: "sécurite informatique" }, { name: "exmain intéractif" }],
-        image: '/assets/work/cover/thumb20.png',
+        image: '/assets/work/cover/thumb20.webp',
         live: 'https://drive.google.com/file/d/16sKHvMLjos4eT_TAPDQRuu4OEsuoGzGx/view?usp=sharing',
     },
     {
@@ -232,7 +232,7 @@ const projects = [
         title: "Devoir de synthèse N°1",
         description: "devoir de synthèse de 7ᵉ année (1eme trimestre) intéractif",
         stack: [{ name: "support de stockage", }, { name: "sécurite informatique" }, { name: "fichier" }, { name: "exmain intéractif" }],
-        image: '/assets/work/cover/thumb21.png',
+        image: '/assets/work/cover/thumb21.webp',
         live: 'https://drive.google.com/file/d/1gVSIMqdqcXeK5QckY57APl0d6nQUZ2GF/view?usp=sharing',
     },
     {
@@ -242,7 +242,7 @@ const projects = [
         title: "Evaluation",
         description: "domaines d'apprentissage : vie privée, sécurité informatique, environnement informatique",
         stack: [{ name: "droit de l'image", }, { name: "sécurite informatique" }, { name: "environnement informatique" }, { name: "exmain intéractif" }, { name: "vie privée" }],
-        image: '/assets/work/cover/thumb22.png',
+        image: '/assets/work/cover/thumb22.webp',
         live: 'https://drive.google.com/file/d/1tOcmiR8QvLPAUvodtox6juNXujTXFoKV/view?usp=sharing',
     },{
         num: '25',
@@ -251,7 +251,7 @@ const projects = [
         title: "Devoir de synthèse N°2",
         description: "devoir de synthèse de 8ᵉ année (2eme trimestre) théorique + pratique",
         stack: [{ name: 'Scratch ', }, { name: "activité débranché" }, { name: "activité pratique" }],
-        image: '/assets/work/cover/thumb23.png',
+        image: '/assets/work/cover/thumb23.webp',
         live: 'https://drive.google.com/file/d/1dPdW1WCSEfeEnZfjYcumxsRY1eF7onVt/view?usp=sharing',
     },
     {
@@ -261,7 +261,7 @@ const projects = [
         title: "Devoir de synthèse N°1",
         description: "devoir de synthèse de 9ᵉ année (1ere trimestre) théorique + pratique",
         stack: [{ name: 'AppInventor ', }, { name: "activité débranché" }, { name: "activité pratique" }],
-        image: '/assets/work/cover/thumb24.png',
+        image: '/assets/work/cover/thumb24.webp',
         live: 'https://drive.google.com/file/d/1HxR7VBvnGxahT0VXd5NlFsukbBR0EB_i/view?usp=sharing',
     },
     {
@@ -271,7 +271,7 @@ const projects = [
         title: "TP",
         description: "des exercices théorique + pratique avec un guide de programmation",
         stack: [{ name: 'Scratch ', }, { name: "activité débranché" }, { name: "activité pratique" }],
-        image: '/assets/work/cover/thumb25.png',
+        image: '/assets/work/cover/thumb25.webp',
         live: 'https://drive.google.com/file/d/16sKHvMLjos4eT_TAPDQRuu4OEsuoGzGx/view?usp=sharing',
     },
     {
@@ -281,7 +281,7 @@ const projects = [
         title: "TP",
         description: "des exercices pratique avec un guide de programmation",
         stack: [{ name: 'Scratch ', }, { name: "activité débranché" }, { name: "activité pratique" }],
-        image: '/assets/work/cover/thumb26.png',
+        image: '/assets/work/cover/thumb26.webp',
         live: 'https://drive.google.com/file/d/1Uo4es5wG6grhkvVN3HXaUWh2k5r2akan/view?usp=sharing',
     },
     {
@@ -291,7 +291,7 @@ const projects = [
         title: "TP",
         description: "des exercices pratique avec un guide de programmation",
         stack: [{ name: 'Scratch ', }, { name: "activité débranché" }, { name: "activité pratique" }],
-        image: '/assets/work/cover/thumb26.png',
+        image: '/assets/work/cover/thumb26.webp',
         live: 'https://drive.google.com/file/d/1RJT-Kg4AgVX-0ge5IJ20gDqa_5XdWnlw/view?usp=sharing',
     },
     {
@@ -301,7 +301,7 @@ const projects = [
         title: "Theoretical evaluation",
         description: "10 questions about scratch",
         stack: [{ name: 'Scratch ' }, { name: "looks" }, { name: "motion" }, { name: "controls" }, { name: "events" }],
-        image: '/assets/work/cover/thumb27.png',
+        image: '/assets/work/cover/thumb27.webp',
         live: 'https://drive.google.com/drive/folders/1Fce-t3eBIeFFschI69ZezzVfeSbEQmq4?usp=sharing',
     },
     {
@@ -311,7 +311,7 @@ const projects = [
         title: "10 Scratch Programming Questions part 1",
         description: "10 questions about scratch",
         stack: [{ name: 'Scratch ' }, { name: "looks" }, { name: "motion" }, { name: "controls" }, { name: "events" }],
-        image: '/assets/work/cover/thumb27.png',
+        image: '/assets/work/cover/thumb27.webp',
         live: 'https://drive.google.com/drive/folders/1Fce-t3eBIeFFschI69ZezzVfeSbEQmq4?usp=sharing',
     },
     {
@@ -321,7 +321,7 @@ const projects = [
         title: "10 Scratch Programming Questions part 2",
         description: "10 questions about scratch",
         stack: [{ name: 'Scratch ' }, { name: "looks" }, { name: "motion" }, { name: "controls" }, { name: "events" }],
-        image: '/assets/work/cover/thumb27.png',
+        image: '/assets/work/cover/thumb27.webp',
         live: 'https://drive.google.com/drive/folders/1Fce-t3eBIeFFschI69ZezzVfeSbEQmq4?usp=sharing',
     },
     {
@@ -331,7 +331,7 @@ const projects = [
         title: "10 Scratch Programming Questions part 3",
         description: "10 questions about scratch",
         stack: [{ name: 'Scratch ' }, { name: "looks" }, { name: "motion" }, { name: "controls" }, { name: "events" }],
-        image: '/assets/work/cover/thumb27.png',
+        image: '/assets/work/cover/thumb27.webp',
         live: 'https://drive.google.com/drive/folders/1Fce-t3eBIeFFschI69ZezzVfeSbEQmq4?usp=sharing',
     },
     {
@@ -341,7 +341,7 @@ const projects = [
         title: "10 Scratch Programming Questions part 4",
         description: "10 questions about scratch",
         stack: [{ name: 'Scratch ' }, { name: "looks" }, { name: "motion" }, { name: "controls" }, { name: "events" }],
-        image: '/assets/work/cover/thumb27.png',
+        image: '/assets/work/cover/thumb27.webp',
         live: 'https://drive.google.com/drive/folders/1Fce-t3eBIeFFschI69ZezzVfeSbEQmq4?usp=sharing',
     },{
         num: '35',
@@ -350,7 +350,7 @@ const projects = [
         title: "10 Scratch Programming Questions part 5",
         description: "10 questions about scratch",
         stack: [{ name: 'Scratch ' }, { name: "looks" }, { name: "motion" }, { name: "controls" }, { name: "events" }],
-        image: '/assets/work/cover/thumb27.png',
+        image: '/assets/work/cover/thumb27.webp',
         live: 'https://drive.google.com/drive/folders/1Fce-t3eBIeFFschI69ZezzVfeSbEQmq4?usp=sharing',
     },
     {
@@ -360,7 +360,7 @@ const projects = [
         title: "10 projects about App Inventor",
         description: "10 projects about App Inventor with a guide",
         stack: [{ name: 'App Inventor ' }, { name: "Cliquez-moi" }, { name: "Trouver le nombre tiré au hasard" }, { name: "Daft Punk" }, { name: "Prise de rendez-vous" }, { name: "Calculatrice" }, { name: "Sandwich : mayo?Ketcheup?" }, { name: "Vibrations et codes barres" }, { name: "Photos et Videos" }, { name: "Table de multiplication" }, { name: "Boussol" }, { name: "Transmition radio" }, { name: "Capteur de température" }, { name: "Capteur de lumière" }, { name: "Capteur de mouvement" }, { name: "Compteur de temps" }, { name: "Pédomètre" }],
-        image: '/assets/work/cover/thumb28.png',
+        image: '/assets/work/cover/thumb28.webp',
         live: 'https://drive.google.com/drive/folders/1Fce-t3eBIeFFschI69ZezzVfeSbEQmq4?usp=sharing',
     },
     {
@@ -370,7 +370,7 @@ const projects = [
         title: "Running unicorn",
         description: "Good evening, Project n°2 of 7ᵉ Pilot Year. I hope you enjoy it, dear colleagues.",
         stack: [{ name: 'Project' }, { name: "motion" }, { name: "looks" }, { name: "repeat" }, { name: "event" }, { name: "animation" }],
-        image: '/assets/work/cover/thumb29.png',
+        image: '/assets/work/cover/thumb29.webp',
         live: 'https://mega.nz/file/8uA3SDaY#WbPMS7URZ9qDrkXbRpceArXhkwaVFoXR-Px_GJ5kWTw',
     },
     {
@@ -380,7 +380,7 @@ const projects = [
         title: "Devoir de synthèse N°3",
         description: "devoir de synthèse de 9ᵉ année (3éme trimestre) théorique + pratique",
         stack: [{ name: 'AppInventor ', }, { name: "activité débranché" }, { name: "activité pratique" }],
-        image: '/assets/work/cover/thumb30.png',
+        image: '/assets/work/cover/thumb30.webp',
         live: 'https://drive.google.com/file/d/1HxR7VBvnGxahT0VXd5NlFsukbBR0EB_i/view?usp=sharing',
     },
     {
@@ -390,7 +390,7 @@ const projects = [
         title: "Devoir de synthèse N°3",
         description: "devoir de synthèse de 8ᵉ année (3éme trimestre) théorique + pratique",
         stack: [{ name: 'Scratch ', }, { name: "activité débranché" }, { name: "activité pratique" }],
-        image: '/assets/work/cover/thumb31.png',
+        image: '/assets/work/cover/thumb31.webp',
         live: 'https://drive.google.com/file/d/1dPdW1WCSEfeEnZfjYcumxsRY1eF7onVt/view?usp=sharing',
     },
     {
@@ -400,7 +400,7 @@ const projects = [
         title: "Devoir de synthèse N°2",
         description: "devoir de synthèse de 8ᵉ année (2éme trimestre) théorique + pratique",
         stack: [{ name: 'Scratch ', }, { name: "activité débranché" }, { name: "activité pratique" }],
-        image: '/assets/work/cover/thumb32.png',
+        image: '/assets/work/cover/thumb32.webp',
         live: 'https://drive.google.com/file/d/1dPdW1WCSEfeEnZfjYcumxsRY1eF7onVt/view?usp=sharing',
     },
     {
@@ -410,7 +410,7 @@ const projects = [
         title: "Devoir de synthèse N°2",
         description: "devoir de synthèse de 9ᵉ année (2éme trimestre) théorique + pratique",
         stack: [{ name: 'AppInventor ', }, { name: "activité débranché" }, { name: "activité pratique" }],
-        image: '/assets/work/cover/thumb33.png',
+        image: '/assets/work/cover/thumb33.webp',
         live: 'https://drive.google.com/file/d/1HxR7VBvnGxahT0VXd5NlFsukbBR0EB_i/view?usp=sharing',
     },
     {
@@ -420,7 +420,7 @@ const projects = [
         title: "Devoir de synthèse N°3",
         description: "devoir de synthèse de 9ᵉ année (3éme trimestre) théorique + pratique",
         stack: [{ name: 'AppInventor ', }, { name: "activité débranché" }, { name: "activité pratique" }],
-        image: '/assets/work/cover/thumb34.png',
+        image: '/assets/work/cover/thumb34.webp',
         live: 'https://drive.google.com/file/d/1HxR7VBvnGxahT0VXd5NlFsukbBR0EB_i/view?usp=sharing',
     },
     {
@@ -430,7 +430,7 @@ const projects = [
         title: "Interface Scratch Quiz",
         description: "Press on the corresponding point",
         stack: [{ name: 'Scratch ' }, { name: "looks" }, { name: "motion" }, { name: "controls" }, { name: "events" }],
-        image: '/assets/work/cover/thumb35.png',
+        image: '/assets/work/cover/thumb35.webp',
         live: 'https://drive.google.com/drive/folders/1Fce-t3eBIeFFschI69ZezzVfeSbEQmq4?usp=sharing',
     },
     {
@@ -440,7 +440,7 @@ const projects = [
         title: "10 Scratch Programming Questions level - beginner",
         description: "Press on the corresponding point",
         stack: [{ name: 'Scratch ' }, { name: "looks" }, { name: "motion" }, { name: "controls" }, { name: "events" }],
-        image: '/assets/work/cover/thumb36.png',
+        image: '/assets/work/cover/thumb36.webp',
         live: 'https://drive.google.com/drive/folders/1Fce-t3eBIeFFschI69ZezzVfeSbEQmq4?usp=sharing',
     },
     {
@@ -450,7 +450,7 @@ const projects = [
         title: "10 Scratch Programming Questions level - medium",
         description: "Press on the corresponding point",
         stack: [{ name: 'Scratch ' }, { name: "looks" }, { name: "motion" }, { name: "controls" }, { name: "events" }],
-        image: '/assets/work/cover/thumb37.png',
+        image: '/assets/work/cover/thumb37.webp',
         live: 'https://drive.google.com/drive/folders/1Fce-t3eBIeFFschI69ZezzVfeSbEQmq4?usp=sharing',
     },
     {
@@ -460,7 +460,7 @@ const projects = [
         title: "Mots Croisés level - medium",
         description: "Mots Croisés",
         stack: [{ name: 'Scratch ' }, { name: "looks" }, { name: "motion" }, { name: "controls" }, { name: "events" }],
-        image: '/assets/work/cover/thumb38.png',
+        image: '/assets/work/cover/thumb38.webp',
         live: 'https://drive.google.com/drive/folders/1Fce-t3eBIeFFschI69ZezzVfeSbEQmq4?usp=sharing',
     },
     {
@@ -470,7 +470,7 @@ const projects = [
         title: "Révision Scratch level - beginner",
         description: "10 questions",
         stack: [{ name: 'Scratch ' }, { name: "looks" }, { name: "motion" }, { name: "controls" }, { name: "events" }],
-        image: '/assets/work/cover/thumb39.png',
+        image: '/assets/work/cover/thumb39.webp',
         live: 'https://drive.google.com/drive/folders/1Fce-t3eBIeFFschI69ZezzVfeSbEQmq4?usp=sharing',
     },
     {
@@ -480,7 +480,7 @@ const projects = [
         title: "Révision Scratch level - beginner",
         description: "10 questions",
         stack: [{ name: 'Scratch ' }, { name: "looks" }, { name: "motion" }, { name: "controls" }, { name: "events" }],
-        image: '/assets/work/cover/thumb40.png',
+        image: '/assets/work/cover/thumb40.webp',
         live: 'https://drive.google.com/drive/folders/1Fce-t3eBIeFFschI69ZezzVfeSbEQmq4?usp=sharing',
     },
     {
@@ -560,7 +560,7 @@ const projects = [
         title: "Révision Scratch level - beginner",
         description: "Communication between sprites",
         stack: [{ name: 'looks' }, { name: "motion" }, { name: "loop" }, { name: "event." }, { name: "broadcast " }, { name: "message" }],
-        image: '/assets/work/cover/thumb48.png',
+        image: '/assets/work/cover/thumb48.webp',
         live: 'https://drive.google.com/drive/folders/1Fce-t3eBIeFFschI69ZezzVfeSbEQmq4?usp=sharing',
     },
 
