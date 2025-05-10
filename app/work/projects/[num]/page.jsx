@@ -120,7 +120,7 @@ const renderContent = (num, project) => {
                     </video>
                     {/* Iframe */}
                     <iframe
-                        src="https://forkphorus.github.io/embed.html#http://localhost:3000/assets/work/9/projets/projet1/interactif%20carte%20tunisienne%20finish.sb3"
+                        src="https://forkphorus.github.io/embed.html#https://raw.githubusercontent.com/bollytn/prof.info/main/public/assets/work/9/projets/projet1/interactif%20carte%20tunisienne%20finish.sb3"
                         width="100%"
                         height="700px"
                         className="border-none w-full"
