@@ -112,7 +112,9 @@ const renderContent = (num, project) => {
                 <div className="mt-12">
                     {/* Video */}
                     <video
-                        src="/assets/work/9/projets/projet1/fin.mp4"
+                        src="/assets/work/9/projets/projet1/fin.webm"
+                        autoPlay
+                        loop
                         controls
                         className="rounded-lg shadow-lg w-full mb-8"
                     >
