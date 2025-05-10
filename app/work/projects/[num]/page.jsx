@@ -105,7 +105,30 @@ const renderContent = (num, project) => {
         ),
     };
 
+
     switch (num) {
+        case "00":
+            return (
+                <div className="mt-12">
+                    {/* Video */}
+                    <video
+                        src="/assets/work/9/projets/projet1/fin.mp4"
+                        controls
+                        className="rounded-lg shadow-lg w-full mb-8"
+                    >
+                        Your browser does not support the video tag.
+                    </video>
+                    {/* Iframe */}
+                    <iframe
+                        src="https://scratch.mit.edu/projects/1171937792"
+                        width="100%"
+                        height="700px"
+                        className="border-none w-full"
+                        loading="lazy"
+                        allowFullScreen
+                    ></iframe>
+                </div>
+            );
         case "01":
             return contentMap.images("/assets/work/9/mangeoire/cour", 12);
         case "02":

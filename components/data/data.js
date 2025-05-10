@@ -1,5 +1,15 @@
 const projects = [
     {
+        num: '00',
+        classe: ['8ᵉ année', '7ᵉ année', '9ᵉ année'],
+        category: 'scratch',
+        title: "Projet de fin d'études",
+        description: "Il s'agit d'un projet de fin d'études pour une étudiante de troisième année,qui consiste à présenter la Tunisie. C'est un projet qui mélange ma vision et ma technique.",
+        stack: [{ name: 'boucle' }, { name: "instruction conditionnelle" }, { name: "variable" }, { name: "bloc d'instructions" }],
+        image: '/assets/work/cover/thumb49.webp',
+        live: 'https://drive.google.com/file/d/10scm-92_kSG3fi1T9l1LURWWFb9SyHQw/view?usp=sharing',
+    },
+    {
         num: '01',
         classe: ['9ᵉ année'],
         category: 'microbit',
