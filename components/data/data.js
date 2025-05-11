@@ -540,7 +540,7 @@ const projects = [
         title: "Révision App Inventor level - medium",
         description: "35 QUESTIONS",
         stack: [{ name: 'Horizontal Arrangment ' }, { name: "accéléromètre" }, { name: "sensors" }, { name: "label" }, { name: "Google Map" }],
-        image: '/assets/work/cover/thumb45.jpg',
+        image: '/assets/work/cover/thumb45.webp',
         live: 'https://drive.google.com/drive/folders/1Fce-t3eBIeFFschI69ZezzVfeSbEQmq4?usp=sharing',
     },
     {
