@@ -510,7 +510,7 @@ const projects = [
         title: "Révision App Inventor level - beginner",
         description: "10 questions",
         stack: [{ name: 'App Inventor ' }, { name: "Media" }, { name: "Properties" }, { name: "Animation" }, { name: ".aia" }],
-        image: '/assets/work/cover/thumb42.jpg',
+        image: '/assets/work/cover/thumb42.webp',
         live: 'https://drive.google.com/drive/folders/1Fce-t3eBIeFFschI69ZezzVfeSbEQmq4?usp=sharing',
     },
     {
@@ -520,7 +520,7 @@ const projects = [
         title: "Révision App Inventor level - beginner",
         description: "10 questions",
         stack: [{ name: 'App Inventor ' }, { name: "Media" }, { name: "Properties" }, { name: "Animation" }, { name: ".aia" }],
-        image: '/assets/work/cover/thumb43.jpg',
+        image: '/assets/work/cover/thumb43.webp',
         live: 'https://drive.google.com/drive/folders/1Fce-t3eBIeFFschI69ZezzVfeSbEQmq4?usp=sharing',
     },
     {
@@ -530,7 +530,7 @@ const projects = [
         title: "Révision App Inventor level - medium",
         description: "6 questions",
         stack: [{ name: 'App Inventor ' }, { name: "layout" }, { name: "sensors" }, { name: "label" }, { name: "textbox" }],
-        image: '/assets/work/cover/thumb44.jpg',
+        image: '/assets/work/cover/thumb44.webp',
         live: 'https://drive.google.com/drive/folders/1Fce-t3eBIeFFschI69ZezzVfeSbEQmq4?usp=sharing',
     },
     {
@@ -550,7 +550,7 @@ const projects = [
         title: "Révision App Inventor level - beginner",
         description: "21 QUESTIONS",
         stack: [{ name: 'apk ' }, { name: "Components" }, { name: "sensors" }, { name: "Button " }, { name: "Number Data" }],
-        image: '/assets/work/cover/thumb46.jpg',
+        image: '/assets/work/cover/thumb46.webp',
         live: 'https://drive.google.com/drive/folders/1Fce-t3eBIeFFschI69ZezzVfeSbEQmq4?usp=sharing',
     },
     {
@@ -560,7 +560,7 @@ const projects = [
         title: "Révision App Inventor level - beginner",
         description: "15 QUESTIONS",
         stack: [{ name: 'User Interface' }, { name: "Textbox" }, { name: "programming loop." }, { name: "canvas " }, { name: "viewr" }],
-        image: '/assets/work/cover/thumb47.jpg',
+        image: '/assets/work/cover/thumb47.webp',
         live: 'https://drive.google.com/drive/folders/1Fce-t3eBIeFFschI69ZezzVfeSbEQmq4?usp=sharing',
     },
     {
