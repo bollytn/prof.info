@@ -105,11 +105,10 @@ const renderContent = (num, project) => {
         ),
     };
 
-
     switch (num) {
         case "00":
             return (
-                <div className="mt-12">
+                <div className="mt-12 ">
                     {/* Video */}
                     <video
                         src="/assets/work/9/projets/projet1/fin.webm"
@@ -120,7 +119,7 @@ const renderContent = (num, project) => {
                     >
                         Your browser does not support the video tag.
                     </video>
-                    {/* Iframe */}
+                    {/* iframe */}
                     <iframe
                         title="carte tunisienne interactif"
                         src="https://forkphorus.github.io/embed.html#https://raw.githubusercontent.com/bollytn/prof.info/main/public/assets/work/9/projets/projet1/interactif%20carte%20tunisienne%20finish.sb3"
