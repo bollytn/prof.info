@@ -136,7 +136,7 @@ const TrackVisitors = () => {
             </p>
 
             <div className='chart-container -mb-14'>
-                <h2 className='chart-title -mb-14'>Location Visitors</h2>
+                <h2 className='chart-title -mb-14'>Lieu Visiteurs :</h2>
                 <ResponsiveContainer width="100%" height={300}>
                     <PieChart>
                         <Pie data={pieChartData} dataKey="count" nameKey="location" cx="50%" cy="50%" outerRadius={80} fill="#FFD900">
