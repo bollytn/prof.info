@@ -55,12 +55,15 @@ const TrackVisitors = () => {
     useEffect(() => {
         const fetchVisitorData = async () => {
             try {
+
+                // Fetch visitor data from the backend API
                 const response = await fetch('http://localhost:5000/api/visitors');
                 const result = await response.json();
                 setData(result);
                 console.log(result);
             } catch (error) {
                 console.error('Error fetching visitor data:', error);
+
             }
         };
         fetchVisitorData();
@@ -88,7 +91,7 @@ const TrackVisitors = () => {
                 {data?.topDay && (
                     <CountUp
                         start={0}
-                        end={500}
+                        end={682}
                         duration={10}
                         separator=","
                         style={{ fontWeight: 'bold', fontSize: '1.2rem' }}
@@ -98,9 +101,24 @@ const TrackVisitors = () => {
             </p>
 
             <p style={{ fontSize: '1rem' }}>
-                Visiteurs en ligne :{' '}
+                Total visites :{' '}
                 {/* use count from the custom hook */}
                 {data?.totalVisits}
+            </p>
+
+            <p style={{ fontSize: '1rem' }}>
+                Total visiteurs uniques :{' '}
+                {/* use count from the custom hook */}
+                {data?.totalVisitors}
+            </p>
+
+            <p style={{ fontSize: '1rem' }}>
+                Most viewed visitors :{' '}
+                {data?.topVisitor?.ip}
+                <br />
+                {data?.topVisitor?.location}
+                <br />
+                {data?.topVisitor?.viewacount}
             </p>
 
         </div>
