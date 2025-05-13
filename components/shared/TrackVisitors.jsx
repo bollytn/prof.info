@@ -135,33 +135,8 @@ const TrackVisitors = () => {
                 {data?.totalVisits}
             </p>
 
-            <p style={{ fontSize: '1rem' }}>
-                Total visiteurs uniques :{' '}
-                {/* use count from the custom hook */}
-                {data?.totalVisitors}
-            </p>
-
-            <p style={{ fontSize: '1rem' }}>
-                Most viewed visitors :{' '}
-                {data?.topVisitor?.ip}
-                <br />
-                {data?.topVisitor?.location}
-                <br />
-                {data?.topVisitor?.viewacount}
-            </p>
-            <div>
-                <h2>Daily Visitors</h2>
-                <ResponsiveContainer width="100%" height={300}>
-                    <BarChart data={BarCharData}>
-                        <XAxis dataKey="date" />
-                        <YAxis />
-                        <Tooltip />
-                        <Bar dataKey="count" fill="#FFD900" />
-                    </BarChart>
-                </ResponsiveContainer>
-            </div>
-            <div>
-                <h2>Location Visitors</h2>
+            <div className='chart-container -mb-14'>
+                <h2 className='chart-title -mb-14'>Location Visitors</h2>
                 <ResponsiveContainer width="100%" height={300}>
                     <PieChart>
                         <Pie data={pieChartData} dataKey="count" nameKey="location" cx="50%" cy="50%" outerRadius={80} fill="#FFD900">
