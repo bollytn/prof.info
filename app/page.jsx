@@ -9,6 +9,7 @@ import Link from 'next/link';
 import AnimatedBox from '@/components/shared/AnimatedBox';
 
 import VisitorStats from '@/components/shared/VisitorStats';
+import TrackVisitors from '@/components/shared/TrackVisitors';
 
 import { useEffect } from 'react';
 import '@/app/styles/globals.css';
@@ -56,7 +57,7 @@ export default function Home() {
             <p className='max-w-[500px] mb-6 text-white/80'>Enseignant multidisciplinaires, professionnel dynamique et respecté, affichant une feuille de route exemplaire pour ce qui est de concevoir et d’offrir d’excellents plans de cours interactifs spécialement adaptés aux besoins de chaque élève.</p>
 
             {/* Statistiques des visiteurs */}
-            <VisitorStats />
+            <TrackVisitors />
 
             {/* btn && social */}
             <div className='flex flex-col xl:flex-row items-center gap 8 mt-6 xl:mt-0'>
