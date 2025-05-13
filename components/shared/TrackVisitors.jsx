@@ -1,7 +1,7 @@
 'use client'
 import { useEffect, useState } from 'react'
 import CountUp from 'react-countup';
-
+import { BarChart, Bar, XAxis, YAxis, Tooltip, ResponsiveContainer, PieChart, Pie, Cell } from 'recharts';
 
 const TrackVisitors = () => {
 
@@ -69,6 +69,35 @@ const TrackVisitors = () => {
         fetchVisitorData();
     }, [])
 
+    // process data 
+    const dailyVisitors = {};
+    data?.visitors?.forEach(visitor => {
+        const date = new Date(visitor.createdAt).toLocaleDateString();
+        dailyVisitors[date] = (dailyVisitors[date] || 0) + 1;
+    });
+    const BarCharData = Object.entries(dailyVisitors).map(([date, count]) => ({
+        date,
+        count,
+    }));
+    console.log(BarCharData);
+
+    //location data
+    const locationData = {};
+    data?.visitors?.forEach(visitor => {
+        const location = visitor.location;
+        locationData[location] = (locationData[location] || 0) + 1;
+    });
+    const pieChartData = Object.entries(locationData).map(([location, count]) => ({
+        location,
+        count,
+    }));
+    console.log(pieChartData);
+
+
+
+
+
+
     return (
         <div
             style={{
@@ -120,6 +149,30 @@ const TrackVisitors = () => {
                 <br />
                 {data?.topVisitor?.viewacount}
             </p>
+            <div>
+                <h2>Daily Visitors</h2>
+                <ResponsiveContainer width="100%" height={300}>
+                    <BarChart data={BarCharData}>
+                        <XAxis dataKey="date" />
+                        <YAxis />
+                        <Tooltip />
+                        <Bar dataKey="count" fill="#FFD900" />
+                    </BarChart>
+                </ResponsiveContainer>
+            </div>
+            <div>
+                <h2>Location Visitors</h2>
+                <ResponsiveContainer width="100%" height={300}>
+                    <PieChart>
+                        <Pie data={pieChartData} dataKey="count" nameKey="location" cx="50%" cy="50%" outerRadius={80} fill="#FFD900">
+                            {pieChartData.map((entry, index) => (
+                                <Cell key={`cell-${index}`} fill={`#${Math.floor(Math.random() * 16777215).toString(16)}`} />
+                            ))}
+                        </Pie>
+                        <Tooltip />
+                    </PieChart>
+                </ResponsiveContainer>
+            </div>
 
         </div>
     )
