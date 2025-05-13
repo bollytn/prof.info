@@ -1,5 +1,7 @@
 'use client'
 import { useEffect, useState } from 'react'
+import CountUp from 'react-countup';
+
 
 const TrackVisitors = () => {
 
@@ -79,6 +81,20 @@ const TrackVisitors = () => {
         >
             <p style={{ fontSize: '1.2rem', fontWeight: 'bold' }}>
                 Aujourd'hui : {new Date().toLocaleDateString('fr-FR', { day: '2-digit', month: '2-digit', year: 'numeric' })}
+            </p>
+
+            <p style={{ fontSize: '1rem' }}>
+                Top visites par jour :{' '}
+                {data?.topDay && (
+                    <CountUp
+                        start={0}
+                        end={500}
+                        duration={10}
+                        separator=","
+                        style={{ fontWeight: 'bold', fontSize: '1.2rem' }}
+                    />
+                )}
+                <br />
             </p>
 
             <p style={{ fontSize: '1rem' }}>

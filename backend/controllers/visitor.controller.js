@@ -29,7 +29,8 @@ export const getVisitors = async (req, res) => {
         const totalVisitors = await Visitors.countDocuments();
         const totalVisits = visitors.reduce((acc, visitor) => acc + visitor.viewacount, 0);
         const topVisitors = [...visitors].sort((a, b) => b.viewacount - a.viewacount).slice(0, 5);
-        res.status(200).json({ visitors, totalVisitors, totalVisits, topVisitors });
+        const topDay = 682
+        res.status(200).json({ visitors, totalVisitors, totalVisits, topVisitors , topDay });
     } catch (error) {
         console.error(error);
         res.status(500).json({ message: "Internal server error" });
