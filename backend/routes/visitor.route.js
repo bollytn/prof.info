@@ -9,4 +9,3 @@ router.post("/add", addVisitor);
 router.get("/", getVisitors);
 
 export default router;
-// Compare this snippet from backend/controllers/visitor.controller.js:

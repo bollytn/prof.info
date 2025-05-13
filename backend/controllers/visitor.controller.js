@@ -28,7 +28,7 @@ export const getVisitors = async (req, res) => {
         const visitors = await Visitors.find();
         const totalVisitors = await Visitors.countDocuments();
         const totalVisits = visitors.reduce((acc, visitor) => acc + visitor.viewacount, 0);
-        const topVisitors = visitors.sort({viewacount: -1},).slice(0, 5);
+        const topVisitors = [...visitors].sort((a, b) => b.viewacount - a.viewacount).slice(0, 5);
         res.status(200).json({ visitors, totalVisitors, totalVisits, topVisitors });
     } catch (error) {
         console.error(error);
