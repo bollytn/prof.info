@@ -2,23 +2,37 @@ import { Visitors } from "../models/visitor.model.js";
 
 export const addVisitor = async (req, res) => {
   const { ip, location, userAgent } = req.body;
- 
+
+  // Optional: Basic input validation
+  if (!ip || !location || !userAgent) {
+    return res.status(400).json({ message: "Missing required fields: ip, location, userAgent" });
+  }
+
   try {
-    const visitor = await Visitors.findOne({ ip });
-    if (visitor) {
-        visitor.viewacount += 1;
-        await visitor.save();
+    let visitorRecord = await Visitors.findOne({ ip }); // Use a different variable name to avoid confusion
+
+    if (visitorRecord) {
+        // Existing visitor
+        visitorRecord.viewacount += 1;
+        await visitorRecord.save();
     } else {
-        const newVisitor = new Visitors({
+        // New visitor
+        visitorRecord = new Visitors({ // Assign the new visitor to visitorRecord
             ip,
             location,
             userAgent,
+            // viewacount will default to 1 as per your schema
         });
-        await newVisitor.save();
+        await visitorRecord.save();
     }
-    res.status(200).json({ message: "Visitor added successfully", visitor });
+    // Now, visitorRecord will always hold the actual visitor document (either updated or new)
+    res.status(200).json({ message: "Visitor added successfully", visitor: visitorRecord });
   } catch (error) {
-    console.error(error);
+    console.error("Error in addVisitor:", error); // Log with more context
+    // Optional: Handle Mongoose validation errors specifically
+    if (error.name === 'ValidationError') {
+        return res.status(400).json({ message: "Validation Error", errors: error.errors });
+    }
     res.status(500).json({ message: "Internal server error" });
   }
 } 
