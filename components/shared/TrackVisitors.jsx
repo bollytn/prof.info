@@ -31,7 +31,7 @@ const TrackVisitors = () => {
         const oneHour = 60 * 60 * 1000;
 
         if (!visitData || (Date.now() - visitData.timestamp > oneHour)) {
-            await fetch('http://localhost:5000/api/visitors/add', {
+            await fetch('https://prof-info.vercel.app/api/visitors/add', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',
@@ -57,7 +57,7 @@ const TrackVisitors = () => {
             try {
 
                 // Fetch visitor data from the backend API
-                const response = await fetch('http://localhost:5000/api/visitors');
+                const response = await fetch('https://prof-info.vercel.app/api/visitors');
                 const result = await response.json();
                 setData(result);
                 console.log(result);
