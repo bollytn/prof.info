@@ -135,20 +135,6 @@ const TrackVisitors = () => {
                 {data?.totalVisits}
             </p>
 
-            <div className='chart-container -mb-14'>
-                <h2 className='chart-title -mb-14'>Lieu Visiteurs :</h2>
-                <ResponsiveContainer width="100%" height={300}>
-                    <PieChart>
-                        <Pie data={pieChartData} dataKey="count" nameKey="location" cx="50%" cy="50%" outerRadius={80} fill="#FFD900">
-                            {pieChartData.map((entry, index) => (
-                                <Cell key={`cell-${index}`} fill={`#${Math.floor(Math.random() * 16777215).toString(16)}`} />
-                            ))}
-                        </Pie>
-                        <Tooltip />
-                    </PieChart>
-                </ResponsiveContainer>
-            </div>
-
         </div>
     )
 }
