@@ -117,15 +117,13 @@ const TrackVisitors = () => {
 
             <p style={{ fontSize: '1rem' }}>
                 Top visites par jour :{' '}
-                {data?.topDay && (
-                    <CountUp
-                        start={0}
-                        end={682}
-                        duration={10}
-                        separator=","
-                        style={{ fontWeight: 'bold', fontSize: '1.2rem' }}
-                    />
-                )}
+                <CountUp
+                    start={0}
+                    end={682}
+                    duration={10}
+                    separator=","
+                    style={{ fontWeight: 'bold', fontSize: '1.2rem' }}
+                />
                 <br />
             </p>
 
