@@ -55,7 +55,6 @@ const TrackVisitors = () => {
     useEffect(() => {
         const fetchVisitorData = async () => {
             try {
-
                 // Fetch visitor data from the backend API
                 const response = await fetch('https://prof-info.vercel.app/api/visitors');
                 const result = await response.json();
@@ -63,7 +62,6 @@ const TrackVisitors = () => {
                 console.log(result);
             } catch (error) {
                 console.error('Error fetching visitor data:', error);
-
             }
         };
         fetchVisitorData();
@@ -92,10 +90,6 @@ const TrackVisitors = () => {
         count,
     }));
     console.log(pieChartData);
-
-
-
-
 
 
     return (
