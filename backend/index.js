@@ -24,6 +24,9 @@ mongoose.connect(process.env.MONGODB_URL, {
   });
 
 app.use('/api/visitors', visitorRoutes);
+app.get('/test', (req, res) => {
+  res.send('Welcome to the Visitor Tracking API');
+});
 
 app.listen(PORT, () => {
   console.log(`Server is running on port ${PORT}`);
