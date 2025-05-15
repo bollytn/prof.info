@@ -24,7 +24,7 @@ mongoose.connect(process.env.MONGODB_URL, {
   });
 
 app.use('/api/visitors', visitorRoutes);
-app.get('/test', (req, res) => {
+app.get('/', (req, res) => {
   res.send('Welcome to the Visitor Tracking API');
 });
 
