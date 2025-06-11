@@ -573,6 +573,17 @@ const projects = [
         image: '/assets/work/cover/thumb48.webp',
         live: 'https://drive.google.com/drive/folders/1Fce-t3eBIeFFschI69ZezzVfeSbEQmq4?usp=sharing',
     },
+    {
+        num: '57',
+        classe:  ['kids'],
+        category: 'Scratch jr',
+        title: "تعليم البرمجه للأطفال من سن 5 سنوات إلى 9 سنوات ",
+        description: "سيتعلم طفلك مبادئ البرمجة بإستخدام برنامج سكراتش جونيور، وهو برنامج مجاني ومفتوح المصدر، مصمم خصيصًا للأطفال من سن 5 إلى 9 سنوات. سيتعلم طفلك كيفية إنشاء قصصه وألعابه الخاصة من خلال البرمجة المرئية.",
+        stack: [{ name: 'Scratch Jr' },{ name: "البرمجة المرئية" }, { name: "قصص" }, { name: "ألعاب" },{ name: 'التفكير الإبداعي' }, { name: "التفكير المنطقي " }, { name: "مهارات البحث " }, { name: "حل المشكلات" }],
+        image: '/assets/work/cover/thumb50.webp',
+        live: 'https://drive.google.com/drive/folders/1Fce-t3eBIeFFschI69ZezzVfeSbEQmq4?usp=sharing',
+    },
+
 
 ]
 

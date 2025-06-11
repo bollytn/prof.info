@@ -263,6 +263,8 @@ const renderContent = (num, project) => {
             return contentMap.iframe("https://quizizz.com/embed/quiz/5ff87fd73edc70001bd2248a");
         case "56":
             return contentMap.images("/assets/work/7/tp/tp3/cour", 3);
+        case "57":
+            return contentMap.images("/assets/work/kids/cours/level1/cour", 29);
 
         default:
             return <p className="text-center text-white">No content available</p>;

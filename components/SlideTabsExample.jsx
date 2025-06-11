@@ -18,7 +18,7 @@ const SlideTabs = ({ onTabClick }) => {
     });
 
     const [selectedTab, setSelectedTab] = useState('9ᵉ année'); // Track the currently selected tab
-    const Section = ['9ᵉ année', '8ᵉ année', '7ᵉ année'];
+    const Section = ['9ᵉ année', '8ᵉ année', '7ᵉ année', 'kids'];
 
     return (
         <ul
