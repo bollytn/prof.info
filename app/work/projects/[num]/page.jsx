@@ -264,7 +264,7 @@ const renderContent = (num, project) => {
         case "56":
             return contentMap.images("/assets/work/7/tp/tp3/cour", 3);
         case "57":
-            return contentMap.images("/assets/work/kids/cours/level1/cour", 29);
+            return contentMap.images("/assets/work/kids/cours/level1/cour", 25);
 
         default:
             return <p className="text-center text-white">No content available</p>;
