@@ -1,7 +1,7 @@
 const projects = [
     {
         num: '00',
-        classe: ['8ᵉ année', '7ᵉ année', '9ᵉ année'],
+        classe: ['8ᵉ année', '7ᵉ année'],
         category: 'scratch',
         title: "Projet de fin d'études",
         description: "Il s'agit d'un projet de fin d'études pour une étudiante de troisième année,qui consiste à présenter la Tunisie. C'est un projet qui mélange ma vision et ma technique.",
@@ -575,9 +575,9 @@ const projects = [
     },
     {
         num: '57',
-        classe:  ['kids'],
+        classe:  ["kid's"],
         category: 'Scratch jr',
-        title: "تعليم البرمجه للأطفال من سن 5 سنوات إلى 9 سنوات ",
+        title: "تعليم البرمجه للأطفال من سن 5 إلى 9 سنوات ",
         description: "سيتعلم طفلك مبادئ البرمجة بإستخدام برنامج سكراتش جونيور، وهو برنامج مجاني ومفتوح المصدر، مصمم خصيصًا للأطفال من سن 5 إلى 9 سنوات. سيتعلم طفلك كيفية إنشاء قصصه وألعابه الخاصة من خلال البرمجة المرئية.",
         stack: [{ name: 'Scratch Jr' },{ name: "البرمجة المرئية" }, { name: "قصص" }, { name: "ألعاب" },{ name: 'التفكير الإبداعي' }, { name: "التفكير المنطقي " }, { name: "مهارات البحث " }, { name: "حل المشكلات" }],
         image: '/assets/work/cover/thumb50.webp',

@@ -18,7 +18,7 @@ const SlideTabs = ({ onTabClick }) => {
     });
 
     const [selectedTab, setSelectedTab] = useState('9ᵉ année'); // Track the currently selected tab
-    const Section = ['9ᵉ année', '8ᵉ année', '7ᵉ année', 'kids'];
+    const Section = ['9ᵉ année', '8ᵉ année', '7ᵉ année', "kid's"];
 
     return (
         <ul
@@ -66,7 +66,7 @@ const Tab = ({ children, setPosition, onClick, isSelected }) => {
                 });
             }}
             onClick={onClick} // Handle click event
-            className={`relative z-10 block cursor-pointer px-3 py-1.5 text-xs uppercase font-semibold rounded-full md:px-5 md:py-3 md:text-base transition-colors duration-300 ${isSelected ? "bg-accent text-black" : "text-white hover:text-black"
+            className={`relative z-10 block cursor-pointer px-3 py-1.5 text-xs capitalize font-semibold rounded-full md:px-5 md:py-3 md:text-base transition-colors duration-300 ${isSelected ? "bg-accent text-black" : "text-white hover:text-black"
                 }`}
         >
             {children}
