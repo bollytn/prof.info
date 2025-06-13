@@ -10,7 +10,7 @@ const isArabic = (text) => /[\u0600-\u06FF]/.test(text);
 
 const ateliers = [
     {
-        title: "Club castor de l'informatique",
+        title: "Club Castor",
         description:
             "➤ Le Club Castor a pour objectif de préparer efficacement les élèves à se présenter au concours Castor 2025.\n" +
             "✦ Le concours couvre divers aspects de l'informatique : information et représentation, pensée algorithmique, utilisation des applications, structures de données, jeux de logique, informatique et société.\n" +
