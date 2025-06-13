@@ -12,13 +12,16 @@ const ateliers = [
     {
         title: "Club Castor",
         description:
-            "➤ Le Club Castor a pour objectif de préparer efficacement les élèves à se présenter au concours Castor 2025.\n" +
-            "✦ Le concours couvre divers aspects de l'informatique : information et représentation, pensée algorithmique, utilisation des applications, structures de données, jeux de logique, informatique et société.\n" +
+            "💡 Le Club Castor a pour objectif de préparer efficacement les élèves à se présenter au concours Castor 2025.\n" +
+            "🚀 Le concours couvre divers aspects de l'informatique : information et représentation, pensée algorithmique, utilisation des applications, structures de données, jeux de logique, informatique et société.\n" +
             "👉 Le club se déroulera en ligne, avec des sessions hebdomadaires pour pratiquer et approfondir les connaissances.\n" +
             "👉 Le concours dure 45 minutes et comporte environ 10 questions interactives, chacune déclinée en 4 versions de difficulté croissante.\n" +
             "👉 Les élèves participent seuls ou par binômes, en salle informatique.\n" +
             "👉 Des diplômes sont offerts aux participants selon leur score.\n" +
-            "👉 Les sujets du concours peuvent être rejoués en ligne toute l'année.\n",
+            "👉 Les sujets du concours peuvent être rejoués en ligne toute l'année.\n" +
+            '📅 12 juin 2025 \n' +
+            '🧔‍♂️ Formateur : Mahjoubi Bilel\n',
+
         images: [
             '/assets/atelier/castor.png', // Remplacez par vos images
         ],
@@ -26,7 +29,10 @@ const ateliers = [
     {
         title: 'scratch workshop "Animated Story"',
         description:
-            'An interactive workshop to learn the basics of programming with Scratch. Ideal for beginners and young learners.',
+            '💡 An interactive workshop to learn the basics of programming with Scratch. Ideal for beginners and young learners.' +
+            '📌 95 av Hedi Chaker  immeuble Sellami premier étage jendouba 8100 \n' +
+            '📅 Spring vacation 2025 \n' +
+            '🧔‍♂️ Trainer : Mahjoubi Bilel\n',
         images: [
             '/assets/atelier/scratch1.png', // Remplacez par vos images
         ],
@@ -34,12 +40,12 @@ const ateliers = [
     {
         title: 'Atelier Programmation "Single Page Applications (SPA)"',
         description:
-            'دعوة لطلبة المعهد العالي للدراسات التكنولوجية بجندوبة المشاركين في هذه الورشة ! \n' +
-            'هل ترغب في تعلم كيفية استخدام رياكت لإنشاء تطبيقات ويب تفاعلية؟ \n' +
-            'لا تفوّت هذه الورشة المميزة حول تصميم برتفوليو تفاعلي! \n' +
-            'المكان: المعهد العالي للدراسات التكنولوجية بجندوبة \n' +
-            'التاريخ: 19 فيفري 2025 \n' +
-            'المدرب: بلال المحجوبي \n',
+            '💡 دعوة لطلبة المعهد العالي للدراسات التكنولوجية بجندوبة المشاركين في هذه الورشة ! \n' +
+            '🚀 هل ترغب في تعلم كيفية استخدام رياكت لإنشاء تطبيقات ويب تفاعلية؟ \n' +
+            '🚨 لا تفوّت هذه الورشة المميزة حول تصميم برتفوليو تفاعلي! \n' +
+            '📌  المكان: المعهد العالي للدراسات التكنولوجية بجندوبة \n' +
+            '📅 التاريخ: 19 فيفري 2025\n' +
+            '🧔‍♂️ المدرب: بلال المحجوبي \n',
         images: [
             '/assets/atelier/web1.png', // Remplacez par vos images
         ],
@@ -47,11 +53,11 @@ const ateliers = [
     {
         title: 'التقنيات الحديثة في التعليم',
         description:
-            'الملتقى الوطني للبرمجة و الروبوتيك بالشراكة مع وزارة التربية تحت إشراف المندوبية الجهوية للتربية \n' +
-            'تنظيم دورات تكوينية في استعمال التكنولوجيات الحديثة في التعليم لإطار التدريس ابتدائي و ثانوي \n' +
-            'المكان: شارع الهادي شاكر عمارة السلامي-الطابق الأول \n' +
-            'التاريخ: 26 ديسمبر 2024 \n' +
-            'المدرب: بلال المحجوبي \n',
+            '💡 الملتقى الوطني للبرمجة و الروبوتيك بالشراكة مع وزارة التربية تحت إشراف المندوبية الجهوية للتربية \n' +
+            '👨🏻‍🏫 تنظيم دورات تكوينية في استعمال التكنولوجيات الحديثة في التعليم لإطار التدريس ابتدائي و ثانوي \n' +
+            '📌 المكان: شارع الهادي شاكر عمارة السلامي-الطابق الأول \n' +
+            '📅 التاريخ: 26 ديسمبر 2024\n' +
+            '🧔‍♂️ المدرب: بلال المحجوبي \n',
         images: [
             '/assets/atelier/tech.png', // Remplacez par vos images
         ],
@@ -59,15 +65,15 @@ const ateliers = [
     {
         title: 'حفل اختتام السنة الدراسية 2023 -2024',
         description:
-            'اختتتام الدورة التكوينيةً لسنة 2023-2024  و افتتاح دورة جديدة تحت شعار « نحن نصنع المستقبل »و من بين أهداف هذه الدورة :\n' +
-            'الملتقى الوطني للبرمجة و الروبوتيك بالشراكة مع وزارة التربية تحت إشراف المندوبية الجهوية للتربية \n' +
-            'المشاركة في المسابقات الدولية و الوطنية \n' +
-            'تنظيم دورات تكوينية في استعمال التكنولوجيات الحديثة في التعليم لإطار التدريس ابتدائي و ثانوي \n' +
-            'تنظيم مسابقات و طنية و جهوية, اتفاقية شراكة مع جامعة جندوبة و العديد من الملتقيات و المشاريع المرتقبة\n' +
-            'تنظيم رحلة تكوينية في عدة مجالات منها في الذكاء الاصطناعي للمنخرطين في الجمعية إلى الولايات المتحدة الأمريكية في اطار الشراكة مع جامعة كاليفورنيا \n' +
-            'المكان: الفرع الجهوي للتكوين و تطوير الكفاءات بجندوبة \n' +
-            'التاريخ: 16 سبتمبر 2024 \n' +
-            'المدرب: بلال المحجوبي \n',
+            '💡 اختتتام الدورة التكوينيةً لسنة 2023-2024  و افتتاح دورة جديدة تحت شعار « نحن نصنع المستقبل »و من بين أهداف هذه الدورة :\n' +
+            '🏛️ الملتقى الوطني للبرمجة و الروبوتيك بالشراكة مع وزارة التربية تحت إشراف المندوبية الجهوية للتربية \n' +
+            '👈 المشاركة في المسابقات الدولية و الوطنية \n' +
+            '👈 تنظيم دورات تكوينية في استعمال التكنولوجيات الحديثة في التعليم لإطار التدريس ابتدائي و ثانوي \n' +
+            '👈 تنظيم مسابقات و طنية و جهوية, اتفاقية شراكة مع جامعة جندوبة و العديد من الملتقيات و المشاريع المرتقبة\n' +
+            '👈 تنظيم رحلة تكوينية في عدة مجالات منها في الذكاء الاصطناعي للمنخرطين في الجمعية إلى الولايات المتحدة الأمريكية في اطار الشراكة مع جامعة كاليفورنيا \n' +
+            '📌 المكان: الفرع الجهوي للتكوين و تطوير الكفاءات بجندوبة \n' +
+            '📅 التاريخ: 16 سبتمبر 2024 \n' +
+            '🧔‍♂️ المدرب: بلال المحجوبي \n',
         images: [
             '/assets/atelier/scratch2.png', // Remplacez par vos images
         ],
@@ -75,14 +81,13 @@ const ateliers = [
     {
         title: 'Atelier web "Développement Full Stack"',
         description:
-            'un atelier pour apprendre à créer des sites web modernes et réactifs. Idéal pour les passionnés de technologie et de programmation web. \n' +
-            'Html, Css, Javascript \n' +
-            'Php ,mysql \n' +
-            'Durée du formation : 16h \n' +
-            '95 av Hedi Chaker  imm.Sellami premier étage jendouba 8100 \n' +
-            'Les places sont limitées \n' +
-            '22 décembre 2024 \n' +
-            'Formateur : Mahjoubi Bilel\n',
+            '🚀 un atelier pour apprendre à créer des sites web modernes et réactifs. Idéal pour les passionnés de technologie et de programmation web. \n' +
+            '👉 Html, Css, Javascript \n' +
+            '👉 Php ,mysql \n' +
+            '🕒 Durée du formation : 16h \n' +
+            '📌 95 av Hedi Chaker  immeuble Sellami premier étage jendouba 8100 \n' +
+            '📅 22 décembre 2024 \n' +
+            '🧔‍♂️ Formateur : Mahjoubi Bilel\n',
         images: [
             '/assets/atelier/web4.png', // Remplacez par vos images
         ],
@@ -90,12 +95,12 @@ const ateliers = [
     {
         title: 'Atelier Scratch avancé "Création de jeux"',
         description:
-            'تنظم الجمعية التونسية للبرمجة و الروبوتيك بمناسبة العطلة الصيفية نادي سكراتش مستوى متقدم ينطلق يوم الجمعة 02 أوت 2024 .  \n' +
-            'تنطلق غدا الدورة التكوينية الخاصة ببرمجية السكراتش في مقر الجمعية ابتداء من الساعة العاشرة صباحا …. مرحبا بالجميع\n' +
-            'لا تفوّت هذه الورشة المميزة حول تصميم ألعاب الفيديو ! \n' +
-            'المكان: 95 نهج الهادي شاكر عمارة السلامي الطابق الاول جندوبة وراء البنك المركزي \n' +
-            'التاريخ: 02 أوت 2024 \n' +
-            'المدرب: بلال المحجوبي \n',
+            '💡 تنظم الجمعية التونسية للبرمجة و الروبوتيك بمناسبة العطلة الصيفية نادي سكراتش مستوى متقدم ينطلق يوم الجمعة 02 أوت 2024 .  \n' +
+            '🚀 تنطلق غدا الدورة التكوينية الخاصة ببرمجية السكراتش في مقر الجمعية ابتداء من الساعة العاشرة صباحا …. مرحبا بالجميع\n' +
+            '🚨 لا تفوّت هذه الورشة المميزة حول تصميم ألعاب الفيديو ! \n' +
+            '📌 المكان: 95 نهج الهادي شاكر عمارة السلامي الطابق الاول جندوبة وراء البنك المركزي \n' +
+            '📅 التاريخ: 02 أوت 2024 \n' +
+            '🧔‍♂️ المدرب: بلال المحجوبي \n',
         images: [
             '/assets/atelier/scratch3.png', // Remplacez par vos images
         ],
