@@ -3,11 +3,26 @@
 import Image from 'next/image';
 import AnimatedBox from '@/components/shared/AnimatedBox'; // Réutilisation de l'animation existante
 import { motion } from 'framer-motion';
+import { FaArrowRight } from "react-icons/fa";
 
 // Fonction pour détecter si le texte contient des caractères arabes
 const isArabic = (text) => /[\u0600-\u06FF]/.test(text);
 
 const ateliers = [
+    {
+        title: "Club castor de l'informatique",
+        description:
+            "➤ Le Club Castor a pour objectif de préparer efficacement les élèves à se présenter au concours Castor 2025.\n" +
+            "✦ Le concours couvre divers aspects de l'informatique : information et représentation, pensée algorithmique, utilisation des applications, structures de données, jeux de logique, informatique et société.\n" +
+            "👉 Le club se déroulera en ligne, avec des sessions hebdomadaires pour pratiquer et approfondir les connaissances.\n" +
+            "👉 Le concours dure 45 minutes et comporte environ 10 questions interactives, chacune déclinée en 4 versions de difficulté croissante.\n" +
+            "👉 Les élèves participent seuls ou par binômes, en salle informatique.\n" +
+            "👉 Des diplômes sont offerts aux participants selon leur score.\n" +
+            "👉 Les sujets du concours peuvent être rejoués en ligne toute l'année.\n",
+        images: [
+            '/assets/atelier/castor.png', // Remplacez par vos images
+        ],
+    },
     {
         title: 'scratch workshop "Animated Story"',
         description:
