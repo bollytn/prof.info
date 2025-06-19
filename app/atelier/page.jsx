@@ -17,7 +17,7 @@ const ateliers = [
             '📅 Starting at 19 juin 2025 \n' +
             '🧔‍♂️ Teatcher : Mahjoubi Bilel\n',
         images: [
-            '/assets/atelier/club.png', // Remplacez par vos images
+            '/assets/atelier/summer.png', // Remplacez par vos images
         ],
     },
     {
