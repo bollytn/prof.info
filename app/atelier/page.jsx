@@ -10,6 +10,17 @@ const isArabic = (text) => /[\u0600-\u06FF]/.test(text);
 
 const ateliers = [
     {
+        title: 'Summer Club "Build Your Own Game"',
+        description:
+            "💡 Tynker is the fun way to learn programming and develop problem-solving & critical thinking skills. \n" +
+            '📌 95 av Hedi Chaker  immeuble Sellami premier étage jendouba 8100 \n' +
+            '📅 Starting at 19 juin 2025 \n' +
+            '🧔‍♂️ Teatcher : Mahjoubi Bilel\n',
+        images: [
+            '/assets/atelier/club.png', // Remplacez par vos images
+        ],
+    },
+    {
         title: "Club Castor",
         description:
             "💡 Le Club Castor a pour objectif de préparer efficacement les élèves à se présenter au concours Castor 2025.\n" +
@@ -19,9 +30,8 @@ const ateliers = [
             "👉 Les élèves participent seuls ou par binômes, en salle informatique.\n" +
             "👉 Des diplômes sont offerts aux participants selon leur score.\n" +
             "👉 Les sujets du concours peuvent être rejoués en ligne toute l'année.\n" +
-            '📅 12 juin 2025 \n' +
+            '📅 a partir de 12 juin 2025 \n' +
             '🧔‍♂️ Formateur : Mahjoubi Bilel\n',
-
         images: [
             '/assets/atelier/castor.png', // Remplacez par vos images
         ],

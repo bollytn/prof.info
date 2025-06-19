@@ -38,7 +38,7 @@ const PaginatedProjects = ({ projects, selectedClass }) => {
                             <p className="text-white/60 mt-4 group-hover:text-white transition-all duration-300">
                                 {project.description}
                             </p>
-                            <ul className="flex flex-wrap gap-4 mt-4 text-left">
+                            <ul className="flex flex-wrap gap-4 mt-4 text-center">
                                 {project.stack.map((item, idx) => (
                                     <li
                                         key={idx}
