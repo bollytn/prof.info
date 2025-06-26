@@ -160,17 +160,17 @@ const renderContent = (num, project) => {
             return contentMap.images("/assets/work/8/guide/cour", 4);
         case "14":
             return contentMap.coversAndDownloads([
-                { name: "baguette", path: "/assets/work/8/jeux/1.sb2", cover: "/assets/work/8/jeux/covers/1.PNG" },
-                { name: "balon", path: "/assets/work/8/jeux/2.sb2", cover: "/assets/work/8/jeux/covers/2.PNG" },
-                { name: "blue sky", path: "/assets/work/8/jeux/3.sb2", cover: "/assets/work/8/jeux/covers/3.PNG" },
-                { name: "chasse clé", path: "/assets/work/8/jeux/4.sb2", cover: "/assets/work/8/jeux/covers/4.PNG" },
-                { name: "chasse aux sorciere", path: "/assets/work/8/jeux/5.sb2", cover: "/assets/work/8/jeux/covers/5.PNG" },
-                { name: "circulation", path: "/assets/work/8/jeux/6.sb2", cover: "/assets/work/8/jeux/covers/6.PNG" },
-                { name: "jeux robot", path: "/assets/work/8/jeux/7.sb2", cover: "/assets/work/8/jeux/covers/7.PNG" },
-                { name: "labyrinthe", path: "/assets/work/8/jeux/8.sb2", cover: "/assets/work/8/jeux/covers/8.PNG" },
-                { name: "poursuite dangereuse", path: "/assets/work/8/jeux/9.sb2", cover: "/assets/work/8/jeux/covers/9.PNG" },
-                { name: "rebond solo", path: "/assets/work/8/jeux/10.sb2", cover: "/assets/work/8/jeux/covers/10.PNG" },
-                { name: "singe", path: "/assets/work/8/jeux/11.sb2", cover: "/assets/work/8/jeux/covers/11.PNG" },
+                { name: "baguette", path: "/assets/work/8/jeux/baguette.sb2", cover: "/assets/work/8/jeux/covers/1.webp" },
+                { name: "balon", path: "/assets/work/8/jeux/balon.sb2", cover: "/assets/work/8/jeux/covers/2.webp" },
+                { name: "blue sky", path: "/assets/work/8/jeux/blue_sky.sb2", cover: "/assets/work/8/jeux/covers/3.webp" },
+                { name: "chasse clé", path: "/assets/work/8/jeux/chasse_clé.sb2", cover: "/assets/work/8/jeux/covers/4.webp" },
+                { name: "chasse aux sorciere", path: "/assets/work/8/jeux/chasse_sorciere.sb2", cover: "/assets/work/8/jeux/covers/5.webp" },
+                { name: "circulation", path: "/assets/work/8/jeux/circulation.sb2", cover: "/assets/work/8/jeux/covers/6.webp" },
+                { name: "jeux robot", path: "/assets/work/8/jeux/jeux_robot.sb2", cover: "/assets/work/8/jeux/covers/7.webp" },
+                { name: "labyrinthe", path: "/assets/work/8/jeux/labyrinthe.sb2", cover: "/assets/work/8/jeux/covers/8.webp" },
+                { name: "poursuite dangereuse", path: "/assets/work/8/jeux/poursuite_dangereuse.sb2", cover: "/assets/work/8/jeux/covers/9.webp" },
+                { name: "rebond solo", path: "/assets/work/8/jeux/rebond_solo.sb2", cover: "/assets/work/8/jeux/covers/10.webp" },
+                { name: "singe", path: "/assets/work/8/jeux/singe.sb2", cover: "/assets/work/8/jeux/covers/11.webp" },
             ]);
         case "15":
             return contentMap.images("/assets/work/8/cartes/vert/cour", 5);
