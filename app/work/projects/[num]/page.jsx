@@ -86,9 +86,10 @@ const renderContent = (num, project) => {
                             src={item.cover}
                             alt={item.name}
                             width={300}
-                            height={200}
+                            height={220}
                             loading="lazy"
                             className="rounded-lg shadow-lg"
+                            style={{ width: 300, height: 220, objectFit: "cover" }}
                         />
                         {/* Download Link */}
                         <a
