@@ -64,6 +64,8 @@ const renderContent = (num, project) => {
                                 className="hover:text-yellow-300 hover:underline transition-all duration-300"
                                 href={file.path}
                                 download={file.name}
+                                target="_blank"
+                                rel="noopener noreferrer"
                             >
                                 {file.name}
                                 <HiOutlineDownload className="animate-bounce duration-700 inline-block ml-2 text-accent" />
@@ -265,7 +267,15 @@ const renderContent = (num, project) => {
         case "56":
             return contentMap.images("/assets/work/7/tp/tp3/cour", 3);
         case "57":
-            return contentMap.images("/assets/work/kids/cours/level1/cour", 25);
+            return (
+                <>
+                    {contentMap.downloads([
+                        { name: "scratch JR", path: "https://drive.google.com/file/d/1z2C2I5zRzPiFCmgXXlV1w17Gy9HudJ8K/view?usp=drive_link" },
+                    ])}
+                    {contentMap.images("/assets/work/kids/cours/level1/cour", 25)}
+
+                </>
+            );
 
         default:
             return <p className="text-center text-white">No content available</p>;
