@@ -149,7 +149,7 @@ const renderContent = (num, project) => {
             return contentMap.images("/assets/work/8/fiche/cour", 15);
         case "07":
             return contentMap.images("/assets/work/9/fiche/cour", 16);
-        case "08":
+        case "58":
             return contentMap.images("/assets/work/8/devoirs/ds12022/cour", 3);
         case "09":
             return contentMap.images("/assets/work/8/dstheorique/cour", 8);
@@ -276,6 +276,8 @@ const renderContent = (num, project) => {
 
                 </>
             );
+        case "08":
+            return contentMap.images("/assets/work/8/15games/", 118);
 
         default:
             return <p className="text-center text-white">No content available</p>;

@@ -86,15 +86,16 @@ const projects = [
         image: '/assets/work/cover/thumb7.webp',
         live: 'https://mega.nz/file/l3Y2GJ4Q#Lvs_UbXCR9aR50StOcsktL9SXt5ArG9oE5cN6ievOVo',
     },
-    {
+    
+{
         num: '08',
-        classe: ['8ᵉ année'],
-        category: 'Examain',
-        title: "Devoir de synthèse N°1",
-        description: "examain théorique et pratique de 8ᵉ année",
-        stack: [{ name: 'scratch' }, { name: "mot croisés" }, { name: "activité débranché" }, { name: "activité pratique" }],
-        image: '/assets/work/cover/thumb8.webp',
-        live: 'https://drive.google.com/file/d/1PgelJW8Tw2dCDr36DdFOkV_ODpce3jdc/view?usp=sharing',
+        classe:  ['8ᵉ année'],
+        category: 'Scratch',
+        title: "15 Games TO Create",
+        description: "Learn to code, one block at a time! With Tynker, coding is as simple as drag-and-drop. These game projects are a blast for kids to program and even better, fun to play with when they're done.",
+        stack: [{ name: 'Geometric patterns' }, { name: "Projectile physics" }, { name: "Gravity" }, { name: "Collisions" }, { name: "Velocity and force" },{ name: "Angles" }, { name: "Bouncing" }, { name: "Physics engine" }, { name: "Impulse" }],
+        image: '/assets/work/cover/thumb51.webp',
+        live: 'https://drive.google.com/drive/folders/1Fce-t3eBIeFFschI69ZezzVfeSbEQmq4?usp=sharing',
     },
     {
         num: '09',
@@ -583,8 +584,17 @@ const projects = [
         image: '/assets/work/cover/thumb50.webp',
         live: 'https://drive.google.com/drive/folders/1Fce-t3eBIeFFschI69ZezzVfeSbEQmq4?usp=sharing',
     },
-
-
+    
+{
+        num: '58',
+        classe: ['8ᵉ année'],
+        category: 'Examain',
+        title: "Devoir de synthèse N°1",
+        description: "examain théorique et pratique de 8ᵉ année",
+        stack: [{ name: 'scratch' }, { name: "mot croisés" }, { name: "activité débranché" }, { name: "activité pratique" }],
+        image: '/assets/work/cover/thumb8.webp',
+        live: 'https://drive.google.com/file/d/1PgelJW8Tw2dCDr36DdFOkV_ODpce3jdc/view?usp=sharing',
+    },
 ]
 
 export default projects;
