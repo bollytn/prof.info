@@ -576,7 +576,7 @@ const projects = [
     },
     {
         num: '57',
-        classe:  ["kid's"],
+        classe:  ["Primaire"],
         category: 'Scratch jr',
         title: "تعليم البرمجه للأطفال من سن 5 إلى 9 سنوات ",
         description: "سيتعلم طفلك مبادئ البرمجة بإستخدام برنامج سكراتش جونيور، وهو برنامج مجاني ومفتوح المصدر، مصمم خصيصًا للأطفال من سن 5 إلى 9 سنوات. سيتعلم طفلك كيفية إنشاء قصصه وألعابه الخاصة من خلال البرمجة المرئية.",
@@ -585,7 +585,7 @@ const projects = [
         live: 'https://drive.google.com/drive/folders/1Fce-t3eBIeFFschI69ZezzVfeSbEQmq4?usp=sharing',
     },
     
-{
+    {
         num: '58',
         classe: ['8ᵉ année'],
         category: 'Examain',
@@ -595,6 +595,26 @@ const projects = [
         image: '/assets/work/cover/thumb8.webp',
         live: 'https://drive.google.com/file/d/1PgelJW8Tw2dCDr36DdFOkV_ODpce3jdc/view?usp=sharing',
     },
+    {
+        num: '59',
+        classe: ['lycée'],
+        category: 'Formation',
+        title: "Formation HTML5 en ligne pour les débutants - 16 heures",
+        description: "Formation en ligne de 16 heures pour les débutants en HTML. Cette formation est destinée aux enseignants et aux élèves du secondaire. Elle couvre les bases du HTML, y compris la structure des pages web, les balises HTML, les attributs, et les bonnes pratiques de codage. La formation est interactive et comprend des exercices pratiques pour aider les participants à maîtriser les concepts enseignés.",
+        stack: [{ name: 'HTML5' }, { name: "Web Development" }, { name: "Web Design" }, { name: "Web Standards" }],
+        image: '/assets/work/cover/thumb52.webp',
+        live: 'https://drive.google.com/file/d/1PgelJW8Tw2dCDr36DdFOkV_ODpce3jdc/view?usp=sharing',
+    },
+    {
+        num: '60',
+        classe: ['lycée'],
+        category: 'Formation',
+        title: "Formation CSS3 en ligne pour les débutants - 36 heures",
+        description: "Formation en ligne de 36 heures pour les débutants en CSS. Cette formation est destinée aux enseignants et aux élèves du secondaire. Elle couvre les bases du CSS, y compris la mise en page, la typographie, les couleurs, et les bonnes pratiques de codage. La formation est interactive et comprend des exercices pratiques pour aider les participants à maîtriser les concepts enseignés.",
+        stack: [{ name: 'HTML5' }, { name: "CSS3" }, { name: "Web Development" }, { name: "Web Design" }, { name: "Web Standards" }],
+        image: '/assets/work/cover/thumb53.webp',
+        live: 'https://drive.google.com/file/d/1PgelJW8Tw2dCDr36DdFOkV_ODpce3jdc/view?usp=sharing',
+    }
 ]
 
 export default projects;
