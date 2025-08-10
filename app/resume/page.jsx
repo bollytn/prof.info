@@ -47,6 +47,11 @@ const experience = {
     description: "J'ai plus de 15 ans d'expérience dans l'enseignement de la programmation. j'ai également enseigné la programmation à des étudiants de tous niveaux.",
     items: [
         {
+            company: '(La plateforme Taki Academy) - منصّة تقي أكاديمي',
+            position: 'enseignant en informatique',
+            duration: '2025 - Présent'
+        },
+        {
             company: 'centre pilote "المركز النموذجي للدعم المدرسي"',
             position: 'computer science teacher',
             duration: '2024 - Présent'
@@ -54,7 +59,7 @@ const experience = {
         {
             company: 'Ecole Privée les génies',
             position: 'enseignant en informatique',
-            duration: '2023 - Présent'
+            duration: '2024 - 2025'
         },
         {
             company: 'الجمعية التونسية للبرمجة و الروبوتيك',
@@ -147,7 +152,7 @@ const Resume = () => {
                                             alt="Badge Icon"
                                             width={50}
                                             height={50}
- unoptimized
+                                            unoptimized
                                         />
                                         <h3 className="text-4xl font-bold mt-1 ml-1">{experience.title}</h3>
                                     </div>
@@ -186,7 +191,7 @@ const Resume = () => {
                                             alt="Cap Icon"
                                             width={50}
                                             height={50}
- unoptimized
+                                            unoptimized
                                         />
                                         <h3 className="text-4xl font-bold mt-1 ml-1">{education.title}</h3>
                                     </div>
@@ -226,7 +231,7 @@ const Resume = () => {
                                                 alt="Cap Icon"
                                                 width={50}
                                                 height={50}
- unoptimized
+                                                unoptimized
                                             />
                                             <h3 className="text-4xl font-bold mt-1 ml-1">{skills.title}</h3>
                                         </div>
@@ -275,7 +280,7 @@ const Resume = () => {
                                             alt="Badge Icon"
                                             width={50}
                                             height={50}
- unoptimized
+                                            unoptimized
                                         />
                                         <h3 className="text-4xl font-bold mt-1 ml-1">{about.title}</h3>
                                     </div>
