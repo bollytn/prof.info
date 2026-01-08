@@ -33,9 +33,46 @@ export const metadata = {
   icons: {
     icon: "/assets/icon.ico",
     shortcut: "/assets/icon.ico",
+    apple: "/assets/icon.ico",
   },
+  manifest: "/manifest.json",
+  robots: "index, follow",
+  openGraph: {
+    title: "Mahjoubi Bilel - Portfolio Enseignant Informatique",
+    description: "Découvrez le portfolio de Mahjoubi Bilel, enseignant en informatique. Explorez ses projets éducatifs, ses services et ses ressources pédagogiques.",
+    url: "https://prof-info.vercel.app",
+    siteName: "Mahjoubi Bilel",
+    images: [
+      {
+        url: "/assets/photo.png",
+        width: 800,
+        height: 600,
+      },
+    ],
+    locale: "fr_FR",
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Mahjoubi Bilel - Portfolio Enseignant Informatique",
+    description: "Découvrez le portfolio de Mahjoubi Bilel, enseignant en informatique. Explorez ses projets éducatifs, ses services et ses ressources pédagogiques.",
+    images: ["/assets/photo.png"],
+    site: "@MahjoubiBilel",
+    creator: "@MahjoubiBilel",
+  },
+  alternates: {
+    canonical: "https://prof-info.vercel.app",
+  },
+  other: {
+    "apple-mobile-web-app-capable": "yes",
+    "apple-mobile-web-app-status-bar-style": "black-translucent",
+    "google": "nositelink",
+  },
+};
 
-
+export const viewport = {
+  width: "device-width",
+  initialScale: 1.0,
 };
 
 export default function RootLayout({ children }) {
@@ -43,60 +80,20 @@ export default function RootLayout({ children }) {
 
   return (
     <html lang="en" suppressHydrationWarning>
-      <head>
-   
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{
-            __html: JSON.stringify({
-                "@context": "https://schema.org",
-                "@type": "WebSite",
-                "name": "Mahjoubi Bilel",
-                "url": "https://prof-info.vercel.app/",
-            }),
-        }}
-    />
-
-<meta name="apple-mobile-web-app-capable" content="yes" />
-<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"></meta>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta charSet="UTF-8" />
-  <meta name="description" content="Découvrez le portfolio de Mahjoubi Bilel, enseignant en informatique. Explorez ses projets éducatifs, ses services et ses ressources pédagogiques." />
-  <meta name="keywords" content="Mahjoubi Bilel, portfolio, enseignant informatique, scratch, AppInventor, Microbit, projets éducatifs" />
-  <meta name="author" content="Mahjoubi Bilel" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="robots" content="index, follow" />
-  <meta name="googlebot" content="index, follow" />
-  <meta name="google" content="nositelink" />
-      <meta property="og:title" content="Mahjoubi Bilel - Portfolio Enseignant Informatique" />
-  <meta property="og:description" content="Découvrez le portfolio de Mahjoubi Bilel, enseignant en informatique. Explorez ses projets éducatifs, ses services et ses ressources pédagogiques." />
-  <meta property="og:image" content="/assets/photo.png" />
-  <meta property="og:url" content="https://prof-info.vercel.app" />
-  <meta property="og:type" content="website" />
-  <meta property="og:site_name" content="Mahjoubi Bilel" />
-  <meta property="og:locale" content="fr_FR" />
-
-
-
-  <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:title" content="Mahjoubi Bilel - Portfolio Enseignant Informatique" />
-  <meta name="twitter:description" content="Découvrez le portfolio de Mahjoubi Bilel, enseignant en informatique. Explorez ses projets éducatifs, ses services et ses ressources pédagogiques." />
-  <meta name="twitter:image" content="/assets/photo.png" />
-  <meta name="twitter:url" content="https://prof-info.vercel.app" />
-  <meta name="twitter:site" content="@MahjoubiBilel" />
-  <meta name="twitter:creator" content="@MahjoubiBilel" />
-  <meta name="twitter:domain" content="https://prof-info.vercel.app" />
-  {/* Ajoutez d'autres métadonnées facebook, linkedin, etc. ici */}
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <link rel="icon" href="/favicon.ico" />
-  <link rel="apple-touch-icon" href="/assets/icon.ico" />
-  <link rel="manifest" href="/manifest.json" />
-  <link rel="canonical" href="https://prof-info.vercel.app" />  
-
-      </head>  
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "WebSite",
+              "name": "Mahjoubi Bilel",
+              "url": "https://prof-info.vercel.app/",
+            }),
+          }}
+        />
         <Header />
         <StairTransition />
         <PageTransition>
