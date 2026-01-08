@@ -1,0 +1,20 @@
+{
+    "name": "prof informatique",
+    "short_name": "mahjoubi bilel",
+    "description": "enseignant informatique et formateur en scratch, appinventer et microbit",
+    "start_url": "/",
+    "display": "standalone",
+    "background_color": "#ffffff",
+    "theme_color": "#1a202c",
+    "orientation": "portrait",
+    "icons": [
+        {
+            "src": "/assets/iconLarge.png",
+            "sizes": "512x512",
+            "type": "image/png"
+        }
+    ],
+    "lang": "fr",
+    "scope": "/",
+    "categories": ["portfolio", "mahjoubi bilel", "prof informatique","enseignant informatique","scratch","appinventer","microbit"]
+}

@@ -1,0 +1,256 @@
+'use client'
+
+import { useState, useEffect } from "react";
+import { Textarea } from "@/components/ui/textarea";
+
+import {
+    Select,
+    SelectContent,
+    SelectGroup,
+    SelectItem,
+    SelectTrigger,
+    SelectValue,
+} from "@/components/ui/select";
+
+import { FaPhoneAlt, FaEnvelope, FaMapMarkerAlt } from "react-icons/fa";
+
+const info = [
+    {
+        icon: <FaPhoneAlt />,
+        title: 'phone',
+        description: '(+216) 22 917 226'
+    },
+    {
+        icon: <FaEnvelope />,
+        title: 'Email',
+        description: 'Mahjoubi.Bilel@gmail.com'
+    },
+    {
+        icon: <FaMapMarkerAlt />,
+        title: 'Address',
+        description: 'Boite Postal 66 jendouba 8100'
+    }
+]
+
+const services = [
+    {
+        title: 'scratch 7eme annnée',
+        description: 'création des histories animées'
+    },
+    {
+        title: 'scratch 8eme annnée',
+        description: 'création des jeux scratch'
+    },
+    {
+        title: 'AppInventor et Microbit 9eme annnée',
+        description: 'creation des applications androids exemple quiz, des jeux de cartes, des jeux de société'
+    },
+]
+
+import { motion } from "framer-motion";
+
+import { ToastContainer, toast, Slide } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
+import { FaCheckCircle } from "react-icons/fa";
+
+import { FaExclamationCircle } from "react-icons/fa";
+
+import Image from "next/image";
+
+const Contact = () => {
+
+    const [formData, setFormData] = useState({
+        firstName: '',
+        lastName: '',
+        email: '',
+        phone: '',
+        subject: '',
+        message: ''
+    });
+
+    const [isFormValid, setIsFormValid] = useState(false);
+
+    useEffect(() => {
+        const { firstName, lastName, email, phone, subject, message } = formData;
+        const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+        const phoneRegex = /^[0-9]+$/;
+        const isValid = firstName.length >= 2 && lastName.length >= 2 && emailRegex.test(email) && phoneRegex.test(phone) && subject && message;
+        setIsFormValid(isValid);
+    }, [formData]);
+
+    const handleSubmit = async (e) => {
+        e.preventDefault();
+        try {
+            const response = await fetch('/api/contact', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                },
+                body: JSON.stringify(formData),
+            });
+            if (response.ok) {
+                toast.success('Message sent successfully!', {
+                    icon: <FaCheckCircle style={{ color: 'green' }} />,
+                    position: "top-right",
+                    autoClose: 5000,
+                    hideProgressBar: false,
+                    closeOnClick: false,
+                    pauseOnHover: true,
+                    draggable: true,
+                    progress: undefined,
+                    theme: "dark",
+                    transition: Slide,
+                });
+                setFormData({ firstName: '', lastName: '', phone: '', email: '', subject: '', message: '' });
+            } else {
+                throw new Error('Failed to send message');
+            }
+        } catch (error) {
+            toast.error('Error sending message. Please try again.', {
+                icon: <FaExclamationCircle style={{ color: 'red' }} />,
+                position: "top-right",
+                autoClose: 5000,
+                hideProgressBar: false,
+                closeOnClick: false,
+                pauseOnHover: true,
+                draggable: true,
+                progress: undefined,
+                theme: "dark",
+                transition: Slide,
+            });
+        }
+    };
+
+    const handleChange = (e) => {
+        setFormData({
+            ...formData,
+            [e.target.name]: e.target.value
+        });
+    };
+
+    const handleSelectChange = (value) => {
+        setFormData({
+            ...formData,
+            subject: value
+        });
+    };
+
+    return (
+
+        <motion.section initial={{ opacity: 0 }}
+            animate={{
+                opacity: 1,
+                transition: { delay: 2.4, duration: 0.4, ease: "easeIn" }
+            }}
+            className="py-6"
+        >
+            <div suppressHydrationWarning>
+                <ToastContainer />
+            </div>
+            <div className="container mx-auto">
+                <div className="flex flex-col xl:flex-row xl:gap-0 gap-6">
+                    {/* form */}
+                    <div className="xl:w-[60%] order-2 xl:order-none">
+                        <form onSubmit={handleSubmit} className="flex flex-col gap-6 p-10 bg-[#27272c] rounded-xl">
+                            <h3 className="text-4xl text-accent">Contactez-moi</h3>
+                            <p className="text-white/60">Commencez votre évaluation, profitez du meilleur contenu d'assistance à distance et restez en contact avec votre professeur sans vous ruiner.</p>
+                            {/* line shadow rounded */}
+                            {/*<div className="h-[1px] w-full bg-yellow-300 shadow-[0_0_10px_yellow] rounded"></div>*/}
+                            {/* divider line */}
+                            <h3 className="flex items-center w-full">
+                                <span className="flex-grow bg-yellow-300 shadow-[0_0_5px_yellow] rounded h-px "></span>
+                                <span className="mx-3 text-lg font-medium text-accent/60 animate-bounce">msg</span>
+                                <span className="flex-grow bg-yellow-300 shadow-[0_0_5px_yellow] rounded h-px"></span>
+                            </h3>
+                            {/*input */}
+                            <div className="grid grid-cols-1 md:grid-cols-2 gap-6 -mb-3" >
+                                <input name="firstName" value={formData.firstName} onChange={handleChange} type="text" placeholder="Nom" className="bg-transparent border-b border-white/20 text-white focus:outline-none placeholder:px-2" />
+                                <input name="lastName" value={formData.lastName} onChange={handleChange} type="text" placeholder="Prenom" className="bg-transparent border-b border-white/20 text-white focus:outline-none placeholder:px-2" />
+                                <input name="email" value={formData.email} onChange={handleChange} type="email" placeholder="E-mail" className="bg-transparent border-b border-white/20 text-white focus:outline-none placeholder:px-2" />
+                                <input name="phone" value={formData.phone} onChange={handleChange} type="tel" placeholder="Tél" className="bg-transparent border-b border-white/20 text-white focus:outline-none placeholder:px-2" />
+                            </div>
+                            {/* select */}
+                            <Select
+                                name="subject"
+                                value={formData.subject}
+                                onValueChange={handleSelectChange}
+                                className="bg-transparent border-b border-white/20 text-white/60 focus:outline-none">
+                                <SelectTrigger className="w-full">
+                                    <SelectValue placeholder="Nos Service" />
+                                </SelectTrigger>
+                                <SelectContent>
+                                    <SelectGroup>
+                                        {
+                                            services.map((service, index) => (
+                                                <SelectItem key={index} value={service.title}>
+                                                    {service.title}
+                                                </SelectItem>
+                                            ))
+                                        }
+                                    </SelectGroup>
+                                </SelectContent>
+                            </Select>
+                            {/*custom textarea */}
+                            <Textarea
+                                name="message"
+                                value={formData.message}
+                                onChange={handleChange}
+                                placeholder="Message"
+                                className="h-[100px] bg-transparent border-white/20 text-white focus:outline-none resize-none
+                                [&::-webkit-scrollbar]:w-2
+                              [&::-webkit-scrollbar-track]:bg-white/10 
+                              [&::-webkit-scrollbar-thumb]:bg-yellow-300
+                                [&::-webkit-scrollbar-thumb]:rounded-full
+                                [&::-webkit-scrollbar-thumb]:shadow-[0_0_5px_yellow]"
+                            />
+                            {/* button */}
+                            {/*<Button className="bg-accent hover:bg-accent/60 text-black rounded-full w-fit">Envoyer</Button>*/}
+                            <motion.button
+                                whileHover={{ scale: 1.1 }}
+                                whileTap={{ scale: 0.9 }}
+                                type="submit"
+                                disabled={!isFormValid}
+                                className={`group p-5 relative text-lg font-normal border-0 flex items-center justify-center bg-transparent text-accent h-auto w-[140px] overflow-hidden transition-all duration-100 ${!isFormValid ? 'opacity-50 cursor-not-allowed' : ''}`}>
+                                <span className="group-hover:w-full absolute left-0 h-full w-5 border-y border-l border-accent transition-all duration-500"></span>
+                                <p className="group-hover:opacity-0 group-hover:translate-x-[-100%] absolute translate-x-0 transition-all duration-200">Envoyer</p>
+                                <span className="group-hover:translate-x-0 group-hover:opacity-100 absolute  translate-x-full opacity-0  transition-all duration-200">Merci!</span>
+                                <span className="group-hover:w-full absolute right-0 h-full w-5 border-y border-r border-accent transition-all duration-500"></span>
+                            </motion.button>
+                        </form>
+                    </div>
+                    {/* info */}
+                    <div className="flex flex-1 flex-col gap-16 items-center xl:justify-between order-1 xl:order-none ">
+                        {/* Image */}
+                        <div className="hidden xl:block">
+                            <Image
+                                src="/assets/contact/maileee.svg"
+                                alt="mail"
+                                width={300}
+                                height={300}
+                                quality={100}
+                            />
+                        </div>
+                        <ul className="flex flex-col gap-4">
+                            {info.map((item, index) => {
+                                return (
+                                    <li key={index} className="flex items-center gap-4 mb-4">
+                                        <div
+                                            className="w-[52px] h-[52px] xl:w-[72px] xl:h-[72px] xl:text-2xl text-xl bg-white/10 p-2 rounded-full text-accent flex items-center justify-center">
+                                            {item.icon}
+
+                                        </div>
+                                        <div>
+                                            <h4 className="text-lg font-medium">{item.title}</h4>
+                                            <p className="text-white/60">{item.description}</p>
+                                        </div>
+                                    </li>
+                                )
+                            })}
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </motion.section>
+    )
+}
+export default Contact;
